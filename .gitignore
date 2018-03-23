@@ -6,3 +6,8 @@
 *.toc
 .DS_Store
 *eps-converted-to.pdf
+
+thesis.bbl
+thesis.blg
+thesis.lof
+thesis.lot
