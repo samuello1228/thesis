@@ -95,35 +95,21 @@
 % These are front matters.
 % Abstract
 % Title page
-% Dedication
 % Declaration
 % Acknowledgment
 % Publication (Optional)
 % Table of Contents (Including List of Tables and List of Figures)
 %*******************************************************
 
-\include{frontMatters/abstract}
-
-\include{frontMatters/titlePage}
-
-\cleardoublepage
-
 \pagenumbering{roman}
-
 \pagestyle{plain}
 
+\include{frontMatters/abstract}
+\include{frontMatters/titlePage}
 \include{frontMatters/declaration}
-
-\cleardoublepage
 \include{frontMatters/acknowledgment}
-
-\cleardoublepage
 \include{frontMatters/contents}
-
-\cleardoublepage
 \include{frontMatters/abbreviations}
-\renewcommand{\nomname}{List of Abbreviations and Symbols}
-\printnomenclature
 
 %*******************************************************
 % Mainmatter
@@ -177,7 +163,7 @@
 \bibliographystyle{apalike}
 
 \renewcommand{\bibname}{References}
-\bibliography{references}
+\bibliography{frontMatters/references}
 
 \cleardoublepage
 \include{frontMatters/publication}
