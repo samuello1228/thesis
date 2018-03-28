@@ -30,7 +30,6 @@
 \usepackage{multicol} % use multicolumn
 \usepackage{rotating} % to create a figure in landscape mode
 
-\usepackage{natbib} % this is for bibliography
 \usepackage{setspace} % this is for setting line spacing
 
 \usepackage{longtable} % this is for longtable
@@ -118,10 +117,7 @@
 \pagenumbering{arabic}
 
 \cleardoublepage
-\include{chapters/chapter1}
-
-\cleardoublepage
-\include{chapters/chapter2}
+\include{chapters/detector}
 
 %*******************************************************
 % Appendix
@@ -140,12 +136,11 @@
 \phantomsection
 \addcontentsline{toc}{chapter}{References}
 
-%\bibliographystyle{plainnat}
-%\bibliographystyle{plain}
-\bibliographystyle{apalike}
+%\bibliographystyle{bibtex/atlasBibStyleWoTitle}
+\bibliographystyle{bibtex/atlasBibStyleWithTitle}
 
 \renewcommand{\bibname}{References}
-\bibliography{frontMatters/references}
+\bibliography{bibtex/references}
 
 \cleardoublepage
 \include{frontMatters/publication}
