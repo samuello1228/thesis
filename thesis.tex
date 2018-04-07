@@ -1,4 +1,4 @@
-\documentclass[twoside,paper=a4,fontsize=11pt]{report}
+\documentclass[twoside,a4paper,11pt]{report}
 
 %*******************************************************
 % From page 7 of Preparing and Submitting Your
@@ -54,10 +54,7 @@
 %*******************************************************
 
 \usepackage{hyphenat} % this define hyphenation, an example is given in the next four lines.
-\hyphenation{pro-ban-da}
-\hyphenation{pro-ban-dum}
-\hyphenation{pen-ul-ti-mate}
-\hyphenation{sche-ma-tic}
+\hyphenation{electro-magnets}
 
 %*******************************************************
 % Make "clickable" Table of Contents
@@ -96,8 +93,8 @@
 % Title page
 % Declaration
 % Acknowledgment
-% Publication (Optional)
 % Table of Contents (Including List of Tables and List of Figures)
+% List of Abbreviations}
 %*******************************************************
 
 \pagenumbering{roman}
@@ -123,11 +120,11 @@
 % Appendix
 %*******************************************************
 
-\appendix
-\include{appendix/appendChapter1}
+%\appendix
+%\include{appendix/appendChapter1}
 
-\cleardoublepage
-\include{appendix/appendChapter2}
+%\cleardoublepage
+%\include{appendix/appendChapter2}
 
 %*******************************************************
 % Other Stuff in the Back
@@ -142,8 +139,8 @@
 \renewcommand{\bibname}{References}
 \bibliography{bibtex/references}
 
-\cleardoublepage
-\include{frontMatters/publication}
+%\cleardoublepage
+%\include{frontMatters/publication}
 %*******************************************************
 
 \end{document}
