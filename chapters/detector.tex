@@ -48,7 +48,7 @@ There are also 392 magnetic quadrupole to make the beam narrower, and the chance
 \cite{supermagnet,cryogenics}
 
 The protons in the beam are grouped into different bunches, and there are about $10^{11}$ protons in each bunch.
-The time-spacing between two adjacent bunches is 25ns.
+The time-spacing between two adjacent bunches is 25ns (or 50 ns in the old configuration).
 This means that in each 25 ns, two bunches are collided at the collision point.
 For each bunch collision, there are about 10 to 50 proton-proton interaction.
 
@@ -57,4 +57,100 @@ The interacting rate for a physics proccess $\frac{dN}{dt}$ is the product of th
 \frac{dN}{dt} = \sigma \mathcal{L}
 \end{equation}
 The instantaneous luminosity $\mathcal{L}$ is a measure of the interacting rate of two protons at the collision point, which is related to the density of the protons and the speed of the protons.
-The instantaneous luminosity in this experiment is about 10 (nb)$^{-1}$ s$^{-1}$.
+The instantaneous luminosity in this experiment is about $10^{34}$ cm$^{-2}$ s$^{-1}$ (or 10 nb$^{-1}$ s$^{-1}$).
+
+\section{ATLAS detector}
+\label{sec:detector_ATLAS}
+
+A Toroidal LHC ApparatuS (ATLAS) is the particle detector used in this experiment.
+Figure \ref{fig:detector_ATLAS} shows the main components of the ATLAS detector.
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{data/photo/ATLAS.jpg}
+\caption{The cut-away view of the ATLAS detector. It is 25m high and 44m long. \cite{ATLAS_photo}}
+\label{fig:detector_ATLAS}
+\end{figure}
+The ATLAS detector is a general purpose particle detector, which is consisted of 3 main components: the inner detector, the calorimeter and the muon spectrometer. \cite{ATLAS_doc}
+
+\subsection{coordinate system}
+The nominal collision point is defined as the origin of the coordinate system.
+The z-axis is along the beam dirention.
+The positive x-asix is pointing to the centre of the LHC ring.
+The positive y-asix is in the upward direction.
+The azimuthal angle $\phi$ and the polar angle $\theta$ are defined as usual in the spherical coordinate system.
+The pseudorapidity $\eta$ is defined as:
+\begin{equation}
+\eta = - \ln \Big( \tan \frac{\theta}{2} \Big)
+\end{equation}
+The distance $\Delta R$ in the pseudorapidity-azimuthal angle space is defined as:
+\begin{equation}
+\Delta R = \sqrt{(\Delta \phi) ^2 + (\Delta \eta) ^2}
+\end{equation}
+The ATLAS detector has a reflection symmetry about the x-y plane.
+
+\subsection{magnetic system}
+There is a thin superconducting solenoid magnet around the inner detector, which generates a 2 T magnetic field inside the inner detector.
+There are also 3 large superconducting toroids around the calorimeter: one for barrel and two for end-caps.
+All these magnets are shown in figure \ref{fig:detector_ATLAS}.
+
+\subsection{The inner detector}
+The inner detector is a particle tracker.
+It mainly detects the tracks of charged particles and has good performance for measuring the momentum of the charged particles and locating the position of the vertices.
+Figure \ref{fig:detector_inner_whole} shows the whole structure of the inner detector.
+The inner detector consists of 3 parts from inner to outer: the pixel detector, the silicon microstrip trackers (SCT) and the transition radiation tracker (TRT).
+Each part further divides into two parts: the barrel region with smaller $|\eta|$ and the end-cap region with larger $|\eta|$.
+Figure \ref{fig:detector_inner_detail} shows the distances R from the beam for the 3 components, and figure \ref{fig:detector_inner_size} shows the shapes and the orientations of each sensor and the $\eta$ coverage, in both the barrel and the end-cap regions.
+The $\eta$ coverage for the inner detector is $|\eta| < 2.5$.
+The shapes and the orientations of the sensors are different in the barrel and the end-cap regions.
+In the barrel region, the shape and the orientation of the sensors is concentric cylinder shells around the beam axis, while in the end-cap region, they are disks perpendicular to the beam axis.
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{data/photo/inner_whole.jpg}
+\caption{The whole structure of the ATLAS inner detector. \cite{inner_photo}}
+\label{fig:detector_inner_whole}
+\end{figure}
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{data/photo/inner_detail.jpg}
+\caption{The distances R from the beam for the 3 components: pixel, SCT and TRT. \cite{inner_photo}}
+\label{fig:detector_inner_detail}
+\end{figure}
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{data/photo/inner_size.png}
+\caption{The shapes, the orientations and the $\eta$ coverage for each sensor. \cite{ATLAS_doc}}
+\label{fig:detector_inner_size}
+\end{figure}
+
+\subsubsection{Pixels and SCT}
+The precision tracking detectors (pixels and SCT) has high resolution in space by using discrete space-points to detect the track of a charged particle, in order to achieve the good performance of the inner detector.
+There are 1744 pixel detectors in total.
+Each pixel sensor is identical, and has the size of 19mm$\times$63mm.
+Each pixel sensor has 47232 pixels, and hence there are in total 80 million pixels for the whole pixel detector.
+Each pixel in the pixel sensor has the accuracy of 10$\mu$m$\times$115$\mu$m.
+
+When the particle moves inside the inner detector, there are, in average, 36 hits per one track.
+By recording the positions of these hits, the path of the particle can be reconstructed.
+The whole inner detector is immersed in a 2 T magnetic field generated by the solenoid magnet, and hence the path of any charged particles will be bent.
+By measuring the curvature of the path, the charge and momentum of the particle can be measured.
+The equation for the circular path is
+\begin{equation}
+\frac{d\mathbf{p}}{dt} = q(\mathbf{v} \times \mathbf{B})
+\end{equation}
+where the relativistic momentum $\mathbf{p} = \gamma m \mathbf{v}$.
+\begin{align}
+\frac{d\mathbf{p}}{dt} &= q( \frac{\mathbf{p}}{\gamma m} \times \mathbf{B}) \\
+&= \frac{q}{\gamma m} (\mathbf{p} \times \mathbf{B})
+\end{align}
+From this equation, we can get the angular frequence $\omega$,
+\begin{align}
+\omega &= \frac{qB}{\gamma m} \\
+\frac{v}{r} &= \frac{qB}{\gamma m} \\
+\frac{1}{r} &= \frac{qB}{\gamma m v} \\
+\frac{1}{r} &= \frac{qB}{p} \\
+p &= rqB
+\end{align}
+By this equation, we can calculate the momentum of the particle, from the curvature of track $1/r$, the charge and the magnetic field strength.
+
+\subsubsection{TRT}
+TRT in the outer part is to produce and detect the transition radiation from the particle.
