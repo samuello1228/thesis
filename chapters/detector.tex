@@ -62,7 +62,7 @@ The instantaneous luminosity in this experiment is about $10^{34}$ cm$^{-2}$ s$^
 \section{ATLAS detector}
 \label{sec:detector_ATLAS}
 
-A Toroidal LHC ApparatuS (ATLAS) is the particle detector used in this experiment.
+A Toroidal LHC ApparatuS (ATLAS) is the particle detector used in this experiment \cite{ATLAS_doc}.
 Figure \ref{fig:detector_ATLAS} shows the main components of the ATLAS detector.
 \begin{figure}
 \centering
@@ -70,7 +70,19 @@ Figure \ref{fig:detector_ATLAS} shows the main components of the ATLAS detector.
 \caption{The cut-away view of the ATLAS detector. It is 25m high and 44m long. \cite{ATLAS_photo}}
 \label{fig:detector_ATLAS}
 \end{figure}
-The ATLAS detector is a general purpose particle detector, which is consisted of 3 main components: the inner detector, the calorimeter and the muon spectrometer. \cite{ATLAS_doc}
+The ATLAS detector is a general purpose particle detector, which is consisted of 3 main components: the inner detector, the calorimeter and the muon spectrometer.
+Figure \ref{fig:ATLAS_particles} shows how the ATLAS distinguishes different types of particle. The inner detector can detect the paths of the charged particles.
+Photons and electrons will deposit most of their energy in the electromagnetic calorimeter, and finally stop by it.
+Hadrons(including protons and neutrons) and mesons will similarly stop by the hadronic calorimeter.
+Only muons and the neutrinos can reach the outermost muon spectrometer, but only muons can be detected by the muon spectrometer.
+Nearly all neutrinos will escape the whole ATLAS detector, which leads to some missing energy.
+In this design, different particles can be identified due to their signature in different parts of ATLAS.
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{data/photo/ATLAS_particles.jpg}
+\caption{The cross section of the ATLAS detector. This shows different components of the ALTAS and how ATLAS detect different types of particles \cite{ATLAS_particles}}
+\label{fig:ATLAS_particles}
+\end{figure}
 
 \subsection{coordinate system}
 The nominal collision point is defined as the origin of the coordinate system.
@@ -97,9 +109,9 @@ All these magnets are shown in figure \ref{fig:detector_ATLAS}.
 The inner detector is a particle tracker.
 It mainly detects the tracks of charged particles and has good performance for measuring the momentum of the charged particles and locating the position of the vertices.
 Figure \ref{fig:detector_inner_whole} shows the whole structure of the inner detector.
-The inner detector consists of 3 parts from inner to outer: the pixel detector, the silicon microstrip trackers (SCT) and the transition radiation tracker (TRT).
+The inner detector consists of 3 sub-detectors from inner to outer: the pixel detector, the silicon microstrip tracker (SCT) and the transition radiation tracker (TRT).
 Each part further divides into two parts: the barrel region with smaller $|\eta|$ and the end-cap region with larger $|\eta|$.
-Figure \ref{fig:detector_inner_detail} shows the distances R from the beam for the 3 components, and figure \ref{fig:detector_inner_size} shows the shapes and the orientations of each sensor and the $\eta$ coverage, in both the barrel and the end-cap regions.
+Figure \ref{fig:detector_inner_detail} shows the distances R from the beam for the 3 sub-detectors, and figure \ref{fig:detector_inner_size} shows the shapes and the orientations of each sensor and the $\eta$ coverage, in both the barrel and the end-cap regions.
 The $\eta$ coverage for the inner detector is $|\eta| < 2.5$.
 The shapes and the orientations of the sensors are different in the barrel and the end-cap regions.
 In the barrel region, the shape and the orientation of the sensors is concentric cylinder shells around the beam axis, while in the end-cap region, they are disks perpendicular to the beam axis.
@@ -122,13 +134,7 @@ In the barrel region, the shape and the orientation of the sensors is concentric
 \label{fig:detector_inner_size}
 \end{figure}
 
-\subsubsection{Pixels and SCT}
-The precision tracking detectors (pixels and SCT) has high resolution in space by using discrete space-points to detect the track of a charged particle, in order to achieve the good performance of the inner detector.
-There are 1744 pixel detectors in total.
-Each pixel sensor is identical, and has the size of 19mm$\times$63mm.
-Each pixel sensor has 47232 pixels, and hence there are in total 80 million pixels for the whole pixel detector.
-Each pixel in the pixel sensor has the accuracy of 10$\mu$m$\times$115$\mu$m.
-
+The precision tracking detectors (pixels and SCT) has high resolution in space by using discrete space-points to detect the track of a charged particle, with the cutting-edge technology, in order to achieve the good performance of the inner detector.
 When the particle moves inside the inner detector, there are, in average, 36 hits per one track.
 By recording the positions of these hits, the path of the particle can be reconstructed.
 The whole inner detector is immersed in a 2 T magnetic field generated by the solenoid magnet, and hence the path of any charged particles will be bent.
@@ -152,5 +158,42 @@ p &= rqB
 \end{align}
 By this equation, we can calculate the momentum of the particle, from the curvature of track $1/r$, the charge and the magnetic field strength.
 
+\subsubsection{Pixel detector}
+As shown in figure \ref{fig:detector_inner_size}, there are 3 layers of cylinder in the barrel region, and 3 layers of disk for each end-cap region.
+There are in total 1744 modules in the pixel detectors.
+Each module is identical, and has the size of 19mm$\times$63mm, and 250 $\mu$m thick.
+The module has 47232 pixels, which has size of 50$\mu$m$\times$400$\mu$m, and hence there are in total 80 million pixels for the whole pixel detector.
+Each pixel has the accuracy of 10$\mu$m$\times$115$\mu$m.
+The sensor is using planar n$^{+}$-in-n type of silicon, with n$^{+}$-type at the readout side and n-type at another side.
+
+\subsubsection{SCT}
+As shown in figure \ref{fig:detector_inner_size}, there are 4 layers of cylinder in the barrel region, and 9 layers of disk for each end-cap region.
+There are in total 4088 modules in the SCT, with the thickness of 285 $\mu$m.
+There are in total 6.3 million pixels for the SCT.
+Each pixel has the accuracy of 17$\mu$m$\times$580$\mu$m.
+The sensor is using planar p-in-n type of silicon.
+
 \subsubsection{TRT}
-TRT in the outer part is to produce and detect the transition radiation from the particle.
+136 TRT modules.
+TRT in the outer part is to produce and detect the transition radiation from the particle. TRT comprises many layers of gaseous straw tube elements interleaved with transition radiation material.
+Each pixel has the accuracy of 130$\mu$m.
+
+\subsection{Calorimeter}
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{data/photo/calorimeter_whole.jpg}
+\caption{whole calorimeter \cite{calorimeter_whole}}
+\label{fig:calorimeter_whole}
+\end{figure}
+
+\subsubsection{Electromagnetic calorimeter}
+
+\subsubsection{Hardronic calorimeter}
+
+\subsection{Muon Spectrometer}
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{data/photo/muon_spectrometer.jpg}
+\caption{muon spectrometer \cite{muon_spectrometer}}
+\label{fig:muon_spectrometer}
+\end{figure}
