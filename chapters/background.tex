@@ -309,3 +309,479 @@ The weighted OS events and the SS events agree within the uncertainties.
 \end{figure}
 
 \section{fake lepton background}
+\subsection{Sources for fake lepton background}
+The fake lepton background is ascribed to the case that other paricle like meson, hadron and photon is mis-identified as a lepton, after the reconstruction.
+Three types of fake lepton background are described as follows.
+\begin{itemize}
+\item Heavy-flavor fakes:
+\begin{itemize}
+\item It comes from semi-leptonic decays of heavy-quark (b or c) hadrons in jets
+\end{itemize}
+\item Light-flavor fakes:
+\begin{itemize}
+\item It comes from semi-leptonic decays of light-quark hadrons in jets
+\item or is due to mis-reconstructions of jets with light-quark hadrons
+\end{itemize}
+\item photon conversion:
+\begin{itemize}
+\item It comes from the pair production from a photon
+\end{itemize}
+\end{itemize}
+These leptons do not often pass the lepton identification cuts and have large impact parameters.
+They are also not well-isolated.
+
+\subsection{Matrix method}
+The fake lepton background is estimated by the matrix method.
+The input of this method is the real and fake efficiencies of electron and muon, in different bins of $p_T$ and $|\eta|$, which is measured in the following sections.
+This method will estimate the amount of fake lepton background, by counting the number of loose and tight in data.
+The tight leptons in our analysis is the signal leptons, and the loose leptons is baseline leptons but not signal leptons.
+
+The probability that a real electron (or muon) passes the signal selection (i.e. tight lepton) is denoted by the real efficiency $\epsilon$.
+The probability that a real electron (or muon) does not pass the signal selection (i.e. loose lepton) is denoted by $\bar{\epsilon} = 1 - \epsilon$.
+Similarly, the probability that a fake electron (or muon) passes the signal selection (i.e. tight lepton) is denoted by the fake efficiency $f$.
+The probability that a fake electron (or muon) does not pass the signal selection (i.e. loose lepton) is denoted by $\bar{f} = 1 - f$.
+Although there are no any subscripts and superscripts for the efficiencies $e$ and $f$, these efficiencies are different for different flavours of the leptons (electron or muon), and also in different $p_T$-$|\eta|$ bins.
+
+For simplicity, we first consider the case with only one leptons. We will then generalize to the case with two leptons.
+By the definition of the efficiencies, the relation between the number of real/fake leptons and the number of tight/loose leptons is given by the following matrix.
+\begin{equation}
+\left( \begin{array}{c}
+N_T \\
+N_L
+\end{array} \right)
+=
+\left( \begin{array}{cc}
+\epsilon & f \\
+\bar{\epsilon} & \bar{f}
+\end{array} \right)
+\left( \begin{array}{c}
+N_R \\
+N_F
+\end{array} \right)
+\label{equ:fake_eff_def}
+\end{equation}
+Because the number of tight/loose leptons can be counted in data, $\left( \begin{array}{c}
+N_T \\
+N_L
+\end{array} \right)$ is known.
+By inverting the matrix, the original number of fake leptons can be calculated.
+\begin{align}
+\begin{split}
+\left( \begin{array}{c}
+0 \\
+N_F
+\end{array} \right)
+&=
+\left( \begin{array}{cc}
+0 & 0 \\
+0 & 1
+\end{array} \right)
+\left( \begin{array}{c}
+N_R \\
+N_F
+\end{array} \right) \\
+&=
+\left( \begin{array}{cc}
+0 & 0 \\
+0 & 1
+\end{array} \right)
+\left( \begin{array}{cc}
+\epsilon & f \\
+\bar{\epsilon} & \bar{f}
+\end{array} \right)^{-1}
+\left( \begin{array}{c}
+N_T \\
+N_L
+\end{array} \right)
+\end{split}
+\end{align}
+The fake lepton background, which is the number of tight lepton due to the fake lepton, $N_T'$, can then be found, by re-apply the matrix in equation \ref{equ:fake_eff_def}.
+\begin{align}
+\begin{split}
+\left( \begin{array}{c}
+N_T' \\
+N_L'
+\end{array} \right)
+&=
+\left( \begin{array}{cc}
+\epsilon & f \\
+\bar{\epsilon} & \bar{f}
+\end{array} \right)
+\left( \begin{array}{c}
+0 \\
+N_F
+\end{array} \right) \\
+&=
+\left( \begin{array}{cc}
+\epsilon & f \\
+\bar{\epsilon} & \bar{f}
+\end{array} \right)
+\left( \begin{array}{cc}
+0 & 0 \\
+0 & 1
+\end{array} \right)
+\left( \begin{array}{cc}
+\epsilon & f \\
+\bar{\epsilon} & \bar{f}
+\end{array} \right)^{-1}
+\left( \begin{array}{c}
+N_T \\
+N_L
+\end{array} \right) \\
+N_T'
+&=
+\left( \begin{array}{cc}
+\epsilon & f \\
+\end{array} \right)
+\left( \begin{array}{cc}
+0 & 0 \\
+0 & 1
+\end{array} \right)
+\left( \begin{array}{cc}
+\epsilon & f \\
+\bar{\epsilon} & \bar{f}
+\end{array} \right)^{-1}
+\left( \begin{array}{c}
+N_T \\
+N_L
+\end{array} \right) \\
+\end{split}
+\end{align}
+
+To generalize to the case with two leptons, equation \ref{equ:fake_eff_def} become
+\begin{equation}
+\left( \begin{array}{c}
+N_{TT} \\
+N_{TL} \\
+N_{LT} \\
+N_{LL}
+\end{array} \right)
+=
+\left( \begin{array}{cccc}
+\epsilon_1 \epsilon_2 & \epsilon_1 f_2 & f_1 \epsilon_2 & f_1 f_2 \\
+\epsilon_1 \bar{\epsilon_2} & \epsilon_1 \bar{f_2} & f_1 \bar{\epsilon_2} & f_1 \bar{f_2} \\
+\bar{\epsilon_1} \epsilon_2 & \bar{\epsilon_1} f_2 & \bar{f_1} \epsilon_2 & \bar{f_1} f_2 \\
+\bar{\epsilon_1} \bar{\epsilon_2} & \bar{\epsilon_1} \bar{f_2} & \bar{f_1} \bar{\epsilon_2} & \bar{f_1} \bar{f_2}
+\end{array} \right)
+\left( \begin{array}{c}
+N_{RR} \\
+N_{RF} \\
+N_{FR} \\
+N_{FF}
+\end{array} \right)
+\end{equation}
+where the subscript 1 and 2 of the efficiencies denote the leading lepton and subleading lepton respectively.
+The two letters in the subscript of $N$ describe the types of the leading and subleading lepton respectively.
+$N_{RF}$, $N_{FR}$, $N_{FF}$ can be found by inverting the matrix.
+\begin{align}
+\begin{split}
+\left( \begin{array}{c}
+0 \\
+N_{RF} \\
+N_{FR} \\
+N_{FF}
+\end{array} \right)
+&=
+\left( \begin{array}{cccc}
+0 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 1
+\end{array} \right)
+\left( \begin{array}{c}
+N_{RR} \\
+N_{RF} \\
+N_{FR} \\
+N_{FF}
+\end{array} \right) \\
+&=
+\left( \begin{array}{cccc}
+0 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 1
+\end{array} \right)
+\left( \begin{array}{cccc}
+\epsilon_1 \epsilon_2 & \epsilon_1 f_2 & f_1 \epsilon_2 & f_1 f_2 \\
+\epsilon_1 \bar{\epsilon_2} & \epsilon_1 \bar{f_2} & f_1 \bar{\epsilon_2} & f_1 \bar{f_2} \\
+\bar{\epsilon_1} \epsilon_2 & \bar{\epsilon_1} f_2 & \bar{f_1} \epsilon_2 & \bar{f_1} f_2 \\
+\bar{\epsilon_1} \bar{\epsilon_2} & \bar{\epsilon_1} \bar{f_2} & \bar{f_1} \bar{\epsilon_2} & \bar{f_1} \bar{f_2}
+\end{array} \right)^{-1}
+\left( \begin{array}{c}
+N_{TT} \\
+N_{TL} \\
+N_{LT} \\
+N_{LL}
+\end{array} \right)
+\end{split}
+\end{align}
+The fake lepton background, which is the number of tight-tight lepton due to the fake lepton, $N_{TT}'$, can then be found.
+\begin{align}
+\begin{split}
+\left( \begin{array}{c}
+N_{TT}' \\
+N_{TL}' \\
+N_{LT}' \\
+N_{LL}'
+\end{array} \right)
+&=
+\left( \begin{array}{cccc}
+\epsilon_1 \epsilon_2 & \epsilon_1 f_2 & f_1 \epsilon_2 & f_1 f_2 \\
+\epsilon_1 \bar{\epsilon_2} & \epsilon_1 \bar{f_2} & f_1 \bar{\epsilon_2} & f_1 \bar{f_2} \\
+\bar{\epsilon_1} \epsilon_2 & \bar{\epsilon_1} f_2 & \bar{f_1} \epsilon_2 & \bar{f_1} f_2 \\
+\bar{\epsilon_1} \bar{\epsilon_2} & \bar{\epsilon_1} \bar{f_2} & \bar{f_1} \bar{\epsilon_2} & \bar{f_1} \bar{f_2}
+\end{array} \right)
+\left( \begin{array}{c}
+0 \\
+N_{RF} \\
+N_{FR} \\
+N_{FF}
+\end{array} \right) \\
+&=
+\left( \begin{array}{cccc}
+\epsilon_1 \epsilon_2 & \epsilon_1 f_2 & f_1 \epsilon_2 & f_1 f_2 \\
+\epsilon_1 \bar{\epsilon_2} & \epsilon_1 \bar{f_2} & f_1 \bar{\epsilon_2} & f_1 \bar{f_2} \\
+\bar{\epsilon_1} \epsilon_2 & \bar{\epsilon_1} f_2 & \bar{f_1} \epsilon_2 & \bar{f_1} f_2 \\
+\bar{\epsilon_1} \bar{\epsilon_2} & \bar{\epsilon_1} \bar{f_2} & \bar{f_1} \bar{\epsilon_2} & \bar{f_1} \bar{f_2}
+\end{array} \right)
+\left( \begin{array}{cccc}
+0 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 1
+\end{array} \right)
+\left( \begin{array}{cccc}
+\epsilon_1 \epsilon_2 & \epsilon_1 f_2 & f_1 \epsilon_2 & f_1 f_2 \\
+\epsilon_1 \bar{\epsilon_2} & \epsilon_1 \bar{f_2} & f_1 \bar{\epsilon_2} & f_1 \bar{f_2} \\
+\bar{\epsilon_1} \epsilon_2 & \bar{\epsilon_1} f_2 & \bar{f_1} \epsilon_2 & \bar{f_1} f_2 \\
+\bar{\epsilon_1} \bar{\epsilon_2} & \bar{\epsilon_1} \bar{f_2} & \bar{f_1} \bar{\epsilon_2} & \bar{f_1} \bar{f_2}
+\end{array} \right)^{-1}
+\left( \begin{array}{c}
+N_{TT} \\
+N_{TL} \\
+N_{LT} \\
+N_{LL}
+\end{array} \right) \\
+N_{TT}'
+&=
+\left( \begin{array}{cccc}
+\epsilon_1 \epsilon_2 & \epsilon_1 f_2 & f_1 \epsilon_2 & f_1 f_2 \\
+\end{array} \right)
+\left( \begin{array}{cccc}
+0 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 1
+\end{array} \right)
+\left( \begin{array}{cccc}
+\epsilon_1 \epsilon_2 & \epsilon_1 f_2 & f_1 \epsilon_2 & f_1 f_2 \\
+\epsilon_1 \bar{\epsilon_2} & \epsilon_1 \bar{f_2} & f_1 \bar{\epsilon_2} & f_1 \bar{f_2} \\
+\bar{\epsilon_1} \epsilon_2 & \bar{\epsilon_1} f_2 & \bar{f_1} \epsilon_2 & \bar{f_1} f_2 \\
+\bar{\epsilon_1} \bar{\epsilon_2} & \bar{\epsilon_1} \bar{f_2} & \bar{f_1} \bar{\epsilon_2} & \bar{f_1} \bar{f_2}
+\end{array} \right)^{-1}
+\left( \begin{array}{c}
+N_{TT} \\
+N_{TL} \\
+N_{LT} \\
+N_{LL}
+\end{array} \right)
+\end{split}
+\label{equ:fake_eff_matrix}
+\end{align}
+Equation \ref{equ:fake_eff_matrix} can be applied to any combination of the flavour, $p_T$ and $|\eta|$ of the leading and subleading lepton.
+In principle, the total amount of fake lepton background should be the summation of all combination of the flavour, $p_T$ and $|\eta|$.
+For a particular combination, the counting result of the tight/loose leptons in data $\left( \begin{array}{c}
+N_{TT} \\
+N_{TL} \\
+N_{LT} \\
+N_{LL}
+\end{array} \right)$ can be split into ``one'', which is the contribution by one event.
+\begin{align}
+\begin{split}
+\left( \begin{array}{c}
+N_{TT} \\
+N_{TL} \\
+N_{LT} \\
+N_{LL}
+\end{array} \right)
+=
+\sum_{i=1}^{N_{TT}}
+\left( \begin{array}{c}
+1 \\
+0 \\
+0 \\
+0
+\end{array} \right)
++
+\sum_{i=1}^{N_{TL}}
+\left( \begin{array}{c}
+0 \\
+1 \\
+0 \\
+0
+\end{array} \right)
++
+\sum_{i=1}^{N_{LT}}
+\left( \begin{array}{c}
+0 \\
+0 \\
+1 \\
+0
+\end{array} \right)
++
+\sum_{i=1}^{N_{LL}}
+\left( \begin{array}{c}
+0 \\
+0 \\
+0 \\
+1
+\end{array} \right)
+\end{split}
+\end{align}
+Because equation \ref{equ:fake_eff_matrix} is a linear function, we can first calculate the small contribution of $N_{TT}'$ from one event, and assign this value as a weight to the event.
+This weight is called the fake weight of the event.
+The total fake lepton background is then the sum of the fake weight of all events in data.
+For example, if the pair of the two leptons is a tight-tight pair, the fake weight of this event is $N_{TT}'$ in the following equation.
+\begin{align}
+\begin{split}
+N_{TT}'
+=
+\left( \begin{array}{cccc}
+\epsilon_1 \epsilon_2 & \epsilon_1 f_2 & f_1 \epsilon_2 & f_1 f_2 \\
+\end{array} \right)
+\left( \begin{array}{cccc}
+0 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 1
+\end{array} \right)
+\left( \begin{array}{cccc}
+\epsilon_1 \epsilon_2 & \epsilon_1 f_2 & f_1 \epsilon_2 & f_1 f_2 \\
+\epsilon_1 \bar{\epsilon_2} & \epsilon_1 \bar{f_2} & f_1 \bar{\epsilon_2} & f_1 \bar{f_2} \\
+\bar{\epsilon_1} \epsilon_2 & \bar{\epsilon_1} f_2 & \bar{f_1} \epsilon_2 & \bar{f_1} f_2 \\
+\bar{\epsilon_1} \bar{\epsilon_2} & \bar{\epsilon_1} \bar{f_2} & \bar{f_1} \bar{\epsilon_2} & \bar{f_1} \bar{f_2}
+\end{array} \right)^{-1}
+\left( \begin{array}{c}
+1 \\
+0 \\
+0 \\
+0
+\end{array} \right)
+\end{split}
+\label{equ:fake_eff_fake_weight}
+\end{align}
+where the flavours, $p_T$ and $|\eta|$ of the efficiencies is simply the flavours, $p_T$ and $|\eta|$ of the leading and subleading lepton in this event.
+
+By calculating the inverse of the matrix, equation \ref{equ:fake_eff_matrix} can be simplified.
+First, we define a variable $d$.
+\begin{align}
+\begin{split}
+d = (\epsilon_1 - f_1) (\epsilon_2 - f_2)
+\end{split}
+\end{align}
+The inverse of the matrix is given by
+\begin{align}
+\begin{split}
+\left( \begin{array}{cccc}
+\epsilon_1 \epsilon_2 & \epsilon_1 f_2 & f_1 \epsilon_2 & f_1 f_2 \\
+\epsilon_1 \bar{\epsilon_2} & \epsilon_1 \bar{f_2} & f_1 \bar{\epsilon_2} & f_1 \bar{f_2} \\
+\bar{\epsilon_1} \epsilon_2 & \bar{\epsilon_1} f_2 & \bar{f_1} \epsilon_2 & \bar{f_1} f_2 \\
+\bar{\epsilon_1} \bar{\epsilon_2} & \bar{\epsilon_1} \bar{f_2} & \bar{f_1} \bar{\epsilon_2} & \bar{f_1} \bar{f_2}
+\end{array} \right)^{-1}
+= \frac{1}{d}
+\left( \begin{array}{cccc}
+  \bar{f_1}        \bar{f_2}        & - \bar{f_1}        f_2        & - f_1        \bar{f_2}        &   f_1        f_2        \\
+- \bar{f_1}        \bar{\epsilon_2} &   \bar{f_1}        \epsilon_2 &   f_1        \bar{\epsilon_2} & - f_1        \epsilon_2 \\
+- \bar{\epsilon_1} \bar{f_2}        &   \bar{\epsilon_1} f_2        &   \epsilon_1 \bar{f_2}        & - \epsilon_1 f_2        \\
+  \bar{\epsilon_1} \bar{\epsilon_2} & - \bar{\epsilon_1} \epsilon_2 & - \epsilon_1 \bar{\epsilon_2} &   \epsilon_1 \epsilon_2 \\
+\end{array} \right)
+\end{split}
+\end{align}
+Equation \ref{equ:fake_eff_matrix} becomes
+\begin{align}
+\begin{split}
+N_{TT}'
+&=
+\left( \begin{array}{cccc}
+\epsilon_1 \epsilon_2 & \epsilon_1 f_2 & f_1 \epsilon_2 & f_1 f_2 \\
+\end{array} \right)
+\left( \begin{array}{cccc}
+0 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 1
+\end{array} \right)
+\frac{1}{d}
+\left( \begin{array}{cccc}
+  \bar{f_1}        \bar{f_2}        & - \bar{f_1}        f_2        & - f_1        \bar{f_2}        &   f_1        f_2        \\
+- \bar{f_1}        \bar{\epsilon_2} &   \bar{f_1}        \epsilon_2 &   f_1        \bar{\epsilon_2} & - f_1        \epsilon_2 \\
+- \bar{\epsilon_1} \bar{f_2}        &   \bar{\epsilon_1} f_2        &   \epsilon_1 \bar{f_2}        & - \epsilon_1 f_2        \\
+  \bar{\epsilon_1} \bar{\epsilon_2} & - \bar{\epsilon_1} \epsilon_2 & - \epsilon_1 \bar{\epsilon_2} &   \epsilon_1 \epsilon_2 \\
+\end{array} \right)
+\left( \begin{array}{c}
+N_{TT} \\
+N_{TL} \\
+N_{LT} \\
+N_{LL}
+\end{array} \right) \\
+&=
+\frac{1}{d}
+\left( \begin{array}{cccc}
+\epsilon_1 \epsilon_2 & \epsilon_1 f_2 & f_1 \epsilon_2 & f_1 f_2 \\
+\end{array} \right)
+\left( \begin{array}{cccc}
+  0                                 &   0                           &   0                           &   0                     \\
+- \bar{f_1}        \bar{\epsilon_2} &   \bar{f_1}        \epsilon_2 &   f_1        \bar{\epsilon_2} & - f_1        \epsilon_2 \\
+- \bar{\epsilon_1} \bar{f_2}        &   \bar{\epsilon_1} f_2        &   \epsilon_1 \bar{f_2}        & - \epsilon_1 f_2        \\
+  \bar{\epsilon_1} \bar{\epsilon_2} & - \bar{\epsilon_1} \epsilon_2 & - \epsilon_1 \bar{\epsilon_2} &   \epsilon_1 \epsilon_2 \\
+\end{array} \right)
+\left( \begin{array}{c}
+N_{TT} \\
+N_{TL} \\
+N_{LT} \\
+N_{LL}
+\end{array} \right) \\
+\end{split}
+\end{align}
+For a tight-tight pair,
+\begin{align}
+\begin{split}
+\text{fake weight} = \frac{1}{d} (
+- \epsilon_1 \bar{f_1} \bar{\epsilon_2} f_2
+- \bar{\epsilon_1} f_1 \epsilon_2 \bar{f_2}
++ \bar{\epsilon_1} f_1 \bar{\epsilon_2} f_2 )
+\end{split}
+\end{align}
+For a tight-loose pair,
+\begin{align}
+\begin{split}
+\text{fake weight} &= \frac{1}{d} (
+\epsilon_1 \bar{f_1} \epsilon_2 f_2
++ \bar{\epsilon_1} f_1 \epsilon_2 f_2
+- \bar{\epsilon_1} f_1 \epsilon_2 f_2 ) \\
+&= \frac{\epsilon_1 \bar{f_1} \epsilon_2 f_2}{d}
+\end{split}
+\end{align}
+For a loose-tight pair,
+\begin{align}
+\begin{split}
+\text{fake weight} &= \frac{1}{d} (
+\epsilon_1 f_1 \bar{\epsilon_2} f_2
++ \epsilon_1 f_1 \epsilon_2 \bar{f_2}
+- \epsilon_1 f_1 \bar{\epsilon_2} f_2 ) \\
+&= \frac{\epsilon_1 f_1 \epsilon_2 \bar{f_2}}{d}
+\end{split}
+\end{align}
+For a loose-loose pair,
+\begin{align}
+\begin{split}
+\text{fake weight} &= \frac{1}{d} (
+- \epsilon_1 f_1 \epsilon_2 f_2
+- \epsilon_1 f_1 \epsilon_2 f_2
++ \epsilon_1 f_1 \epsilon_2 f_2 ) \\
+&= - \frac{\epsilon_1 f_1 \epsilon_2 f_2}{d}
+\end{split}
+\end{align}
+
+\subsection{Measurement of real efficiencies}
+
