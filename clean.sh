@@ -1,0 +1,11 @@
+rm thesis.aux
+rm thesis.bbl
+rm thesis.blg
+rm thesis.lof
+rm thesis.log
+rm thesis.lot
+rm thesis.nlg
+rm thesis.nlo
+rm thesis.nls
+rm thesis.out
+rm thesis.toc
