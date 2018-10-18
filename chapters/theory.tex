@@ -80,6 +80,7 @@ These fundamental vertices are the basic building blocks for all physical proces
 Although Standard Model can explain almost all experimental results, there still are some phenomena it cannot explain.
 
 \subsection{Dark matter}
+\label{sec:dark_matter}
 Dark matter is some unknown matter that does not involve in electromagnetic interaction, but involve in gravitational interaction.
 It was first discovered in the Milky Way, by studying the speed of the stars orbiting around the center of the Milky Way.
 Because it does not involve in electromagnetic interaction, it does not emit any electromagnetic radiation, and it cannot be seen by our telescopes.
@@ -124,28 +125,124 @@ Supersymmetry(SUSY) is an extension of the Standard Model, and try to answer som
 One of the problem SUSY can solve is the hierarchy problem of Higgs mass mentioned in section \ref{subsec:hierarchy_problem}.
 We first notice that the negative sign in the equation \ref{eq:higgs_correction} is due to the correction from the fermions.
 If we can somehow have some symmetry between the fermions and bosons, and add more positive correction terms due to the bosons, the correction terms will cancel with each other and the hierarchy problem can be solved.
-This new symmetry is called the supersymmetry(SUSY).
+This new symmetry is called the supersymmetry (SUSY).
 
 \subsection{Minimal Supersymmetric Standard Model}
-Minimal Supersymmetric Standard Model(MSSM) is the minimal supersymmetrical theory that contain the least number of new particle states and new interactions.
-It predicts that each particle in the Standard Model has its own partner particle, called the superpartner.
-The name of the superpartner is by adding a prefix "s", followed by the name of the orginal Standard Model particle.
+Minimal Supersymmetric Standard Model(MSSM) is the simplest realization of the supersymmetrical theories that contain the minimum number of new particles and new interactions.
+It predicts that each particle in the Standard Model has its own partner particle, called the superpartner, as shown in figure \ref{fig:SUSY_particles}.
+The name of the superpartner of a fermion is by adding a prefix ``s'', followed by the name of the orginal Standard Model particle: squarks and sleptons, etc.
 For example, the superpartner of an electron is called selectron.
+For the superpartner of a Standard Model boson, the suffix ``ino'' is added: gluino and Higgsino, etc.
 As for the symbol for the superpartner, a tilde will be added above the original symbol.
 For example, the symbol for selectron is $\tilde{e}$.
 Also, the spin of the superpartner will differ from the Standard Model particle by 1/2.
 For fermions, the spin of their superpartner is 0, while for bosons, the spin of their superpartner is 1/2.
+The superpartners would interact with the same forces as the Standard Model particles, but they would have different masses.
 This is the new symmetry between the fermions and bosons, mentioned before.
 It is also the correction terms from these superpartners to fix the hierarchy problem of the Higgs mass.
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{data/photo/theory/SM-SUSY-diagram.jpg}
+\caption{The particles in Standard Model and their corresponding superpartners and thier names}
+\label{fig:SUSY_particles}
+\end{figure}
+
+In the MSSM, one neutral Higgs boson $H$ and two charged Higgs bosons $H^+$, $H^-$ needed to be introduced.
+This means that for the Standard Model electro-weak bosons, there are 4 neutral bosons: $\gamma$, $Z$, $h$ and $H$, and 4 charged bosons: $W^+$, $W^-$, $H^+$ and $H^-$.
+The superpartners of the 4 neutral bosons together form 4 mass eigenstates, called neutralinos: $\tilde{\chi}_1^0$, $\tilde{\chi}_2^0$, $\tilde{\chi}_3^0$ and $\tilde{\chi}_4^0$.
+The superpartners of the 4 charged bosons together form two mass eigenstates with electric charge $\pm 1$, called charginos: $\tilde{\chi}_1^\pm$ and $\tilde{\chi}_2^\pm$.
+The subscripts of the symbol of the neutralinos and charginos are labeled by the ascending order in mass.
+Table \ref{tab:SUSY_particle} summarizes the Standard Model particles and their superpartners.
 If MSSM is correct, these supersymmetric particles should be detected in the LHC.
 
-\section{Wh channel}
+\begin{table}[htbp]
+\tiny
+\centering
+\begin{tabular}{|c|cccc|cccc|}
+\hline
+\hline
+Type & SM particle & Symbol & Spin & R-parity & Superpartner & Symbol & Spin & R-parity \\
+\hline
+\hline
+Fermions & Quark  & $q$ & $\frac{1}{2}$ & +1 & Squark  & $\tilde{q}$ & 0 & -1 \\
+         & Lepton & $l$ & $\frac{1}{2}$ & +1 & Slepton & $\tilde{l}$ & 0 & -1 \\
+\hline
+Gluon & Gluon  & $g$ & $1$ & +1 & Gluino & $\tilde{g}$ & $\frac{1}{2}$ & -1  \\
+\hline
+Neutral EW Bosons & Photon         & $\gamma$ & $1$ & +1
+                  &  &  &  &  \\
+                  & Z Boson        & $Z$      & $1$ & +1
+                  & Neutralinos & $\tilde{\chi}_1^0$, $\tilde{\chi}_2^0$, $\tilde{\chi}_3^0$, $\tilde{\chi}_4^0$ & $\frac{1}{2}$ & -1 \\
+                  & Neutral Higgs  & $h$,$H$  & $0$ & +1
+                  &  &  &  &  \\
+\hline
+Charged EW Bosons & W Boson        & $W^+$, $W^-$  & $1$ & +1
+                  & Charginos & $\tilde{\chi}_1^\pm$, $\tilde{\chi}_2^\pm$ & $\frac{1}{2}$ & -1 \\
+                  & Charged Higgs  & $H^+$, $H^-$  & $0$ & +1
+                  &  &  &  &  \\
+\hline
+\hline
+\end{tabular}
+\caption{The spin and R-parity for the Standard Model particles and their superpartners.}
+\label{tab:SUSY_particle}
+\end{table}
+
+The baryon number $B$ is defined by $\frac{1}{3} (n_q - n_{\bar{q}})$, where $n_q$ is the number of quarks and $n_{\bar{q}}$ is the number of anti-quarks.
+The lepton number $L$ is defined by $n_l - n_{\bar{l}}$, where $n_l$ is the number of leptons and $n_{\bar{l}}$ is the number of anti-leptons.
+In the Standard Model and the experimental data, $B-L$ is conserved, but in MSSM, it is no longer conserved.
+To keep this conservation and prevent the proton decay, the R-parity $P_R$ is introduced.
+\begin{equation}
+P_R = (-1)^{3(B-L)-2s}
+\end{equation}
+where s is the spin.
+By this definition, all Standard Model particles have R-parity $+1$, and all supersymmetric particles have R-parity $-1$.
+If the R-parity is conserved, the lightest supersymmetric particle (LSP) cannot decay and is stable.
+If the LSP is electrically neutral and interacts with matter only by the weak interaction and gravity, for example the lightest neutralinos $\tilde{\chi}_1^0$ or a sneutrino $\tilde{\nu}$, it could be a candidate for dark matter mentioned in section \ref{sec:dark_matter}.
+In this thesis, the R-parity is assumed to be conserved, and the lightest neutralino $\tilde{\chi}_1^0$ is assumed to be the LSP.
+Due to the conservation of R-parity, the supersymmetric particles can only be pair-produced, and will eventually decay into Standard Model particles and the lightest neutralino $\tilde{\chi}_1^0$, i.e. the LSP in this thesis.
+
+\section{Signal scenario}
 \label{sec:Wh_signal}
+In the recent searches for the squarks and gluinos, the masses of gluinos and the first and second generation squarks are suggested to be larger than 1 TeV, while the masses of the third generation squarks are still allowed to be below 1 TeV \cite{gluinos}.
+In this case, the direct pair production of electroweak gauginos (i.e. neutralinos and charginos) may be the dominant SUSY production process at the LHC, if the masses of the gluinos and squarks are significantly heavier than the low mass electroweak gauginos, because the production cross sections of supersymmetric particles depend on the masses of the sparticles.
+With the results in the Run-I analysis \cite{run1} by using the center-of-mass energy $\sqrt{s} = 8$ TeV shown in figure \ref{fig:result_run1}, the electroweak pair production may be a promising hope for SUSY discovery at a higher center-of-mass energy $\sqrt{s} = 13$ TeV in Run-II using 2015 and 2016 data.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{data/photo/theory/run1.png}
+\caption{The exclusion contours for the masses $m_{\tilde{\chi}_1^\pm , \tilde{\chi}_2^0}$ and $m_{\tilde{\chi}_1^0}$ in the Run-I analysis \cite{run1}.}
+\label{fig:result_run1}
+\end{figure}
+
+Same as the Run-I analysis, the supersymmetric process we are looking for is the pair production of the lightest chargino $\tilde{\chi}_1^\pm$ and the second lightest neutralino $\tilde{\chi}_2^0$.
+The masses of them are assumed to be the same, $m_{\tilde{\chi}_1^\pm} = m_{\tilde{\chi}_2^0}$, and denoted by $m_{\tilde{\chi}_1^\pm , \tilde{\chi}_2^0}$ in the later chapters.
+With the assumption that all sleptons are heavier than $\tilde{\chi}_1^\pm$ and $\tilde{\chi}_2^0$,
+$\tilde{\chi}_1^\pm$ will decay to W boson and $\tilde{\chi}_1^0$ (i.e. $\tilde{\chi}_1^\pm \rightarrow W^{\pm} + \tilde{\chi}_1^0$)
+and $\tilde{\chi}_2^0$ will decay to the lightest MSSM Higgs boson $h$ and $\tilde{\chi}_1^0$ (i.e. $\tilde{\chi}_2^0 \rightarrow h + \tilde{\chi}_1^0$),
+or Z boson and $\tilde{\chi}_1^0$ (i.e. $\tilde{\chi}_2^0 \rightarrow Z + \tilde{\chi}_1^0$).
+In this thesis, we assume $\tilde{\chi}_1^\pm \rightarrow W^{\pm} + \tilde{\chi}_1^0$ and $\tilde{\chi}_2^0 \rightarrow h + \tilde{\chi}_1^0$ decays with 100\% branching ratio, which is the Wh channel we are looking for.
+The mass of the lightest MSSM Higgs boson $h$ is set to 125 GeV.
+
+The W boson from $\tilde{\chi}_1^\pm$ will decay into one lepton (electron or muon) and one neutrino (i.e. $W{^\pm} \rightarrow \ell^{\pm} + \nu$) with the SM branching ratio.
+The Higgs boson form $\tilde{\chi}_2^0$ will eventually decay into one lepton (electron or muon), quarks (i.e. jets) and neutrino(s) by various decay modes with the SM branching ratios.
+For example, $h \rightarrow W^{+} W^{-} $ and $h \rightarrow \tau^{+} \tau^{-} $ are the dominant decay modes, with one of the $W / \tau$ decays leptonically (e.g. $W{^\pm} \rightarrow \ell^{\pm} + \nu$) and another decays hadronically (e.g. $W \rightarrow q + q$).
+The Feynman diagram in figure \ref{fig:signal_feynman} summarizes the whole signal scenario we are looking for in this thesis.
+
 \begin{figure}
 \centering
 \includegraphics[width=0.5\textwidth]{data/photo/theory/signal_feynman.png}
-\caption{The Feynman diagram for our Wh signal}
+\caption{The Feynman diagram for the Wh same-sign signal scenario in this thesis. The final states in this process are two same-sign leptons (electron or muon), quarks (i.e. jets) and missing transverse momentum contributed by the lightest neutralinos $\tilde{\chi}_1^0$ and neutrinos $\nu$.}
 \label{fig:signal_feynman}
 \end{figure}
 
+The two leptons in the final states are either electrons or muons, and the term ``lepton'' (with symbol $\ell$) in the later chapters in this thesis is refer to electron or moun, but not tau lepton or neutrino.
+We are only looking for two leptons with the same electric charge, in order to suppress the Standard Model background that have two leptons with opposite electric charge, mainly from Z boson decays.
+The mass splitting between the two lightest neutralinos ($m_{\tilde{\chi}_2^0} - m_{\tilde{\chi}_1^0}$) should be larger that the mass of Higgs boson ($\sim$ 125 GeV), in order to be able to pass the requirement of the signal lepton ($p_T > 25$ GeV), described in table \ref{tab:lepdef}.
+In the case that mass splitting is close to the mass of Higgs boson, which is called the compressed region, one of the lepton may not pass the requirement of the signal lepton, due to the low momentum of the Higgs boson.
+However, if the Higgs boson eventually decays into two leptons, for example $h \rightarrow ZZ$ with one of the Z boson decays leptonically (e.g. $Z \rightarrow \ell^{+} + \ell^{-}$) and another decays hadronically (e.g. $Z \rightarrow q + q$), the total number of leptons in the final state will be three.
+If one of the three leptons has low momentum and does not pass the signal requirement (i.e. not detected), and another two leptons have the same electric charge, this scenario will have the same final state as our signal.
+This means that in the compressed region, there are more decay modes for the Higgs boson, such that they have the same final state in our signal scenario, and hence this will contributes more sensitivity in the compressed region.
 
+Because the two neutralinos $\tilde{\chi}_1^0$ and neutrinos $\nu$ in the final state cannot be detected, a large missing transverse momentum (i.e. unbalanced momentum in the detector) will be expected.
+This is also a signature for our signal.
