@@ -73,44 +73,112 @@ Figure \ref{fig:detector_ATLAS} shows the main components of the ATLAS detector.
 \caption{The cut-away view of the ATLAS detector. It is 25m high and 44m long. \cite{ATLAS_photo}}
 \label{fig:detector_ATLAS}
 \end{figure}
+Its height is 25 m, its length is 44 m and its weight is 7000 tonne.
 The ATLAS detector is a general purpose particle detector, which is consisted of 3 main components: the inner detector, the calorimeter and the muon spectrometer.
-Figure \ref{fig:ATLAS_particles} shows how the ATLAS distinguishes different types of particle. The inner detector can detect the paths of the charged particles.
-Photons and electrons will deposit most of their energy in the electromagnetic calorimeter, and finally stop by it.
-Hadrons(including protons and neutrons) and mesons will similarly stop by the hadronic calorimeter.
-Only muons and the neutrinos can reach the outermost muon spectrometer, but only muons can be detected by the muon spectrometer.
-Nearly all neutrinos will escape the whole ATLAS detector, which leads to some missing energy.
-In this design, different particles can be identified due to their signature in different parts of ATLAS.
+The heavy and hence short-lived particles will immediately decay into two or more lighter particles.
+The lighter particles and stable particles will pass throught different parts of the detectors.
+These detectors mainly measure the momentum and energy of the particles.
+Figure \ref{fig:ATLAS_particles} shows how the ATLAS distinguishes different types of particle, by using different components of the detector.
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{data/photo/detector/ATLAS_particles.jpg}
 \caption{The cross section of the ATLAS detector. This shows different components of the ALTAS and how ATLAS detect different types of particles \cite{ATLAS_particles}}
 \label{fig:ATLAS_particles}
 \end{figure}
+The inner detector is surrounded by the solenoid, and with a strong magnetic field.
+The magnetic field will bend the track of the particle and the inner detector can detect the paths of the charged particles and its momentum.
+Photons and electrons will deposit most of their energy in the electromagnetic calorimeter, and finally stop by it.
+Hadrons(including protons and neutrons) and mesons will similarly stop by the hadronic calorimeter.
+Only muons and the neutrinos can reach the outermost muon spectrometer, but only muons can be detected by the muon spectrometer.
+Nearly all neutrinos will escape the whole ATLAS detector, which leads to some missing energy.
+In this design, different particles can be identified due to their own signature in different parts of ATLAS.
 
-\subsection{coordinate system}
+\begin{itemize}
+\item \textbf{Electron} The track of a electron is measured by the inner detector, and its energy will be deposited in the electromagnetic calorimeter.
+\item \textbf{Proton} The track of a proton is measured by the inner detector, and its energy will be deposited in the hadronic calorimeter.
+\item \textbf{Photon} No track is inside inner detector, but its energy will be deposited in the electromagnetic calorimeter.
+\item \textbf{Neutron} No track is inside inner detector, but its energy will be deposited in the hadronic calorimeter.
+\item \textbf{Muon} The track of a proton is measured by the inner detector and the muon spectrometer. It will nearly not deposit its energy into the calorimeter and escape the detector.
+\item \textbf{Neutrino} Neutrino cannot be detected, and will escape the detector. It is only inferred by the missing momentum.
+\end{itemize}
+
+\subsection{The coordinate system and basic variables}
 The nominal collision point is defined as the origin of the coordinate system.
-The z-axis is along the beam dirention.
+The z-axis is along the beam direction.
 The positive x-asix is pointing to the centre of the LHC ring.
 The positive y-asix is in the upward direction.
-The azimuthal angle $\phi$ and the polar angle $\theta$ are defined as usual in the spherical coordinate system.
+The ATLAS detector has a reflection symmetry about the x-y plane.
+
+The impact parameters of the track of a particle are $z_0$ and $d_0$, described in figure \ref{fig:impact_parameter}.
+The nearest point of the track to the z-axis is marked by the the small circle in the figure, with the smallest distance $d_0$.
+The z-coordinate of the nearest point is $z_0$.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.6\textwidth]{data/photo/detector/impact_parameter.png}
+\caption{This figure shows how the impact parameters $z_0$ and $d_0$ are defined by the nearest point (the small circle) of the track to the the z-axis. It also shows how the azimuthal angle $\phi$ and the polar angle $\theta$ of the momentum $\bf{p}$ are defined. $p_T$ is the projection of the momentum $\bf{p}$ onto the x-y plane.}
+\label{fig:impact_parameter}
+\end{figure}
+
+The figure also shows the momentum $\bf{p}$ of the particle when it passes through the nearest point.
+The azimuthal angle $\phi$ and the polar angle $\theta$ of the momentum $\bf{p}$ are defined as usual in the spherical coordinate system.
+The polar angle $\theta$ is the angle between the momentum $\bf{p}$ and the positive z-direction.
 The pseudorapidity $\eta$ is defined as:
 \begin{equation}
 \eta = - \ln \Big( \tan \frac{\theta}{2} \Big)
 \end{equation}
-The distance $\Delta R$ in the pseudorapidity-azimuthal angle space is defined as:
+Different polar angles $\theta$ corresponding to different values of pseudorapidity $\eta$ are shown in figure \ref{fig:pseudorapidity}.
+The positive values of pseudorapidity $\eta$ correspond to $0 <\theta< \frac{\pi}{2}$, while the negative values of pseudorapidity $\eta$ correspond to $\frac{\pi}{2} <\theta< \pi$.
+The values of pseudorapidity $\eta$ are reflective symmetric about the x-y plane.
+\begin{align}
+( \eta \text{ at } \theta = \pi - x) &= - \ln \Big( \tan \frac{\pi - x}{2} \Big) \\
+&= - \ln \Big( \tan (\frac{\pi}{2} - \frac{x}{2}) \Big) \\
+&= - \ln \Big( \frac{1}{ \tan \frac{x}{2} } \Big) \\
+&= - \Big( - \ln \Big( \tan \frac{x}{2} \Big) \Big) \\
+&= - ( \eta \text{ at } \theta = x)
+\end{align}
+The ATLAS detector covers the region where $|\eta| < 4.9$, but the reconstructed objects is often restricted to $|\eta| < 2.5$.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.6\textwidth]{data/photo/detector/pseudorapidity.png}
+\caption{The red lines show different directions corresponding to different positive values of pseudorapidity. \cite{pseudorapidity}}
+\label{fig:pseudorapidity}
+\end{figure}
+
+The projection of the nearest point onto the x-y plane is also shown in the figure \ref{fig:impact_parameter}.
+The transverse momentum of a particle, denoted by $\bf{p}_T$, is the projection of its momentum $\bf{p}$ onto the x-y plane, as shown in the figure.
+The azimuthal angle $\phi$ of the momentum $\bf{p}$ is the azimuthal angle of $\bf{p}_T$ in the two-dimensional polar coordinate system on the x-y plane.
+The magnitude of $\bf{p}_T$ is denoted by $p_T$.
+\begin{equation}
+p_T = \sqrt{p_x^2 + p_y^2}
+\end{equation}
+In the later chapter, the term ``transverse momentum" $p_T$ refer to the magnitude of $\bf{p}_T$.
+
+The distance $\Delta R$ in the pseudorapidity-azimuthal angle space of two particles is defined as:
 \begin{equation}
 \Delta R = \sqrt{(\Delta \phi) ^2 + (\Delta \eta) ^2}
 \end{equation}
-The ATLAS detector has a reflection symmetry about the x-y plane.
+It measures the angular separation of the momentum of two particles.
 
-\subsection{magnetic system}
-There is a thin superconducting solenoid magnet around the inner detector, which generates a 2 T magnetic field inside the inner detector.
+\subsection{The magnetic system}
+There is a thin superconducting solenoid magnet around the inner detector, which generates a 2 T magnetic field in the z-direction inside the inner detector.
 There are also 3 large superconducting toroids around the calorimeter: one for barrel and two for end-caps.
-All these magnets are shown in figure \ref{fig:detector_ATLAS}.
+Each has eight-fold symmetrical toroidal loops, which provide magnetic field in the $\phi$-direction for the muon spectrometer.
+The stength of the magnetic field is 0.5 T in the barrel region and 1 T in the end-cap region.
+All these magnets are shown in figure \ref{fig:magnetic_system}.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.6\textwidth]{data/photo/detector/magnet.png}
+\caption{Schematic view of the magnetic system of the ATLAS detector. \cite{magnetic_system}}
+\label{fig:magnetic_system}
+\end{figure}
 
 \subsection{The inner detector}
 The inner detector is a particle tracker.
-It mainly detects the tracks of charged particles and has good performance for measuring the momentum of the charged particles and locating the position of the vertices.
+For each collision, about 1000 particles will be produced within $|\eta| < 2.5$.
+It mainly detects the tracks of charged particles and need to have good performance for measuring the momentum of the charged particles and locating the position of the vertices.
 Figure \ref{fig:detector_inner_whole} shows the whole structure of the inner detector.
 The inner detector consists of 3 sub-detectors from inner to outer: the pixel detector, the silicon microstrip tracker (SCT) and the transition radiation tracker (TRT).
 Each part further divides into two parts: the barrel region with smaller $|\eta|$ and the end-cap region with larger $|\eta|$.
@@ -162,36 +230,243 @@ p &= rqB
 By this equation, we can calculate the momentum of the particle, from the curvature of track $1/r$, the charge and the magnetic field strength.
 
 \subsubsection{Pixel detector}
-As shown in figure \ref{fig:detector_inner_size}, there are 3 layers of cylinder in the barrel region, and 3 layers of disk for each end-cap region.
+The pixel detector is the innermost part of the inner detector, and hence it need to withstand the highest amount of radiation from the interaction point.
+As shown in figure \ref{fig:detector_inner_size}, there are 3 layers of cylinder in the barrel region at radii 50.5mm, 88.5mm and 122.5mm, and 3 layers of disk for each end-cap region at z = 495mm, 580mm and 650mm.
 There are in total 1744 modules in the pixel detectors.
-Each module is identical, and has the size of 19mm$\times$63mm, and 250 $\mu$m thick.
+Each module is identical, and has the size of 19mm$\times$63mm.
 The module has 47232 pixels, which has size of 50$\mu$m$\times$400$\mu$m, and hence there are in total 80 million pixels for the whole pixel detector.
 Each pixel has the accuracy of 10$\mu$m$\times$115$\mu$m.
-The sensor is using planar n$^{+}$-in-n type of silicon, with n$^{+}$-type at the readout side and n-type at another side.
+
+The sensor in the module is using planar n$^{+}$-in-n type of silicon with 250 $\mu$m thick, with n$^{+}$-type at the readout side (i.e. the electronics chip) and n-type at another side.
+When the charged particle passes through the silicon, electrons are produced and attracted to the anode, which is attached to a electronics chip with 180 $\mu$m thick.
+
+The innermost layer of pixels at radius 50.5mm is very important for measuring the secondary vertices of the long-lived b-hadrons.
+It help identify the b-jets (jets originating from bottom quarks), which are the decay products of the top quarks and Higgs bosons.
 
 \subsubsection{SCT}
+The SCT is in the middle part of the inner detector.
 As shown in figure \ref{fig:detector_inner_size}, there are 4 layers of cylinder in the barrel region, and 9 layers of disk for each end-cap region.
-There are in total 4088 modules in the SCT, with the thickness of 285 $\mu$m.
-There are in total 6.3 million pixels for the SCT.
-Each pixel has the accuracy of 17$\mu$m$\times$580$\mu$m.
-The sensor is using planar p-in-n type of silicon.
+There are in total 4088 modules in the SCT, and in total 6.3 million pixels.
+Each module has the thickness of 300 $\mu$m.
+It has a thermally conductive base-board in the middle, which provide the cooling of the sensor.
+The p-in-n silicon sensors are glued on each side of the base-board.
+The working principle is similar to the pixel detector.
+Each sensor has the spatial resolution of 17$\mu$m$\times$580$\mu$m.
 
 \subsubsection{TRT}
-136 TRT modules.
-TRT in the outer part is to produce and detect the transition radiation from the particle. TRT comprises many layers of gaseous straw tube elements interleaved with transition radiation material.
-Each pixel has the accuracy of 130$\mu$m.
+The TRT is the outermost part of the inner detector.
+It continues detecting the track of the charged particle, and help distinguishing the electrons from other charged hadrons.
+It is a straw tube gaseous detector, with 96 TRT modules in the barrel and 20 TRT modules on each end-cap.
+There are in total 52544 straws in the barrel and 122880 straws in the end-cap.
+Each straw tube is a polyimide drift straw tube with 144 cm long and 4 mm diameter.
+It is filled with a non-flammable gas mixture of 70\% Xe, 27\% CO$_2$ and 3\% O$_2$.
+When the charged particle passes throught the gas, the charged particle ionizes the gas and produce transition radiation.
+The transition radiation further ionize the gas and produce free electrons, which are attracted to the wire at the center of the straw tube.
+The electrons can be identified by detecting the amount of transition radiation, because electrons will emit more transition radiation than other charged hadrons, like pions.
+
+TRT has the spatial resolution of 130$\mu$m in the R-$\phi$ plane.
+The spatial resolution of z can only be provided by the length of the straw tube, 144 cm.
 
 \subsection{Calorimeter}
+The calorimeters measure the energy of the particle.
+Besides the measurement of the energy of the particles, it also help identifying different particles, like electrons, photons and jets.
+It is becasue different particles will have different signature when the particle deposit its energy to the calorimeters.
+It contains two types of calorimeter: the electromagnetic calorimeter and the hadronic calorimeter.
+The electromagnetic calorimeter is designed to measure the energy of electrons and photon, while the hadronic calorimeter is for the hadrons, like protons, neutrons and mesons.
+The figure \ref{fig:calorimeter_whole} shows the whole calorimeter system of the ATLAS detector.
+In the barrel region, the Liquid Argon (LAr) electromagnetic calorimeter (ECal) works as a electromagnetic calorimeter, while the tile calorimeter (TileCal) works as a hadronic calorimeter.
+In the end-cap region, the LAr ElectroMagnetic End-Cap (EMEC) calorimeter works as a electromagnetic calorimeter, while the LAr Hadronic End-Cap (HEC) calorimeter works as a hadronic calorimeter.
+In the forward region, the LAr Forward Calorimeter (FCal) has three layers: one is electromagnetic and two are hadronic.
+Figure \ref{fig:calorimeter_endcap1} and \ref{fig:calorimeter_endcap2} show the schematic view for one side of the end-cap and forward calorimeter.
+The large coverage $|\eta| < 4.9$ is to ensure a good measurement of the missing energy ($E_T^{\text{miss}}$).
+
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{data/photo/detector/calorimeter_whole.jpg}
-\caption{whole calorimeter \cite{calorimeter_whole}}
+\caption{Schematic view for the calorimeter system of the ATLAS detector. \cite{calorimeter_whole}}
 \label{fig:calorimeter_whole}
 \end{figure}
 
-\subsubsection{Electromagnetic calorimeter}
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{data/photo/detector/endcap1.png}
+\caption{Schematic view for one side of the end-cap and forward calorimeter. \cite{calorimeter}}
+\label{fig:calorimeter_endcap1}
+\end{figure}
 
-\subsubsection{Hardronic calorimeter}
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{data/photo/detector/endcap2.png}
+\caption{Schematic view for one side of the end-cap and forward calorimeter. One layer of forward calorimeter is electromagnetic and two are hadronic. \cite{ATLAS_doc}}
+\label{fig:calorimeter_endcap2}
+\end{figure}
+
+\subsubsection{Electromagnetic calorimeter}
+For the barrel region, it covers $|\eta| < 1.457$.
+For the end-cap region, there are two concentric wheels, with the outer one covering from $1.375 <|\eta| < 2.5$ and the inner one covering from $2.5 <|\eta| < 3.2$.
+The EM calorimeter is alternately interleaved with many accordion-shaped layers of electrodes and absorbers, and is filled with liquid argon between the layers at -185$^{\circ}$C .
+The accordion geometry provides complete $\phi$ symmetry without azimuthal cracks.
+A layer of absorbers is made of a lead plate, to which two stainless-steel sheets (0.2 mm thick) are glued on both sides.
+The thickness of the lead plate is 1.53 mm for $|\eta| < 0.8$ and 1.13 mm for $|\eta| > 0.8$ in the barrel region, and 1.7 mm for $|\eta| < 2.5$ and 2.2 mm for $|\eta| > 2.5$ in the end-cap region.
+A layer of electrode is made of three conductive copper layers, which are separated by insulating polyimide sheets.
+When the high energy electron or photon pass through the lead absorbers, a shower of lower energy electrons, positrons and photons is produced.
+The liquid argon atom, as the active material, is ionized by the particles in the shower, and free electrons are produced and attracted to the electrode.
+By measuring the current from the electrode, the energy of the electron or photon can be measured.
+
+The lead absorber can also further reduce the energy of particles in the shower before they escape the calorimeter.
+Hence, only part of the energy is measured, and a correction need to be applied.
+The innermost layer, called the presampler, help calculate the correction due to the energy lost.
+
+It has a fine granularity to have precise measurements for electrons and photons.
+The granularity depends on the layers, as shown in figure \ref{fig:ECAL}.
+Besides the layer of presampler, there are two or three layers (Layer 1, Layer 2 and Layer 3), depending the $|\eta|$.
+For the region used by the signal objects, i.e. $|\eta|<2.5$, three layers are often used for precise measurement.
+Table \ref{tab:granularity_EM_barrel} and \ref{tab:granularity_EM_endcap} show the granularity for each layers in the barrel region and the end-cap region respectively.
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{data/photo/detector/ECAL.png}
+\caption{The granularity in $\eta$ and $\phi$ of the cells of each of the three layers in the electromagnetic calorimeter. \cite{ATLAS_doc}}
+\label{fig:ECAL}
+\end{figure}
+
+\begin{table}[htpb]
+\centering
+\begin{tabular}{|c|l|r|}
+\hline
+Layer & $|\eta|$ range & Granularit $\Delta \eta \times \Delta \phi$ \\
+\hline
+\hline
+Presampler & $|\eta| < 1.52$         & $0.025 \times 0.1$ \\
+\hline
+Layer 1    & $|\eta| < 1.4$          & $0.003 \times 0.1$ \\
+           & $1.4 < |\eta| < 1.475$  & $0.025 \times 0.025$ \\
+\hline
+Layer 2    & $|\eta| < 1.4$          & $0.025 \times 0.025$ \\
+           & $1.4 < |\eta| < 1.475$  & $0.075 \times 0.025$ \\
+\hline
+Layer 3    & $|\eta| < 1.35$         & $0.050 \times 0.025$ \\
+\hline
+\end{tabular}
+\caption{The granularity in $\eta$ and $\phi$ for different layers in the barrel region. \cite{ATLAS_doc}}
+\label{tab:granularity_EM_barrel}
+\end{table}
+
+\begin{table}[htpb]
+\centering
+\begin{tabular}{|c|l|r|}
+\hline
+Layer & $|\eta|$ range & Granularit $\Delta \eta \times \Delta \phi$ \\
+\hline
+\hline
+Presampler & $1.5   < |\eta| < 1.8$   & $0.025 \times 0.1$ \\
+\hline
+Layer 1    & $1.375 < |\eta| < 1.425$ & $0.050 \times 0.1$ \\
+           & $1.425 < |\eta| < 1.5$   & $0.025 \times 0.1$ \\
+           & $1.5   < |\eta| < 1.8$   & $0.003 \times 0.1$ \\
+           & $1.8   < |\eta| < 2.0$   & $0.004 \times 0.1$ \\
+           & $2.0   < |\eta| < 2.4$   & $0.006 \times 0.1$ \\
+           & $2.4   < |\eta| < 2.5$   & $0.025 \times 0.1$ \\
+           & $2.5   < |\eta| < 3.2$   & $0.1   \times 0.1$ \\
+\hline
+Layer 2    & $1.375 < |\eta| < 1.425$ & $0.050 \times 0.025$ \\
+           & $1.425 < |\eta| < 2.5$   & $0.025 \times 0.025$ \\
+           & $2.5   < |\eta| < 3.2$   & $0.1   \times 0.1$ \\
+\hline
+Layer 3    & $1.5   < |\eta| < 2.5$   & $0.050 \times 0.025$ \\
+\hline
+\end{tabular}
+\caption{The granularity in $\eta$ and $\phi$ for different layers in the end-cap region. \cite{ATLAS_doc}}
+\label{tab:granularity_EM_endcap}
+\end{table}
+
+\subsubsection{Hadronic calorimeter}
+For the barrel region, tile calorimeter is used for measuring the energy of the hadrons in $|\eta| < 1.7$.
+The central barrel covers $|\eta| < 1.0$, while the extended region covers $0.8 < |\eta| < 1.7$.
+As shown in figure \ref{fig:tile_calorimeter}, the tile calorimeter is alternately interleaved with sheets of steel and scintillator, called tile, like a sandwich.
+The steel acts as the absorber material, while the scintillator acts as the active material.
+When the high energy hadron passes through the sheets of steel, it will have nuclear interaction with the atomic nuclei of the steel, and produce a shower of lower energy charged particles, which then trigger the scintillators to produce photons.
+These photons are collected by the wavelength-shifting fibres on the edges of the tile.
+The photomultiplier tubes (PMT) then convert the optical signal to the electronic siganl.
+By measuring the intensity of the photons, the energy of the hadron can be measured.
+There are 3 layers in the tile calorimeter.
+The granularity of the first 2 layers is $\Delta \eta \times \Delta \phi = 0.1 \times 0.1$, while the third layer is $\Delta \eta \times \Delta \phi = 0.2 \times 0.1$.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth]{data/photo/detector/tile.png}
+\caption{Schematic view of one module of the tile calorimeter. \cite{ATLAS_doc}}
+\label{fig:tile_calorimeter}
+\end{figure}
+
+For the end-cap region $1.5 < |\eta| < 3.2$, there are two independent wheels of LAr hadronic calorimeters (HEC) for each end-cap, i.e. the front wheel and the back wheel as shown in figure \ref{fig:calorimeter_endcap2}.
+For each wheel, it consists of 32 identical wedge-shaped modules and each module has two layers.
+Hence, in total, there are 4 layers for each end-cap.
+Similar to the electromagnetic calorimeter, it uses the liquid argon as the active material, but it uses flat parallel copper plates as the absorber material.
+For the front wheel, there are 24 copper plates with 25 mm thick.
+For the back wheel, there are 16 copper plates with 50 mm thick.
+The thickness of the gap between the copper plates is 8.5 mm.
+As shown in figure \ref{fig:HEC}, the gap is separated by three electrodes and is filled with liquid argon.
+The granularity is $\Delta \eta \times \Delta \phi = 0.1 \times 0.1$ for $1.5 < |\eta| < 2.5$, and $\Delta \eta \times \Delta \phi = 0.2 \times 0.2$ for $2.5 < |\eta| < 3.2$.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth]{data/photo/detector/HEC.png}
+\caption{Schematic view of the arrangement of the HEC readout structure in the 8.5 mm inter-plate gap. All dimensions are in mm. \cite{ATLAS_doc}}
+\label{fig:HEC}
+\end{figure}
+
+\subsubsection{Forward calorimeter}
+The LAr Forward calorimeter (FCal) covers $3.1<\eta<4.9$, with 3 wheels: FCal 1, FCal 2 and FCal 3.
+FCal 1 is a electromagnetic calorimeter and use copper as the absorber material.
+FCal 2 and FCal 3 are hadronic calorimeters and use tungsten as the absorber material.
+It uses the liquid argon as the active material.
+
+Due to the high $|\eta|$ and the close distance to the interaction point (4.7m), the forward calorimeters are exposed to high particle fluxes.
+This results in a new design with a small gap of liquid argon to avoid the ion build-up problems.
+Figure \ref{fig:forward_calorimeter} shows the structure of FCal 1.
+A matrix of copper plates is filled inside the forward calorimeter, with 12260 regularly spaced electrodes parallel to the beam direction.
+In the electrodes, there are concentric copper rods and copper tubes.
+The gap between rod and tube is filled with a thin layer of liquid argon with thickness 0.269 mm.
+
+For FCal 2 and FCal 3, there are 10200 and 8224 electrodes respectively.
+The structure is similar to FCal, but the copper rods are replaced by the tungsten rods, and the matrix of copper plates is replaced by a matrix of tungsten alloy.
+The tungsten rod is surrounded by a copper tube, with the gap filled with liquid argon.
+The thickness of the liquid argon of FCal 2 and FCal 3 are 0.376 mm and 0.508 mm respectively.
+The granularity of the forward calorimeter in the x-y plane is shown in \ref{tab:granularity_FCal}.
+
+A shielding plug made of a copper alloy has been mounted behind the FCal 3 to further reduce the backgrounds that reach the muon spectrometer.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth]{data/photo/detector/forward.png}
+\caption{Electrode structure of FCal 1 with the matrix of copper plates and the copper tubes and rods with the LAr gap for the electrodes. The Moli\`ere radius, $R_M$, is represented by the solid disk. \cite{ATLAS_doc}}
+\label{fig:forward_calorimeter}
+\end{figure}
+
+\begin{table}[htpb]
+\centering
+\begin{tabular}{|c|l|r|}
+\hline
+Layer & $|\eta|$ range & Granularit $\Delta x \times \Delta y$ (cm) \\
+\hline
+\hline
+       & $3.15 < |\eta| < 4.30$   & $3.0 \times 2.6$ \\
+FCal 1 & $3.10 < |\eta| < 3.15$   & $\sim$ four times finer \\
+       & $4.30 < |\eta| < 4.83$   & $\sim$ four times finer \\
+\hline
+       & $3.24 < |\eta| < 4.50$   & $3.3 \times 4.2$ \\
+FCal 2 & $3.20 < |\eta| < 3.24$   & $\sim$ four times finer \\
+       & $4.50 < |\eta| < 4.81$   & $\sim$ four times finer \\
+\hline
+       & $3.32 < |\eta| < 4.60$   & $5.4 \times 4.7$ \\
+FCal 3 & $3.29 < |\eta| < 3.32$   & $\sim$ four times finer \\
+       & $4.60 < |\eta| < 4.75$   & $\sim$ four times finer \\
+\hline
+\end{tabular}
+\caption{The granularity in the x-y plane in the forward calorimeter. \cite{ATLAS_doc}}
+\label{tab:granularity_FCal}
+\end{table}
 
 \subsection{Muon Spectrometer}
 \begin{figure}
