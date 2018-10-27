@@ -162,9 +162,11 @@ The distance $\Delta R$ in the pseudorapidity-azimuthal angle space of two parti
 It measures the angular separation of the momentum of two particles.
 
 \subsection{The magnetic system}
+\label{sec:magnetic_system}
 There is a thin superconducting solenoid magnet around the inner detector, which generates a 2 T magnetic field in the z-direction inside the inner detector.
 There are also 3 large superconducting toroids around the calorimeter: one for barrel and two for end-caps.
-Each has eight-fold symmetrical toroidal loops, which provide magnetic field in the $\phi$-direction for the muon spectrometer.
+Each toroid consists of eight coils arranged symmetrically, which provide magnetic field in the $\phi$-direction for the muon spectrometer.
+The end-cap toroids are rotated by 22.5$^{\circ}$ relative to the barrel toroid, in order to optimize the magnetic field at the region between the two coil systems.
 The stength of the magnetic field is 0.5 T in the barrel region and 1 T in the end-cap region.
 All these magnets are shown in figure \ref{fig:magnetic_system}.
 
@@ -469,9 +471,54 @@ FCal 3 & $3.29 < |\eta| < 3.32$   & $\sim$ four times finer \\
 \end{table}
 
 \subsection{Muon Spectrometer}
+The muon spectrometer is a tracker for muons.
+In the barrel region ($|\eta| < 1.4$), the magnetic field is provided by the barrel toroid, described in section \ref{sec:magnetic_system}.
+In the end-cap region ($1.6 < |\eta| < 2.7$), the magnetic field is provided by the end-cap toroid.
+In the transition region ($1.4 < |\eta| < 1.6$), the magnetic field is provided by the combined field from the two toroids.
+
+Figure \ref{fig:muon_spectrometer} show all the components in the muon spectrometer.
+The tracking detector is mainly provided by the Monitored Drift Tube chambers (MDT), in the range of $|\eta| < 2.7$.
+In the barrel region, the track of the muon is measured by three cylindrical layers of MDT, located at R = 5 m, 7.5 m and 10 m, as shown in figure \ref{fig:muon_barrel}.
+Each layer has 8 large chambers and 8 small chambers.
+In the end-cap region, there are four wheels of MDT, located at $|z|=$ 7.4 m, 10.8 m, 14 m and 21.5 m, as shown in figure \ref{fig:muon_endcap}.
+For the naming scheme of MDT chambers, the first letter (B and E) refers to the barrel and end-cap chambers respectively.
+The second letter (I, E, M and O) refers to the inner, extra, middle and outer layers respectively.
+The third letter (L ans S) refers to the large and small chambers respectively.
+
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{data/photo/detector/muon_spectrometer.jpg}
-\caption{muon spectrometer \cite{muon_spectrometer}}
+\caption{Cut-away view of the muon spectrometer. \cite{muon_spectrometer}}
 \label{fig:muon_spectrometer}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{data/photo/detector/muon_barrel.png}
+\caption{The cross section of the barrel region for the muon spectrometer. Three concentric cylindrical layers of barrel MDT are shown. \cite{ATLAS_doc}}
+\label{fig:muon_barrel}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{data/photo/detector/muon_endcap.png}
+\caption{The cross section of the end-cap region for the muon spectrometer. Four layers of end-cap MDT are shown in blue colour. Three layers of barrel MDT are also shown in green colour. \cite{ATLAS_doc}}
+\label{fig:muon_endcap}
+\end{figure}
+
+The total number of drift tubes in each MDT chamber is about 200 to 500, depending on the type of the chamber.
+The lengths of the drift tubes vary from 0.85 m to 6.24 m.
+The tube is made of aluminum with a diameter of 29.970 mm, as shown in figure \ref{fig:MDT}.
+It is filled with a gas mixture of 93\% argon and 7\% CO$_2$, operated at a pressure of 3 bar.
+The anode wire is made of tungsten-rhenium with a diameter of 50 $\mu$m, at a potential of 3080 V.
+When the muon passes through the tube, the gas mixture is ionized and free electrons are produced.
+The free electrons are attracted and drifted to the anode wire.
+By measuring the drift time the free electrons take from the position of the muon to the anode wire, the position of the muon can be measured.
+The average resolution of the MDT is 80 $\mu$m per tube, or about 35 $\mu$m per chamber.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{data/photo/detector/MDT.png}
+\caption{The cross-section of a MDT tube. When the muon passes through the tube, free electrons are produced along the track. The free electrons are drifted to the anode wire. \cite{ATLAS_doc}}
+\label{fig:MDT}
 \end{figure}
