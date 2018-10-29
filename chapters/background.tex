@@ -893,3 +893,93 @@ The results for the fake efficiencies are shown in figure \ref{fig:result_fake_e
 \end{figure}
 
 \subsection{Validation for the fake lepton background}
+In order to validate the fake lepton background, the fake lepton background, together with other backgrounds, are compared with the data in a validation region.
+The validation region is expected to have small contribution from signal.
+The validation region is defined as follows, on top of the selections in section \ref{event_cleaning}.
+\begin{itemize}
+\item The two leptons are signal leptons.
+\item The two leptons are same-sign.
+\item b-jets veto: $n_{\text{b-jets}} = 0$, to suppress top background.
+\item At least one signal jet: $n_{\text{jets}} \geq 1$
+\item Z veto: $|m_{ll} - m_Z| > 10$ GeV, to suppress Z+jets background.
+\item $E_{T}^{\text{miss}} > 30$ GeV
+\item $m_{\text{eff}} > 200$ GeV
+\end{itemize}
+
+To ensure that the contribution from signal is small, the percentages of the signal contribution are checked in figure \ref{fig:signal_contribution}, and they are below 3\%.
+Also, in order to make sure that there is a substantial contribution from fake lepton background, the percentages of different backgrounds are checked in table \ref{tab:VRfakes_compos}.
+The validation region is splitted into 3 channels: electron-electron, muon-muon and electron-muon channel.
+Their fake contributions are 66\%,  24\% and 49\% respectively.
+
+The backgrounds and the data are compared for several variables in the 3 channels, shown in figure \ref{fig:VRSS_fake_ee}, \ref{fig:VRSS_fake_mumu} and \ref{fig:VRSS_fake_emu} respectively.
+The agreements between the backgrounds and the data are good within the uncertainties.
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=\textwidth]{data/plot/DataFakes/FakeEff/signal_contamination.pdf}
+\caption{Signal contributions in the validation region are shown for different mass points.}
+\label{fig:signal_contribution}
+\end{center}
+\end{figure}
+
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+\hline
+& ee channel & $\mu\mu$ channel & e$\mu$ channel\\
+\hline
+\hline
+Fakes       & 65.8\% (710.3) & 23.8\% (85.7)  & 49.4\% (576.4)\\
+Charge-flip & 10.3\% (111.6) &  0.0\% (0.0)   &  1.1\% (13.6)\\
+WZ          & 17.4\% (188.5) & 54.0\% (194.5) & 36.2\% (422.0)\\
+ZZ          &  0.7\% (1.6)   &  0.5\% (1.8)   &  0.3\% (3.5)\\
+WW          &  3.9\% (42.3)  & 13.8\% (50.0)  &  7.9\% (92.4)\\
+Rare        &  1.5\% (16.9)  &  4.5\% (16.3)  &  2.0\% (23.5)\\
+ttV         &  0.6\% (8.0)   &  2.4\% (8.8)   &  1.5\% (17.3)\\
+\hline
+Total BG    & 1079           & 357.1          & 1149\\
+\hline
+Data        &  936           &  360           & 1166\\
+\hline
+\end{tabular}
+\caption{Percentages of different backgrounds in the Validation region. The numbers in brackets are the yields.}
+\label{tab:VRfakes_compos}
+\end{center}
+\end{table}
+
+\begin{figure}[htbp]
+\includegraphics[width=0.49\textwidth]{data/plot/DataFakes/FakeEff/IntNote_pTlead_ee.pdf}
+\includegraphics[width=0.49\textwidth]{data/plot/DataFakes/FakeEff/IntNote_meff_ee.pdf}\\
+\includegraphics[width=0.49\textwidth]{data/plot/DataFakes/FakeEff/IntNote_mT_ee.pdf}
+\includegraphics[width=0.49\textwidth]{data/plot/DataFakes/FakeEff/IntNote_met_ee.pdf}\\
+\begin{center}
+\includegraphics[width=0.49\textwidth]{data/plot/DataFakes/FakeEff/IntNote_nJets_ee.pdf}
+\end{center}
+\caption{Distribution of the  leading lepton $p_T$, $m_{\text{eff}}$, $m_T$, $E_{T}^{\text{miss}}$ and $n_{\text{jets}}$ in the electron-electron channel. The ratio of data to background is shown in the lower plot. The error bar includes all the systematic uncertainties except for the theoretical uncertainties.}
+\label{fig:VRSS_fake_ee}
+\end{figure}
+
+\begin{figure}[htbp]
+\includegraphics[width=0.49\textwidth]{data/plot/DataFakes/FakeEff/IntNote_pTlead_mumu.pdf}
+\includegraphics[width=0.49\textwidth]{data/plot/DataFakes/FakeEff/IntNote_meff_mumu.pdf}\\
+\includegraphics[width=0.49\textwidth]{data/plot/DataFakes/FakeEff/IntNote_mT_mumu.pdf}
+\includegraphics[width=0.49\textwidth]{data/plot/DataFakes/FakeEff/IntNote_met_mumu.pdf}\\
+\begin{center}
+\includegraphics[width=0.49\textwidth]{data/plot/DataFakes/FakeEff/IntNote_nJets_mumu.pdf}
+\end{center}
+\caption{Distribution of the  leading lepton $p_T$, $m_{\text{eff}}$, $m_T$, $E_{T}^{\text{miss}}$ and $n_{\text{jets}}$ in the muon-muon channel. The ratio of data to background is shown in the lower plot. The error bar includes all the systematic uncertainties except for the theoretical uncertainties.}
+\label{fig:VRSS_fake_mumu}
+\end{figure}
+
+\begin{figure}[htbp]
+\includegraphics[width=0.49\textwidth]{data/plot/DataFakes/FakeEff/IntNote_pTlead_emu.pdf}
+\includegraphics[width=0.49\textwidth]{data/plot/DataFakes/FakeEff/IntNote_meff_emu.pdf}\\
+\includegraphics[width=0.49\textwidth]{data/plot/DataFakes/FakeEff/IntNote_mT_emu.pdf}
+\includegraphics[width=0.49\textwidth]{data/plot/DataFakes/FakeEff/IntNote_met_emu.pdf}\\
+\begin{center}
+\includegraphics[width=0.49\textwidth]{data/plot/DataFakes/FakeEff/IntNote_nJets_emu.pdf}
+\end{center}
+\caption{Distribution of the  leading lepton $p_T$, $m_{\text{eff}}$, $m_T$, $E_{T}^{\text{miss}}$ and $n_{\text{jets}}$ in the electron-muon channel. The ratio of data to background is shown in the lower plot. The error bar includes all the systematic uncertainties except for the theoretical uncertainties.}
+\label{fig:VRSS_fake_emu}
+\end{figure}
