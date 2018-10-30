@@ -5,9 +5,9 @@
 
 The signal region (SR) is a set of selections of events, such that the signal is rich and the background is small.
 It is designed to discover the new particles, or set a limit on the masses of the hypothetical particles.
-In the analysis, two siganl regions are defined, SRjet1 and SRjet23.
+In the analysis, two signal regions are defined, SRjet1 and SRjet23.
 Number of signal jets for SRjet1 is 1, while number of signal jets for SRjet23 is 2 or 3.
-The details of the definition of these two signal region will be desrcided in section.
+The details of the definition of these two signal regions will be described in section \ref{sec:signal_region_optimization}.
 
 \section{Discriminant variables}
 The discriminant variables are designed to define the signal regions.
@@ -93,14 +93,15 @@ It is defined by finding the minimum value over all possible transverse vectors 
 \begin{equation}
 m_{T2} = \min_{{\bf q}_T} \Bigg[ \max \bigg( m_T( {\bf p}_T^1, {\bf q}_T ), m_T( {\bf p}_T^2, {\bf p}_T^{\text{miss}} - {\bf q}_T ) \bigg) \Bigg]
 \end{equation}
-Similar to equation \ref{equ:mT_approx}, the transverse mass of two transverse momentum $m_T( {\bf p}_T, {\bf q}_T )$ is defined as follows.
+Similar to equation \ref{equ:mT_approx}, the transverse mass of two transverse momenta $m_T( {\bf p}_T, {\bf q}_T )$ is defined as follows.
 \begin{equation}
 m_T( {\bf p}_T, {\bf q}_T ) = \sqrt{ 2 p_T q_T ( 1 - \cos{\Delta\phi} ) }
 \end{equation}
-where $\Delta\phi$ is the azimuthal angle between the two transverse momentum.
+where $\Delta\phi$ is the azimuthal angle between the two transverse momenta.
 \end{itemize}
 
 \section{Signal region optimization}
+\label{sec:signal_region_optimization}
 This section describes how the signal region is found and optimizied.
 The goal of the optimization is to increase the number of signal events $N_s$ and decrease the number of background event $N_b$.
 This study was done, before we look at the real data, and hence the MC samples were used for signal and background.
@@ -135,10 +136,10 @@ The connection between these Bernoulli experiments and our analysis will not be 
 \begin{itemize}
 \item It is a continuous function. $N_b$ and $N_s$ can be non-integer. (cf. Poisson distribution)
 \item It is a smooth function. It is convenient for finding the maximum value.
-\item For large $N_b$ and $N_s$, it reduces to eqution \ref{equ:simple_significance}.
+\item For large $N_b$ and $N_s$, it reduces to equation \ref{equ:simple_significance}.
 \item It is fast to compute.
 \end{itemize}
-By using the equation \ref{equ:significance_def}, an approximately-optimal signal region can be found.
+By using the equation \ref{equ:significance_def}, an approximately optimal signal region can be found.
 
 \subsection{Pre-selection}
 \label{sec:SR_pre-selection}
@@ -180,7 +181,7 @@ The plots after the pre-selection in section \ref{sec:SR_pre-selection} (except 
 \subsection{Running for optimization}
 Some constraints were applied during the process of optimization, in order to have enough statistics to have reliable estimation of $N_s$ and $N_b$.
 \begin{itemize}
-\item The yields (i.e. the sum of weighted events) for each processes of background need to be positive, to have a reasonable and stable modelling of the background shape.
+\item The yields (i.e. the sum of weighted events) for each process of background need to be positive, to have a reasonable and stable modelling of the background shape.
 Also, the HistFitter requires the background need to have positive yields.
 \item The diboson and ttV background have at least 10 unweighted events respectively, to have a reliable estimation for the main background processes from prompt leptons (i.e. not fake leptons).
 \item For $E_T^{\text{miss}}$, $m_T$, $m_{\text{eff}}$ and $m_{T2}$, only lower cuts are applied.
@@ -216,7 +217,7 @@ $m_{T2}$ & lower cut \\
 \subsection{Results for optimization}
 The final results for the definitions of the two signal regions are shown in table \ref{tab:SR_Def}.
 The yields for different background processes are shown in table \ref{tab:SR_yields}.
-The N-1 plots for the discriminant variables are shown in figure \ref{fig:SRjet1_N1} and \ref{fig:SRjet23_N1}.
+The N-1 plots for the discriminant variables are shown in figures \ref{fig:SRjet1_N1} and \ref{fig:SRjet23_N1}.
 The N-1 plot means that the cut for that variable is removed, and the lower plot shows the signal significance after applying the cut at that value of that variable.
 Only statistical uncertainties are considered in the significance calculation in the lower plot.
 
@@ -255,8 +256,8 @@ WZ & 2.2481 &  2.0779 \\
 \hline
 \hline
 ttV & 0.099 (34) & 0.140 (66)\\
-triboson & 0.446 (49)& 0.204 (21)\\
-higgs & 0.010 (5)& 0.229 (21)\\
+Triboson & 0.446 (49)& 0.204 (21)\\
+Higgs & 0.010 (5)& 0.229 (21)\\
 Wt & 0.0 & 0.277 (1)\\
 multitop & 0.00 & 0.00 \\
 Drellyan & 0.0 & 0.00\\
