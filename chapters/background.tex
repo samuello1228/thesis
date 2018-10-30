@@ -44,7 +44,7 @@ This will reduce the chance of the process of bremsstrahlung.
 The second reason is that muons can reach to the muon spectrometer, which is the outer part of the detector, while most electrons cannot.
 This means that the length of the track of a muon, which can be detected by the tracker, is longer than that of an electron.
 Hence, the reconstructed curvature of the track for muons can be more accurate, and it reduces the chance of the mis-identification due to the high $p_T$.
-Becasue most of the charge flip background comes from electrons, we only estimate the charge flip background for electrons.
+Because most of the charge flip background comes from electrons, we only estimate the charge flip background for electrons.
 
 \subsection{Likelihood method}
 \label{sec:likelihood_method}
@@ -66,7 +66,7 @@ $|\eta|$ & 0, 0.50, 1.00, 1.37, 1.52, 1.80, 2.00, 2.47 \\
 \label{tab:binning_charge_flip}
 \end{table}
 
-Suppose that, before the reconstruction, there are $m^{ij}_{OS}$ opposite-sign events with the leading lepton in bin $i$ and the subleading lepton in bin $j$, and similarly there are $m^{ij}_{SS}$ same-sign events.
+Suppose that, before the reconstruction, there are $m^{ij}_{OS}$ opposite-sign events with the leading lepton in bin $i$ and the sub-leading lepton in bin $j$, and similarly there are $m^{ij}_{SS}$ same-sign events.
 After the reconstruction, due to the charge flip, there are $M^{ij}_{OS}$ opposite-sign events and $M^{ij}_{SS}$ same-sign events.
 The number of events after the reconstruction is given by
 \begin{equation}
@@ -128,7 +128,7 @@ L(\epsilon_i,\epsilon_j|N^{ij},N^{ij}_{SS}) &= \prod_{ij} P(N^{ij}_{SS}|N^{ij},\
 &= \prod_{ij} \frac{ (p_{ij} N^{ij})^{N^{ij}_{SS}} e^{- p_{ij} N^{ij}} }{N^{ij}_{SS}!} \\
 \end{align}
 Given the measured values of $N^{ij}$ and $N^{ij}_{SS}$ in each bin, by maximizing the likelihood function over all possible values of $\epsilon_i$, the value of $\epsilon_i$ can be estimated.
-By taking the nagative logarithm, it is equivalent to minimize $- \ln L$.
+By taking the negative logarithm, it is equivalent to minimize $- \ln L$.
 \begin{align}
 - \ln L
 &= - \ln \prod_{ij} \frac{ (p_{ij} N^{ij})^{N^{ij}_{SS}} e^{- p_{ij} N^{ij}} }{N^{ij}_{SS}!} \\
@@ -138,16 +138,16 @@ By taking the nagative logarithm, it is equivalent to minimize $- \ln L$.
 &= - \sum_{ij} \Big[ N^{ij}_{SS} \ln (N^{ij}[\epsilon_i (1-\epsilon_j) + (1-\epsilon_i) \epsilon_j]) - N^{ij}[\epsilon_i (1-\epsilon_j) + (1-\epsilon_i) \epsilon_j] \Big] + \text{constant}
 \end{align}
 
-\subsection{Background substraction}
-\label{sec:Background_substraction}
+\subsection{Background subtraction}
+\label{sec:Background_subtraction}
 By minimizing $- \ln L$ described in the previous section, the value of the charge-flip rate $\epsilon_i$ can be measured by using the data in the control region.
-In order to have better input values of $N^{ij}$ and $N^{ij}_{SS}$, the number of events should mainly come from $Z \rightarrow ee$ processes, and other processes should be substracted.
+In order to have better input values of $N^{ij}$ and $N^{ij}_{SS}$, the number of events should mainly come from $Z \rightarrow ee$ processes, and other processes should be subtracted.
 The number of events from other processes can be estimated by the sideband region: 60 GeV $<m_{ll}<$ 80 GeV and 100 GeV $<m_{ll}<$ 120 GeV.
 The corrected values of $N^{ij}$ and $N^{ij}_{SS}$ are given by
 \begin{align}
 N_{80,100;\text{corrected}} = N_{80,100} - 20 \Big( \frac{N_{60,80} + N_{80,100}}{20 + 20} \Big)
 \end{align}
-In the sideband substraction, the number of events in the sideband region should be normalized to the width of the central region.
+In the sideband subtraction, the number of events in the sideband region should be normalized to the width of the central region.
 In general, given the number of events in the central region $N_{\text{central}}$, the left sideband region $N_{\text{left}}$ and the right sideband region $N_{\text{right}}$, and their corresponding width $w_{\text{central}}$, $w_{\text{left}}$ and $w_{\text{right}}$, the corrected values $N_{\text{central,corrected}}$ are given by
 \begin{align}
 N_{\text{central,corrected}} = N_{\text{central}} - w_{\text{central}} \Big( \frac{N_{\text{left}} + N_{\text{right}}}{w_{\text{left}} + w_{\text{right}}} \Big)
@@ -165,15 +165,15 @@ The errors only include the uncertainties in the likelihood method due to the st
 \label{fig:charge_flip_data_stat}
 \end{figure}
 
-\subsection{Systematic uncertainties due to background substraction}
-\label{sec:sys_background_substraction}
-The systematic uncertainties due to background substraction is estimated by the variations of different central widths and sideband widths.
-The following are the nominal central region and sideband rigion, and their 4 variations. \\
-The nominal background substraction:
+\subsection{Systematic uncertainties due to background subtraction}
+\label{sec:sys_background_subtraction}
+The systematic uncertainties due to background subtraction is estimated by the variations of different central widths and sideband widths.
+The following are the nominal central region and sideband region, and their 4 variations. \\
+The nominal background subtraction:
 \begin{itemize}
 \item Central region: 80 - 100 GeV; Sideband width: 20 GeV
 \end{itemize}
-The 4 variations for background substraction:
+The 4 variations for background subtraction:
 \begin{itemize}
 \item Central region: 80 - 100 GeV; Sideband width: 15 GeV
 \item Central region: 80 - 100 GeV; Sideband width: 25 GeV
@@ -181,12 +181,12 @@ The 4 variations for background substraction:
 \item Central region: 80 - 100 GeV; no background subtraction
 \end{itemize}
 
-For each bin, the largest deviation from the nominal among these variations is the systematic uncertainty due to background substraction.
+For each bin, the largest deviation from the nominal among these variations is the systematic uncertainty due to background subtraction.
 \begin{equation}
 \sigma_{\text{bgk}} = \max \{| \sigma_{\text{nominal}} - \sigma_{\text{variation}} |\}
 \end{equation}
 
-Figure \ref{fig:charge_flip_sys_background_substraction} shows the variations of the resulting charge flip rate, due to these 4 variations.
+Figure \ref{fig:charge_flip_sys_background_subtraction} shows the variations of the resulting charge flip rate, due to these 4 variations.
 \begin{figure}
 \centering
 \includegraphics[width=0.3\textwidth]{data/plot/charge_flip/FitPlots/data_cf_comparison_0.eps}
@@ -194,8 +194,8 @@ Figure \ref{fig:charge_flip_sys_background_substraction} shows the variations of
 \includegraphics[width=0.3\textwidth]{data/plot/charge_flip/FitPlots/data_cf_comparison_2.eps} \\
 \includegraphics[width=0.3\textwidth]{data/plot/charge_flip/FitPlots/data_cf_comparison_3.eps}
 \includegraphics[width=0.3\textwidth]{data/plot/charge_flip/FitPlots/data_cf_comparison_4.eps}
-\caption{The systematic variations of the charge-flip rate $\epsilon_i$ in data, due to the background substraction.}
-\label{fig:charge_flip_sys_background_substraction}
+\caption{The systematic variations of the charge-flip rate $\epsilon_i$ in data, due to the background subtraction.}
+\label{fig:charge_flip_sys_background_subtraction}
 \end{figure}
 
 \subsection{Systematic uncertainties due to likelihood method}
@@ -250,7 +250,7 @@ Figure \ref{fig:charge_flip_sys_truth} shows the comparison of the resulting cha
 
 \subsection{Results with total uncertainties}
 \label{sec:charge_flip_results_stat}
-The total systematic uncertainties is the quadratic sum of systematic uncertainties due to the background substraction and the likelihood method, described in section \ref{sec:sys_background_substraction} and \ref{sec:sys_likelihood} respectively.
+The total systematic uncertainties is the quadratic sum of systematic uncertainties due to the background subtraction and the likelihood method, described in section \ref{sec:sys_background_subtraction} and \ref{sec:sys_likelihood} respectively.
 \begin{equation}
 \sigma_{\text{sys}} = \sqrt{\sigma_{\text{bgk}} ^2+ \sigma_{\text{truth}} ^2}
 \end{equation}
@@ -311,7 +311,7 @@ The weighted OS events and the SS events agree within the uncertainties.
 \section{Fake lepton background}
 \label{sec:fake_background}
 \subsection{Sources for fake lepton background}
-The fake lepton background is ascribed to the case that other paricle like meson, hadron and photon is mis-identified as a lepton, after the reconstruction.
+The fake lepton background is ascribed to the case that other particle like meson, hadron and photon is mis-identified as a lepton, after the reconstruction.
 Three types of fake lepton background are described as follows.
 \begin{itemize}
 \item Heavy-flavor fakes:
@@ -334,14 +334,14 @@ They are also not well-isolated.
 \subsection{Matrix method}
 The fake lepton background is estimated by the matrix method.
 The input of this method is the real and fake efficiencies of electron and muon, in different bins of $p_T$ and $|\eta|$, which is measured in the following sections.
-This method will estimate the amount of fake lepton background, by counting the number of loose and tight in data.
-The tight leptons in our analysis is the signal leptons, and the loose leptons is baseline leptons but not signal leptons.
+This method will estimate the amount of fake lepton background, by counting the number of loose and tight leptons in data.
+The tight leptons in our analysis are the signal leptons, and the loose leptons are baseline leptons but not signal leptons.
 
 The probability that a real electron (or muon) passes the signal selection (i.e. tight lepton) is denoted by the real efficiency $\epsilon$.
 The probability that a real electron (or muon) does not pass the signal selection (i.e. loose lepton) is denoted by $\bar{\epsilon} = 1 - \epsilon$.
 Similarly, the probability that a fake electron (or muon) passes the signal selection (i.e. tight lepton) is denoted by the fake efficiency $f$.
 The probability that a fake electron (or muon) does not pass the signal selection (i.e. loose lepton) is denoted by $\bar{f} = 1 - f$.
-Although there are no any subscripts and superscripts for the efficiencies $e$ and $f$, these efficiencies are different for different flavours of the leptons (electron or muon), and also in different $p_T$-$|\eta|$ bins.
+Although there is no subscripts and superscripts for the efficiencies $e$ and $f$, these efficiencies are different for different flavours of the leptons (electron or muon), and also in different $p_T$-$|\eta|$ bins.
 
 For simplicity, we first consider the case with only one leptons. We will then generalize to the case with two leptons.
 By the definition of the efficiencies, the relation between the number of real/fake leptons and the number of tight/loose leptons is given by the following matrix.
@@ -449,7 +449,7 @@ N_L
 \end{split}
 \end{align}
 
-To generalize to the case with two leptons, equation \ref{equ:fake_eff_def} become
+To generalize to the case with two leptons, equation \ref{equ:fake_eff_def} becomes
 \begin{equation}
 \left( \begin{array}{c}
 N_{TT} \\
@@ -471,8 +471,8 @@ N_{FR} \\
 N_{FF}
 \end{array} \right)
 \end{equation}
-where the subscript 1 and 2 of the efficiencies denote the leading lepton and subleading lepton respectively.
-The two letters in the subscript of $N$ describe the types of the leading and subleading lepton respectively.
+where the subscripts 1 and 2 of the efficiencies denote the leading lepton and sub-leading lepton respectively.
+The two letters in the subscript of $N$ describe the types of the leading and sub-leading lepton respectively.
 $N_{RF}$, $N_{FR}$, $N_{FF}$ can be found by inverting the matrix.
 \begin{align}
 \begin{split}
@@ -589,7 +589,7 @@ N_{LL}
 \end{split}
 \label{equ:fake_eff_matrix}
 \end{align}
-Equation \ref{equ:fake_eff_matrix} can be applied to any combination of the flavour, $p_T$ and $|\eta|$ of the leading and subleading lepton.
+Equation \ref{equ:fake_eff_matrix} can be applied to any combination of the flavour, $p_T$ and $|\eta|$ of the leading and sub-leading lepton.
 In principle, the total amount of fake lepton background should be the summation of all combination of the flavour, $p_T$ and $|\eta|$.
 For a particular combination, the counting result of the tight/loose leptons in data $\left( \begin{array}{c}
 N_{TT} \\
@@ -671,7 +671,7 @@ N_{TT}'
 \end{split}
 \label{equ:fake_eff_fake_weight}
 \end{align}
-where the flavours, $p_T$ and $|\eta|$ of the efficiencies is simply the flavours, $p_T$ and $|\eta|$ of the leading and subleading lepton in this event.
+where the flavours, $p_T$ and $|\eta|$ of the efficiencies is simply the flavours, $p_T$ and $|\eta|$ of the leading and sub-leading lepton in this event.
 
 By calculating the inverse of the matrix, equation \ref{equ:fake_eff_matrix} can be simplified.
 First, we define a variable $d$.
@@ -797,8 +797,8 @@ The counting was done on the data sample, and hence this a data-driven method.
 
 The selections for the control region used in the measurement of real efficiencies is, on top of the selections in section \ref{event_cleaning}, as follows.
 \begin{itemize}
-\item The two lepton is two electrons or two muons.
-\item The electric charges of the two lepton is opposite sign.
+\item The two leptons are two electrons or two muons.
+\item The electric charges of the two leptons are opposite sign.
 \item 80 GeV $< m_{ll} <$ 100 GeV
 \end{itemize}
 
@@ -836,11 +836,11 @@ The results for the real efficiencies are shown in figure \ref{fig:result_real_e
 The fake efficiencies are measured by the tag-and-probe method, similar to the real efficiencies.
 On top of the selections in section \ref{event_cleaning}, two different control regions are defined for electron and muon respectively.
 The control regions are needed to have rich heavy-flavor fakes, by the requiring at least one b-jet.
-The selections for the control regions are summarized as follows.
+The selections for the control regions are summarized as follows:
 \begin{itemize}
 \item For electron fake efficiencies, one lepton is a muon and another is an electron. For muons fake efficiencies, the two leptons are both muons.
-\item The electric charges of the two lepton is same sign.
-\item It has at least 1 b-jet.
+\item The electric charges of the two leptons are same sign.
+\item There is at least 1 b-jet.
 \end{itemize}
 
 In both control regions, the tag leptons must be a signal muon with $p_T > 40$ GeV, and hence it is very likely to be a real lepton.
@@ -908,7 +908,7 @@ The validation region is defined as follows, on top of the selections in section
 
 To ensure that the contribution from signal is small, the percentages of the signal contribution are checked in figure \ref{fig:signal_contribution_fakes}, and they are below 3\%.
 Also, in order to make sure that there is a substantial contribution from fake lepton background, the percentages of different backgrounds are checked in table \ref{tab:VRfakes_compos}.
-The validation region is splitted into 3 channels: electron-electron, muon-muon and electron-muon channel.
+The validation region is split into 3 channels: electron-electron, muon-muon and electron-muon channel.
 Their fake contributions are 66\%,  24\% and 49\% respectively.
 
 The backgrounds and the data are compared for several variables in the 3 channels, shown in figure \ref{fig:VRSS_fake_ee}, \ref{fig:VRSS_fake_mumu} and \ref{fig:VRSS_fake_emu} respectively.
