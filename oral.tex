@@ -2,6 +2,7 @@
 \useoutertheme{infolines}
 %\usepackage{tabularx}
 %\usepackage{amsmath}
+\graphicspath{{data/plot/plot_SR/}}
 
 \title[Oral Presentation]{Search for chargino and neutralino production in final states with two same-sign leptons, jets and missing transverse momentum at $\sqrt{s} = 13$ TeV with the ATLAS detector}
 \author[]
@@ -430,5 +431,121 @@ p_{\ell 2} &\text{ if } \Delta R(p_{\ell 1},p_{\text{jet-system}}) > \Delta R(p_
 \end{equation*}
 \end{itemize}
 \end{frame}
+
+\begin{frame}{Signal Region : Pre-selection}
+\begin{itemize}
+\item Signal Region(SR) is a set of cuts of the discriminant variables, such that the signal sensitivity is high.
+\item By trying different sets of cuts, the signal region with the highest signal sensitivity can be found. This process is called the signal region optimization.
+The following cuts are the pre-selection, before the signal region optimization.
+\end{itemize}
+Pre-selection:
+\begin{itemize}
+\item Exactly 2 leptons with $p_T > 25$ GeV.
+\item The two leptons are same-sign in electric charge (SS).
+\item $n_{\text{b-jets}} = 0$, to reduce the SM background from top quark.
+\item Two signal regions: SRjet1 with $n_{\text{jets}} = 1$, SRjet23 with $n_{\text{jets}} = 2$ or $3$.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Signal Region : cut result}
+\input{data/plot/plot_SR/cut_table_SR_SS_opt_0.tex}
+\end{tabular}
+\end{frame}
+
+\section{Backup}
+\begin{frame}
+\begin{center}
+\huge
+Backup
+\end{center}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\huge
+Pre-selection plots
+\end{center}
+\end{frame}
+
+\begin{frame}{Yields in pre-selection}
+\begin{table}[htbp]
+\centering
+\tiny
+
+\begin{columns}
+
+\begin{column}{0.5\textwidth}
+\scalebox{0.8}{
+\begin{tabular}{|c|c|}
+\hline
+& Number of events \\
+\hline
+\input{data/plot/plot_SR/SR_SS_jet1_pre.tex}
+\end{tabular}
+}
+\caption{\tiny Yields in SRjet1}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+\scalebox{0.8}{
+\begin{tabular}{|c|c|}
+\hline
+& Number of events \\
+\hline
+\input{data/plot/plot_SR/SR_SS_jet23_pre.tex}
+\end{tabular}
+}
+\caption{\tiny Yields in SRjet23}
+\end{column}
+
+\end{columns}
+\end{table}
+\end{frame}
+
+\input{data/plot/plot_SR/plot_SR_SS_pre.tex}
+
+\begin{frame}
+\begin{center}
+\huge
+N-1 plots
+\end{center}
+\end{frame}
+
+\begin{frame}{Yields in SR}
+\begin{table}[htbp]
+\centering
+\tiny
+
+\begin{columns}
+
+\begin{column}{0.5\textwidth}
+\scalebox{0.8}{
+\begin{tabular}{|c|c|c|}
+\hline
+& Number of events & Significance \\
+\hline
+\input{data/plot/plot_SR/SR_SS_jet1_opt_0.tex}
+\end{tabular}
+}
+\caption{\tiny Yields in SRjet1}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+\scalebox{0.8}{
+\begin{tabular}{|c|c|c|}
+\hline
+& Number of events & Significance \\
+\hline
+\input{data/plot/plot_SR/SR_SS_jet23_opt_0.tex}
+\end{tabular}
+}
+\caption{\tiny Yields in SRjet23}
+\end{column}
+
+\end{columns}
+\end{table}
+\end{frame}
+
+\input{data/plot/plot_SR/plot_SR_SS_opt_0.tex}
 
 \end{document}
