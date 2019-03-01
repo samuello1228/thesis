@@ -283,55 +283,22 @@ Experimental Setup
 \end{figure}
 \end{frame}
 
-\section{Challenges}
-\begin{frame}
-\begin{center}
-\huge
-Challenges
-\end{center}
-\end{frame}
-
-\begin{frame}{Challenges}
-Estimation of the signal sensitivity
+\begin{frame}{Challenges of Background Estimatation}
 \begin{itemize}
-\item Cross section for our signal $\sim 0.1$ pb
-\item Total luminosity in one year $\sim 10^4$ pb$^{-1}$
-\item Expected number of signal events in one year $\sim 10^3$
+\item Before we search for the signal, we need to understand and estimate the background first.
+\item Our detector is not perfect. There are two types of background in the data, which is due to the limitation of our detector.
+\begin{itemize}
+\item Charge flip background
+\item Fake lepton background
 \end{itemize}
-\begin{itemize}
-\item Time interval between each collision $= 25$ ns
-\item Total number of events in one year $\sim 10^{15}$
-\item The probability to have a signal event $\sim 10^{-12}$
-\item Conclusion: the SUSY signal is very rare.
+\item They are due to the wrong identification of the particle.
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Strategy}
-In order to extract the signal, the following strategies are used.
-\begin{itemize}
-\item A hardware trigger system are used when taking the data (online), to only store the interested events in the disk. \\
-(40 MHz $\rightarrow$ 100 kHz $\rightarrow$ 1 kHz)
-\item Some discriminant variables (based on the kinematic variables) are defined, to help distinguish the signal and the background (i.e. noise).
-\item Two dedicated signal regions are defined based on the discriminant variables, to maximize signal sensitivity (like the signal-to-noise ratio).
-\end{itemize}
-\end{frame}
-
-\section{Signal Region}
-\begin{frame}
-\begin{center}
-\huge
-Signal Region
-\end{center}
-\end{frame}
-
-\begin{frame}{Signal Region : Basic kinematic variables}
+\begin{frame}{Basic kinematic variables}
 \begin{itemize}
 \item The z-axis is in the proton beam direction.
 \item The direction of the momentum $\bf{p}$ of the particle can by specified by the azimuthal angle $\phi$ and the polar angle $\theta$, as usual in the spherical coordinate system.
-\item The transverse momentum $\bf{p}_T$ is the projection of $\bf{p}$ onto the x-y plane. The magnitude of $\bf{p}_T$ is denoted by $p_T$
-\begin{equation*}
-p_T = \sqrt{p_x^2 + p_y^2}
-\end{equation*}
 \end{itemize}
 \begin{figure}
 \centering
@@ -339,7 +306,21 @@ p_T = \sqrt{p_x^2 + p_y^2}
 \end{figure}
 \end{frame}
 
-\begin{frame}{Signal Region : Basic kinematic variables}
+\begin{frame}{Basic kinematic variables}
+\begin{itemize}
+\item The transverse momentum $\bf{p}_T$ is the projection of $\bf{p}$ onto the x-y plane. The magnitude of $\bf{p}_T$ is denoted by $p_T$
+\begin{equation*}
+p_T = \sqrt{p_x^2 + p_y^2}
+\end{equation*}
+\item $p_T^1$ and $p_T^2$ are $p_T$ of the two leptons, with $p_T^1 \geq p_T^2$. The lepton with larger $p_T$ is called the leading lepton, while the lepton with smaller $p_T$ is called the sub-leading lepton.
+\end{itemize}
+\begin{figure}
+\centering
+\includegraphics[width=0.4\textwidth]{data/photo/detector/impact_parameter.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Basic kinematic variables}
 \begin{itemize}
 \item The pseudorapidity $\eta$ is defined by
 \begin{equation*}
@@ -357,6 +338,104 @@ p_T = \sqrt{p_x^2 + p_y^2}
 \end{figure}
 \end{frame}
 
+\section{Charge flip Background}
+\begin{frame}
+\begin{center}
+\huge
+Charge flip Background
+\end{center}
+\end{frame}
+
+\begin{frame}{Charge flip Background : Sources}
+\begin{itemize}
+\item The charge flip background is due to the mis-identification of the sign of the charge of a lepton (mainly electron) in the reconstruction.
+\item The sign of the charge is determined by the direction of the curvature of the track. The charge may be reversed, or flipped.
+\end{itemize}
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{data/photo/charge_flip/Brem.jpg} \\
+\includegraphics[width=0.5\textwidth]{data/photo/charge_flip/WrongTrack.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Charge flip Background : charge flip rate}
+\begin{itemize}
+\item The probability that the charge of an electron is flipped, called the charge flip rate $\epsilon(p_T, |\eta|)$, depends on the $p_T$ and $|\eta|$ of the electron.
+\item The charge flip rates are measured by the likelihood method described in the backup slides.
+\item After getting the charge flip rates, the charge flip background can be found by applying the charge flip rates on the OS events in data.
+\item The probability that an OS data event becomes a SS data event, which is the charge of one of the leptons is flipped, is given by
+\begin{align*}
+& P(p^1_T, |\eta^1|, p^2_T, |\eta^2|) \\
+&= [1 - \epsilon(p^1_T, |\eta^1|)] \cdot \epsilon(p^2_T, |\eta^2|) + [1 - \epsilon(p^2_T, |\eta^2|)] \cdot \epsilon(p^1_T, |\eta^1|) \\
+&= (1 - \epsilon_1)\epsilon_2 + (1 - \epsilon_2)\epsilon_1
+\end{align*}
+\item It is called the charge flip weight. The charge flip weight is applied on all OS data events to estimate the charge flip background.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Charge flip Background : Result for Charge Flip Rate}
+\begin{figure}
+\centering
+\includegraphics[width=0.6\textwidth]{data/plot/charge_flip/FitPlots/data_cf_rate_tot.eps}
+\caption{The measured values of the charge-flip rate $\epsilon_i$ in data, with total uncertainties.}
+\label{fig:charge_flip_data_tot}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Charge flip Background : MC Validation Plots}
+\begin{figure}
+\centering
+\includegraphics[width=0.3\textwidth]{data/plot/charge_flip/ReweightPlots/plots_NOchfSF/mc_pt_1.pdf}
+\includegraphics[width=0.3\textwidth]{data/plot/charge_flip/ReweightPlots/plots_NOchfSF/mc_pt_2.pdf} \\
+\includegraphics[width=0.3\textwidth]{data/plot/charge_flip/ReweightPlots/plots_NOchfSF/mc_eta_1.pdf}
+\includegraphics[width=0.3\textwidth]{data/plot/charge_flip/ReweightPlots/plots_NOchfSF/mc_eta_2.pdf}
+\caption{The comparison between the weighted OS events and the SS events, with different variables.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Charge flip Background : MC Validation Plots}
+\begin{figure}
+\centering
+\includegraphics[width=0.3\textwidth]{data/plot/charge_flip/ReweightPlots/plots_NOchfSF/mc_mll.pdf} \\
+\includegraphics[width=0.3\textwidth]{data/plot/charge_flip/ReweightPlots/plots_NOchfSF/mc_phi_1.pdf}
+\includegraphics[width=0.3\textwidth]{data/plot/charge_flip/ReweightPlots/plots_NOchfSF/mc_phi_2.pdf}
+\caption{The comparison between the weighted OS events and the SS events, with different variables.}
+\end{figure}
+\end{frame}
+
+\section{Signal Region}
+\begin{frame}
+\begin{center}
+\huge
+Signal Region
+\end{center}
+\end{frame}
+
+\begin{frame}{Signal Region: Challenges}
+Estimation of the signal sensitivity
+\begin{itemize}
+\item Cross section for our signal $\sim 0.1$ pb
+\item Total luminosity in one year $\sim 10^4$ pb$^{-1}$
+\item Expected number of signal events in one year $\sim 10^3$
+\end{itemize}
+\begin{itemize}
+\item Time interval between each collision $= 25$ ns
+\item Total number of events in one year $\sim 10^{15}$
+\item The probability to have a signal event $\sim 10^{-12}$
+\item Conclusion: the SUSY signal is very rare.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Signal Region : Strategy}
+In order to extract the signal, the following strategies are used.
+\begin{itemize}
+\item A hardware trigger system are used when taking the data (online), to only store the interested events in the disk. \\
+(40 MHz $\rightarrow$ 100 kHz $\rightarrow$ 1 kHz)
+\item Some discriminant variables (based on the kinematic variables) are defined, to help distinguish the signal and the background (i.e. noise).
+\item Two dedicated signal regions are defined based on the discriminant variables, to maximize signal sensitivity (like the signal-to-noise ratio).
+\end{itemize}
+\end{frame}
+
 \begin{frame}{Signal Region : discriminant variable}
 \begin{itemize}
 \item The missing momentum ${\bf p}^{\text{miss}}$ due to undetected particle is defined by
@@ -367,7 +446,6 @@ p_T = \sqrt{p_x^2 + p_y^2}
 \begin{equation*}
 E_{T}^{\text{miss}} = |{\bf p}_T^{\text{miss}}| = \sqrt{ (p_x^{\text{miss}})^2 + (p_y^{\text{miss}})^2}
 \end{equation*}
-\item $p_T^1$ and $p_T^2$ are $p_T$ of the two leptons, with $p_T^1 \geq p_T^2$. The lepton with larger $p_T$ is called the leading lepton, while the lepton with smaller $p_T$ is called the sub-leading lepton.
 \end{itemize}
 \end{frame}
 
@@ -447,9 +525,27 @@ Pre-selection:
 \end{itemize}
 \end{frame}
 
+\begin{frame}{Signal Region : Pre-selection plots}
+\Wider{
+\includegraphics[width=0.4\textwidth]{pt1_SR_SS_jet1_pre}
+\includegraphics[width=0.4\textwidth]{pt1_SR_SS_jet23_pre} \\
+\includegraphics[width=0.4\textwidth]{MET_SR_SS_jet1_pre}
+\includegraphics[width=0.4\textwidth]{MET_SR_SS_jet23_pre}
+}
+\end{frame}
+
 \begin{frame}{Signal Region : cut result}
 \input{data/plot/plot_SR/cut_table_SR_SS_opt_0.tex}
 \end{tabular}
+\end{frame}
+
+\begin{frame}{Signal Region : N-1 plots}
+\Wider{
+\includegraphics[width=0.4\textwidth]{MET_SR_SS_jet1_opt_0}
+\includegraphics[width=0.4\textwidth]{MET_SR_SS_jet23_opt_0} \\
+\includegraphics[width=0.4\textwidth]{mTtwo_SR_SS_jet1_opt_0}
+\includegraphics[width=0.4\textwidth]{mTtwo_SR_SS_jet23_opt_0}
+}
 \end{frame}
 
 \section{Backup}
@@ -458,6 +554,186 @@ Pre-selection:
 \huge
 Backup
 \end{center}
+\end{frame}
+
+\subsection{Charge flip Background : Likelihood Method}
+\begin{frame}
+\begin{center}
+\huge
+Charge flip Background : Likelihood Method
+\end{center}
+\end{frame}
+
+\begin{frame}{Likelihood Method : Method}
+\begin{itemize}
+\item The probability that the charge of an electron is flipped is denoted by the charge-flip rate $\epsilon_i$, where the index i represents the dependency on the $p_T$ and $|\eta|$ of the electron.
+\item The value of index i is defined by the index of the following grids in the table.
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+Variable & Boundary of the bins \\
+\hline
+$p_T$ (GeV) &  25, 60, 90, 130, 150, 1000 \\
+\hline
+$|\eta|$ & 0, 0.50, 1.00, 1.37, 1.52, 1.80, 2.00, 2.47 \\
+\hline
+\end{tabular}
+\caption{Binning in $p_T$ and $|\eta|$ for the charge-flip rate $\epsilon_i$.}
+\end{table}
+
+\item The probability $p_{ij}$ that an OS data event becomes a SS data event (with the leading lepton in bin $i$ and the subleading lepton in bin $j$) is
+\begin{equation*}
+p_{ij} = (1 - \epsilon_i)\epsilon_j + (1 - \epsilon_j)\epsilon_i
+\end{equation*}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Likelihood Method : Definition of Control Region}
+A control region is defined.
+\begin{itemize}
+\item Trigger requirement
+\item exactly 2 signal leptons
+\item 2 electrons
+\item $25 <p_T < 1000$
+\item $|\eta| < 2.47$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Likelihood Method : Method}
+\begin{itemize}
+\item The charge flip rate $\epsilon_i$ is measured by using the data in the control region, within the Z mass window cut of 80-100 GeV.
+\item The events inside the Z mass window is then subtracted by the non-Zee processes, by using the sideband technique.
+\item After the subtraction, the total number of event is denoted by $N^{ij}$, and the number of events with two same-sign leptons is denoted by $N^{ij}_{SS}$.
+\item The expected value of $N^{ij}_{SS}$ is then given by $\lambda = N^{ij}p_{ij}$. And, if $N^{ij}_{SS}$ is described by a Poisson distribution, then
+\end{itemize}
+\begin{equation*}
+P(N^{ij}_{SS} | N^{ij}, \epsilon_i, \epsilon_j) = \frac{(N^{ij}p_{ij})^{N^{ij}_{SS}} e^{-N^{ij}p_{ij}}}{N^{ij}_{SS}!}
+\end{equation*}
+\end{frame}
+
+\begin{frame}{Likelihood Method : Method}
+\begin{itemize}
+\item Converting it to the likelihood function L and taking the negative natural log yields
+\end{itemize}
+\begin{equation*}
+\begin{split}
+-\ln L &= -\ln\prod_{ij} P(N^{ij}_{SS} | N^{ij}, \epsilon_i, \epsilon_j) \\
+&= - \sum_{ij} \Big[ N^{ij}_{SS} \ln (N^{ij}[\epsilon_i (1-\epsilon_j) + (1-\epsilon_i) \epsilon_j]) \\
+&- N^{ij}[\epsilon_i (1-\epsilon_j) + (1-\epsilon_i) \epsilon_j] \Big] + \text{constant}
+\end{split}
+\end{equation*}
+\begin{itemize}
+\item where the summation over $i$ and $j$ is taken over all $p_T$ and $|\eta|$ bins of both electrons.
+\item By minimizing this likelihood, the charge-flip rate can be estimated.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Likelihood Method : Background Subtraction}
+Both for data and MC
+\begin{itemize}
+\item Central region: 80 - 100 GeV
+\item Sideband region: 60 - 80 and 100 - 120 \\
+(Sideband width 20 GeV)
+\end{itemize}
+\begin{equation*}
+N_{Central} = N_{Central} - \frac{20}{20+20} N_{SB}
+\end{equation*}
+\begin{itemize}
+\item Background subtraction is done both on $N^{ij}$ and $N^{ij}_{SS}$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Likelihood Method : Result for Charge Flip Rate (statistical error only)}
+\begin{itemize}
+\item Results by likelihood method from data, $\epsilon_{\text{lik,data}}$
+\item The error is statistical only, from likelihood method, $\sigma_{\text{lik,data}}$.
+\end{itemize}
+\includegraphics[width=0.6\textwidth]{data/plot/charge_flip/FitPlots/data_cf_rate_stat.eps}
+\end{frame}
+
+\begin{frame}{Likelihood Method : MC Truth Validation}
+\begin{itemize}
+\item Results by likelihood method from MC (blue points)
+\item Results by MC truth (red points)
+\end{itemize}
+\includegraphics[width=0.3\textwidth]{data/plot/charge_flip/FitPlots/mc_cf_rate_0.eps}
+\includegraphics[width=0.3\textwidth]{data/plot/charge_flip/FitPlots/mc_cf_rate_1.eps}
+\includegraphics[width=0.3\textwidth]{data/plot/charge_flip/FitPlots/mc_cf_rate_2.eps} \\
+\includegraphics[width=0.3\textwidth]{data/plot/charge_flip/FitPlots/mc_cf_rate_3.eps}
+\includegraphics[width=0.3\textwidth]{data/plot/charge_flip/FitPlots/mc_cf_rate_4.eps}
+\end{frame}
+
+\begin{frame}{Likelihood Method : MC Truth Matching}
+\begin{itemize}
+\item It is a complicated part, because we do not know the original charge of the reconstructed electron for some cases.
+\item The reconstructed electrons match the truth particle by the smallest $\Delta R$ ($\Delta R < 0.1$).
+\item No match for reconstructed electrons if no any truth particle is inside $\Delta R < 0.1$. (cannot find the original charge)
+\item If the truth particle is matched, the truth particle is not electron. (fake lepton, not charge flip)
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Likelihood Method : MC Truth Matching}
+\begin{itemize}
+\item If the truth particle is electron, the (grand)mother particle is not Z Boson. (ignore it)
+\item If (grand)mother particle is Z Boson, the daughter of the Z Boson is not electron.  (ignore it)
+\item If the daughter of the Z Boson is electron, the charge of that electron is the original charge.
+\end{itemize}
+\centering
+\includegraphics[width=0.5\textwidth]{data/photo/charge_flip/MC-truth.png}
+\end{frame}
+
+\begin{frame}{Likelihood Method : Systematic uncertainties due to likelihood method}
+For each bin, the systematic uncertainties due to likelihood method are estimated by the difference between the likelihood method and the MC truth method.
+
+For MC,
+\begin{equation*}
+\sigma_{\text{truth,MC}} = | \epsilon_{\text{lik,MC}} - \epsilon_{\text{MC truth}} |
+\end{equation*}
+For data,
+\begin{equation*}
+\sigma_{\text{truth,data}} = \epsilon_{\text{lik,data}} \times \frac{\sigma_{\text{truth,MC}}}{\epsilon_{\text{lik,MC}}}
+\end{equation*}
+\end{frame}
+
+\begin{frame}{Likelihood Method : Systematic uncertainties due to background substraction}
+Nominal:
+\begin{itemize}
+\item Central region: 80 - 100 GeV, Sideband width: 20 GeV
+\end{itemize}
+Variations:
+\begin{itemize}
+\item Central region: 80 - 100 GeV, Sideband width: 15 GeV
+\item Central region: 80 - 100 GeV, Sideband width: 25 GeV
+\item Central region: 75 - 105 GeV, Sideband width: 20 GeV
+\item Central region: 80 - 100 GeV, no background subtraction
+\end{itemize}
+For each bin, the largest deviation from the nominal among these variations is the systematic uncertainty due to background substraction.
+\begin{equation*}
+\sigma_{\text{bgk}} = max\{| \sigma_{\text{nominal}} - \sigma_{\text{variation}} |\}
+\end{equation*}
+\end{frame}
+
+\begin{frame}{Likelihood Method : Result for different variation}
+\begin{itemize}
+\item Results for different variations
+\end{itemize}
+\includegraphics[width=0.3\textwidth]{data/plot/charge_flip/FitPlots/data_cf_comparison_0.eps}
+\includegraphics[width=0.3\textwidth]{data/plot/charge_flip/FitPlots/data_cf_comparison_1.eps}
+\includegraphics[width=0.3\textwidth]{data/plot/charge_flip/FitPlots/data_cf_comparison_2.eps} \\
+\includegraphics[width=0.3\textwidth]{data/plot/charge_flip/FitPlots/data_cf_comparison_3.eps}
+\includegraphics[width=0.3\textwidth]{data/plot/charge_flip/FitPlots/data_cf_comparison_4.eps}
+\end{frame}
+
+\begin{frame}{Likelihood Method : Total uncertainties}
+\begin{equation*}
+\sigma_{\text{sys}} = \sqrt{\sigma_{\text{truth}} ^2 + \sigma_{\text{bgk}} ^2}
+\end{equation*}
+\begin{equation*}
+\sigma_{\text{tot}} = \sqrt{\sigma_{\text{lik}} ^2 + \sigma_{\text{sys}} ^2}
+\end{equation*}
 \end{frame}
 
 \begin{frame}
