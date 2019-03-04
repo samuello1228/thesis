@@ -286,12 +286,16 @@ Experimental Setup
 \begin{frame}{Challenges of Background Estimatation}
 \begin{itemize}
 \item Before we search for the signal, we need to understand and estimate the background first.
-\item Our detector is not perfect. There are two types of background in the data, which is due to the limitation of our detector.
+\item SM background from ``real" same-sign dilepton pair is estimated by MC
+\begin{itemize}
+\item DiBoson: WZ, WW, ZZ
+\item ttV, VVV, multitop, Higgs
+\end{itemize}
+\item SM background from ``fake" same-sign dilepton pair, due to the limitation of our detector. They are due to the wrong identification of the particle. There are two types of these ``fake" backgrounds.
 \begin{itemize}
 \item Charge flip background
 \item Fake lepton background
 \end{itemize}
-\item They are due to the wrong identification of the particle.
 \end{itemize}
 \end{frame}
 
@@ -338,27 +342,32 @@ p_T = \sqrt{p_x^2 + p_y^2}
 \end{figure}
 \end{frame}
 
-\section{Charge flip Background}
+\section{Charge Flip Background}
 \begin{frame}
 \begin{center}
 \huge
-Charge flip Background
+Charge Flip Background
 \end{center}
 \end{frame}
 
-\begin{frame}{Charge flip Background : Sources}
+\begin{frame}{Charge Flip Background : Sources}
 \begin{itemize}
 \item The charge flip background is due to the mis-identification of the sign of the charge of a lepton (mainly electron) in the reconstruction.
 \item The sign of the charge is determined by the direction of the curvature of the track. The charge may be reversed, or flipped.
 \end{itemize}
 \begin{figure}
 \centering
-\includegraphics[width=0.5\textwidth]{data/photo/charge_flip/Brem.jpg} \\
-\includegraphics[width=0.5\textwidth]{data/photo/charge_flip/WrongTrack.png}
+\includegraphics[width=0.4\textwidth]{data/photo/charge_flip/Brem.jpg}
+\caption{Bremsstrahlung and $\gamma$ conversion.}
+\end{figure}
+\begin{figure}
+\centering
+\includegraphics[width=0.3\textwidth]{data/photo/charge_flip/WrongTrack.png}
+\caption{Track with high velocity}
 \end{figure}
 \end{frame}
 
-\begin{frame}{Charge flip Background : charge flip rate}
+\begin{frame}{Charge Flip Background : charge flip rate}
 \begin{itemize}
 \item The probability that the charge of an electron is flipped, called the charge flip rate $\epsilon(p_T, |\eta|)$, depends on the $p_T$ and $|\eta|$ of the electron.
 \item The charge flip rates are measured by the likelihood method described in the backup slides.
@@ -373,7 +382,7 @@ Charge flip Background
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Charge flip Background : Result for Charge Flip Rate}
+\begin{frame}{Charge Flip Background : Result for Charge Flip Rate}
 \begin{figure}
 \centering
 \includegraphics[width=0.6\textwidth]{data/plot/charge_flip/FitPlots/data_cf_rate_tot.eps}
@@ -382,7 +391,7 @@ Charge flip Background
 \end{figure}
 \end{frame}
 
-\begin{frame}{Charge flip Background : MC Validation Plots}
+\begin{frame}{Charge Flip Background : MC Validation Plots}
 \begin{figure}
 \centering
 \includegraphics[width=0.3\textwidth]{data/plot/charge_flip/ReweightPlots/plots_NOchfSF/mc_pt_1.pdf}
@@ -393,13 +402,308 @@ Charge flip Background
 \end{figure}
 \end{frame}
 
-\begin{frame}{Charge flip Background : MC Validation Plots}
+\begin{frame}{Charge Flip Background : MC Validation Plots}
 \begin{figure}
 \centering
 \includegraphics[width=0.3\textwidth]{data/plot/charge_flip/ReweightPlots/plots_NOchfSF/mc_mll.pdf} \\
 \includegraphics[width=0.3\textwidth]{data/plot/charge_flip/ReweightPlots/plots_NOchfSF/mc_phi_1.pdf}
 \includegraphics[width=0.3\textwidth]{data/plot/charge_flip/ReweightPlots/plots_NOchfSF/mc_phi_2.pdf}
 \caption{The comparison between the weighted OS events and the SS events, with different variables.}
+\end{figure}
+\end{frame}
+
+\section{Fake Lepton Background}
+\begin{frame}
+\begin{center}
+\huge
+Fake Lepton Background
+\end{center}
+\end{frame}
+
+\begin{frame}{Fake Lepton Background : Sources}
+The source of the fake lepton is that other object (like jet and photon) is mis-identified as a lepton. Thay can be mainly classified into 3 types:
+\begin{itemize}
+\item Heavy-flavor fakes:
+\begin{itemize}
+\item It comes from semi-leptonic decays of heavy-quark (b or c) hadrons in jets.
+\end{itemize}
+\item Light-flavor fakes:
+\begin{itemize}
+\item It comes from semi-leptonic decays of light-quark hadrons in jets. OR
+\item It is due to mis-reconstructions of jets with light-quark hadrons.
+\end{itemize}
+\item photon conversion:
+\begin{itemize}
+\item It comes from the pair production from a photon
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Fake Lepton Background : Matrix Method}
+\begin{itemize}
+\item The fake leptons is estimated by the matrix method.
+\item The probability that a real lepton passes the tight selection (i.e. tight lepton) is denoted by the real efficiency $\epsilon$.
+\item The probability that a real lepton does not pass the tight selection (i.e. loose lepton) is denoted by $\bar{\epsilon} = 1 - \epsilon$.
+\item The probability that a fake lepton passes the tight selection (i.e. tight lepton) is denoted by the fake efficiency $f$.
+\item The probability that a fake lepton does not pass the tight selection (i.e. loose lepton) is denoted by $\bar{f} = 1 - f$.
+\end{itemize}
+
+\begin{equation*}
+\left( \begin{array}{c}
+N_T \\
+N_L
+\end{array} \right)
+=
+\left( \begin{array}{cc}
+\epsilon & f \\
+\bar{\epsilon} & \bar{f}
+\end{array} \right)
+\left( \begin{array}{c}
+N_R \\
+N_F
+\end{array} \right)
+\end{equation*}
+\end{frame}
+
+\begin{frame}{Fake Lepton Background : Matrix Method}
+Suppose we know $\left( \begin{array}{c}
+N_T \\
+N_L
+\end{array} \right)$, we can find $N_F$ by inverting the matrix.
+
+\begin{equation*}
+\left( \begin{array}{c}
+0 \\
+N_F
+\end{array} \right)
+=
+\left( \begin{array}{cc}
+0 & 0 \\
+0 & 1
+\end{array} \right)
+\left( \begin{array}{c}
+N_R \\
+N_F
+\end{array} \right)
+=
+\left( \begin{array}{cc}
+0 & 0 \\
+0 & 1
+\end{array} \right)
+\left( \begin{array}{cc}
+\epsilon & f \\
+\bar{\epsilon} & \bar{f}
+\end{array} \right)^{-1}
+\left( \begin{array}{c}
+N_T \\
+N_L
+\end{array} \right)
+\end{equation*}
+Then, we can find the number of tight lepton due to the fake lepton, $N_T'$
+
+\begin{equation*}
+\left( \begin{array}{c}
+N_T' \\
+N_L'
+\end{array} \right)
+=
+\left( \begin{array}{cc}
+\epsilon & f \\
+\bar{\epsilon} & \bar{f}
+\end{array} \right)
+\left( \begin{array}{c}
+0 \\
+N_F
+\end{array} \right)
+\end{equation*}
+
+\begin{equation*}
+=
+\left( \begin{array}{cc}
+\epsilon & f \\
+\bar{\epsilon} & \bar{f}
+\end{array} \right)
+\left( \begin{array}{cc}
+0 & 0 \\
+0 & 1
+\end{array} \right)
+\left( \begin{array}{cc}
+\epsilon & f \\
+\bar{\epsilon} & \bar{f}
+\end{array} \right)^{-1}
+\left( \begin{array}{c}
+N_T \\
+N_L
+\end{array} \right)
+\end{equation*}
+\end{frame}
+
+\begin{frame}{Fake Lepton Background : Matrix Method}
+We can generalize the one-lepton case to the two-leptons case.
+\begin{equation*}
+\left( \begin{array}{c}
+N_{TT} \\
+N_{TL} \\
+N_{LT} \\
+N_{LL}
+\end{array} \right)
+=
+\left( \begin{array}{cccc}
+\epsilon_1 \epsilon_2 & \epsilon_1 f_2 & f_1 \epsilon_2 & f_1 f_2 \\
+\epsilon_1 \bar{\epsilon_2} & \epsilon_1 \bar{f_2} & f_1 \bar{\epsilon_2} & f_1 \bar{f_2} \\
+\bar{\epsilon_1} \epsilon_2 & \bar{\epsilon_1} f_2 & \bar{f_1} \epsilon_2 & \bar{f_1} f_2 \\
+\bar{\epsilon_1} \bar{\epsilon_2} & \bar{\epsilon_1} \bar{f_2} & \bar{f_1} \bar{\epsilon_2} & \bar{f_1} \bar{f_2}
+\end{array} \right)
+\left( \begin{array}{c}
+N_{RR} \\
+N_{RF} \\
+N_{FR} \\
+N_{FF}
+\end{array} \right)
+\end{equation*}
+where $\epsilon_1$ is the probability that a leading real lepton passes the signal selection (i.e. tight lepton), $\epsilon_2$ is the probability that a subleading real lepton passes the signal selection (i.e. tight lepton), etc.
+\end{frame}
+
+\begin{frame}{Fake Lepton Background : Matrix Method}
+We can find $N_{RF}$, $N_{FR}$, $N_{FF}$ by inverting the matrix.
+
+\begin{equation*}
+\left( \begin{array}{c}
+0 \\
+N_{RF} \\
+N_{FR} \\
+N_{FF}
+\end{array} \right)
+=
+\left( \begin{array}{cccc}
+0 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 1
+\end{array} \right)
+\left( \begin{array}{c}
+N_{RR} \\
+N_{RF} \\
+N_{FR} \\
+N_{FF}
+\end{array} \right)
+\end{equation*}
+
+\begin{equation*}
+=
+\left( \begin{array}{cccc}
+0 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 1
+\end{array} \right)
+\left( \begin{array}{cccc}
+\epsilon_1 \epsilon_2 & \epsilon_1 f_2 & f_1 \epsilon_2 & f_1 f_2 \\
+\epsilon_1 \bar{\epsilon_2} & \epsilon_1 \bar{f_2} & f_1 \bar{\epsilon_2} & f_1 \bar{f_2} \\
+\bar{\epsilon_1} \epsilon_2 & \bar{\epsilon_1} f_2 & \bar{f_1} \epsilon_2 & \bar{f_1} f_2 \\
+\bar{\epsilon_1} \bar{\epsilon_2} & \bar{\epsilon_1} \bar{f_2} & \bar{f_1} \bar{\epsilon_2} & \bar{f_1} \bar{f_2}
+\end{array} \right)^{-1}
+\left( \begin{array}{c}
+N_{TT} \\
+N_{TL} \\
+N_{LT} \\
+N_{LL}
+\end{array} \right)
+\end{equation*}
+\end{frame}
+
+\begin{frame}{Fake Lepton Background : Matrix Method}
+Then, we can find the number of tight-tight leptons due to the fake leptons, $N_{TT}'$
+
+\begin{equation*}
+\left( \begin{array}{c}
+N_{TT}' \\
+N_{TL}' \\
+N_{LT}' \\
+N_{LL}'
+\end{array} \right)
+=
+\left( \begin{array}{cccc}
+\epsilon_1 \epsilon_2 & \epsilon_1 f_2 & f_1 \epsilon_2 & f_1 f_2 \\
+\epsilon_1 \bar{\epsilon_2} & \epsilon_1 \bar{f_2} & f_1 \bar{\epsilon_2} & f_1 \bar{f_2} \\
+\bar{\epsilon_1} \epsilon_2 & \bar{\epsilon_1} f_2 & \bar{f_1} \epsilon_2 & \bar{f_1} f_2 \\
+\bar{\epsilon_1} \bar{\epsilon_2} & \bar{\epsilon_1} \bar{f_2} & \bar{f_1} \bar{\epsilon_2} & \bar{f_1} \bar{f_2}
+\end{array} \right)
+\left( \begin{array}{c}
+0 \\
+N_{RF} \\
+N_{FR} \\
+N_{FF}
+\end{array} \right)
+\end{equation*}
+
+\begin{equation*}
+=
+\left( \begin{array}{cccc}
+\epsilon_1 \epsilon_2 & \epsilon_1 f_2 & f_1 \epsilon_2 & f_1 f_2 \\
+\epsilon_1 \bar{\epsilon_2} & \epsilon_1 \bar{f_2} & f_1 \bar{\epsilon_2} & f_1 \bar{f_2} \\
+\bar{\epsilon_1} \epsilon_2 & \bar{\epsilon_1} f_2 & \bar{f_1} \epsilon_2 & \bar{f_1} f_2 \\
+\bar{\epsilon_1} \bar{\epsilon_2} & \bar{\epsilon_1} \bar{f_2} & \bar{f_1} \bar{\epsilon_2} & \bar{f_1} \bar{f_2}
+\end{array} \right)
+\left( \begin{array}{cccc}
+0 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 1
+\end{array} \right)
+\end{equation*}
+
+\begin{equation*}
+\left( \begin{array}{cccc}
+\epsilon_1 \epsilon_2 & \epsilon_1 f_2 & f_1 \epsilon_2 & f_1 f_2 \\
+\epsilon_1 \bar{\epsilon_2} & \epsilon_1 \bar{f_2} & f_1 \bar{\epsilon_2} & f_1 \bar{f_2} \\
+\bar{\epsilon_1} \epsilon_2 & \bar{\epsilon_1} f_2 & \bar{f_1} \epsilon_2 & \bar{f_1} f_2 \\
+\bar{\epsilon_1} \bar{\epsilon_2} & \bar{\epsilon_1} \bar{f_2} & \bar{f_1} \bar{\epsilon_2} & \bar{f_1} \bar{f_2}
+\end{array} \right)^{-1}
+\left( \begin{array}{c}
+N_{TT} \\
+N_{TL} \\
+N_{LT} \\
+N_{LL}
+\end{array} \right)
+\end{equation*}
+\end{frame}
+
+\begin{frame}{Fake Lepton Background : Results of Real Efficiencies}
+The method for measuring the real efficiencies is described in the backup slides.
+\begin{figure}
+\begin{columns}
+
+\begin{column}{0.5\textwidth}
+\includegraphics[width=\textwidth]{data/plot/plotRealEffs/El_hEff.eps}
+\caption{Electron real efficiency}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+\includegraphics[width=\textwidth]{data/plot/plotRealEffs/Mu_hEff.eps}
+\caption{Muon real efficiency}
+\end{column}
+
+\end{columns}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Fake Lepton Background : Results of Fake Efficiencies}
+The method for measuring the fake efficiencies is described in the backup slides.
+\begin{figure}
+\begin{columns}
+
+\begin{column}{0.5\textwidth}
+\includegraphics[width=\textwidth]{data/plot/getFakeEffs/El_hEff.eps}
+\caption{Electron real efficiency}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+\includegraphics[width=\textwidth]{data/plot/getFakeEffs/Mu_hEff.eps}
+\caption{Muon real efficiency}
+\end{column}
+
+\end{columns}
 \end{figure}
 \end{frame}
 
@@ -519,6 +823,7 @@ The following cuts are the pre-selection, before the signal region optimization.
 Pre-selection:
 \begin{itemize}
 \item Exactly 2 leptons with $p_T > 25$ GeV.
+\item Electron: $|\eta| < 2.47$ ; Muon: $|\eta| < 2.4$
 \item The two leptons are same-sign in electric charge (SS).
 \item $n_{\text{b-jets}} = 0$, to reduce the SM background from top quark.
 \item Two signal regions: SRjet1 with $n_{\text{jets}} = 1$, SRjet23 with $n_{\text{jets}} = 2$ or $3$.
@@ -556,11 +861,11 @@ Backup
 \end{center}
 \end{frame}
 
-\subsection{Charge flip Background : Likelihood Method}
+\subsection{Charge Flip Background : Likelihood Method}
 \begin{frame}
 \begin{center}
 \huge
-Charge flip Background : Likelihood Method
+Charge Flip Background : Likelihood Method
 \end{center}
 \end{frame}
 
@@ -734,6 +1039,170 @@ For each bin, the largest deviation from the nominal among these variations is t
 \begin{equation*}
 \sigma_{\text{tot}} = \sqrt{\sigma_{\text{lik}} ^2 + \sigma_{\text{sys}} ^2}
 \end{equation*}
+\end{frame}
+
+\subsection{Method for measuring real and fake efficiencies}
+\begin{frame}
+\begin{center}
+\huge
+Method for measuring real efficiencies
+\end{center}
+\end{frame}
+
+\begin{frame}{Control Region for Real Efficiencies}
+It uses the Z tag-and-probe method to measure the real efficiencies of electrons and muons. \\
+Pre-selection:
+\begin{itemize}
+\item Trigger requirement
+\item exactly 2 baseline leptons
+\item same flavour and opposite charge ($Z \rightarrow ee$, $Z \rightarrow \mu \mu$)
+\item $80 < m_{ll} < 100$
+\item $p_T > 20$
+\item $|\eta| < 2.47$ for electron, $|\eta| < 2.5$ for muon
+\end{itemize}
+Requirements for tag lepton
+\begin{itemize}
+\item $p_T > 25$
+\item pass signal requirement
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Permutation of tag and probe}
+Check the probe lepton: \\
+Tight lepton: pass signal requirement \\
+Loose lepton: pass baseline requirement (include tight lepton) \\
+4 possible cases: (slightly simplified)
+\begin{itemize}
+\item TL: fill loose hist by the subleading lepton
+\item LT: fill loose hist by the leading lepton
+\item TT: fill both loose and tight hist by the both leading and subleading lepton
+\item LL: do nothing
+\end{itemize}
+The real eff is calculated by
+\begin{equation*}
+\epsilon = \frac{N_{\text{tight}}}{N_{\text{loose}}}
+\end{equation*}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\huge
+Method for measuring fake efficiencies
+\end{center}
+\end{frame}
+
+\begin{frame}{Control Region for fake eff for muon}
+It uses the heavy-flavour fake-enriched region to measure the fake efficiencies of electrons and muons. \\
+For muon fake eff, it uses the muon-muon events. \\
+Pre-selection for muon-muon events:
+\begin{itemize}
+\item Trigger requirement
+\item exactly 2 baseline muons
+\item SS
+\item at least 1 jet
+\item at least 1 b-jet
+\item $p_T > 20$
+\item $|\eta| < 2.5$
+\end{itemize}
+Requirements for the tag lepton
+\begin{itemize}
+\item $p_T > 40$
+\item pass signal requirement
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Control Region for fake eff for electron}
+For electron fake eff, it uses the muon-electron events. \\
+Pre-selection for muon-electron events:
+\begin{itemize}
+\item Trigger requirement
+\item exactly 1 baseline electron and 1 baseline muon
+\item SS
+\item at least 1 jet
+\item at least 1 b-jet
+\item $p_T > 20$
+\item $|\eta| < 2.5$
+\end{itemize}
+Requirements for the tag lepton
+\begin{itemize}
+\item muon
+\item $p_T > 40$
+\item pass signal requirement
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Calculate the fake eff}
+The fake eff is calculated by
+\begin{equation*}
+\epsilon = \frac{N^{\text{data}}_{\text{tight}} - N^{\text{prompt MC}}_{\text{tight}}}{N^{\text{data}}_{\text{loose}} - N^{\text{prompt MC}}_{\text{loose}}}
+\end{equation*}
+
+The prompt lepton is estimated from MC by using the truth information. The prompt lepton is defined by the MCTruthClassifier, with the ParticleType = IsoElectron or IsoMuon.
+\end{frame}
+
+\subsection{Validation plots for fake lepton background}
+\begin{frame}
+\begin{center}
+\huge
+Validation plots for fake lepton background
+\end{center}
+\end{frame}
+
+\begin{frame}{ee channel}
+\vspace{5mm}
+\begin{tabular}{|c|c|c|}
+\hline
+& Number of events & \\
+\hline
+\input{data/plot/Fake_VR/VR_Fake_ee.tex}
+\end{tabular}
+\end{frame}
+
+\begin{frame}{ee channel}
+\Wider{
+\includegraphics[width=0.4\textwidth]{data/plot/Fake_VR/pt1_VR_Fake_ee}
+\includegraphics[width=0.4\textwidth]{data/plot/Fake_VR/mt1_VR_Fake_ee} \\
+\includegraphics[width=0.4\textwidth]{data/plot/Fake_VR/meff_VR_Fake_ee}
+\includegraphics[width=0.4\textwidth]{data/plot/Fake_VR/MET_VR_Fake_ee}
+}
+\end{frame}
+
+\begin{frame}{mumu channel}
+\vspace{5mm}
+\begin{tabular}{|c|c|c|}
+\hline
+& Number of events & \\
+\hline
+\input{data/plot/Fake_VR/VR_Fake_mumu.tex}
+\end{tabular}
+\end{frame}
+
+\begin{frame}{mumu channel}
+\Wider{
+\includegraphics[width=0.4\textwidth]{data/plot/Fake_VR/pt1_VR_Fake_mumu}
+\includegraphics[width=0.4\textwidth]{data/plot/Fake_VR/mt1_VR_Fake_mumu} \\
+\includegraphics[width=0.4\textwidth]{data/plot/Fake_VR/meff_VR_Fake_mumu}
+\includegraphics[width=0.4\textwidth]{data/plot/Fake_VR/MET_VR_Fake_mumu}
+}
+\end{frame}
+
+\begin{frame}{emu channel}
+\vspace{5mm}
+\begin{tabular}{|c|c|c|}
+\hline
+& Number of events & \\
+\hline
+\input{data/plot/Fake_VR/VR_Fake_emu.tex}
+\end{tabular}
+\end{frame}
+
+\begin{frame}{emu channel}
+\Wider{
+\includegraphics[width=0.4\textwidth]{data/plot/Fake_VR/pt1_VR_Fake_emu}
+\includegraphics[width=0.4\textwidth]{data/plot/Fake_VR/mt1_VR_Fake_emu} \\
+\includegraphics[width=0.4\textwidth]{data/plot/Fake_VR/meff_VR_Fake_emu}
+\includegraphics[width=0.4\textwidth]{data/plot/Fake_VR/MET_VR_Fake_emu}
+}
 \end{frame}
 
 \begin{frame}
