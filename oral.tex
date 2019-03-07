@@ -818,9 +818,9 @@ p_{\ell 2} &\text{ if } \Delta R(p_{\ell 1},p_{\text{jet-system}}) > \Delta R(p_
 \begin{itemize}
 \item Signal Region(SR) is a set of cuts of the discriminant variables, such that the signal sensitivity is high.
 \item By trying different sets of cuts, the signal region with the highest signal sensitivity can be found. This process is called the signal region optimization.
-The following cuts are the pre-selection, before the signal region optimization.
+\item In the SR optimization, the MC signal and background are used to study the expected sensitivity.
 \end{itemize}
-Pre-selection:
+The following cuts are the pre-selection, before the signal region optimization.
 \begin{itemize}
 \item Exactly 2 leptons with $p_T > 25$ GeV.
 \item Electron: $|\eta| < 2.47$ ; Muon: $|\eta| < 2.4$
@@ -844,6 +844,41 @@ Pre-selection:
 \end{tabular}
 \end{frame}
 
+\begin{frame}{Signal Region : Expected Yields}
+\begin{table}[htbp]
+\centering
+\tiny
+
+\begin{columns}
+
+\begin{column}{0.5\textwidth}
+\scalebox{0.8}{
+\begin{tabular}{|c|c|c|}
+\hline
+& Number of events & Significance \\
+\hline
+\input{data/plot/plot_SR/SR_SS_jet1_opt_0.tex}
+\end{tabular}
+}
+\caption{\tiny Yields in SRjet1}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+\scalebox{0.8}{
+\begin{tabular}{|c|c|c|}
+\hline
+& Number of events & Significance \\
+\hline
+\input{data/plot/plot_SR/SR_SS_jet23_opt_0.tex}
+\end{tabular}
+}
+\caption{\tiny Yields in SRjet23}
+\end{column}
+
+\end{columns}
+\end{table}
+\end{frame}
+
 \begin{frame}{Signal Region : N-1 plots}
 \Wider{
 \includegraphics[width=0.4\textwidth]{MET_SR_SS_jet1_opt_0}
@@ -851,6 +886,175 @@ Pre-selection:
 \includegraphics[width=0.4\textwidth]{mTtwo_SR_SS_jet1_opt_0}
 \includegraphics[width=0.4\textwidth]{mTtwo_SR_SS_jet23_opt_0}
 }
+\end{frame}
+
+\section{Validation Region}
+\begin{frame}
+\begin{center}
+\huge
+Validation Region
+\end{center}
+\end{frame}
+
+\begin{frame}{Validation Region: Introduction}
+\begin{itemize}
+\item The validation region(VR) is designed to ensure that the background events have a good modelling.
+\item Method: The backgrounds are compared with the data, to see whether they agree with each other.
+\item One VR is defined for each SR: VRjet1 and VRjet23.
+\end{itemize}
+There are three requirements for the validation regions:
+\begin{itemize}
+\item The signal contribution should be small.
+\item The validation region is orthogonal to the corresponding signal region.
+\item The background composition is similar to the corresponding signal region.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Validation Region: Method}
+\begin{itemize}
+\item VRjet1
+\begin{itemize}
+\scriptsize
+\item invert the $E_T^{\text{miss}}$ cut, to make it orthogonal to SR.
+\item adjust $E_T^{\text{miss}}$ lower cut to 70 GeV, to have similar background composition.
+\item invert the $m_{lj}$ cut, to reduce the signal.
+\item remove the $m_{\text{eff}}$ and $m_{T2}$ cuts, to increase statistics.
+\end{itemize}
+\item VRjet23
+\begin{itemize}
+\scriptsize
+\item invert the $m_{T}$ cut, to make it orthogonal to SR.
+\item adjust $m_{T}$ lower cut to 65 GeV, to have similar background composition.
+\item invert the $m_{ljj}$ cut, to reduce the signal.
+\item remove the $m_{T2}$ cut, to increase statistics.
+\end{itemize}
+\end{itemize}
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+Cut & VRjet1 & VRjet23 \\
+\hline
+\hline
+$n_{\text{jets}}$               & 1                             & $[2,3]$ \\
+$\Delta \eta_{ll}$              & $<1.5$                        & $-$ \\
+$E_T^{\text{miss}}$ [GeV]       & \textcolor{red}{ $[70,100]$ } & $>100$ \\
+$m_T$ [GeV]                     & $>140$                        & \textcolor{red}{$[65,120]$} \\
+$m_{\text{eff}}$ [GeV]          & $\textcolor{red}{-}$          & $>240$ \\
+$m_{lj(j)}$ [GeV]               & \textcolor{red}{$>130$}       & \textcolor{red}{$>130$} \\
+$m_{T2}$ [GeV]                  & $\textcolor{red}{-}$          & $\textcolor{red}{-}$ \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+\end{frame}
+
+\begin{frame}{Validation Region: Check for Signal Contribution}
+The signal contribution is below 12\% and 10\% for VRjet1 and VRjet23 respectively.
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{data/plot/VR/SignalContamination_VRjet1.eps}
+\includegraphics[width=0.45\textwidth]{data/plot/VR/SignalContamination_VRjet23.eps}
+\caption{Percentages of signal contribution are shown for the VRjet1 (left) and VRjet23 (right).}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Validation Region: Check for Background Composition}
+The background compositions for VRjet1 and SRjet1 are similar.
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{data/plot/VR/BkgComposition_VRjet1.eps}
+\includegraphics[width=0.45\textwidth]{data/plot/VR/BkgComposition_SRjet1.eps}
+\caption{Background composition for the VRjet1 (left) and SRjet1 (right).}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Validation Region: Check for Background Composition}
+The background compositions for VRjet23 and SRjet23 are similar.
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{data/plot/VR/BkgComposition_VRjet23.eps}
+\includegraphics[width=0.45\textwidth]{data/plot/VR/BkgComposition_SRjet23.eps}
+\caption{Background composition for the VRjet23 (left) and SRjet23 (right).}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Validation Region: Yield}
+\begin{table}
+\begin{center}
+\begin{tabular}{|l|c|c|}
+\hline
+\hline
+Process & VRjet1 & VRjet23 \\
+\hline
+\hline
+Rare        & $0.775\pm 0.389^{+0.661}_{-0.362}$ & $2.469 \pm 0.674^{+0.998} _{-0.899}$ \\
+$t\bar{t}V$ & $0.039\pm 0.013^{+0.018}_{-0.012}$ & $0.959 \pm 0.082^{+0.152} _{-0.146}$ \\
+ZZ          & $0.298\pm 0.060^{+0.089}_{-0.063}$ & $0.247 \pm 0.045^{+0.113} _{-0.047}$ \\
+WZ          & $4.909\pm 0.530^{+0.960}_{-0.899}$ & $19.325\pm 0.643^{+4.393} _{-4.346}$ \\
+WW          & $0.801\pm 0.051^{+0.123}_{-0.060}$ & $10.477\pm 0.176^{+0.796} _{-0.726}$ \\
+Charge flip & $1.997\pm 0.128^{+0.260}_{-0.260}$ & $2.065 \pm 0.085^{+0.166} _{-0.166}$ \\
+Fakes       & $8.021\pm 1.390^{+5.806}_{-5.806}$ & $19.990\pm 2.013^{+13.461}_{-13.461}$ \\
+\hline
+Total BG      & $16.839\pm 1.545^{+5.915}_{-5.912}$ & $55.534\pm 2.228^{+14.396}_{-14.332}$ \\
+\hline
+\hline
+Data        & $17$ & $54$ \\
+\hline
+\hline
+\end{tabular}
+\caption{The uncertainties include the statistical and systematic uncertainties.}
+\label{tab:VR_yields}
+\end{center}
+\end{table}
+The distribution plots for different variables are in the backup slides.
+\end{frame}
+
+\section{Results}
+\begin{frame}
+\begin{center}
+\huge
+Results
+\end{center}
+\end{frame}
+
+\begin{frame}{Results: Exclusion Limits}
+\begin{itemize}
+\item Tow SR are combined to calculate the exclusion limits.
+\item The contour line is in 95\% confidence level.
+\end{itemize}
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{data/plot/HistFitterResults/contourPlotterWhSS_upperLimit.pdf}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Results: Exclusion Limits}
+\begin{itemize}
+\item The exclusion limits for the masses of $\tilde{\chi}_1^\pm$ and $\tilde{\chi}_2^0$ are extended up to 245 GeV, and the exclusion limits for the mass of $\tilde{\chi}_1^0$ are extended up to 40 GeV.
+\item This means that the mass points inside the contour line are rejected with 95\% confidence level.
+\end{itemize}
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{data/plot/HistFitterResults/contourPlotterWhSS_upperLimit.pdf}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Conclusion}
+\begin{itemize}
+\item The charge flip BG was estimated by the likelihood method.
+\item The fake lepton BG was estimated by the matrix method.
+\item Two SR were found and their expected sensitivities was also calculated.
+\item Two VR were found and different backgrounds were validated.
+\item New exclusion limits were set, by combining the two SR.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\huge
+Thank You
+\end{center}
 \end{frame}
 
 \section{Backup}
@@ -1292,5 +1496,61 @@ N-1 plots
 \end{frame}
 
 \input{data/plot/plot_SR/plot_SR_SS_opt_0.tex}
+
+\subsection{Validation Region : Plots for different variables}
+\begin{frame}
+\begin{center}
+\huge
+Validation Region : Plots for different variables
+\end{center}
+\end{frame}
+
+\begin{frame}{VRjet1}
+\Wider{
+\includegraphics[width=0.4\textwidth]{data/plot/VR/all_DEtall_VRjet1.eps}
+\includegraphics[width=0.4\textwidth]{data/plot/VR/all_Met_VRjet1.eps} \\
+\includegraphics[width=0.4\textwidth]{data/plot/VR/all_Meff_VRjet1.eps}
+\includegraphics[width=0.4\textwidth]{data/plot/VR/all_Mlj_VRjet1.eps}
+}
+\end{frame}
+
+\begin{frame}{VRjet1}
+\Wider{
+\includegraphics[width=0.4\textwidth]{data/plot/VR/all_Mt2_VRjet1.eps}
+\includegraphics[width=0.4\textwidth]{data/plot/VR/all_Mt_VRjet1.eps} \\
+\includegraphics[width=0.4\textwidth]{data/plot/VR/all_PtLep_VRjet1.eps}
+\includegraphics[width=0.4\textwidth]{data/plot/VR/all_PtSublep_VRjet1.eps}
+}
+\end{frame}
+
+\begin{frame}{VRjet1}
+\Wider{
+\includegraphics[width=0.4\textwidth]{data/plot/VR/all_Njets_VRjet1.eps}
+}
+\end{frame}
+
+\begin{frame}{VRjet23}
+\Wider{
+\includegraphics[width=0.4\textwidth]{data/plot/VR/all_DEtall_VRjet23.eps}
+\includegraphics[width=0.4\textwidth]{data/plot/VR/all_Met_VRjet23.eps} \\
+\includegraphics[width=0.4\textwidth]{data/plot/VR/all_Meff_VRjet23.eps}
+\includegraphics[width=0.4\textwidth]{data/plot/VR/all_Mlj_VRjet23.eps}
+}
+\end{frame}
+
+\begin{frame}{VRjet23}
+\Wider{
+\includegraphics[width=0.4\textwidth]{data/plot/VR/all_Mt2_VRjet23.eps}
+\includegraphics[width=0.4\textwidth]{data/plot/VR/all_Mt_VRjet23.eps} \\
+\includegraphics[width=0.4\textwidth]{data/plot/VR/all_PtLep_VRjet23.eps}
+\includegraphics[width=0.4\textwidth]{data/plot/VR/all_PtSublep_VRjet23.eps}
+}
+\end{frame}
+
+\begin{frame}{VRjet23}
+\Wider{
+\includegraphics[width=0.4\textwidth]{data/plot/VR/all_Njets_VRjet23.eps}
+}
+\end{frame}
 
 \end{document}
