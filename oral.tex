@@ -4,14 +4,13 @@
 %\usepackage{amsmath}
 \graphicspath{{data/plot/plot_SR/}}
 
-\title[Oral Presentation]{Search for chargino and neutralino production in final states with two same-sign leptons, jets and missing transverse momentum at $\sqrt{s} = 13$ TeV with the ATLAS detector}
+\title[Lo Cheuk Yee]{Search for chargino and neutralino production in final states with two same-sign leptons, jets and missing transverse momentum at $\sqrt{s} = 13$ TeV with the ATLAS detector}
 \author[]
 {
-Samuel Lo \inst{1}
+Samuel Lo
 }
 \institute[]
 {
-\inst{1}
 The University of Hong Kong
 }
 \date[]{\today}
@@ -28,7 +27,22 @@ The University of Hong Kong
 \begin{document}
 
 \frame{\titlepage}
-\frame{\tableofcontents}
+%\frame{\tableofcontents}
+
+\begin{frame}{Contents}
+\begin{itemize}
+\item Introduction
+\item Experimental Setup
+\item Background
+\begin{itemize}
+\item Charge Flip Background
+\item Fake Lepton Background
+\end{itemize}
+\item Signal Region
+\item Validation Region
+\item Results
+\end{itemize}
+\end{frame}
 
 \section{Introduction}
 \begin{frame}
@@ -73,16 +87,24 @@ Introduction
 \end{columns}
 \end{frame}
 
+\begin{frame}{Standard Model : Success}
+\begin{itemize}
+\item SM gained huge successes in providing experimental predictions.
+\item With the W boson explaining the beta decay, the existence of the neutral Z boson was predicted and discovered later in 1973.
+\item The existence of a third generation of quarks is predicted in 1973 and top quark was discovered in 1995.
+\item Higgs boson is proposed in 1964 and discovered recently in 2012.
+\end{itemize}
+\end{frame}
+
 \begin{frame}{Standard Model : Limitation}
 \begin{itemize}
-\item SM cannot explain gravity.
 \item SM cannot explain the nature of dark matter.
 \item The hierarchy problem
 \begin{itemize}
 \item Why the weak force is stronger than the gravity by $10^{24}$.
-\item Why the Higgs mass is much lighter than the Planck mass.
-\item At very high energy scale, the Higgs boson mass is strongly sensitive to quantum corrections.
+\item At very high energy scale ($\sim 10^{19}$ GeV), the Higgs boson mass is strongly sensitive to quantum corrections.
 \end{itemize}
+\item The EM force and the weak force were unified in 1961, but the electroweak interaction and the strong interaction are not unified in SM.
 \end{itemize}
 \end{frame}
 
@@ -92,7 +114,13 @@ Introduction
 \item It is one of the most promising theory.
 \item It can solve the hierarchy problem of Higgs mass.
 \item It can explain the nature of dark matter.
+\item It unifies the electroweak interaction and the strong interaction at $\sim 10^{16}$ GeV. The gauge couplings change with the energy scale.
 \end{itemize}
+\begin{figure}
+\centering
+\includegraphics[width=0.3\textwidth]{data/photo/theory/unification.png}
+\caption{Black dashed lines are for SM. Red and blue lines are for the MSSM.}
+\end{figure}
 \end{frame}
 
 \begin{frame}{Supersymmetry : MSSM}
@@ -154,21 +182,8 @@ Charged EW Bosons & W Boson        & $W^+$, $W^-$  & $1$ & +1
 
 \begin{frame}{Supersymmetry : R-parity}
 \begin{itemize}
-\item The baryon number $B$ is defined by $\frac{1}{3} (n_q - n_{\bar{q}})$, where $n_q$ is the number of quarks and $n_{\bar{q}}$ is the number of anti-quarks.
-\item The lepton number $L$ is defined by $n_l - n_{\bar{l}}$, where $n_l$ is the number of leptons and $n_{\bar{l}}$ is the number of anti-leptons.
-\item In SM, $(B-L)$ is conserved. But in MSSM, it is no longer conserved.
-\item To keep $(B-L)$ conservation and prevent the proton decay, the R-parity $P_R$ is introduced.
-\begin{equation*}
-P_R = (-1)^{3(B-L)-2s}
-\end{equation*}
-where s is the spin.
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Supersymmetry : R-parity}
-\begin{itemize}
-\item All SM particles have R-parity $+1$, while all SUSY particles have R-parity $-1$.
-\item If the R-parity is conserved, the lightest supersymmetric particle (LSP) cannot decay and is stable.
+\item A quantum number R-parity is introduced to prevent the proton decay. All SM particles have R-parity $+1$, while all SUSY particles have R-parity $-1$.
+\item If the R-parity is conserved, the lightest supersymmetric particle (LSP) cannot decay (stable).
 \item If the LSP is electrically neutral and interacts with matter only by the weak interaction and gravity, it could be a candidate for dark matter, for example the lightest neutralinos $\tilde{\chi}_1^0$.
 \item In this thesis, the R-parity is assumed to be conserved, and the lightest neutralino $\tilde{\chi}_1^0$ is assumed to be the LSP.
 \item Due to the conservation of R-parity, the supersymmetric particles can only be pair-produced, and will eventually decay into SM particles and the lightest neutralino $\tilde{\chi}_1^0$ (i.e. LSP).
@@ -206,7 +221,7 @@ $\tilde{\chi}_2^0 \rightarrow h + \tilde{\chi}_1^0$
 
 \begin{frame}{Our Signal Scenario : Decay Processes}
 \begin{itemize}
-\item The W boson will further to one lepton (electron or muon) and one neutrino with the SM branching ratio : \\
+\item The W boson will further decay to one lepton (electron or muon) and one neutrino with the SM branching ratio : \\
 $W{^\pm} \rightarrow \ell^{\pm} + \nu$
 \item The Higgs boson $h$ will eventually decay to one lepton (electron or muon), quarks (i.e. jets) and neutrino(s) by various decay modes with the SM branching ratios. (For example, $h \rightarrow W^{+} W^{-} $ and $h \rightarrow \tau^{+} \tau^{-} $)
 \item From now on, a lepton $\ell^{\pm}$ only refer to an electron or muon, but not $\tau$ lepton or neutrino.
@@ -219,7 +234,7 @@ $W{^\pm} \rightarrow \ell^{\pm} + \nu$
 
 \begin{frame}{Our Signal Scenario : Signal Signature in the Final State}
 \begin{itemize}
-\item In this thesis, we only search for two same-sign(SS) leptons, in order to suppress the SM backgrounds.
+\item In this thesis, we search for two same-sign(SS) leptons, in order to reduce the SM backgrounds.
 \item A large missing energy is expected, due to the undetected neutralinos $\tilde{\chi}_1^0$ and neutrinos $\nu$.
 \item Each quark will eventually become a particle shower within a narrow cone, called a jet, by the process of hadronization.
 \item The mass difference between the two lightest neutralinos ($m_{\tilde{\chi}_2^0} - m_{\tilde{\chi}_1^0}$) should be larger than the Higgs mass ($\sim$ 125 GeV).
@@ -234,9 +249,8 @@ $W{^\pm} \rightarrow \ell^{\pm} + \nu$
 \begin{itemize}
 \item If the mass difference ($m_{\tilde{\chi}_1^\pm , \tilde{\chi}_2^0} - m_{\tilde{\chi}_1^0}$) is slightly larger than the Higgs mass, it is called the compressed region.
 \item In the compressed region, one of the lepton may have low energy, due to the low momentum of the Higgs boson, and hence it may not be detected.
-\item In this case, there may be originally 3 leptons, but only 2 leptons are detected.
-\item This allows more decay modes for Higgs boson, which produce two leptons. (For example, $h \rightarrow ZZ$)
-\item Hence, the signal will be more sensitive in the compressed region.
+\item In this case, only 2 out of 3 leptons are detected.
+\item In the compressed region, the signal will be more sensitive than the 3-leptons channel that searched for final states with 3 leptons. We can pick up their signal.
 \end{itemize}
 \end{frame}
 
@@ -284,19 +298,20 @@ Experimental Setup
 \end{frame}
 
 \begin{frame}{Challenges of Background Estimatation}
-\begin{itemize}
-\item Before we search for the signal, we need to understand and estimate the background first.
-\item SM background from ``real" same-sign dilepton pair is estimated by MC
-\begin{itemize}
-\item DiBoson: WZ, WW, ZZ
-\item ttV, VVV, multitop, Higgs
-\end{itemize}
-\item SM background from ``fake" same-sign dilepton pair, due to the limitation of our detector. They are due to the wrong identification of the particle. There are two types of these ``fake" backgrounds.
+In order to search for SUSY, we need to understand the SM background very well.
+\begin{enumerate}
+\item Reducible SM background: They are due to the limitation of our detector and the wrong identification of the particle. There are two dominant reducible SM backgrounds, which are estimated by the data-driven method.
 \begin{itemize}
 \item Charge flip background
-\item Fake lepton background
+\item Fake lepton background (dominant background)
 \end{itemize}
+\item Irreducible SM background: they is estimated by Monte Carlo (MC)
+\begin{itemize}
+\item VV: WZ, WW, ZZ
+\item tt+V
+\item Rare: VVV, multitop, Higgs
 \end{itemize}
+\end{enumerate}
 \end{frame}
 
 \begin{frame}{Basic kinematic variables}
@@ -1063,6 +1078,20 @@ Thank You
 \huge
 Backup
 \end{center}
+\end{frame}
+
+\subsection{Supersymmetry : R-parity}
+\begin{frame}{Supersymmetry : R-parity}
+\begin{itemize}
+\item The baryon number $B$ is defined by $\frac{1}{3} (n_q - n_{\bar{q}})$, where $n_q$ is the number of quarks and $n_{\bar{q}}$ is the number of anti-quarks.
+\item The lepton number $L$ is defined by $n_l - n_{\bar{l}}$, where $n_l$ is the number of leptons and $n_{\bar{l}}$ is the number of anti-leptons.
+\item In SM, $(B-L)$ is conserved. But in MSSM, it is no longer conserved.
+\item To keep $(B-L)$ conservation and prevent the proton decay, the R-parity $P_R$ is introduced.
+\begin{equation*}
+P_R = (-1)^{3(B-L)-2s}
+\end{equation*}
+where s is the spin.
+\end{itemize}
 \end{frame}
 
 \subsection{Charge Flip Background : Likelihood Method}
