@@ -297,23 +297,6 @@ Experimental Setup
 \end{figure}
 \end{frame}
 
-\begin{frame}{Challenges of Background Estimatation}
-In order to search for SUSY, we need to understand the SM background very well.
-\begin{enumerate}
-\item Reducible SM background: They are due to the limitation of our detector and the wrong identification of the particle. There are two dominant reducible SM backgrounds, which are estimated by the data-driven method.
-\begin{itemize}
-\item Charge flip background
-\item Fake lepton background (dominant background)
-\end{itemize}
-\item Irreducible SM background: they is estimated by Monte Carlo (MC)
-\begin{itemize}
-\item VV: WZ, WW, ZZ
-\item tt+V
-\item Rare: VVV, multitop, Higgs
-\end{itemize}
-\end{enumerate}
-\end{frame}
-
 \begin{frame}{Basic kinematic variables}
 \begin{itemize}
 \item The z-axis is in the proton beam direction.
@@ -357,6 +340,23 @@ p_T = \sqrt{p_x^2 + p_y^2}
 \end{figure}
 \end{frame}
 
+\begin{frame}{Challenges of Background Estimatation}
+In order to search for SUSY, we need to understand the SM background very well.
+\begin{enumerate}
+\item Reducible SM background: They are due to the limitation of our detector and the wrong identification of the particle. There are two dominant reducible SM backgrounds, which are estimated by the data-driven method.
+\begin{itemize}
+\item Charge flip background
+\item Fake lepton background (dominant background)
+\end{itemize}
+\item Irreducible SM background: They are estimated by Monte Carlo (MC)
+\begin{itemize}
+\item VV: WZ, WW, ZZ
+\item tt+V
+\item Rare: VVV, multitop, Higgs
+\end{itemize}
+\end{enumerate}
+\end{frame}
+
 \section{Charge Flip Background}
 \begin{frame}
 \begin{center}
@@ -385,7 +385,7 @@ Charge Flip Background
 \begin{frame}{Charge Flip Background : charge flip rate}
 \begin{itemize}
 \item The probability that the charge of an electron is flipped, called the charge flip rate $\epsilon(p_T, |\eta|)$, depends on the $p_T$ and $|\eta|$ of the electron.
-\item The charge flip rates are measured by the likelihood method described in the backup slides.
+\item The charge flip rates are measured by the likelihood method described in the next slide.
 \item After getting the charge flip rates, the charge flip background can be found by applying the charge flip rates on the OS events in data.
 \item The probability that an OS data event becomes a SS data event, which is the charge of one of the leptons is flipped, is given by
 \begin{align*}
@@ -397,33 +397,68 @@ Charge Flip Background
 \end{itemize}
 \end{frame}
 
+\begin{frame}{Charge Flip Background : Likelihood Method}
+\begin{itemize}
+\item The probability that the charge of an electron is flipped is denoted by the charge-flip rate $\epsilon_i$, where the index i represents the dependency on the $p_T$ and $|\eta|$ of the electron.
+\item The value of index i is defined by the index of the following grids in the table.
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+Variable & Boundary of the bins \\
+\hline
+$p_T$ (GeV) &  25, 60, 90, 130, 150, 1000 \\
+\hline
+$|\eta|$ & 0, 0.50, 1.00, 1.37, 1.52, 1.80, 2.00, 2.47 \\
+\hline
+\end{tabular}
+\caption{Binning in $p_T$ and $|\eta|$ for the charge-flip rate $\epsilon_i$.}
+\end{table}
+
+\item The probability $p_{ij}$ that an OS data event becomes a SS data event (with the leading lepton in bin $i$ and the subleading lepton in bin $j$) is
+\begin{equation*}
+p_{ij} = (1 - \epsilon_i)\epsilon_j + (1 - \epsilon_j)\epsilon_i
+\end{equation*}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Charge Flip Background : Likelihood Method}
+\begin{itemize}
+\item The charge flip rate $\epsilon_i$ is measured by using the data in the control region, within the Z mass window cut of 80-100 GeV.
+\item The events inside the Z mass window is then subtracted by the non-Zee processes, by using the sideband technique.
+\item After the subtraction, the total number of event is denoted by $N^{ij}$, and the number of events with two same-sign leptons is denoted by $N^{ij}_{SS}$.
+\item The expected value of $N^{ij}_{SS}$ is then given by $\lambda = N^{ij}p_{ij}$. And, if $N^{ij}_{SS}$ is described by a Poisson distribution, then
+\end{itemize}
+\begin{equation*}
+P(N^{ij}_{SS} | N^{ij}, \epsilon_i, \epsilon_j) = \frac{(N^{ij}p_{ij})^{N^{ij}_{SS}} e^{-N^{ij}p_{ij}}}{N^{ij}_{SS}!}
+\end{equation*}
+\end{frame}
+
+\begin{frame}{Charge Flip Background : Likelihood Method}
+\begin{itemize}
+\item Converting it to the likelihood function L and taking the negative natural log yields
+\end{itemize}
+\begin{equation*}
+\begin{split}
+-\ln L &= -\ln\prod_{ij} P(N^{ij}_{SS} | N^{ij}, \epsilon_i, \epsilon_j) \\
+&= - \sum_{ij} \Big[ N^{ij}_{SS} \ln (N^{ij}[\epsilon_i (1-\epsilon_j) + (1-\epsilon_i) \epsilon_j]) \\
+&- N^{ij}[\epsilon_i (1-\epsilon_j) + (1-\epsilon_i) \epsilon_j] \Big] + \text{constant}
+\end{split}
+\end{equation*}
+\begin{itemize}
+\item where the summation over $i$ and $j$ is taken over all $p_T$ and $|\eta|$ bins of both electrons.
+\item By minimizing this likelihood, the charge-flip rate can be estimated.
+\end{itemize}
+\end{frame}
+
 \begin{frame}{Charge Flip Background : Result for Charge Flip Rate}
 \begin{figure}
 \centering
 \includegraphics[width=0.6\textwidth]{data/plot/charge_flip/FitPlots/data_cf_rate_tot.eps}
 \caption{The measured values of the charge-flip rate $\epsilon_i$ in data, with total uncertainties.}
 \label{fig:charge_flip_data_tot}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Charge Flip Background : MC Validation Plots}
-\begin{figure}
-\centering
-\includegraphics[width=0.3\textwidth]{data/plot/charge_flip/ReweightPlots/plots_NOchfSF/mc_pt_1.pdf}
-\includegraphics[width=0.3\textwidth]{data/plot/charge_flip/ReweightPlots/plots_NOchfSF/mc_pt_2.pdf} \\
-\includegraphics[width=0.3\textwidth]{data/plot/charge_flip/ReweightPlots/plots_NOchfSF/mc_eta_1.pdf}
-\includegraphics[width=0.3\textwidth]{data/plot/charge_flip/ReweightPlots/plots_NOchfSF/mc_eta_2.pdf}
-\caption{The comparison between the weighted OS events and the SS events, with different variables.}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Charge Flip Background : MC Validation Plots}
-\begin{figure}
-\centering
-\includegraphics[width=0.3\textwidth]{data/plot/charge_flip/ReweightPlots/plots_NOchfSF/mc_mll.pdf} \\
-\includegraphics[width=0.3\textwidth]{data/plot/charge_flip/ReweightPlots/plots_NOchfSF/mc_phi_1.pdf}
-\includegraphics[width=0.3\textwidth]{data/plot/charge_flip/ReweightPlots/plots_NOchfSF/mc_phi_2.pdf}
-\caption{The comparison between the weighted OS events and the SS events, with different variables.}
 \end{figure}
 \end{frame}
 
@@ -457,10 +492,10 @@ The source of the fake lepton is that other object (like jet and photon) is mis-
 \begin{frame}{Fake Lepton Background : Matrix Method}
 \begin{itemize}
 \item The fake leptons is estimated by the matrix method.
-\item The probability that a real lepton passes the tight selection (i.e. tight lepton) is denoted by the real efficiency $\epsilon$.
-\item The probability that a real lepton does not pass the tight selection (i.e. loose lepton) is denoted by $\bar{\epsilon} = 1 - \epsilon$.
-\item The probability that a fake lepton passes the tight selection (i.e. tight lepton) is denoted by the fake efficiency $f$.
-\item The probability that a fake lepton does not pass the tight selection (i.e. loose lepton) is denoted by $\bar{f} = 1 - f$.
+\item The probability that a real lepton passes the tight selection criteria (i.e. tight lepton) is denoted by the real efficiency $\epsilon$.
+\item The probability that a real lepton does not pass the tight selection criteria (i.e. loose lepton) is denoted by $\bar{\epsilon} = 1 - \epsilon$.
+\item The probability that a fake lepton passes the tight selection criteria (i.e. tight lepton) is denoted by the fake efficiency $f$.
+\item The probability that a fake lepton does not pass the tight selection criteria (i.e. loose lepton) is denoted by $\bar{f} = 1 - f$.
 \end{itemize}
 
 \begin{equation*}
@@ -580,55 +615,7 @@ where $\epsilon_1$ is the probability that a leading real lepton passes the sign
 \end{frame}
 
 \begin{frame}{Fake Lepton Background : Matrix Method}
-We can find $N_{RF}$, $N_{FR}$, $N_{FF}$ by inverting the matrix.
-
-\begin{equation*}
-\left( \begin{array}{c}
-0 \\
-N_{RF} \\
-N_{FR} \\
-N_{FF}
-\end{array} \right)
-=
-\left( \begin{array}{cccc}
-0 & 0 & 0 & 0 \\
-0 & 1 & 0 & 0 \\
-0 & 0 & 1 & 0 \\
-0 & 0 & 0 & 1
-\end{array} \right)
-\left( \begin{array}{c}
-N_{RR} \\
-N_{RF} \\
-N_{FR} \\
-N_{FF}
-\end{array} \right)
-\end{equation*}
-
-\begin{equation*}
-=
-\left( \begin{array}{cccc}
-0 & 0 & 0 & 0 \\
-0 & 1 & 0 & 0 \\
-0 & 0 & 1 & 0 \\
-0 & 0 & 0 & 1
-\end{array} \right)
-\left( \begin{array}{cccc}
-\epsilon_1 \epsilon_2 & \epsilon_1 f_2 & f_1 \epsilon_2 & f_1 f_2 \\
-\epsilon_1 \bar{\epsilon_2} & \epsilon_1 \bar{f_2} & f_1 \bar{\epsilon_2} & f_1 \bar{f_2} \\
-\bar{\epsilon_1} \epsilon_2 & \bar{\epsilon_1} f_2 & \bar{f_1} \epsilon_2 & \bar{f_1} f_2 \\
-\bar{\epsilon_1} \bar{\epsilon_2} & \bar{\epsilon_1} \bar{f_2} & \bar{f_1} \bar{\epsilon_2} & \bar{f_1} \bar{f_2}
-\end{array} \right)^{-1}
-\left( \begin{array}{c}
-N_{TT} \\
-N_{TL} \\
-N_{LT} \\
-N_{LL}
-\end{array} \right)
-\end{equation*}
-\end{frame}
-
-\begin{frame}{Fake Lepton Background : Matrix Method}
-Then, we can find the number of tight-tight leptons due to the fake leptons, $N_{TT}'$
+Similarly, we can find the number of tight-tight leptons due to the fake leptons, $N_{TT}'$
 
 \begin{equation*}
 \left( \begin{array}{c}
@@ -637,22 +624,6 @@ N_{TL}' \\
 N_{LT}' \\
 N_{LL}'
 \end{array} \right)
-=
-\left( \begin{array}{cccc}
-\epsilon_1 \epsilon_2 & \epsilon_1 f_2 & f_1 \epsilon_2 & f_1 f_2 \\
-\epsilon_1 \bar{\epsilon_2} & \epsilon_1 \bar{f_2} & f_1 \bar{\epsilon_2} & f_1 \bar{f_2} \\
-\bar{\epsilon_1} \epsilon_2 & \bar{\epsilon_1} f_2 & \bar{f_1} \epsilon_2 & \bar{f_1} f_2 \\
-\bar{\epsilon_1} \bar{\epsilon_2} & \bar{\epsilon_1} \bar{f_2} & \bar{f_1} \bar{\epsilon_2} & \bar{f_1} \bar{f_2}
-\end{array} \right)
-\left( \begin{array}{c}
-0 \\
-N_{RF} \\
-N_{FR} \\
-N_{FF}
-\end{array} \right)
-\end{equation*}
-
-\begin{equation*}
 =
 \left( \begin{array}{cccc}
 \epsilon_1 \epsilon_2 & \epsilon_1 f_2 & f_1 \epsilon_2 & f_1 f_2 \\
@@ -750,8 +721,8 @@ In order to extract the signal, the following strategies are used.
 \begin{itemize}
 \item A hardware trigger system are used when taking the data (online), to only store the interested events in the disk. \\
 (40 MHz $\rightarrow$ 100 kHz $\rightarrow$ 1 kHz)
-\item Some discriminant variables (based on the kinematic variables) are defined, to help distinguish the signal and the background (i.e. noise).
-\item Two dedicated signal regions are defined based on the discriminant variables, to maximize signal sensitivity (like the signal-to-noise ratio).
+\item Some discriminant variables (based on the kinematic variables) are defined, to help distinguish the signal and the background.
+\item Two dedicated signal regions are defined (SRjet1 and SRjet23) based on the discriminant variables, to maximize the signal sensitivity.
 \end{itemize}
 \end{frame}
 
@@ -772,11 +743,11 @@ E_{T}^{\text{miss}} = |{\bf p}_T^{\text{miss}}| = \sqrt{ (p_x^{\text{miss}})^2 +
 \begin{itemize}
 \item $n_{\text{jets}}$: Number of signal jets:
 \item $n_{\text{b-jets}}$: Number of $b$-jets (jet from b quark).
-\item
+\item $\Delta \eta_{ll}$ is designed to estimate the angle between the two leptons.
 \begin{equation*}
 \Delta \eta_{ll} = |\eta_{1} - \eta_{2}|
 \end{equation*}
-\item
+\item $m_{\text{eff}}$ is designed to estimate the total energy and momentum of the charginos $\tilde{\chi}_1^\pm$ and neutralinos $\tilde{\chi}_2^0$.
 \begin{equation*}
 m_{\text{eff}} = p_T^1 + p_T^2 + E_T^{\text{miss}} + \sum_{\text {signal jets}} p_T
 \end{equation*}
@@ -811,8 +782,8 @@ m_T( {\bf p}_T, {\bf q}_T ) = \sqrt{ 2 p_T q_T ( 1 - \cos{\Delta\phi} ) }
 p_{\text{jet-system}} =
 \left\{
 \begin{array}{ll}
-p_{\text{jet1}} &\text{ for SRjet1}\\
-p_{\text{jet1}} + p_{\text{jet2}} &\text{ for SRjet23}
+p_{\text{jet1}} &\text{ for SRjet1 (1 jet)}\\
+p_{\text{jet1}} + p_{\text{jet2}} &\text{ for SRjet23 (2 or 3 jets)}
 \end{array} \right.
 \end{equation*}
 \begin{equation*}
@@ -854,7 +825,7 @@ The following cuts are the pre-selection, before the signal region optimization.
 }
 \end{frame}
 
-\begin{frame}{Signal Region : cut result}
+\begin{frame}{Signal Region : Optimizied Event Selection}
 \input{data/plot/plot_SR/cut_table_SR_SS_opt_0.tex}
 \end{tabular}
 \end{frame}
@@ -867,26 +838,22 @@ The following cuts are the pre-selection, before the signal region optimization.
 \begin{columns}
 
 \begin{column}{0.5\textwidth}
-\scalebox{0.8}{
 \begin{tabular}{|c|c|c|}
 \hline
 & Number of events & Significance \\
 \hline
-\input{data/plot/plot_SR/SR_SS_jet1_opt_0.tex}
+\input{data/plot/plot_SR/SR_SS_jet1_opt_0_3dp.tex}
 \end{tabular}
-}
 \caption{\tiny Yields in SRjet1}
 \end{column}
 
 \begin{column}{0.5\textwidth}
-\scalebox{0.8}{
 \begin{tabular}{|c|c|c|}
 \hline
 & Number of events & Significance \\
 \hline
-\input{data/plot/plot_SR/SR_SS_jet23_opt_0.tex}
+\input{data/plot/plot_SR/SR_SS_jet23_opt_0_3dp.tex}
 \end{tabular}
-}
 \caption{\tiny Yields in SRjet23}
 \end{column}
 
@@ -913,7 +880,7 @@ Validation Region
 
 \begin{frame}{Validation Region: Introduction}
 \begin{itemize}
-\item The validation region(VR) is designed to ensure that the background events have a good modelling.
+\item The validation region(VR) is designed to ensure that the estimation of background is reliable.
 \item Method: The backgrounds are compared with the data, to see whether they agree with each other.
 \item One VR is defined for each SR: VRjet1 and VRjet23.
 \end{itemize}
@@ -962,36 +929,6 @@ $m_{T2}$ [GeV]                  & $\textcolor{red}{-}$          & $\textcolor{re
 \end{tabular}
 \end{center}
 \end{table}
-\end{frame}
-
-\begin{frame}{Validation Region: Check for Signal Contribution}
-The signal contribution is below 12\% and 10\% for VRjet1 and VRjet23 respectively.
-\begin{figure}
-\centering
-\includegraphics[width=0.45\textwidth]{data/plot/VR/SignalContamination_VRjet1.eps}
-\includegraphics[width=0.45\textwidth]{data/plot/VR/SignalContamination_VRjet23.eps}
-\caption{Percentages of signal contribution are shown for the VRjet1 (left) and VRjet23 (right).}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Validation Region: Check for Background Composition}
-The background compositions for VRjet1 and SRjet1 are similar.
-\begin{figure}
-\centering
-\includegraphics[width=0.45\textwidth]{data/plot/VR/BkgComposition_VRjet1.eps}
-\includegraphics[width=0.45\textwidth]{data/plot/VR/BkgComposition_SRjet1.eps}
-\caption{Background composition for the VRjet1 (left) and SRjet1 (right).}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Validation Region: Check for Background Composition}
-The background compositions for VRjet23 and SRjet23 are similar.
-\begin{figure}
-\centering
-\includegraphics[width=0.45\textwidth]{data/plot/VR/BkgComposition_VRjet23.eps}
-\includegraphics[width=0.45\textwidth]{data/plot/VR/BkgComposition_SRjet23.eps}
-\caption{Background composition for the VRjet23 (left) and SRjet23 (right).}
-\end{figure}
 \end{frame}
 
 \begin{frame}{Validation Region: Yield}
@@ -1057,10 +994,11 @@ Results
 
 \begin{frame}{Conclusion}
 \begin{itemize}
-\item The charge flip BG was estimated by the likelihood method.
-\item The fake lepton BG was estimated by the matrix method.
-\item Two SR were found and their expected sensitivities was also calculated.
-\item Two VR were found and different backgrounds were validated.
+\item We searched for the electroweak pair production of a chargino and a neutralino
+($p + p \rightarrow \tilde{\chi}_1^\pm + \tilde{\chi}_2^0$), with the Wh channel $\tilde{\chi}_1^\pm \rightarrow \tilde{\chi}_1^0 + W$ and $\tilde{\chi}_2^0 \rightarrow \tilde{\chi}_1^0 + h$, and the same-sign channel.
+\item By using the ATLAS data with total integrated luminosity 36.1 fb$^{-1}$.
+\item The dominant BG (fake lepton BG and charge flip BG) were estimated by the data-driven method.
+\item All the results were consistent with the SM.
 \item New exclusion limits were set, by combining the two SR.
 \end{itemize}
 \end{frame}
@@ -1271,6 +1209,166 @@ For each bin, the largest deviation from the nominal among these variations is t
 \end{equation*}
 \begin{equation*}
 \sigma_{\text{tot}} = \sqrt{\sigma_{\text{lik}} ^2 + \sigma_{\text{sys}} ^2}
+\end{equation*}
+\end{frame}
+
+\begin{frame}{Likelihood Method : MC Validation Plots}
+\begin{figure}
+\centering
+\includegraphics[width=0.3\textwidth]{data/plot/charge_flip/ReweightPlots/plots_NOchfSF/mc_pt_1.pdf}
+\includegraphics[width=0.3\textwidth]{data/plot/charge_flip/ReweightPlots/plots_NOchfSF/mc_pt_2.pdf} \\
+\includegraphics[width=0.3\textwidth]{data/plot/charge_flip/ReweightPlots/plots_NOchfSF/mc_eta_1.pdf}
+\includegraphics[width=0.3\textwidth]{data/plot/charge_flip/ReweightPlots/plots_NOchfSF/mc_eta_2.pdf}
+\caption{The comparison between the weighted OS events and the SS events, with different variables.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Likelihood Method : MC Validation Plots}
+\begin{figure}
+\centering
+\includegraphics[width=0.3\textwidth]{data/plot/charge_flip/ReweightPlots/plots_NOchfSF/mc_mll.pdf} \\
+\includegraphics[width=0.3\textwidth]{data/plot/charge_flip/ReweightPlots/plots_NOchfSF/mc_phi_1.pdf}
+\includegraphics[width=0.3\textwidth]{data/plot/charge_flip/ReweightPlots/plots_NOchfSF/mc_phi_2.pdf}
+\caption{The comparison between the weighted OS events and the SS events, with different variables.}
+\end{figure}
+\end{frame}
+
+\subsection{Fake Lepton Background : Matrix Method}
+\begin{frame}
+\begin{center}
+\huge
+Fake Lepton Background : Matrix Method
+\end{center}
+\end{frame}
+
+\begin{frame}{Fake Lepton Background : Matrix Method}
+We can generalize the one-lepton case to the two-leptons case.
+\begin{equation*}
+\left( \begin{array}{c}
+N_{TT} \\
+N_{TL} \\
+N_{LT} \\
+N_{LL}
+\end{array} \right)
+=
+\left( \begin{array}{cccc}
+\epsilon_1 \epsilon_2 & \epsilon_1 f_2 & f_1 \epsilon_2 & f_1 f_2 \\
+\epsilon_1 \bar{\epsilon_2} & \epsilon_1 \bar{f_2} & f_1 \bar{\epsilon_2} & f_1 \bar{f_2} \\
+\bar{\epsilon_1} \epsilon_2 & \bar{\epsilon_1} f_2 & \bar{f_1} \epsilon_2 & \bar{f_1} f_2 \\
+\bar{\epsilon_1} \bar{\epsilon_2} & \bar{\epsilon_1} \bar{f_2} & \bar{f_1} \bar{\epsilon_2} & \bar{f_1} \bar{f_2}
+\end{array} \right)
+\left( \begin{array}{c}
+N_{RR} \\
+N_{RF} \\
+N_{FR} \\
+N_{FF}
+\end{array} \right)
+\end{equation*}
+where $\epsilon_1$ is the probability that a leading real lepton passes the signal selection (i.e. tight lepton), $\epsilon_2$ is the probability that a subleading real lepton passes the signal selection (i.e. tight lepton), etc.
+\end{frame}
+
+\begin{frame}{Fake Lepton Background : Matrix Method}
+We can find $N_{RF}$, $N_{FR}$, $N_{FF}$ by inverting the matrix.
+
+\begin{equation*}
+\left( \begin{array}{c}
+0 \\
+N_{RF} \\
+N_{FR} \\
+N_{FF}
+\end{array} \right)
+=
+\left( \begin{array}{cccc}
+0 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 1
+\end{array} \right)
+\left( \begin{array}{c}
+N_{RR} \\
+N_{RF} \\
+N_{FR} \\
+N_{FF}
+\end{array} \right)
+\end{equation*}
+
+\begin{equation*}
+=
+\left( \begin{array}{cccc}
+0 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 1
+\end{array} \right)
+\left( \begin{array}{cccc}
+\epsilon_1 \epsilon_2 & \epsilon_1 f_2 & f_1 \epsilon_2 & f_1 f_2 \\
+\epsilon_1 \bar{\epsilon_2} & \epsilon_1 \bar{f_2} & f_1 \bar{\epsilon_2} & f_1 \bar{f_2} \\
+\bar{\epsilon_1} \epsilon_2 & \bar{\epsilon_1} f_2 & \bar{f_1} \epsilon_2 & \bar{f_1} f_2 \\
+\bar{\epsilon_1} \bar{\epsilon_2} & \bar{\epsilon_1} \bar{f_2} & \bar{f_1} \bar{\epsilon_2} & \bar{f_1} \bar{f_2}
+\end{array} \right)^{-1}
+\left( \begin{array}{c}
+N_{TT} \\
+N_{TL} \\
+N_{LT} \\
+N_{LL}
+\end{array} \right)
+\end{equation*}
+\end{frame}
+
+\begin{frame}{Fake Lepton Background : Matrix Method}
+Then, we can find the number of tight-tight leptons due to the fake leptons, $N_{TT}'$
+
+\begin{equation*}
+\left( \begin{array}{c}
+N_{TT}' \\
+N_{TL}' \\
+N_{LT}' \\
+N_{LL}'
+\end{array} \right)
+=
+\left( \begin{array}{cccc}
+\epsilon_1 \epsilon_2 & \epsilon_1 f_2 & f_1 \epsilon_2 & f_1 f_2 \\
+\epsilon_1 \bar{\epsilon_2} & \epsilon_1 \bar{f_2} & f_1 \bar{\epsilon_2} & f_1 \bar{f_2} \\
+\bar{\epsilon_1} \epsilon_2 & \bar{\epsilon_1} f_2 & \bar{f_1} \epsilon_2 & \bar{f_1} f_2 \\
+\bar{\epsilon_1} \bar{\epsilon_2} & \bar{\epsilon_1} \bar{f_2} & \bar{f_1} \bar{\epsilon_2} & \bar{f_1} \bar{f_2}
+\end{array} \right)
+\left( \begin{array}{c}
+0 \\
+N_{RF} \\
+N_{FR} \\
+N_{FF}
+\end{array} \right)
+\end{equation*}
+
+\begin{equation*}
+=
+\left( \begin{array}{cccc}
+\epsilon_1 \epsilon_2 & \epsilon_1 f_2 & f_1 \epsilon_2 & f_1 f_2 \\
+\epsilon_1 \bar{\epsilon_2} & \epsilon_1 \bar{f_2} & f_1 \bar{\epsilon_2} & f_1 \bar{f_2} \\
+\bar{\epsilon_1} \epsilon_2 & \bar{\epsilon_1} f_2 & \bar{f_1} \epsilon_2 & \bar{f_1} f_2 \\
+\bar{\epsilon_1} \bar{\epsilon_2} & \bar{\epsilon_1} \bar{f_2} & \bar{f_1} \bar{\epsilon_2} & \bar{f_1} \bar{f_2}
+\end{array} \right)
+\left( \begin{array}{cccc}
+0 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 1
+\end{array} \right)
+\end{equation*}
+
+\begin{equation*}
+\left( \begin{array}{cccc}
+\epsilon_1 \epsilon_2 & \epsilon_1 f_2 & f_1 \epsilon_2 & f_1 f_2 \\
+\epsilon_1 \bar{\epsilon_2} & \epsilon_1 \bar{f_2} & f_1 \bar{\epsilon_2} & f_1 \bar{f_2} \\
+\bar{\epsilon_1} \epsilon_2 & \bar{\epsilon_1} f_2 & \bar{f_1} \epsilon_2 & \bar{f_1} f_2 \\
+\bar{\epsilon_1} \bar{\epsilon_2} & \bar{\epsilon_1} \bar{f_2} & \bar{f_1} \bar{\epsilon_2} & \bar{f_1} \bar{f_2}
+\end{array} \right)^{-1}
+\left( \begin{array}{c}
+N_{TT} \\
+N_{TL} \\
+N_{LT} \\
+N_{LL}
+\end{array} \right)
 \end{equation*}
 \end{frame}
 
@@ -1526,15 +1624,45 @@ N-1 plots
 
 \input{data/plot/plot_SR/plot_SR_SS_opt_0.tex}
 
-\subsection{Validation Region : Plots for different variables}
+\subsection{Validation Region}
 \begin{frame}
 \begin{center}
 \huge
-Validation Region : Plots for different variables
+Validation Region
 \end{center}
 \end{frame}
 
-\begin{frame}{VRjet1}
+\begin{frame}{Validation Region: Check for Signal Contribution}
+The signal contribution is below 12\% and 10\% for VRjet1 and VRjet23 respectively.
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{data/plot/VR/SignalContamination_VRjet1.eps}
+\includegraphics[width=0.45\textwidth]{data/plot/VR/SignalContamination_VRjet23.eps}
+\caption{Percentages of signal contribution are shown for the VRjet1 (left) and VRjet23 (right).}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Validation Region: Check for Background Composition}
+The background compositions for VRjet1 and SRjet1 are similar.
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{data/plot/VR/BkgComposition_VRjet1.eps}
+\includegraphics[width=0.45\textwidth]{data/plot/VR/BkgComposition_SRjet1.eps}
+\caption{Background composition for the VRjet1 (left) and SRjet1 (right).}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Validation Region: Check for Background Composition}
+The background compositions for VRjet23 and SRjet23 are similar.
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{data/plot/VR/BkgComposition_VRjet23.eps}
+\includegraphics[width=0.45\textwidth]{data/plot/VR/BkgComposition_SRjet23.eps}
+\caption{Background composition for the VRjet23 (left) and SRjet23 (right).}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Validation Region : Plots for different variables (VRjet1)}
 \Wider{
 \includegraphics[width=0.4\textwidth]{data/plot/VR/all_DEtall_VRjet1.eps}
 \includegraphics[width=0.4\textwidth]{data/plot/VR/all_Met_VRjet1.eps} \\
@@ -1543,7 +1671,7 @@ Validation Region : Plots for different variables
 }
 \end{frame}
 
-\begin{frame}{VRjet1}
+\begin{frame}{Validation Region : Plots for different variables (VRjet1)}
 \Wider{
 \includegraphics[width=0.4\textwidth]{data/plot/VR/all_Mt2_VRjet1.eps}
 \includegraphics[width=0.4\textwidth]{data/plot/VR/all_Mt_VRjet1.eps} \\
@@ -1552,13 +1680,13 @@ Validation Region : Plots for different variables
 }
 \end{frame}
 
-\begin{frame}{VRjet1}
+\begin{frame}{Validation Region : Plots for different variables (VRjet1)}
 \Wider{
 \includegraphics[width=0.4\textwidth]{data/plot/VR/all_Njets_VRjet1.eps}
 }
 \end{frame}
 
-\begin{frame}{VRjet23}
+\begin{frame}{Validation Region : Plots for different variables (VRjet23)}
 \Wider{
 \includegraphics[width=0.4\textwidth]{data/plot/VR/all_DEtall_VRjet23.eps}
 \includegraphics[width=0.4\textwidth]{data/plot/VR/all_Met_VRjet23.eps} \\
@@ -1567,7 +1695,7 @@ Validation Region : Plots for different variables
 }
 \end{frame}
 
-\begin{frame}{VRjet23}
+\begin{frame}{Validation Region : Plots for different variables (VRjet23)}
 \Wider{
 \includegraphics[width=0.4\textwidth]{data/plot/VR/all_Mt2_VRjet23.eps}
 \includegraphics[width=0.4\textwidth]{data/plot/VR/all_Mt_VRjet23.eps} \\
@@ -1576,7 +1704,7 @@ Validation Region : Plots for different variables
 }
 \end{frame}
 
-\begin{frame}{VRjet23}
+\begin{frame}{Validation Region : Plots for different variables (VRjet23)}
 \Wider{
 \includegraphics[width=0.4\textwidth]{data/plot/VR/all_Njets_VRjet23.eps}
 }
