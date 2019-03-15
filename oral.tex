@@ -90,7 +90,7 @@ Introduction
 \begin{frame}{Standard Model : Success}
 \begin{itemize}
 \item SM gained huge successes in providing experimental predictions.
-\item With the W boson explaining the beta decay, the existence of the neutral Z boson was predicted and discovered later in 1973.
+\item With the W boson explaining the beta decay, the existence of the neutral Z boson was predicted and discovered later in 1983.
 \item The existence of a third generation of quarks is predicted in 1973 and top quark was discovered in 1995.
 \item Higgs boson is proposed in 1964 and discovered recently in 2012.
 \end{itemize}
@@ -104,7 +104,7 @@ Introduction
 \item Why the weak force is stronger than the gravity by $10^{24}$.
 \item At very high energy scale ($\sim 10^{19}$ GeV), the Higgs boson mass is strongly sensitive to quantum corrections.
 \end{itemize}
-\item The EM force and the weak force were unified in 1961, but the electroweak interaction and the strong interaction are not unified in SM.
+\item The electroweak interaction and the strong interaction have not been unified in SM.
 \end{itemize}
 \end{frame}
 
@@ -182,7 +182,7 @@ Charged EW Bosons & W Boson        & $W^+$, $W^-$  & $1$ & +1
 
 \begin{frame}{Supersymmetry : R-parity}
 \begin{itemize}
-\item A quantum number R-parity is introduced to prevent the proton decay. All SM particles have R-parity $+1$, while all SUSY particles have R-parity $-1$.
+\item In order to agree with the experimental result that we never observe the proton decay, a quantum number R-parity is introduced. All SM particles have R-parity $+1$, while all SUSY particles have R-parity $-1$.
 \item If the R-parity is conserved, the lightest supersymmetric particle (LSP) cannot decay (stable).
 \item If the LSP is electrically neutral and interacts with matter only by the weak interaction and gravity, it could be a candidate for dark matter, for example the lightest neutralinos $\tilde{\chi}_1^0$.
 \item In this thesis, the R-parity is assumed to be conserved, and the lightest neutralino $\tilde{\chi}_1^0$ is assumed to be the LSP.
@@ -192,8 +192,8 @@ Charged EW Bosons & W Boson        & $W^+$, $W^-$  & $1$ & +1
 
 \begin{frame}{Our Signal Scenario : Motivation}
 \begin{itemize}
-\item In the recent searches for the squarks ($\tilde{q}$) and gluinos ($\tilde{g}$), the masses of gluinos and the first and second generation squarks are suggested to be larger than 1 TeV, while the masses of the third generation squarks are still allowed to be below 1 TeV.
-\item In this case, the direct pair production of $\tilde{\chi}_1^\pm$  and $\tilde{\chi}_2^0$ may be the dominant SUSY production process at the LHC, if the masses of them are below 1 TeV.
+\item In the recent searches for SUSY particles involved in strong interaction, their masses are suggested to be larger than 1 TeV.
+\item In this case, the direct pair production of SUSY electroweak boson $\tilde{\chi}_1^\pm$  and $\tilde{\chi}_2^0$ may be the dominant SUSY production process at the LHC, if their masses are below 1 TeV.
 \item In this thesis, their masses are assumed to be the same, and denoted by $m_{\tilde{\chi}_1^\pm , \tilde{\chi}_2^0}$.
 \end{itemize}
 \begin{figure}
@@ -223,7 +223,7 @@ $\tilde{\chi}_2^0 \rightarrow h + \tilde{\chi}_1^0$
 \begin{itemize}
 \item The W boson will further decay to one lepton (electron or muon) and one neutrino with the SM branching ratio : \\
 $W{^\pm} \rightarrow \ell^{\pm} + \nu$
-\item The Higgs boson $h$ will eventually decay to one lepton (electron or muon), quarks (i.e. jets) and neutrino(s) by various decay modes with the SM branching ratios. (For example, $h \rightarrow W^{+} W^{-} $ and $h \rightarrow \tau^{+} \tau^{-} $)
+\item The Higgs boson $h$ will eventually decay to one lepton (electron or muon), quarks (i.e. jets) and neutrino(s) by various decay modes with the SM branching ratios. (For example, $h \rightarrow W^{+} W^{-} $)
 \item From now on, a lepton $\ell^{\pm}$ only refer to an electron or muon, but not $\tau$ lepton or neutrino.
 \end{itemize}
 \begin{figure}
@@ -328,7 +328,6 @@ p_T = \sqrt{p_x^2 + p_y^2}
 \begin{equation*}
 \eta = - \ln \Big( \tan \frac{\theta}{2} \Big)
 \end{equation*}
-\item The values of pseudorapidity $\eta$ have reflective symmetry about the x-y plane. (Negetive value for $90^{\circ} <\theta< 180^{\circ}$)
 \item The angle separation $\Delta R$ of two particles is defined as:
 \begin{equation*}
 \Delta R = \sqrt{(\Delta \phi) ^2 + (\Delta \eta) ^2}  = \sqrt{(\phi_2 -\phi_1) ^2 + (\eta_2 - \eta_1) ^2}
@@ -382,22 +381,8 @@ Charge Flip Background
 \end{figure}
 \end{frame}
 
-\begin{frame}{Charge Flip Background : charge flip rate}
-\begin{itemize}
-\item The probability that the charge of an electron is flipped, called the charge flip rate $\epsilon(p_T, |\eta|)$, depends on the $p_T$ and $|\eta|$ of the electron.
-\item The charge flip rates are measured by the likelihood method described in the next slide.
-\item After getting the charge flip rates, the charge flip background can be found by applying the charge flip rates on the OS events in data.
-\item The probability that an OS data event becomes a SS data event, which is the charge of one of the leptons is flipped, is given by
-\begin{align*}
-& P(p^1_T, |\eta^1|, p^2_T, |\eta^2|) \\
-&= [1 - \epsilon(p^1_T, |\eta^1|)] \cdot \epsilon(p^2_T, |\eta^2|) + [1 - \epsilon(p^2_T, |\eta^2|)] \cdot \epsilon(p^1_T, |\eta^1|) \\
-&= (1 - \epsilon_1)\epsilon_2 + (1 - \epsilon_2)\epsilon_1
-\end{align*}
-\item It is called the charge flip weight. The charge flip weight is applied on all OS data events to estimate the charge flip background.
-\end{itemize}
-\end{frame}
 
-\begin{frame}{Charge Flip Background : Likelihood Method}
+\begin{frame}{Charge Flip Background : Charge Flip Rate}
 \begin{itemize}
 \item The probability that the charge of an electron is flipped is denoted by the charge-flip rate $\epsilon_i$, where the index i represents the dependency on the $p_T$ and $|\eta|$ of the electron.
 \item The value of index i is defined by the index of the following grids in the table.
@@ -420,9 +405,18 @@ $|\eta|$ & 0, 0.50, 1.00, 1.37, 1.52, 1.80, 2.00, 2.47 \\
 \begin{equation*}
 p_{ij} = (1 - \epsilon_i)\epsilon_j + (1 - \epsilon_j)\epsilon_i
 \end{equation*}
+\item It is called the charge flip weight.
 \end{itemize}
 
 \end{frame}
+
+\begin{frame}{Charge Flip Background : Charge Flip Rate}
+\begin{itemize}
+\item The charge flip rates are measured by the likelihood method described in the next slide.
+\item After getting the charge flip rates, the charge flip background can be estimated by applying the charge flip weights on all OS events in data.
+\end{itemize}
+\end{frame}
+
 
 \begin{frame}{Charge Flip Background : Likelihood Method}
 \begin{itemize}
@@ -475,16 +469,16 @@ The source of the fake lepton is that other object (like jet and photon) is mis-
 \begin{itemize}
 \item Heavy-flavor fakes:
 \begin{itemize}
-\item It comes from semi-leptonic decays of heavy-quark (b or c) hadrons in jets.
+\item It comes from semi-leptonic decays of heavy-quark (b or c) hadrons.
 \end{itemize}
 \item Light-flavor fakes:
 \begin{itemize}
-\item It comes from semi-leptonic decays of light-quark hadrons in jets. OR
-\item It is due to mis-reconstructions of jets with light-quark hadrons.
+\item It comes from semi-leptonic decays of light-quark hadrons. \\ OR
+\item It is due to mis-reconstructions of light-quark hadrons.
 \end{itemize}
 \item photon conversion:
 \begin{itemize}
-\item It comes from the pair production from a photon
+\item It comes from the pair production of leptons from a photon
 \end{itemize}
 \end{itemize}
 \end{frame}
@@ -655,25 +649,6 @@ N_{LL}
 \end{equation*}
 \end{frame}
 
-\begin{frame}{Fake Lepton Background : Results of Real Efficiencies}
-The method for measuring the real efficiencies is described in the backup slides.
-\begin{figure}
-\begin{columns}
-
-\begin{column}{0.5\textwidth}
-\includegraphics[width=\textwidth]{data/plot/plotRealEffs/El_hEff.eps}
-\caption{Electron real efficiency}
-\end{column}
-
-\begin{column}{0.5\textwidth}
-\includegraphics[width=\textwidth]{data/plot/plotRealEffs/Mu_hEff.eps}
-\caption{Muon real efficiency}
-\end{column}
-
-\end{columns}
-\end{figure}
-\end{frame}
-
 \begin{frame}{Fake Lepton Background : Results of Fake Efficiencies}
 The method for measuring the fake efficiencies is described in the backup slides.
 \begin{figure}
@@ -681,12 +656,12 @@ The method for measuring the fake efficiencies is described in the backup slides
 
 \begin{column}{0.5\textwidth}
 \includegraphics[width=\textwidth]{data/plot/getFakeEffs/El_hEff.eps}
-\caption{Electron real efficiency}
+\caption{Electron fake efficiency}
 \end{column}
 
 \begin{column}{0.5\textwidth}
 \includegraphics[width=\textwidth]{data/plot/getFakeEffs/Mu_hEff.eps}
-\caption{Muon real efficiency}
+\caption{Muon fake efficiency}
 \end{column}
 
 \end{columns}
@@ -719,23 +694,10 @@ Estimation of the signal sensitivity
 \begin{frame}{Signal Region : Strategy}
 In order to extract the signal, the following strategies are used.
 \begin{itemize}
-\item A hardware trigger system are used when taking the data (online), to only store the interested events in the disk. \\
+\item A trigger system are used when taking the data (online), to only store the interested events in the disk. \\
 (40 MHz $\rightarrow$ 100 kHz $\rightarrow$ 1 kHz)
 \item Some discriminant variables (based on the kinematic variables) are defined, to help distinguish the signal and the background.
 \item Two dedicated signal regions are defined (SRjet1 and SRjet23) based on the discriminant variables, to maximize the signal sensitivity.
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Signal Region : discriminant variable}
-\begin{itemize}
-\item The missing momentum ${\bf p}^{\text{miss}}$ due to undetected particle is defined by
-\begin{equation*}
-{\bf p}^{\text{miss}} = - \sum_{\text{All detected particles}}{\bf p}
-\end{equation*}
-\item The transverse missing erengy, denoted by $E_{T}^{\text{miss}}$ or MET, is defined by
-\begin{equation*}
-E_{T}^{\text{miss}} = |{\bf p}_T^{\text{miss}}| = \sqrt{ (p_x^{\text{miss}})^2 + (p_y^{\text{miss}})^2}
-\end{equation*}
 \end{itemize}
 \end{frame}
 
@@ -754,6 +716,19 @@ m_{\text{eff}} = p_T^1 + p_T^2 + E_T^{\text{miss}} + \sum_{\text {signal jets}} 
 \item $m_{ll}$: The invariant mass of the 4-momentum sum of the two leptons
 \begin{equation*}
 (m_{ll})^2 = (p_1 + p_2)^2
+\end{equation*}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Signal Region : discriminant variable}
+\begin{itemize}
+\item The missing momentum ${\bf p}^{\text{miss}}$ due to undetected particles is defined by
+\begin{equation*}
+{\bf p}^{\text{miss}} = - \sum_{\text{All detected particles}}{\bf p}
+\end{equation*}
+\item $E_{T}^{\text{miss}}$ or MET: The transverse missing erengy is designed to estimate the missing energy from undetected particles.
+\begin{equation*}
+E_{T}^{\text{miss}} = |{\bf p}_T^{\text{miss}}| = \sqrt{ (p_x^{\text{miss}})^2 + (p_y^{\text{miss}})^2}
 \end{equation*}
 \end{itemize}
 \end{frame}
@@ -818,10 +793,8 @@ The following cuts are the pre-selection, before the signal region optimization.
 
 \begin{frame}{Signal Region : Pre-selection plots}
 \Wider{
-\includegraphics[width=0.4\textwidth]{pt1_SR_SS_jet1_pre}
-\includegraphics[width=0.4\textwidth]{pt1_SR_SS_jet23_pre} \\
-\includegraphics[width=0.4\textwidth]{MET_SR_SS_jet1_pre}
-\includegraphics[width=0.4\textwidth]{MET_SR_SS_jet23_pre}
+\includegraphics[width=0.49\textwidth]{MET_SR_SS_jet1_pre}
+\includegraphics[width=0.49\textwidth]{MET_SR_SS_jet23_pre}
 }
 \end{frame}
 
@@ -863,10 +836,8 @@ The following cuts are the pre-selection, before the signal region optimization.
 
 \begin{frame}{Signal Region : N-1 plots}
 \Wider{
-\includegraphics[width=0.4\textwidth]{MET_SR_SS_jet1_opt_0}
-\includegraphics[width=0.4\textwidth]{MET_SR_SS_jet23_opt_0} \\
-\includegraphics[width=0.4\textwidth]{mTtwo_SR_SS_jet1_opt_0}
-\includegraphics[width=0.4\textwidth]{mTtwo_SR_SS_jet23_opt_0}
+\includegraphics[width=0.49\textwidth]{mTtwo_SR_SS_jet1_opt_0}
+\includegraphics[width=0.49\textwidth]{mTtwo_SR_SS_jet23_opt_0}
 }
 \end{frame}
 
@@ -894,22 +865,10 @@ There are three requirements for the validation regions:
 
 \begin{frame}{Validation Region: Method}
 \begin{itemize}
-\item VRjet1
-\begin{itemize}
-\scriptsize
-\item invert the $E_T^{\text{miss}}$ cut, to make it orthogonal to SR.
-\item adjust $E_T^{\text{miss}}$ lower cut to 70 GeV, to have similar background composition.
-\item invert the $m_{lj}$ cut, to reduce the signal.
-\item remove the $m_{\text{eff}}$ and $m_{T2}$ cuts, to increase statistics.
-\end{itemize}
-\item VRjet23
-\begin{itemize}
-\scriptsize
-\item invert the $m_{T}$ cut, to make it orthogonal to SR.
-\item adjust $m_{T}$ lower cut to 65 GeV, to have similar background composition.
-\item invert the $m_{ljj}$ cut, to reduce the signal.
-\item remove the $m_{T2}$ cut, to increase statistics.
-\end{itemize}
+\item In order to make it orthogonal to SR, $E_T^{\text{miss}}$/$m_{T}$ cut is inverted.
+\item Adjust its lower cut, to have a similar background composition.
+\item Invert the $m_{lj}$/$m_{ljj}$ cut, to reduce the signal.
+\item Remove $m_{T2}$ and $m_{\text{eff}}$ cuts, to increase statistics.
 \end{itemize}
 \begin{table}[htbp]
 \begin{center}
@@ -970,9 +929,42 @@ Results
 \end{center}
 \end{frame}
 
+\begin{frame}{Results: Observed Events}
+\begin{itemize}
+\item The observed events are consistent with the SM.
+\end{itemize}
+\begin{table}[htbp]
+\centering
+
+\begin{columns}
+
+\begin{column}{0.5\textwidth}
+\begin{tabular}{|c|c|c|}
+\hline
+& Number of events \\
+\hline
+\input{data/plot/plot_SR/SR_SS_jet1_opt_0_3dp_obs.tex}
+\end{tabular}
+\caption{Yields in SRjet1}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+\begin{tabular}{|c|c|c|}
+\hline
+& Number of events \\
+\hline
+\input{data/plot/plot_SR/SR_SS_jet23_opt_0_3dp_obs.tex}
+\end{tabular}
+\caption{Yields in SRjet23}
+\end{column}
+
+\end{columns}
+\end{table}
+\end{frame}
+
 \begin{frame}{Results: Exclusion Limits}
 \begin{itemize}
-\item Tow SR are combined to calculate the exclusion limits.
+\item New exclusion limits were set, by combining the two SR.
 \item The contour line is in 95\% confidence level.
 \end{itemize}
 \begin{figure}
@@ -1413,6 +1405,25 @@ The real eff is calculated by
 \begin{equation*}
 \epsilon = \frac{N_{\text{tight}}}{N_{\text{loose}}}
 \end{equation*}
+\end{frame}
+
+\begin{frame}{Fake Lepton Background : Results of Real Efficiencies}
+The method for measuring the real efficiencies is described in the backup slides.
+\begin{figure}
+\begin{columns}
+
+\begin{column}{0.5\textwidth}
+\includegraphics[width=\textwidth]{data/plot/plotRealEffs/El_hEff.eps}
+\caption{Electron real efficiency}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+\includegraphics[width=\textwidth]{data/plot/plotRealEffs/Mu_hEff.eps}
+\caption{Muon real efficiency}
+\end{column}
+
+\end{columns}
+\end{figure}
 \end{frame}
 
 \begin{frame}
