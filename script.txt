@@ -1,0 +1,47 @@
+page 1
+I would like to talk about a search ....
+
+page 2
+I will first talk about the theoretical introduction.
+And then, the experimental setup.
+The background in our analysis, mainly focusing on the reducible background, Charge Flip Background and Fake Lepton Background.
+Signal Region, Validation Region, Results
+
+page 4
+SM is the current mainstream theory to describe the fundamental particles and their interactions.
+This is the periodic table for all fundamental particles in SM.
+On the left side, they are the matter particles, quarks and leptons. In the middle, they are force carrier, the gauge boson. On the right side, we have the recently discovered Higgs boson.
+
+page 5
+This is the fundamental interactions in SM.
+Both the Z and W boson can decay leptonically and hadronically.
+For Z boson leptonic dacay, the Z boson can decay into 2 leptons. For example, decay to a pair of electron and positron, or a pair of muon and anti-muon.
+For Z boson hadronic dacay, The Z boson can decay into 2 quarks.
+
+Similarly, for W boson hadronic dacay, the W boson can decay into 2 quarks.
+For W boson leptonic dacay, the W boson can decay into one charged lepton and one neutrino.
+
+The higgs boson can decay into a pair of W bosons, or a pair of Z bosons.
+
+page 6
+Here are 3 examples
+
+page 7
+Although SM gained a huge success, it still has some limitations.
+
+page 8
+So, we need theories for new physics, and supersymmetry is one of the most promising theory.
+Supersymmetry(SUSY) is a theoretical extension of the Standard Model.
+It can solve the problems in the previous slide.
+
+page 14
+The W boson will decay leptonically to one lepton (electron or muon) and one neutrino.
+
+
+why we need pt and eta(22)
+how straight track measure sign of charge(26)
+definition of pt and eta before charge flip rate
+ideas is to use Z->ee(29)
+high another plot (47)
+right side of the dashed line (50)
+We have combined the two SR (57)
