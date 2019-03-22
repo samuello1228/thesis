@@ -33,12 +33,12 @@ The University of Hong Kong
 \begin{itemize}
 \item Introduction
 \item Experimental Setup
-\item Background
+\item Background Estimation
 \begin{itemize}
 \item Charge Flip Background
 \item Fake Lepton Background
 \end{itemize}
-\item Signal Region
+\item Optimization for Signal Selection
 \item Validation Region
 \item Results
 \end{itemize}
@@ -62,29 +62,6 @@ Introduction
 \includegraphics[width=0.5\textwidth]{data/photo/theory/SM_particles.png}
 \caption{The ``periodic'' table for all fundamental particles in SM.}
 \end{figure}
-\end{frame}
-
-\begin{frame}{Standard Model : Fundamental Interaction}
-\begin{columns}
-
-\begin{column}{0.5\textwidth}
-\begin{figure}
-\centering
-\includegraphics[width=\textwidth]{data/photo/theory/vertices_SM_circle.png}
-\caption{All allowed fundamental Feynman vertices in SM, except higgs-related vertices.}
-\end{figure}
-
-\end{column}
-
-\begin{column}{0.5\textwidth}
-\begin{figure}
-\centering
-\includegraphics[width=\textwidth]{data/photo/theory/vertices_higgs_circle.png}
-\caption{All allowed fundamental higgs-related Feynman vertices in SM.}
-\end{figure}
-\end{column}
-
-\end{columns}
 \end{frame}
 
 \begin{frame}{Standard Model : Success}
@@ -114,7 +91,7 @@ SM gained a huge success in predicting experimental results.
 \item Supersymmetry(SUSY) is a theoretical extension of the Standard Model.
 \item It can solve the hierarchy problem of Higgs mass.
 \item It can explain the nature of dark matter.
-\item It unifies the electroweak interaction and the strong interaction at $\sim 10^{16}$ GeV. The gauge couplings change with the energy scale.
+\item It unifies the electroweak interaction and the strong interaction at $\sim 10^{16}$ GeV.
 \end{itemize}
 \begin{figure}
 \centering
@@ -180,11 +157,12 @@ Charged EW Bosons & W Boson        & $W^+$, $W^-$  & $1$ & +1
 
 \begin{frame}{Supersymmetry : R-parity}
 \begin{itemize}
-\item In order to avoid the proton decay, a quantum number R-parity is introduced. All SM particles have R-parity $+1$, while all SUSY particles have R-parity $-1$.
+\item All SM particles have R-parity $+1$, while all SUSY particles have R-parity $-1$.
 \item If the R-parity is conserved, the lightest SUSY particle (LSP) cannot decay (stable).
-\item If the LSP is electrically neutral and interacts with matter only by the weak interaction and gravity, it could be a candidate for dark matter, for example the lightest neutralinos $\tilde{\chi}_1^0$.
-\item In this thesis, the R-parity is assumed to be conserved, and the lightest neutralino $\tilde{\chi}_1^0$ is assumed to be the LSP.
-\item Due to the conservation of R-parity, the SUSY particles can only be pair-produced, and will eventually decay into SM particles and the lightest neutralino $\tilde{\chi}_1^0$ (i.e. LSP).
+\item If the LSP is neutral and interacts with matter only by the weak interaction and gravity, it could be a candidate for dark matter, for example the lightest neutralinos $\tilde{\chi}_1^0$.
+\item The R-parity is assumed to be conserved.
+\item Due to the conservation of R-parity, the SUSY particles can only be pair-produced, and will eventually decay into SM particles and the LSP.
+\item The lightest neutralino $\tilde{\chi}_1^0$ is assumed to be the LSP.
 \end{itemize}
 \end{frame}
 
@@ -202,44 +180,16 @@ Charged EW Bosons & W Boson        & $W^+$, $W^-$  & $1$ & +1
 
 \begin{frame}{Our Signal Scenario : Decay Processes}
 \begin{itemize}
-\item If all the slepton ($\tilde{l}$) are heavier than $\tilde{\chi}_1^\pm$ and $\tilde{\chi}_2^0$ :
-\begin{enumerate}
-\item $\tilde{\chi}_1^\pm$ will decay to W boson and $\tilde{\chi}_1^0$ : \\
-$\tilde{\chi}_1^\pm \rightarrow W^{\pm} + \tilde{\chi}_1^0$
-\item $\tilde{\chi}_2^0$ will decay to the lightest Higgs boson $h$ and $\tilde{\chi}_1^0$ : \\
-$\tilde{\chi}_2^0 \rightarrow h + \tilde{\chi}_1^0$
-\end{enumerate}
+\item $\tilde{\chi}_1^\pm \rightarrow W^{\pm} + \tilde{\chi}_1^0$, $W{^\pm} \rightarrow \ell^{\pm} + \nu$
+\item $\tilde{\chi}_2^0 \rightarrow h + \tilde{\chi}_1^0$, $h \rightarrow \ell^{\pm} + \nu + \text{quarks}$
+\item Two same-sign(SS) leptons (electron or muon)
+\item A large missing energy is expected
+\item Each quark will eventually become a particle shower within a narrow cone, called a jet, by the process of hadronization.
 \end{itemize}
 \begin{figure}
 \centering
 \includegraphics[width=0.3\textwidth]{data/photo/theory/signal_feynman.png}
 \caption{The Feynman diagram for our Wh same-sign signal scenario.}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Our Signal Scenario : Decay Processes}
-\begin{itemize}
-\item The W boson will decay leptonically to one lepton (electron or muon) and one neutrino with the SM branching ratio : \\
-$W{^\pm} \rightarrow \ell^{\pm} + \nu$
-\item The Higgs boson $h$ will eventually decay to one lepton (electron or muon), quarks (i.e. jets) and neutrino(s) by various decay modes with the SM branching ratios. (For example, $h \rightarrow W^{+} W^{-} $ and $h \rightarrow \tau^{+} \tau^{-} $)
-\item From now on, a lepton $\ell^{\pm}$ only refer to an electron or muon, but not $\tau$ lepton or neutrino.
-\end{itemize}
-\begin{figure}
-\centering
-\includegraphics[width=0.3\textwidth]{data/photo/theory/signal_feynman.png}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Our Signal Scenario : Signal Signature in the Final State}
-\begin{itemize}
-\item In this thesis, we search for two same-sign(SS) leptons, in order to reduce the SM backgrounds.
-\item A large missing energy is expected, due to the undetected neutralinos $\tilde{\chi}_1^0$ and neutrinos $\nu$.
-\item Each quark will eventually become a particle shower within a narrow cone, called a jet, by the process of hadronization.
-\item The mass difference between the two lightest neutralinos ($m_{\tilde{\chi}_2^0} - m_{\tilde{\chi}_1^0}$) should be larger than the Higgs mass ($\sim$ 125 GeV).
-\end{itemize}
-\begin{figure}
-\centering
-\includegraphics[width=0.3\textwidth]{data/photo/theory/signal_feynman.png}
 \end{figure}
 \end{frame}
 
@@ -265,7 +215,7 @@ Experimental Setup
 \item The Large Hadron Collider (LHC) is the most powerful circular particle accelerator in the world.
 \item Its circumference is 27 km.
 \item Two beams of protons will be accelerated in opposite direction to centre-of-mass energy 13 TeV.
-\item They will be finally collided at the ATLAS detector.
+\item One of the collision point is at the ATLAS detector.
 \end{itemize}
 \begin{figure}
 \centering
@@ -296,45 +246,31 @@ Experimental Setup
 \end{frame}
 
 \begin{frame}{Basic kinematic variables}
-\begin{itemize}
-\item The z-axis is in the proton beam direction.
-\item The direction of the momentum $\bf{p}$ of the particle can by specified by the azimuthal angle $\phi$ and the polar angle $\theta$, as usual in the spherical coordinate system.
-\end{itemize}
-\begin{figure}
-\centering
-\includegraphics[width=0.4\textwidth]{data/photo/detector/impact_parameter.png}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Basic kinematic variables}
-\begin{itemize}
-\item $p_T$: It is designed to estimate the momentum of the lepton on the x-y plane. The transverse momentum $\bf{p}_T$ is the projection of $\bf{p}$ onto the x-y plane. The magnitude of $\bf{p}_T$ is denoted by $p_T$
 \begin{equation*}
 p_T = \sqrt{p_x^2 + p_y^2}
 \end{equation*}
-\item The lepton with larger $p_T$ is called the leading lepton, and the lepton with smaller $p_T$ is called the sub-leading lepton. $p_T^1$ is the $p_T$ of the leading lepton. $p_T^2$ is the $p_T$ of the sub-leading lepton.
-\end{itemize}
-\begin{figure}
-\centering
-\includegraphics[width=0.4\textwidth]{data/photo/detector/impact_parameter.png}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Basic kinematic variables}
-\begin{itemize}
-\item The pseudorapidity $\eta$ is defined by
+The pseudorapidity $\eta$ is defined by
 \begin{equation*}
 \eta = - \ln \Big( \tan \frac{\theta}{2} \Big)
 \end{equation*}
-\item It is designed to measure the polar angle $\theta$ of the particle.
-\item The angle separation $\Delta R$ of two particles is defined as:
+The angle separation $\Delta R$ of two particles is defined as:
 \begin{equation*}
 \Delta R = \sqrt{(\Delta \phi) ^2 + (\Delta \eta) ^2}  = \sqrt{(\phi_2 -\phi_1) ^2 + (\eta_2 - \eta_1) ^2}
 \end{equation*}
-\end{itemize}
 \begin{figure}
+\begin{columns}
+
+\begin{column}{0.5\textwidth}
 \centering
-\includegraphics[width=0.3\textwidth]{data/photo/detector/pseudorapidity.png}
+\includegraphics[width=0.7\textwidth]{data/photo/detector/impact_parameter.png}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+\centering
+\includegraphics[width=0.5\textwidth]{data/photo/detector/pseudorapidity.png}
+\end{column}
+
+\end{columns}
 \end{figure}
 \end{frame}
 
@@ -693,8 +629,7 @@ Estimation of the signal sensitivity
 \begin{frame}{Signal Region : Strategy}
 In order to extract the signal, the following strategies are used.
 \begin{itemize}
-\item A trigger system are used when taking the data (online), to only store the interested events in the disk. \\
-(40 MHz $\rightarrow$ 100 kHz $\rightarrow$ 1 kHz)
+\item A trigger system are used when taking the data (online), to only store the interested events in the disk.
 \item Some discriminant variables (based on the kinematic variables) are defined, to help distinguish the signal and the background.
 \item Two dedicated signal regions are defined (SRjet1 and SRjet23) based on the discriminant variables, to maximize the signal sensitivity.
 \end{itemize}
@@ -792,8 +727,8 @@ The following cuts are the pre-selection, before the signal region optimization.
 
 \begin{frame}{Signal Region : Pre-selection plots}
 \Wider{
-\includegraphics[width=0.49\textwidth]{MET_SR_SS_jet1_pre}
-\includegraphics[width=0.49\textwidth]{MET_SR_SS_jet23_pre}
+\includegraphics[width=0.49\textwidth]{meff_SR_SS_jet1_pre}
+\includegraphics[width=0.49\textwidth]{meff_SR_SS_jet23_pre}
 }
 \end{frame}
 
@@ -964,18 +899,8 @@ Results
 \begin{frame}{Results: Exclusion Limits}
 \begin{itemize}
 \item New exclusion limits were set, by combining the two SR.
-\item The contour line is in 95\% confidence level.
-\end{itemize}
-\begin{figure}
-\centering
-\includegraphics[width=0.5\textwidth]{data/plot/HistFitterResults/contourPlotterWhSS_upperLimit.pdf}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Results: Exclusion Limits}
-\begin{itemize}
-\item The exclusion limits for the masses of $\tilde{\chi}_1^\pm$ and $\tilde{\chi}_2^0$ are extended up to 245 GeV, and the exclusion limits for the mass of $\tilde{\chi}_1^0$ are extended up to 40 GeV.
 \item This means that the mass points inside the contour line are rejected with 95\% confidence level.
+\item The exclusion limits for the masses of $\tilde{\chi}_1^\pm$ and $\tilde{\chi}_2^0$ are extended up to 245 GeV, and the exclusion limits for the mass of $\tilde{\chi}_1^0$ are extended up to 40 GeV.
 \end{itemize}
 \begin{figure}
 \centering
@@ -985,7 +910,7 @@ Results
 
 \begin{frame}{Conclusion}
 \begin{itemize}
-\item By using the ATLAS data with total integrated luminosity 36.1 fb$^{-1}$, we searched for the electroweak pair production of a chargino and a neutralino
+\item By using the ATLAS 2015 and 2016 data with total integrated luminosity 36.1 fb$^{-1}$, we searched for the electroweak pair production of a chargino and a neutralino
 ($p + p \rightarrow \tilde{\chi}_1^\pm + \tilde{\chi}_2^0$), with the Wh channel $\tilde{\chi}_1^\pm \rightarrow \tilde{\chi}_1^0 + W$ and $\tilde{\chi}_2^0 \rightarrow \tilde{\chi}_1^0 + h$, and the same-sign channel.
 \item The numbers of observed events in data were consistent with the prediction in the SM.
 \item The exclusion limits for the masses of $\tilde{\chi}_1^\pm$ and $\tilde{\chi}_2^0$ are extended up to 245 GeV, and the exclusion limits for the mass of $\tilde{\chi}_1^0$ are extended up to 40 GeV, with 95\% confidence level.
@@ -1005,6 +930,29 @@ Thank You
 \huge
 Backup
 \end{center}
+\end{frame}
+
+\begin{frame}{Standard Model : Fundamental Interaction}
+\begin{columns}
+
+\begin{column}{0.5\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{data/photo/theory/vertices_SM_circle.png}
+\caption{All allowed fundamental Feynman vertices in SM, except higgs-related vertices.}
+\end{figure}
+
+\end{column}
+
+\begin{column}{0.5\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{data/photo/theory/vertices_higgs_circle.png}
+\caption{All allowed fundamental higgs-related Feynman vertices in SM.}
+\end{figure}
+\end{column}
+
+\end{columns}
 \end{frame}
 
 \subsection{Supersymmetry : R-parity}
