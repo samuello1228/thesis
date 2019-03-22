@@ -37,11 +37,84 @@ It can solve the problems in the previous slide.
 page 14
 The W boson will decay leptonically to one lepton (electron or muon) and one neutrino.
 
+page 18
+We will use the Large Hadron Collider to accelerate protons.
 
-why we need pt and eta(22)
-how straight track measure sign of charge(26)
-definition of pt and eta before charge flip rate
-ideas is to use Z->ee(29)
+page 19
+This the side view for the whole ATLAS detector. It is 25 tall and 44m long.
+
+page 20
+The inner detector is inside a strong magnetic field by a solenoid magnet.
+The orange one is the electromagnetic calorimeter, and the blue one is the hadronic calorimeter.
+Finally, the muon spectrometer is in the outermost part.
+We can distinguish different types of particle by their signatures in different parts of the detector.
+
+page 21
+I will talk about some basic kinematic variables in the detector.
+First, we will define the z-axis is in the proton beam direction.
+Then, we will find the nearest point of track to the z-axis.
+The momentum of the particle is defined by the momentum at this nearest point.
+The direction of the momentum ...
+
+page 23
+delta R is invariant under the Lorentz boost
+
+page 24
+There are two types of backgrounds: the reducible SM background and irreducible SM background.
+
+page 26
+The first source is due to the material of detector. The blue track is the original track. When electron pass through the material, it will produce bremsstrahlung radiation. The photon will produce a pair of electron and positron. If the track is reconstructed as the orange track, the charge will be flipped.
+The second source is due to the very high velocity of the particle. The track is nearly straight and the direction of the curvature will be easily mis-identified.
+
+page 27
+We defined the charge-flip rate epsilon i by the the probability that the charge of an electron is flipped, where the index i ...
+
+Most of the same-sign charge-flip background is because one of the electron is charge-flipped.
+It may be due to the leading electron or sub-leading electron.
+So, most of the same-sign charge-flip background comes from events with two opposite-sign electrons, with one of the charge is flipped.
+Each OS event will have a probability pij that it becomes a SS event.
+It is called the charge flip weight.
+
+page 29
+I will now talk about how to use likelihood method to measure the charge-flip rate.
+The ideas is to use Z->ee process to make sure the event will have two opposite-sign electrons.
+We select Z->ee process in data by requiring the invariant mass of the two electrons is within the Z mass window 80-100 GeV.
+
+page 30
+and then we convert it into likelihood function by the product of all grid ij.
+taking the negative log
+We know the N and Nss. By minimizing this likelihood over the paremeter epsilon i, the optimized charge-flip rate can be estimated.
+
+page 33
+The fake lepton comes from ...
+
+Finally, the fake lepton can come from the pair production of a photon.
+
+page 34
+By using this notation, we have this matrix equation.
+It describe how the real or fake lepton, convert to the tight and loose lepton.
+We know the number of tight and loose lepton, but we don't know the number of real and fake lepton.
+
+page 35
+But we can find the number of fake lepton by inverting the matrix.
+And then applying the matrix again, we can find the number of tight lepton due to the fake lepton.
+
+page 36
+We can generalize the one-lepton case to the two-leptons case.
+We have this matrix equation.
+
+page 38
+On the left, it is the electron fake efficiency. On the right, it is the muon fake efficiency.
+Different colour correspond to different eta range
+
+page 40
+In this slide, I will do some estimation of the signal sensitivity.
+
+By multipiying these two number, we can get the expected number of signal events in one year.
+
+By calculate the ratio of signal event to all event, we can get the probability to have a signal event.
+
+
 high another plot (47)
 right side of the dashed line (50)
 We have combined the two SR (57)

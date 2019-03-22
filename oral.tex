@@ -308,11 +308,11 @@ Experimental Setup
 
 \begin{frame}{Basic kinematic variables}
 \begin{itemize}
-\item The transverse momentum $\bf{p}_T$ is the projection of $\bf{p}$ onto the x-y plane. The magnitude of $\bf{p}_T$ is denoted by $p_T$
+\item $p_T$: It is designed to estimate the momentum of the lepton on the x-y plane. The transverse momentum $\bf{p}_T$ is the projection of $\bf{p}$ onto the x-y plane. The magnitude of $\bf{p}_T$ is denoted by $p_T$
 \begin{equation*}
 p_T = \sqrt{p_x^2 + p_y^2}
 \end{equation*}
-\item $p_T^1$ and $p_T^2$ are $p_T$ of the two leptons, with $p_T^1 \geq p_T^2$. The lepton with larger $p_T$ is called the leading lepton, while the lepton with smaller $p_T$ is called the sub-leading lepton.
+\item The lepton with larger $p_T$ is called the leading lepton, and the lepton with smaller $p_T$ is called the sub-leading lepton. $p_T^1$ is the $p_T$ of the leading lepton. $p_T^2$ is the $p_T$ of the sub-leading lepton.
 \end{itemize}
 \begin{figure}
 \centering
@@ -326,6 +326,7 @@ p_T = \sqrt{p_x^2 + p_y^2}
 \begin{equation*}
 \eta = - \ln \Big( \tan \frac{\theta}{2} \Big)
 \end{equation*}
+\item It is designed to measure the polar angle $\theta$ of the particle.
 \item The angle separation $\Delta R$ of two particles is defined as:
 \begin{equation*}
 \Delta R = \sqrt{(\Delta \phi) ^2 + (\Delta \eta) ^2}  = \sqrt{(\phi_2 -\phi_1) ^2 + (\eta_2 - \eta_1) ^2}
@@ -389,7 +390,7 @@ Charge Flip Background
 \centering
 \begin{tabular}{|c|c|}
 \hline
-Variable & Boundary of the bins \\
+Variable & Boundary of the grids \\
 \hline
 $p_T$ (GeV) &  25, 60, 90, 130, 150, 1000 \\
 \hline
@@ -410,8 +411,8 @@ p_{ij} = (1 - \epsilon_i)\epsilon_j + (1 - \epsilon_j)\epsilon_i
 
 \begin{frame}{Charge Flip Background : Charge Flip Rate}
 \begin{itemize}
-\item The charge flip rates are measured by the likelihood method described in the next slide.
-\item After getting the charge flip rates, the charge flip background can be estimated by applying the charge flip weights on all OS events in data.
+\item The charge flip background can be estimated by applying the charge flip weights on all OS events in data.
+\item The charge flip rates can be measured by the likelihood method described in the next slide.
 \end{itemize}
 \end{frame}
 
@@ -421,7 +422,7 @@ p_{ij} = (1 - \epsilon_i)\epsilon_j + (1 - \epsilon_j)\epsilon_i
 \item The charge flip rate $\epsilon_i$ is measured by using the data in the control region, within the Z mass window cut of 80-100 GeV.
 \item The events inside the Z mass window is then subtracted by the non-Zee processes, by using the sideband technique.
 \item After the subtraction, the total number of event is denoted by $N^{ij}$, and the number of events with two same-sign leptons is denoted by $N^{ij}_{SS}$.
-\item The expected value of $N^{ij}_{SS}$ is then given by $\lambda = N^{ij}p_{ij}$. And, if $N^{ij}_{SS}$ is described by a Poisson distribution, then
+\item The $N^{ij}_{SS}$ is described by a Poisson distribution with the expected value $\lambda = N^{ij}p_{ij}$
 \end{itemize}
 \begin{equation*}
 P(N^{ij}_{SS} | N^{ij}, \epsilon_i, \epsilon_j) = \frac{(N^{ij}p_{ij})^{N^{ij}_{SS}} e^{-N^{ij}p_{ij}}}{N^{ij}_{SS}!}
@@ -472,7 +473,7 @@ The source of the fake lepton is that other object (like jet and photon) is mis-
 \item Light-flavor fakes:
 \begin{itemize}
 \item leptons from the semi-leptonic decays of light-quark hadrons. \\ OR
-\item It is due to mis-identification of light-quark hadrons.
+\item It is due to the mis-identification of light-quark hadrons itself.
 \end{itemize}
 \item photon conversion:
 \begin{itemize}
@@ -703,11 +704,11 @@ In order to extract the signal, the following strategies are used.
 \begin{itemize}
 \item $n_{\text{jets}}$: Number of signal jets:
 \item $n_{\text{b-jets}}$: Number of $b$-jets (jet from b quark).
-\item $\Delta \eta_{ll}$ is designed to estimate the angle between the two leptons.
+\item $\Delta \eta_{ll}$: It is designed to estimate the angle between the two leptons.
 \begin{equation*}
 \Delta \eta_{ll} = |\eta_{1} - \eta_{2}|
 \end{equation*}
-\item $m_{\text{eff}}$ is designed to estimate the total energy and momentum of the charginos $\tilde{\chi}_1^\pm$ and neutralinos $\tilde{\chi}_2^0$.
+\item $m_{\text{eff}}$: It is designed to estimate the total energy and momentum of the charginos $\tilde{\chi}_1^\pm$ and neutralinos $\tilde{\chi}_2^0$.
 \begin{equation*}
 m_{\text{eff}} = p_T^1 + p_T^2 + E_T^{\text{miss}} + \sum_{\text {signal jets}} p_T
 \end{equation*}
