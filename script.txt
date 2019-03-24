@@ -4,8 +4,10 @@ I would like to talk about a search ....
 page 2
 I will first talk about the theoretical introduction.
 And then, the experimental setup.
-The background in our analysis, mainly focusing on the reducible background, Charge Flip Background and Fake Lepton Background.
-Signal Region, Validation Region, Results
+For the analysis workflow, we first need to understand the background very well, mainly focusing on the reducible background, Charge Flip Background and Fake Lepton Background.
+and then, we need to optimize the Signal Selection
+and check the background in the Validation Region
+Finally, we compare the observed events in the data with the background
 
 page 4
 SM is the current mainstream theory to describe the fundamental particles and their interactions.
@@ -13,60 +15,62 @@ This is the periodic table for all fundamental particles in SM.
 On the left side, they are the matter particles, quarks and leptons. In the middle, they are force carrier, the gauge boson. On the right side, we have the recently discovered Higgs boson.
 
 page 5
-This is the fundamental interactions in SM.
-Both the Z and W boson can decay leptonically and hadronically.
-For Z boson leptonic dacay, the Z boson can decay into 2 leptons. For example, decay to a pair of electron and positron, or a pair of muon and anti-muon.
-For Z boson hadronic dacay, The Z boson can decay into 2 quarks.
-
-Similarly, for W boson hadronic dacay, the W boson can decay into 2 quarks.
-For W boson leptonic dacay, the W boson can decay into one charged lepton and one neutrino.
-
-The higgs boson can decay into a pair of W bosons, or a pair of Z bosons.
-
-page 6
 Here are 3 examples
 
-page 7
+page 6
 Although SM gained a huge success, it still has some limitations.
 
-page 8
+page 7
 So, we need theories for new physics, and supersymmetry is one of the most promising theory.
 Supersymmetry(SUSY) is a theoretical extension of the Standard Model.
 It can solve the problems in the previous slide.
 
-page 14
-The W boson will decay leptonically to one lepton (electron or muon) and one neutrino.
+page 8
+On the left, they are SM particle. and on the right, they are their superpartner.
 
-page 18
+page 10
+In order to avoid the proton decay, a quantum number R-parity is introduced.
+
+page 12
+On the upper branch, the chargino will decay into a W boson and the lightest neutralino. The W boson will decay leptonically to one lepton (electron or muon) and one neutrino.
+
+On the lower branch, the second lightest neutralino will decay into a higgs boson and the lightest neutralino. The higgs boson will eventually decay to one lepton, neutrino and quatks by various decay modes. For example, higgs to WW and higgs to tau tau.
+
+We search for two same-sign leptons (electron or muon)
+
+page 15
 We will use the Large Hadron Collider to accelerate protons.
 
-page 19
-This the side view for the whole ATLAS detector. It is 25 tall and 44m long.
+page 16
+This the side view for the whole ATLAS detector. It is 25m tall and 44m long.
 
-page 20
+page 17
 The inner detector is inside a strong magnetic field by a solenoid magnet.
 The orange one is the electromagnetic calorimeter, and the blue one is the hadronic calorimeter.
 Finally, the muon spectrometer is in the outermost part.
 We can distinguish different types of particle by their signatures in different parts of the detector.
 
-page 21
+page 18
 I will talk about some basic kinematic variables in the detector.
 First, we will define the z-axis is in the proton beam direction.
 Then, we will find the nearest point of track to the z-axis.
 The momentum of the particle is defined by the momentum at this nearest point.
-The direction of the momentum ...
 
-page 23
-delta R is invariant under the Lorentz boost
+The pT is defined by the projection of momentum onto the x-y plane.
 
-page 24
+The direction of the momentum of the particle can by specified by the azimuthal angle phi and the polar angle theta, as usual in the spherical coordinate system.
+The pseudorapidity eta is defined by using the polar angle. You can see how eta depend on the polar angle.
+The angle separation delta R of two particles is defined by the delta phi and delta eta.
+delta R is invariant under the Lorentz boost.
+
+page 19
 There are two types of backgrounds: the reducible SM background and irreducible SM background.
 
-page 26
+page 21
 The first source is due to the material of detector. The blue track is the original track. When electron pass through the material, it will produce bremsstrahlung radiation. The photon will produce a pair of electron and positron. If the track is reconstructed as the orange track, the charge will be flipped.
 The second source is due to the very high velocity of the particle. The track is nearly straight and the direction of the curvature will be easily mis-identified.
 
-page 27
+page 22
 We defined the charge-flip rate epsilon i by the the probability that the charge of an electron is flipped, where the index i ...
 
 Most of the same-sign charge-flip background is because one of the electron is charge-flipped.
@@ -75,46 +79,81 @@ So, most of the same-sign charge-flip background comes from events with two oppo
 Each OS event will have a probability pij that it becomes a SS event.
 It is called the charge flip weight.
 
-page 29
+page 24
 I will now talk about how to use likelihood method to measure the charge-flip rate.
 The ideas is to use Z->ee process to make sure the event will have two opposite-sign electrons.
 We select Z->ee process in data by requiring the invariant mass of the two electrons is within the Z mass window 80-100 GeV.
 
-page 30
+page 25
 and then we convert it into likelihood function by the product of all grid ij.
 taking the negative log
 We know the N and Nss. By minimizing this likelihood over the paremeter epsilon i, the optimized charge-flip rate can be estimated.
 
-page 33
+page 26
+here is the result of charge flip rate. The x-axis is pT of electron and the y-axis is eta of electron. Different colours correspond to different value of charge flip rate.
+You can see that charge flip rate increase with pt and eta.
+
+page 28
 The fake lepton comes from ...
 
 Finally, the fake lepton can come from the pair production of a photon.
 
-page 34
+page 29
 By using this notation, we have this matrix equation.
 It describe how the real or fake lepton, convert to the tight and loose lepton.
 We know the number of tight and loose lepton, but we don't know the number of real and fake lepton.
 
-page 35
+page 30
 But we can find the number of fake lepton by inverting the matrix.
 And then applying the matrix again, we can find the number of tight lepton due to the fake lepton.
 
-page 36
+page 31
 We can generalize the one-lepton case to the two-leptons case.
 We have this matrix equation.
 
-page 38
+page 33
+This is the result for measuring the fake efficiencies.
 On the left, it is the electron fake efficiency. On the right, it is the muon fake efficiency.
-Different colour correspond to different eta range
+The x-axis is pT of the lepton, the y-axis is the fake efficiency.
+Different colour correspond to different eta range.
 
-page 40
+page 35
 In this slide, I will do some estimation of the signal sensitivity.
 
 By multipiying these two number, we can get the expected number of signal events in one year.
 
 By calculate the ratio of signal event to all event, we can get the probability to have a signal event.
 
+page 42
+This is the distribution plot for effective mass.
+On the left, it is for the first SR. On the right, it is for the second SR.
+The x-asix is effective mass. The y-axis is the number of events.
+Different colour correspond to different BG.
+The three dashed line is for MC signal with different mass point.
+If we apply a cut at 260 GeV, a lagre number of BG at left hand side can be reduced.
+By trying different value of the cut, the optimized SR can be found.
 
-high another plot (47)
-right side of the dashed line (50)
-We have combined the two SR (57)
+page 43
+This is the result for the signal optimization. This is the optimizied event selection and the definition of the two signal regions
+
+page 44
+This is the expected yields and sensitivity for the two signal regions.
+On the left column, they are different type of background and tatol BG and different signal mass point.
+You can see that the dominant background is the fake lepton BG and WZ.
+
+page 45
+This is the N-1 plot for mT2 varible.
+This means that the plot in the SR selection except the mT2 cut.
+In this plot, you can see how the mT2 cut discriminate the signal from the background, if we apply a lower cut.
+You can see that on the right side of the cut, the signal to background ratio is higher.
+
+page 49
+This is the yield of validation region. You can see the data and the background agree with other within the uncertainties.
+
+page 51
+This is yield of the two SR. You can see the observed events in the first SR is 2 and the observed events in the second SR is 8.
+The observed events were consistent with the prediction in the SM.
+
+page 52
+Although the observed events were consistent with the prediction in the SM.
+But, new exclusion limits ...
