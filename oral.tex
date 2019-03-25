@@ -320,7 +320,7 @@ Charge Flip Background
 \begin{frame}{Charge Flip Background : Charge Flip Rate}
 \begin{itemize}
 \item The probability that the charge of an electron is flipped is denoted by the charge-flip rate $\epsilon_i$, where the index i represents the dependency on the $p_T$ and $|\eta|$ of the electron.
-\item The value of index i is defined by the index of the following grids in the table.
+\item The value of index i is defined by the index of the following grid splitting.
 
 \begin{table}[htbp]
 \centering
@@ -336,17 +336,18 @@ $|\eta|$ & 0, 0.50, 1.00, 1.37, 1.52, 1.80, 2.00, 2.47 \\
 \caption{Binning in $p_T$ and $|\eta|$ for the charge-flip rate $\epsilon_i$.}
 \end{table}
 
-\item The probability $p_{ij}$ that an OS data event becomes a SS data event (with the leading lepton in bin $i$ and the subleading lepton in bin $j$) is
-\begin{equation*}
-p_{ij} = (1 - \epsilon_i)\epsilon_j + (1 - \epsilon_j)\epsilon_i
-\end{equation*}
-\item It is called the charge flip weight.
 \end{itemize}
 
 \end{frame}
 
 \begin{frame}{Charge Flip Background : Charge Flip Rate}
 \begin{itemize}
+\item Most of the same-sign charge-flip background comes from events with two opposite-sign electrons, with one of the charge is flipped.
+\item The probability $p_{ij}$ that an OS data event becomes a SS data event (with the leading electron in bin $i$ and the sub-leading electron in bin $j$) is
+\begin{equation*}
+p_{ij} = (1 - \epsilon_i)\epsilon_j + (1 - \epsilon_j)\epsilon_i
+\end{equation*}
+\item It is called the charge flip weight.
 \item The charge flip background can be estimated by applying the charge flip weights on all OS events in data.
 \item The charge flip rates can be measured by the likelihood method described in the next slide.
 \end{itemize}
@@ -355,7 +356,7 @@ p_{ij} = (1 - \epsilon_i)\epsilon_j + (1 - \epsilon_j)\epsilon_i
 
 \begin{frame}{Charge Flip Background : Likelihood Method}
 \begin{itemize}
-\item The charge flip rate $\epsilon_i$ is measured by using the data in the control region, within the Z mass window cut of 80-100 GeV.
+\item We select $Z \rightarrow ee$ events in data by requiring the invariant mass of the two electrons is within the Z mass window cut of 80-100 GeV.
 \item The events inside the Z mass window is then subtracted by the non-Zee processes, by using the sideband technique.
 \item After the subtraction, the total number of event is denoted by $N^{ij}$, and the number of events with two same-sign leptons is denoted by $N^{ij}_{SS}$.
 \item The $N^{ij}_{SS}$ is described by a Poisson distribution with the expected value $\lambda = N^{ij}p_{ij}$
@@ -635,7 +636,7 @@ In order to extract the signal, the following strategies are used.
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Signal Region : discriminant variable}
+\begin{frame}{Signal Region : discriminant variables}
 \begin{itemize}
 \item $n_{\text{jets}}$: Number of signal jets:
 \item $n_{\text{b-jets}}$: Number of $b$-jets (jet from b quark).
@@ -654,7 +655,7 @@ m_{\text{eff}} = p_T^1 + p_T^2 + E_T^{\text{miss}} + \sum_{\text {signal jets}} 
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Signal Region : discriminant variable}
+\begin{frame}{Signal Region : discriminant variables}
 \begin{itemize}
 \item The missing momentum ${\bf p}^{\text{miss}}$ due to undetected particles is defined by
 \begin{equation*}
@@ -667,7 +668,7 @@ E_{T}^{\text{miss}} = |{\bf p}_T^{\text{miss}}| = \sqrt{ (p_x^{\text{miss}})^2 +
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Signal Region : discriminant variable}
+\begin{frame}{Signal Region : discriminant variables}
 \begin{itemize}
 \item $m_T$: It is designed to reconstruct the mass of the W boson.
 \begin{equation*}
@@ -684,7 +685,7 @@ m_T( {\bf p}_T, {\bf q}_T ) = \sqrt{ 2 p_T q_T ( 1 - \cos{\Delta\phi} ) }
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Signal Region : discriminant variable}
+\begin{frame}{Signal Region : discriminant variables}
 \begin{itemize}
 \item $m_{lj}$ or $m_{ljj}$: It is designed to reconstruct the mass of the Higgs boson.
 \begin{equation*}
@@ -709,10 +710,10 @@ p_{\ell 2} &\text{ if } \Delta R(p_{\ell 1},p_{\text{jet-system}}) > \Delta R(p_
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Signal Region : Pre-selection}
+\begin{frame}{Signal Region}
 \begin{itemize}
-\item Signal Region(SR) is a set of cuts of the discriminant variables, such that the signal sensitivity is high.
-\item By trying different sets of cuts, the signal region with the highest signal sensitivity can be found. This process is called the signal region optimization.
+\item Signal Region(SR) is defined by applying a set of selections with discriminant variables, such that the signal sensitivity is high.
+\item By trying different sets of selections, the signal region with the highest signal sensitivity can be found. This process is called the signal region optimization.
 \item In the SR optimization, the MC signal and background are used to study the expected sensitivity.
 \end{itemize}
 The following cuts are the pre-selection, before the signal region optimization.
@@ -910,7 +911,7 @@ Results
 
 \begin{frame}{Conclusion}
 \begin{itemize}
-\item By using the ATLAS 2015 and 2016 data with total integrated luminosity 36.1 fb$^{-1}$, we searched for the electroweak pair production of a chargino and a neutralino
+\item By using the ATLAS data with total integrated luminosity 36.1 fb$^{-1}$, we searched for the electroweak pair production of a chargino and a neutralino
 ($p + p \rightarrow \tilde{\chi}_1^\pm + \tilde{\chi}_2^0$), with the Wh channel $\tilde{\chi}_1^\pm \rightarrow \tilde{\chi}_1^0 + W$ and $\tilde{\chi}_2^0 \rightarrow \tilde{\chi}_1^0 + h$, and the same-sign channel.
 \item The numbers of observed events in data were consistent with the prediction in the SM.
 \item The exclusion limits for the masses of $\tilde{\chi}_1^\pm$ and $\tilde{\chi}_2^0$ are extended up to 245 GeV, and the exclusion limits for the mass of $\tilde{\chi}_1^0$ are extended up to 40 GeV, with 95\% confidence level.

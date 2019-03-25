@@ -71,23 +71,22 @@ The first source is due to the material of detector. The blue track is the origi
 The second source is due to the very high velocity of the particle. The track is nearly straight and the direction of the curvature will be easily mis-identified.
 
 page 22
-We defined the charge-flip rate epsilon i by the the probability that the charge of an electron is flipped, where the index i ...
+I will talk about how to estimate the charge flip background
+We first defined the charge-flip rate epsilon i by the the probability that the charge of an electron is flipped, where the index i ...
 
+page 23
 Most of the same-sign charge-flip background is because one of the electron is charge-flipped.
 It may be due to the leading electron or sub-leading electron.
-So, most of the same-sign charge-flip background comes from events with two opposite-sign electrons, with one of the charge is flipped.
-Each OS event will have a probability pij that it becomes a SS event.
-It is called the charge flip weight.
 
 page 24
 I will now talk about how to use likelihood method to measure the charge-flip rate.
-The ideas is to use Z->ee process to make sure the event will have two opposite-sign electrons.
-We select Z->ee process in data by requiring the invariant mass of the two electrons is within the Z mass window 80-100 GeV.
+The ideas is to use a clean Z->ee process in which the charge of the electron is definitely known.
 
 page 25
-and then we convert it into likelihood function by the product of all grid ij.
+and then we convert it into likelihood function by the product over all grids ij.
 taking the negative log
-We know the N and Nss. By minimizing this likelihood over the paremeter epsilon i, the optimized charge-flip rate can be estimated.
+At this point, We know the N and Nss, but we don't know epsilon i.
+By minimizing this likelihood over all possible epsilon i, the optimized charge-flip rate can be estimated.
 
 page 26
 here is the result of charge flip rate. The x-axis is pT of electron and the y-axis is eta of electron. Different colours correspond to different value of charge flip rate.
@@ -129,7 +128,7 @@ This is the distribution plot for effective mass.
 On the left, it is for the first SR. On the right, it is for the second SR.
 The x-asix is effective mass. The y-axis is the number of events.
 Different colour correspond to different BG.
-The three dashed line is for MC signal with different mass point.
+The three dashed line is for MC signal with different mass points.
 If we apply a cut at 260 GeV, a lagre number of BG at left hand side can be reduced.
 By trying different value of the cut, the optimized SR can be found.
 
@@ -143,7 +142,7 @@ You can see that the dominant background is the fake lepton BG and WZ.
 
 page 45
 This is the N-1 plot for mT2 varible.
-This means that the plot in the SR selection except the mT2 cut.
+This means that all the other SR selections are applied, except for mT2
 In this plot, you can see how the mT2 cut discriminate the signal from the background, if we apply a lower cut.
 You can see that on the right side of the cut, the signal to background ratio is higher.
 
