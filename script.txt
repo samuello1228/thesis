@@ -67,6 +67,8 @@ page 19
 There are two types of backgrounds: the reducible SM background and irreducible SM background.
 
 page 21
+inside the magnetic field
+
 The first source is due to the material of detector. The blue track is the original track. When electron pass through the material, it will produce bremsstrahlung radiation. The photon will produce a pair of electron and positron. If the track is reconstructed as the orange track, the charge will be flipped.
 The second source is due to the very high velocity of the particle. The track is nearly straight and the direction of the curvature will be easily mis-identified.
 
