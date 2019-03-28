@@ -143,7 +143,7 @@ By using the equation \ref{equ:significance_def}, an approximately optimal signa
 
 \subsection{Pre-selection}
 \label{sec:SR_pre-selection}
-Before the optimization, the following pre-selection is applied, on top of the selections in section \ref{event_cleaning}.
+Before the optimization, the following pre-selections are applied, on top of the selections in section \ref{event_cleaning}.
 \begin{itemize}
 \item \textbf{Exactly 2 signal leptons} The events which have exactly 2 signal leptons are selected. This means that the two leptons must be signal leptons.
 \item \textbf{Same sign} The electric charges of the two leptons have the same sign. This is what we are looking for, described in section \ref{sec:Wh_signal}.
@@ -157,24 +157,29 @@ For signal, the mass point ($m_{\tilde{\chi}_1^\pm , \tilde{\chi}_2^0}$,$m_{\til
 For the background, MC samples were used for diboson, triboson, ttV and Higgs.
 The fake lepton background estimated by the matrix method in section \ref{sec:fake_background} was used, instead of using the corresponding MC samples, because the fake lepton background are the major background and the corresponding MC sample is not reliable.
 The data sample was also used when calculating the fake lepton background estimation.
-The plots after the pre-selection in section \ref{sec:SR_pre-selection} (except the b-jet veto), but before the optimization, are shown in figures \ref{fig:SRjet1_pre-selection} and \ref{fig:SRjet23_pre-selection}. The lower plots in the figures are the signal significance, after the corresponding cuts for that variables.
+The plots after the pre-selection in section \ref{sec:SR_pre-selection}, but before the optimization, are shown in figures \ref{fig:SRjet1_pre-selection} and \ref{fig:SRjet23_pre-selection}.
 
 \begin{figure}[htpb]
 \centering
-\includegraphics[width=0.45\linewidth]{data/plot/SR_redefinition/SRjet1_step0/leDeltaEtaLep_fakes.pdf}\includegraphics[width=0.45\linewidth]{data/plot/SR_redefinition/SRjet1_step0/lemeff_fakes.pdf}\\
-\includegraphics[width=0.45\linewidth]{data/plot/SR_redefinition/SRjet1_step0/lemet_fakes.pdf}\includegraphics[width=0.45\linewidth]{data/plot/SR_redefinition/SRjet1_step0/lemt2ll_fakes.pdf}\\
-\includegraphics[width=0.45\linewidth]{data/plot/SR_redefinition/SRjet1_step0/lemljj_comb_fakes.pdf}\includegraphics[width=0.45\linewidth]{data/plot/SR_redefinition/SRjet1_step0/lemt_fakes.pdf}\\
-\includegraphics[width=0.45\linewidth]{data/plot/SR_redefinition/SRjet1_step0/nBJet20_MV2c10_fakes.pdf}
-\caption{Distribution of the kinematic variables used for the optimization in SRjet1. The pre-selection, except the b-jet veto, has been applied. Only the statistical uncertainty is considered in the significance calculation.}
+\includegraphics[width=0.45\linewidth]{data/plot/plot_SR/dEta_SR_SS_jet1_pre}
+\includegraphics[width=0.45\linewidth]{data/plot/plot_SR/meff_SR_SS_jet1_pre}\\
+\includegraphics[width=0.45\linewidth]{data/plot/plot_SR/MET_SR_SS_jet1_pre}
+\includegraphics[width=0.45\linewidth]{data/plot/plot_SR/mTtwo_SR_SS_jet1_pre}\\
+\includegraphics[width=0.45\linewidth]{data/plot/plot_SR/mlj_SR_SS_jet1_pre}
+\includegraphics[width=0.45\linewidth]{data/plot/plot_SR/mt1_SR_SS_jet1_pre}\\
+\caption{Distribution of the kinematic variables used for the optimization in SRjet1. The pre-selection has been applied.}
 \label{fig:SRjet1_pre-selection}
 \end{figure}
 
 \begin{figure}[htpb]
 \centering
-\includegraphics[width=0.45\linewidth]{data/plot/SR_redefinition/SRjet23_step0/leDeltaEtaLep_fakes.pdf}\includegraphics[width=0.45\linewidth]{data/plot/SR_redefinition/SRjet23_step0/lemeff_fakes.pdf}\\
-\includegraphics[width=0.45\linewidth]{data/plot/SR_redefinition/SRjet23_step0/lemet_fakes.pdf}\includegraphics[width=0.45\linewidth]{data/plot/SR_redefinition/SRjet23_step0/lemt2ll_fakes.pdf}\\
-\includegraphics[width=0.45\linewidth]{data/plot/SR_redefinition/SRjet23_step0/lemljj_comb_fakes.pdf}\includegraphics[width=0.45\linewidth]{data/plot/SR_redefinition/SRjet23_step0/lemt_fakes.pdf}\\
-\caption{Distribution of the kinematic variables used for the optimization in SRjet23. The pre-selection, except the b-jet veto, has been applied. Only the statistical uncertainty is considered in the significance calculation.}
+\includegraphics[width=0.45\linewidth]{data/plot/plot_SR/dEta_SR_SS_jet23_pre}
+\includegraphics[width=0.45\linewidth]{data/plot/plot_SR/meff_SR_SS_jet23_pre}\\
+\includegraphics[width=0.45\linewidth]{data/plot/plot_SR/MET_SR_SS_jet23_pre}
+\includegraphics[width=0.45\linewidth]{data/plot/plot_SR/mTtwo_SR_SS_jet23_pre}\\
+\includegraphics[width=0.45\linewidth]{data/plot/plot_SR/mlj_SR_SS_jet23_pre}
+\includegraphics[width=0.45\linewidth]{data/plot/plot_SR/mt1_SR_SS_jet23_pre}\\
+\caption{Distribution of the kinematic variables used for the optimization in SRjet23. The pre-selection has been applied.}
 \label{fig:SRjet23_pre-selection}
 \end{figure}
 
@@ -216,10 +221,9 @@ $m_{T2}$ & lower cut \\
 
 \subsection{Results for optimization}
 The final results for the definitions of the two signal regions are shown in table \ref{tab:SR_Def}.
-The yields for different background processes are shown in table \ref{tab:SR_yields}.
+The yields for different background and signal processes are shown in table \ref{tab:SRjet1_yields} and \ref{tab:SRjet23_yields}.
 The N-1 plots for the discriminant variables are shown in figures \ref{fig:SRjet1_N1} and \ref{fig:SRjet23_N1}.
-The N-1 plot means that the cut for that variable is removed, and the lower plot shows the signal significance after applying the cut at that value of that variable.
-Only statistical uncertainties are considered in the significance calculation in the lower plot.
+The N-1 plot means that all other SR selections are applied, except the selection for that variable.
 
 \begin{table}[htpb]
 \centering
@@ -240,51 +244,98 @@ $m_{T2}$ & $\geq 80$ GeV&  $\geq 70$ GeV \\
 
 \begin{table}[htpb]
 \centering
-\begin{tabular}{|r|c|c|}
+\begin{tabular}{|c|c|c|}
 \hline
-Background & SRjet1 & SRjet23 \\
-\hline
-\hline
-Fake leptons & 3.061 & 1.542\\
+& Number of events & Significance \\
 \hline
 \hline
-Total diboson & 2.670 (396) & 2.792 (596)\\
+Fakes & $3.295\pm0.819$ (24) & \\
 \hline
-WW & 0.4061 &  0.6472 \\
-ZZ & 0.0157 &  0.0664 \\
-WZ & 2.2481 &  2.0779 \\
+WZ & $2.176\pm0.398$ (257) & \\
+\hline
+Charge Flip & $0.472\pm0.053$ (265) & \\
+\hline
+Rare & $0.444\pm0.111$ (56) & \\
+\hline
+WW & $0.166\pm0.023$ (67) & \\
+\hline
+$t\bar{t}+V$ & $0.125\pm0.046$ (36) & \\
+\hline
+ZZ & $0.055\pm0.028$ (31) & \\
 \hline
 \hline
-ttV & 0.099 (34) & 0.140 (66)\\
-Triboson & 0.446 (49)& 0.204 (21)\\
-Higgs & 0.010 (5)& 0.229 (21)\\
-Wt & 0.0 & 0.277 (1)\\
-multitop & 0.00 & 0.00 \\
-Drellyan & 0.0 & 0.00\\
+Total BG & $6.733\pm0.921$ (736) & \\
+\hline
+\hline
+(225.0,75.0) & $3.33\pm0.60$ (60) &$ \bf 0.74$\\
+\hline
+(187.5,37.5) & $3.77\pm0.95$ (31) &$0.86$\\
+\hline
+(175.0,0.0) & $4.29\pm0.73$ (36) &$0.98$\\
 \hline
 \end{tabular}
-\caption{The background yields in the two signal regions. The unweighed event are also shown in parentheses.}
-\label{tab:SR_yields}
+\caption{The yields in SRjet1. The unweighed event are also shown in parentheses.}
+\label{tab:SRjet1_yields}
+\end{table}
+
+\begin{table}[htpb]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+& Number of events & Significance \\
+\hline
+\hline
+WZ & $1.849\pm0.273$ (319) & \\
+\hline
+Fakes & $1.765\pm0.709$ (20) & \\
+\hline
+Rare & $0.731\pm0.195$ (48) & \\
+\hline
+WW & $0.514\pm0.037$ (235) & \\
+\hline
+Charge Flip & $0.267\pm0.029$ (274) & \\
+\hline
+$t\bar{t}+V$ & $0.142\pm0.031$ (67) & \\
+\hline
+ZZ & $0.067\pm0.025$ (24) & \\
+\hline
+\hline
+Total BG & $5.335\pm0.787$ (987) & \\
+\hline
+\hline
+(225.0,75.0) & $2.35\pm0.34$ (58) &$0.57$\\
+\hline
+(187.5,37.5) & $4.72\pm0.74$ (47) &$\bf 1.26$\\
+\hline
+(175.0,0.0) & $8.60\pm1.51$ (58) &$2.24$\\
+\hline
+\end{tabular}
+\caption{The yields in SRjet23. The unweighed event are also shown in parentheses.}
+\label{tab:SRjet23_yields}
 \end{table}
 
 \begin{figure}[htpb]
 \centering
-\includegraphics[width=0.45\linewidth]{data/plot/SR_redefinition/SRjet1/hDeltaEtaLep_fakes_upd.pdf}\includegraphics[width=0.45\linewidth]{data/plot/SR_redefinition/SRjet1/lemeff_fakes.pdf}\\
-\includegraphics[width=0.45\linewidth]{data/plot/SR_redefinition/SRjet1/lemet_fakes.pdf}\includegraphics[width=0.45\linewidth]{data/plot/SR_redefinition/SRjet1/lemt2ll_fakes.pdf}\\
-\includegraphics[width=0.45\linewidth]{data/plot/SR_redefinition/SRjet1/hmljj_comb_fakes_upd.pdf}\includegraphics[width=0.45\linewidth]{data/plot/SR_redefinition/SRjet1/lemt_fakes.pdf}\\
-\includegraphics[width=0.3\linewidth]{data/plot/SR_redefinition/SRjet1/nBJet20_MV2c10_fakes.pdf}\includegraphics[width=0.3\linewidth]{data/plot/SR_redefinition/SRjet1/lenJet20_fakes.pdf}\includegraphics[width=0.3\linewidth]{data/plot/SR_redefinition/SRjet1/hnJet20_fakes.pdf}
-\caption{The N-1 plots for SRjet1. Only statistical uncertainties are considered in the significance calculation in the lower plot.}
+\includegraphics[width=0.45\linewidth]{data/plot/plot_SR/dEta_SR_SS_jet1_opt_0}
+\includegraphics[width=0.45\linewidth]{data/plot/plot_SR/meff_SR_SS_jet1_opt_0}\\
+\includegraphics[width=0.45\linewidth]{data/plot/plot_SR/MET_SR_SS_jet1_opt_0}
+\includegraphics[width=0.45\linewidth]{data/plot/plot_SR/mTtwo_SR_SS_jet1_opt_0}\\
+\includegraphics[width=0.45\linewidth]{data/plot/plot_SR/mlj_SR_SS_jet1_opt_0}
+\includegraphics[width=0.45\linewidth]{data/plot/plot_SR/mt1_SR_SS_jet1_opt_0}\\
+\caption{The N-1 plots for SRjet1.}
 \label{fig:SRjet1_N1}
 \end{figure}
 
 
 \begin{figure}[htpb]
 \centering
-\includegraphics[width=0.45\linewidth]{data/plot/SR_redefinition/SRjet23/leDeltaEtaLep_fakes.pdf}\includegraphics[width=0.45\linewidth]{data/plot/SR_redefinition/SRjet23/lemeff_fakes.pdf}\\
-\includegraphics[width=0.45\linewidth]{data/plot/SR_redefinition/SRjet23/lemet_fakes.pdf}\includegraphics[width=0.45\linewidth]{data/plot/SR_redefinition/SRjet23/lemt2ll_fakes.pdf}\\
-\includegraphics[width=0.45\linewidth]{data/plot/SR_redefinition/SRjet23/hmljj_comb_fakes_upd.pdf}\includegraphics[width=0.45\linewidth]{data/plot/SR_redefinition/SRjet23/lemt_fakes.pdf}\\
-\includegraphics[width=0.45\linewidth]{data/plot/SR_redefinition/SRjet23/hnJet20_fakes.pdf}\includegraphics[width=0.45\linewidth]{data/plot/SR_redefinition/SRjet23/lenJet20_fakes.pdf}\\
-\caption{The N-1 plots for SRjet23. Only statistical uncertainties are considered in the significance calculation in the lower plot.}
+\includegraphics[width=0.45\linewidth]{data/plot/plot_SR/dEta_SR_SS_jet23_opt_0}
+\includegraphics[width=0.45\linewidth]{data/plot/plot_SR/meff_SR_SS_jet23_opt_0}\\
+\includegraphics[width=0.45\linewidth]{data/plot/plot_SR/MET_SR_SS_jet23_opt_0}
+\includegraphics[width=0.45\linewidth]{data/plot/plot_SR/mTtwo_SR_SS_jet23_opt_0}\\
+\includegraphics[width=0.45\linewidth]{data/plot/plot_SR/mlj_SR_SS_jet23_opt_0}
+\includegraphics[width=0.45\linewidth]{data/plot/plot_SR/mt1_SR_SS_jet23_opt_0}\\
+\caption{The N-1 plots for SRjet23.}
 \label{fig:SRjet23_N1}
 \end{figure}
 
@@ -295,7 +346,7 @@ The figure shows considerable signal significances, in particular for the compre
 
 \begin{figure}[htpb]
 \centering
-\includegraphics[width=0.5\linewidth]{data/plot/SR_redefinition/HF/sigp1expclsf_Dani_bVeto_unitscale.pdf}
+\includegraphics[width=0.5\linewidth]{data/plot/plot_SR/combine_significance_0}
 \caption{The expected combined signal significances for different mass points.}
 \label{fig:SR_expected_limit}
 \end{figure}
