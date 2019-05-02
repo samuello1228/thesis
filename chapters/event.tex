@@ -12,9 +12,9 @@ All dataset are SUSY2 DxAOD derivations, which aim for 2 or 3 leptons search.
 We use 2015 (periods D-H and J) and 2016 (periods A-L, I, K and L) $pp$-collisions data samples, at $\sqrt s=13$ TeV.
 Only events in good condition are used, where LHC beams were stable and all ATLAS detectors were in good state.
 These good events are summarised in the Good Run Lists.
-The two Good Run Lists (GRL) in 2015 and 2016 data are shown the section \ref{sec:List_Data}.
+The two Good Run Lists (GRL) in 2015 and 2016 data are shown in the section \ref{sec:List_Data}.
 The integrated luminosities in 2015 and 2106 are $3.21$ fb$^{-1}$ and $32.86$ fb$^{-1}$ respectively, with relative error 2.1\%.
-The list of data samples used in this analysis is shown the section \ref{sec:List_Data}.
+The list of data samples used in this analysis is shown in the section \ref{sec:List_Data}.
 
 \subsection{MC samples}
 \subsubsection{SM background}
@@ -68,7 +68,7 @@ The following pre-selections on the events are applied to reject background whic
 \item \textbf{LAr/Tile/SCT error} Events with data integrity errors in the SCT detector and the LAr and Tile calorimeter are removed. (For data only)
 \item \textbf{Primary Vertex} The events need to have a primary vertex, which is defined as the one with the largest $\sum p_{T}^{2}$ of tracks, and has at least two tracks.
 \item \textbf{Cosmic Muon Veto} The events with cosmic muons need to be removed. The track of cosmic muon is identified by large impact parameters with respect to the primary vertex, with the condition that $|z_{0}^{PV}|>1$ mm or $|d_{0}^{PV}|>0.2$ mm.
-\item \textbf{Bad Muon Veto} The events with bad muons that does not come from the proton-proton collision need to be removed. The bad muon is identified by a large relative error in the ratio of electric charge to momentum ($q/p$), with the condition that $\sigma(q/p) / |q/p| > 0.2$, or by the ``Bad" quality by the recommendation of the Muon CP group.
+\item \textbf{Bad Muon Veto} The events with a bad muon that does not come from the proton-proton collision need to be removed. The bad muon is identified by a large relative error in the ratio of electric charge to momentum ($q/p$), with the condition that $\sigma(q/p) / |q/p| > 0.2$, or by the ``Bad" quality by the recommendation of the Muon CP group.
 \item \textbf{Bad Jet Veto} The events with bad jets that does not come from the proton-proton collision need to be removed. A jet with $p_{T}<$ 20 GeV or with the ``LooseBad" quality by the recommendation of the Jet/$E_T^{\text{miss}}$ group is identified as a bad jet.
 \item \textbf{Trigger Selection} The events need to pass at least one trigger in the trigger list, described in section \ref{sec:trigger}.
 \item \textbf{Exactly 2 baseline leptons} The events which have exactly 2 baseline leptons are selected. The definition of baseline electron and muon are described in section \ref{sec:object}. ``The two leptons" mentioned in the later chapters refer to these 2 baseline leptons. These two leptons are indexed in the descending order by their $p_T$. The lepton with larger $p_T$ is called the leading lepton ($\ell_1$), and the lepton with smaller $p_T$ is called the sub-leading lepton($\ell_2$).
@@ -180,7 +180,7 @@ ChargeIDSelector & Medium at 97\% efficiency & - \\
 
 \subsection{Jets}
 The baseline jets are reconstructed by the anti-$k_t$ jet algorithm with the distance parameter $D = 0.4$.
-The baseline must has $p_T > 20$ GeV and $|\eta| < 2.8$.
+Each baseline jet must have $p_T > 20$ GeV and $|\eta| < 2.8$.
 The signal jets are selected on top of the baseline jet, with additional criteria.
 The signal jets need to further satisfy the Jet Vertex Tagger (JVT) cut that JVT$> 0.59$ if the jets have $p_T < 60$ GeV and $|\eta| < 2.4$.
 The b-jets are signal jets with b-tag, by using the MV2c10 b-tagging algorithm with \texttt{FixedCut} working point which has b-jet efficiency 77\%.
