@@ -8,16 +8,16 @@ The charge flip background and the fake lepton background are the two dominant b
 \section{Charge flip background}
 \label{sec:charge_flip_background}
 \subsection{Sources for charge flip background}
-The charge flip background is due to the mis-identification of the sign of the charge of a lepton, after the reconstruction.
+The charge flip background is due to the misidentification of the sign of the charge of a lepton, after the reconstruction.
 The sign of the charge is determined by the direction of the curvature of the track.
-There are two main sources for the mis-identification for the direction of the curvature.
+There are two main sources for the misidentification for the direction of the curvature.
 
-The first source is described by the figure \ref{fig:charge_flip_bremsstrahlung}.
+The first source is described by figure \ref{fig:charge_flip_bremsstrahlung}.
 It is the case that the lepton interacts with the material of the detector, and a photon is emitted by the process of bremsstrahlung.
 The emitted photon further produces a pair of electron and positron, namely the $\gamma$ conversion.
-As shown in figure \ref{fig:charge_flip_bremsstrahlung}, if the most of the energy is carried by the positron $e^{+}$ (the purple track), the direction of the curvature of the reconstructed track (the orange track) will be reversed.
+As shown in figure \ref{fig:charge_flip_bremsstrahlung}, if most of the energy is carried by the positron $e^{+}$ (the purple track), the direction of the curvature of the reconstructed track (the orange track) will be reversed.
 Thus, the charge of the lepton is flipped.
-Because the amount of this mis-identification depends on the number of hits with the detector, and hence depends on $|\eta|$ of the original track.
+Because the amount of this misidentification depends on the number of hits with the detector, and hence depends on $|\eta|$ of the original track.
 
 \begin{figure}
 \centering
@@ -39,17 +39,17 @@ The chance to have this problem obviously depends on $p_T$ of the lepton.
 \label{fig:charge_flip_high_pt}
 \end{figure}
 
-Compared to an electron, the charge of a reconstructed muon will be less often to be mis-identified.
+Compared to an electron, the charge of a reconstructed muon will be less often to be misidentified.
 The first reason is that a muon is heavier than an electron.
 This will reduce the chance of the process of bremsstrahlung.
 The second reason is that muons can reach to the muon spectrometer, which is the outer part of the detector, while most electrons cannot.
 This means that the length of the track of a muon, which can be detected by the tracker, is longer than that of an electron.
-Hence, the reconstructed curvature of the track for muons can be more accurate, and it reduces the chance of the mis-identification due to the high $p_T$.
+Hence, the reconstructed curvature of the track for muons can be more accurate, and it reduces the chance of the misidentification due to the high $p_T$.
 Because most of the charge flip background comes from electrons, we only estimate the charge flip background for electrons.
 
 \subsection{Likelihood method}
 \label{sec:likelihood_method}
-The probability that the charge of an electron is mis-identified is denoted by the charge-flip rate $\epsilon_i$, where the index i represents the dependency on the $p_T$ and $|\eta|$ of the electron.
+The probability that the charge of an electron is misidentified is denoted by the charge-flip rate $\epsilon_i$, where the index i represents the dependency on the $p_T$ and $|\eta|$ of the electron.
 The value of index i is found by splitting the variables $p_T$ and $|\eta|$ into different 2-dimensional bins, and the binning for the $p_T$ and $|\eta|$ is described by the table \ref{tab:binning_charge_flip}. The index i of $\epsilon_i$ is defined by the index of the bin.
 
 \begin{table}[htbp]
@@ -312,7 +312,7 @@ The weighted OS events and the SS events agree within the uncertainties.
 \section{Fake lepton background}
 \label{sec:fake_background}
 \subsection{Sources for fake lepton background}
-The fake lepton background is ascribed to the case that other particle like meson, hadron and photon is mis-identified as a lepton, after the reconstruction.
+The fake lepton background is ascribed to the case that other particle like meson, hadron and photon is misidentified as a lepton, after the reconstruction.
 Three types of fake lepton background are described as follows.
 \begin{itemize}
 \item Heavy-flavor fakes:
@@ -342,9 +342,9 @@ The probability that a real electron (or muon) passes the signal selection (i.e.
 The probability that a real electron (or muon) does not pass the signal selection (i.e. loose lepton) is denoted by $\bar{\epsilon} = 1 - \epsilon$.
 Similarly, the probability that a fake electron (or muon) passes the signal selection (i.e. tight lepton) is denoted by the fake efficiency $f$.
 The probability that a fake electron (or muon) does not pass the signal selection (i.e. loose lepton) is denoted by $\bar{f} = 1 - f$.
-Although there is no subscripts and superscripts for the efficiencies $e$ and $f$, these efficiencies are different for different flavours of the leptons (electron or muon), and also in different $p_T$-$|\eta|$ bins.
+Although there are no subscripts and superscripts for the efficiencies $e$ and $f$, these efficiencies are different for different flavours of the leptons (electron or muon), and also in different $p_T$-$|\eta|$ bins.
 
-For simplicity, we first consider the case with only one leptons. We will then generalize to the case with two leptons.
+For simplicity, we first consider the case with only one lepton. We will then generalize to the case with two leptons.
 By the definition of the efficiencies, the relation between the number of real/fake leptons and the number of tight/loose leptons is given by the following matrix.
 \begin{equation}
 \left( \begin{array}{c}
@@ -597,7 +597,7 @@ N_{TT} \\
 N_{TL} \\
 N_{LT} \\
 N_{LL}
-\end{array} \right)$ can be split into ``one'', which is the contribution by one event.
+\end{array} \right)$ can be split into ``one'', which is the contribution by one event:
 \begin{align}
 \begin{split}
 \left( \begin{array}{c}
@@ -804,7 +804,7 @@ The selections for the control region used in the measurement of real efficienci
 \end{itemize}
 
 To increase the statistics, if the two leptons are both signal leptons, both leptons can be tag leptons.
-Hence, both leptons will be probe leptons, and it will be double-counted.
+Hence, both leptons will be probe leptons, and the event will be double-counted.
 
 The binning for $p_T$ and $|\eta|$ is shown in table \ref{tab:binning_real_eff}.
 \begin{table}[htbp]
