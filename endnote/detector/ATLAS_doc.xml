@@ -1,0 +1,2954 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+<records>
+<record>
+  <contributors>
+    <authors>
+      <author>Bentvelsen, S</author>
+      <author>Bobbink, G J</author>
+      <author>Bos, K</author>
+      <author>Boterenbrood, H</author>
+      <author>Brouwer, G</author>
+      <author>Buis, E J</author>
+      <author>Buskop, J J F</author>
+      <author>Colijn, A P</author>
+      <author>Dankers, R</author>
+      <author>Daum, C</author>
+      <author>de Boer, R</author>
+      <author>de Jong, P</author>
+      <author>Ennes, P</author>
+      <author>Gosselink, M</author>
+      <author>Groenstege, H</author>
+      <author>Hart, R G G</author>
+      <author>Hartjes, F</author>
+      <author>Hendriks, P J</author>
+      <author>Hessey, N P</author>
+      <author>Jansweijer, P P M</author>
+      <author>Kieft, G</author>
+      <author>Klous, S</author>
+      <author>Kluit, P</author>
+      <author>Koffeman, E</author>
+      <author>Koutsman, A</author>
+      <author>Liebig, W</author>
+      <author>Limper, M</author>
+      <author>Linde, F</author>
+      <author>Luijckx, G</author>
+      <author>Massaro, G</author>
+      <author>Muijs, A</author>
+      <author>Peeters, S J M</author>
+      <author>Reichold, A</author>
+      <author>Rewiersma, P</author>
+      <author>Rijpstra, M</author>
+      <author>Scholte, R C</author>
+      <author>Schuijlenburg, H W</author>
+      <author>Snuverink, J</author>
+      <author>van der Graaf, H</author>
+      <author>van der Kraaij, E</author>
+      <author>Van Eijk, B</author>
+      <author>van Kesteren, Z</author>
+      <author>van Vulpen, I</author>
+      <author>Verkerke, W</author>
+      <author>Vermeulen, J C</author>
+      <author>Vreeswijk, M</author>
+      <author>Werneke, P</author>
+      <author>Cakir, O</author>
+      <author>Ciftci, A K</author>
+      <author>Duran Yildiz, H</author>
+      <author>Sultanov, S</author>
+      <author>Turk Cakir, I</author>
+      <author>Yilmaz, M</author>
+      <author>Aubert, B</author>
+      <author>Bazan, A</author>
+      <author>Beaugiraud, B</author>
+      <author>Bellachia, F</author>
+      <author>Berger, N</author>
+      <author>Blaising, J J</author>
+      <author>Colas, J</author>
+      <author>Consonni, M</author>
+      <author>Delebecque, P</author>
+      <author>Delsart, P A</author>
+      <author>Di Ciaccio, L</author>
+      <author>Dayot, N Dumont&gt;</author>
+      <author>Elles, S</author>
+      <author>Ghez, Philippe&gt;</author>
+      <author>Girard, C G</author>
+      <author>Gouanere, M</author>
+      <author>Goy, C</author>
+      <author>Guillemin, T</author>
+      <author>Ionescu, G</author>
+      <author>Jeremie, A</author>
+      <author>Jezequel, S</author>
+      <author>Lafaye, R</author>
+      <author>Laplace, S</author>
+      <author>Marchand, J F</author>
+      <author>Massol, N</author>
+      <author>Neukermans, L</author>
+      <author>Perrodo, P</author>
+      <author>Perrot, G</author>
+      <author>Prast, J</author>
+      <author>Przysiezniak, H</author>
+      <author>Sauvage, G</author>
+      <author>Thion, J</author>
+      <author>Wingerter-Seez, I</author>
+      <author>Zitoun, R</author>
+      <author>Zolnierowski, Y</author>
+      <author>Baranov, S</author>
+      <author>Blair, R E</author>
+      <author>Cranshaw, J</author>
+      <author>Dawson, J W</author>
+      <author>Drake, G</author>
+      <author>Fullana Torregrosa, E</author>
+      <author>Gieraltowski, G F</author>
+      <author>Grudzinski, J</author>
+      <author>Guarino, V J</author>
+      <author>Hill, D</author>
+      <author>Hill, N</author>
+      <author>Karr, K</author>
+      <author>LeCompte, T</author>
+      <author>Lim, H</author>
+      <author>Malon, D</author>
+      <author>May, E N</author>
+      <author>Nodulman, L J</author>
+      <author>Petereit, E</author>
+      <author>Price, L E</author>
+      <author>Proudfoot, J</author>
+      <author>Schlereth, J L</author>
+      <author>Stanek, R W</author>
+      <author>Underwood, D G</author>
+      <author>van Gemmeren, P</author>
+      <author>Vaniachine, A</author>
+      <author>Yoshida, R</author>
+      <author>Zhang, J</author>
+      <author>Cheu, E</author>
+      <author>Johns, K A</author>
+      <author>Lampl, W</author>
+      <author>Loch, P</author>
+      <author>Rutherfoord, J P</author>
+      <author>Savine, A Y</author>
+      <author>Shaver, L</author>
+      <author>Shupe, M A</author>
+      <author>Tompkins, D</author>
+      <author>Varnes, E W</author>
+      <author>Alexopoulos, T</author>
+      <author>Avramidou, R</author>
+      <author>Dris, M</author>
+      <author>Filippas, A</author>
+      <author>Fokitis, M</author>
+      <author>Gazis, E N</author>
+      <author>Katsoufis, E</author>
+      <author>Maltezos, S</author>
+      <author>Papadopoulou, T</author>
+      <author>Savva, P</author>
+      <author>Tsipolitis, G</author>
+      <author>Tzamariudaki, E</author>
+      <author>Vlachos, S</author>
+      <author>Antonaki, A</author>
+      <author>Arabidze, G</author>
+      <author>Fassouliotis, D</author>
+      <author>Giakoumopoulou, V</author>
+      <author>Giokaris, N</author>
+      <author>Ioannou, P</author>
+      <author>Kourkoumelis, C</author>
+      <author>Manousakis-Katsikakis, A</author>
+      <author>Nikolopoulos, K</author>
+      <author>Tzanakos, G</author>
+      <author>Vellidis, C</author>
+      <author>Abdinov, O</author>
+      <author>Aliyev, M</author>
+      <author>Huseynov, N</author>
+      <author>Khalilzade, F</author>
+      <author>Biscarat, C</author>
+      <author>Blanch, O</author>
+      <author>Blumenschein, U</author>
+      <author>Bosman, M</author>
+      <author>Bravo, S</author>
+      <author>Casado, M P</author>
+      <author>Cavalli-Sforza, M</author>
+      <author>Deluca Silberberg, C</author>
+      <author>Domingo, E</author>
+      <author>Dosil, M</author>
+      <author>Espinal Curull, X</author>
+      <author>Fiorini, L</author>
+      <author>Flix, J</author>
+      <author>Garitaonandia, H</author>
+      <author>Iglesias Escudero, M C</author>
+      <author>Korolkov, I</author>
+      <author>Mir, L M</author>
+      <author>Verge, L Miralles&gt;</author>
+      <author>Norniella Francisco, O</author>
+      <author>Osuna, C</author>
+      <author>Pacheco Pages, A</author>
+      <author>Padilla Aranda, C</author>
+      <author>Park, I</author>
+      <author>Perez Codina, E</author>
+      <author>Puigdengoles, C</author>
+      <author>Dachs, I Riu&gt;</author>
+      <author>Ruiz, H</author>
+      <author>Salto Bauza, O</author>
+      <author>Sanchez Sanchez, C A</author>
+      <author>Segura, E</author>
+      <author>Sushkov, S</author>
+      <author>Vives Vaques, F</author>
+      <author>Volpi, M</author>
+      <author>Chen, T</author>
+      <author>Cheng, S</author>
+      <author>Feng, C</author>
+      <author>Han, H</author>
+      <author>Han, L</author>
+      <author>He, M</author>
+      <author>Jiang, Y</author>
+      <author>Jin, G</author>
+      <author>Jin, S</author>
+      <author>Lu, F</author>
+      <author>Ouyang, Q</author>
+      <author>Pei, E</author>
+      <author>Ping, J</author>
+      <author>Qi, M</author>
+      <author>Shan, L</author>
+      <author>Tong, G</author>
+      <author>Xie, Y</author>
+      <author>Xu, G</author>
+      <author>Yang, Y</author>
+      <author>Yu, X</author>
+      <author>Zhang, H</author>
+      <author>Zhang, X</author>
+      <author>Zheng, S</author>
+      <author>Zhu, C G</author>
+      <author>Krstic, J</author>
+      <author>Milosavljevic, M</author>
+      <author>Popovic, D S</author>
+      <author>Reljic, D</author>
+      <author>Sijacki, D</author>
+      <author>Simic, L</author>
+      <author>Vranjes, N</author>
+      <author>Vudragovic, M</author>
+      <author>Buanes, T</author>
+      <author>Eigen, G</author>
+      <author>Johansen, L G</author>
+      <author>Kastanas, A</author>
+      <author>Lipniacka, A</author>
+      <author>Mohn, B</author>
+      <author>Sandaker, H</author>
+      <author>Stugu, B</author>
+      <author>Tonoyan, A</author>
+      <author>Kolanoski, H</author>
+      <author>Kwee, R</author>
+      <author>Lohse, T</author>
+      <author>zur Nedden, M</author>
+      <author>Ambrosini, G</author>
+      <author>Beck, H P</author>
+      <author>Borer, K</author>
+      <author>Ereditato, A</author>
+      <author>Gjelsten, B K</author>
+      <author>Haeberli, C</author>
+      <author>Haug, S</author>
+      <author>Hess, M</author>
+      <author>Kabana, S</author>
+      <author>Kordas, K</author>
+      <author>Pretzl, K</author>
+      <author>Thomas, E</author>
+      <author>Topfel, C</author>
+      <author>Booth, J R A</author>
+      <author>Bright-Thomas, P G</author>
+      <author>Charlton, D G</author>
+      <author>Curtis, C J</author>
+      <author>Dowell, J D</author>
+      <author>Garvey, J</author>
+      <author>Hillier, S J</author>
+      <author>Hollins, T I</author>
+      <author>Homer, R J</author>
+      <author>Jovanovic, P</author>
+      <author>Mahout, G</author>
+      <author>McMahon, T J</author>
+      <author>Moye, T H</author>
+      <author>O'Neale, S W</author>
+      <author>Staley, R J</author>
+      <author>Thomas, J P</author>
+      <author>Typaldos, D</author>
+      <author>Watkins, P M</author>
+      <author>Watson, A T</author>
+      <author>Wilson, J A</author>
+      <author>Woehrling, E</author>
+      <author>Antonelli, S</author>
+      <author>Bellagamba, L</author>
+      <author>Bertin, A</author>
+      <author>Boscherini, D</author>
+      <author>Bruni, A</author>
+      <author>Bruni, G</author>
+      <author>Bruschi, M</author>
+      <author>Caforio, D</author>
+      <author>Corradi, M</author>
+      <author>De Castro, S</author>
+      <author>Fabbri, L</author>
+      <author>Faccioli, P</author>
+      <author>Giacobbe, B</author>
+      <author>Giusti, P</author>
+      <author>Grimaldi, F</author>
+      <author>Iacobucci, G</author>
+      <author>Massa, I</author>
+      <author>Mazzanti, P</author>
+      <author>Piccinini, M</author>
+      <author>Polini, A</author>
+      <author>Sbarra, C</author>
+      <author>Sbrizzi, A</author>
+      <author>Semprini-Cesari, N</author>
+      <author>Spighi, R</author>
+      <author>Villa, M</author>
+      <author>Vitale, A</author>
+      <author>Zoccoli, A</author>
+      <author>Ackers, M</author>
+      <author>Brock, I</author>
+      <author>Cammin, J</author>
+      <author>Cristinziani, M</author>
+      <author>Desch, K K</author>
+      <author>Dietsche, W</author>
+      <author>Eyring, A</author>
+      <author>Fischer, P</author>
+      <author>Fleischmann, S</author>
+      <author>Geich-Gimbel, C</author>
+      <author>Grosse-Knetter, J</author>
+      <author>Honerbach, W</author>
+      <author>Huegging, F</author>
+      <author>Karagounis, M</author>
+      <author>Klute, M</author>
+      <author>Kokott, T</author>
+      <author>Lehmacher, M</author>
+      <author>Loddenkoetter, T</author>
+      <author>Martinez, G</author>
+      <author>Mathes, M</author>
+      <author>Meuser, S</author>
+      <author>Nderitu, S K</author>
+      <author>Nunes Hanninger, G</author>
+      <author>Ockenfels, W</author>
+      <author>Odenthal, I</author>
+      <author>Peric, I</author>
+      <author>Pleier, M A</author>
+      <author>Prabhu, R</author>
+      <author>Raith, B</author>
+      <author>Runolfsson, O</author>
+      <author>Ruwiedel, C</author>
+      <author>Schmitz, M</author>
+      <author>Stockmanns, T</author>
+      <author>Ta, D</author>
+      <author>Treis, J</author>
+      <author>Wermes, N</author>
+      <author>Wienemann, P</author>
+      <author>Zendler, C</author>
+      <author>Ahlen, S P</author>
+      <author>Butler, J M</author>
+      <author>Hazen, E</author>
+      <author>Lewandowska, M</author>
+      <author>Love, J</author>
+      <author>Marin, A</author>
+      <author>Nation, N R</author>
+      <author>Posch, C</author>
+      <author>Shank, J T</author>
+      <author>Whitaker, S P</author>
+      <author>Yan, Z</author>
+      <author>Youssef, S P</author>
+      <author>Bensinger, J R</author>
+      <author>Blocker, C</author>
+      <author>Dushkin, A</author>
+      <author>Hashemi, K</author>
+      <author>Kirsch, L E</author>
+      <author>Kotchetkov, D</author>
+      <author>Schricker, A</author>
+      <author>Skvorodnev, N</author>
+      <author>Wellenstein, H</author>
+      <author>Bednar, P</author>
+      <author>Bruncko, D</author>
+      <author>Coss, J</author>
+      <author>Ferencei, J</author>
+      <author>Gazo, E</author>
+      <author>Kladiva, E</author>
+      <author>Lovas, L</author>
+      <author>Seman, M</author>
+      <author>Stavina, P</author>
+      <author>Strizenec, P</author>
+      <author>Sykora, I</author>
+      <author>Tokar, S</author>
+      <author>Tomasz, F</author>
+      <author>Zenis, T</author>
+      <author>Zilka, B</author>
+      <author>Adams, D L</author>
+      <author>Armstrong, S R</author>
+      <author>Assamagan, K</author>
+      <author>Burns, R</author>
+      <author>Chan, A</author>
+      <author>Chen, H</author>
+      <author>Cunha, A</author>
+      <author>Damazio, D</author>
+      <author>Deng, W</author>
+      <author>Duffin, S</author>
+      <author>Farrell, J</author>
+      <author>Gibbard, B</author>
+      <author>Gordeev, A</author>
+      <author>Gordon, H</author>
+      <author>Greenwood, D</author>
+      <author>Hackenburg, R</author>
+      <author>Hoffmann, A E</author>
+      <author>Hover, J</author>
+      <author>Ito, H</author>
+      <author>Izen, J M</author>
+      <author>Junnarkar, S S</author>
+      <author>Kandasamy, A</author>
+      <author>Kandasamy, S</author>
+      <author>Kierstead, J A</author>
+      <author>Klimentov, A</author>
+      <author>Lanni, F</author>
+      <author>Le Vine, M</author>
+      <author>Lissauer, A</author>
+      <author>Lou, X</author>
+      <author>Lynn, D</author>
+      <author>Ma, H</author>
+      <author>Maeno, T</author>
+      <author>Makowiecki, D</author>
+      <author>Misawa, S</author>
+      <author>Muller, T R</author>
+      <author>Nevski, P</author>
+      <author>Paige, F</author>
+      <author>Panitkin, S</author>
+      <author>Park, W</author>
+      <author>Pate, D</author>
+      <author>Petti, R</author>
+      <author>Polychronakos, V</author>
+      <author>Popescu, R</author>
+      <author>Purohit, M</author>
+      <author>Radeka, V</author>
+      <author>Rahm, D</author>
+      <author>Rajagopalan, S</author>
+      <author>Redlinger, G R</author>
+      <author>Rehak, M</author>
+      <author>Rescia, S</author>
+      <author>Sexton, K A</author>
+      <author>Smith, J</author>
+      <author>Snyder, S</author>
+      <author>Sondericker, J</author>
+      <author>Stumer, I</author>
+      <author>Takai, H</author>
+      <author>Tarrade, F</author>
+      <author>Tcherniatine, V</author>
+      <author>Undrus, A</author>
+      <author>Wenaus, T</author>
+      <author>White, S</author>
+      <author>Wlodek, T</author>
+      <author>Yarradoddi, K</author>
+      <author>Yu, D</author>
+      <author>Zhao, X</author>
+      <author>Alexa, C</author>
+      <author>Badescu, E</author>
+      <author>Boldea, V</author>
+      <author>Caprini, I</author>
+      <author>Caprini, M</author>
+      <author>Caramarcu, C</author>
+      <author>Chesneanu, D</author>
+      <author>Ciubancan, M</author>
+      <author>Constantinescu, S</author>
+      <author>Dita, P</author>
+      <author>Dita, S</author>
+      <author>Gruse, C</author>
+      <author>Micu, L</author>
+      <author>Niculescu, M</author>
+      <author>Pantea, D</author>
+      <author>Preda, T</author>
+      <author>Rotaru, M</author>
+      <author>Gonzalez Silva, M L</author>
+      <author>Piegaia, R</author>
+      <author>Romeo, G</author>
+      <author>Bieri, M</author>
+      <author>Komaragiri, J R</author>
+      <author>O'Neil, D C</author>
+      <author>Rezaie, E</author>
+      <author>Schouten, D</author>
+      <author>Stewart, T D</author>
+      <author>Vetterli, M C</author>
+      <author>Benedict, B H</author>
+      <author>Bold, T</author>
+      <author>Ciobotaru, M D</author>
+      <author>Corso-Radu, A</author>
+      <author>Gough Eschrich, I</author>
+      <author>Hawkins, D</author>
+      <author>Kolos, S</author>
+      <author>Lankford, A J</author>
+      <author>McCormick, C</author>
+      <author>Mommsen, R</author>
+      <author>Murillo Garcia, R</author>
+      <author>Negri, A</author>
+      <author>Pier, S</author>
+      <author>Schernau, M</author>
+      <author>Stancu, S N</author>
+      <author>Unel, G</author>
+      <author>Wheeler-Ellis, S J</author>
+      <author>Chouridou, S</author>
+      <author>Dorfan, D E</author>
+      <author>Dubbs, T</author>
+      <author>Fadeyev, V</author>
+      <author>Grillo, A A</author>
+      <author>Hansl-Kozanecka, T</author>
+      <author>Litke, A M</author>
+      <author>Lockman, W S</author>
+      <author>Nielsen, J</author>
+      <author>Pequenao, J</author>
+      <author>Rosenbaum, F</author>
+      <author>Sadrozinski, H F W</author>
+      <author>Seiden, A</author>
+      <author>Spencer, E</author>
+      <author>Taylor, G</author>
+      <author>Batley, J R</author>
+      <author>Brochu, F M</author>
+      <author>Carter, J R</author>
+      <author>Frost, J A</author>
+      <author>Goodrick, M J</author>
+      <author>Hill, J C</author>
+      <author>Lester, C G</author>
+      <author>Munday, D J</author>
+      <author>Palmer, M J</author>
+      <author>Parker, M A</author>
+      <author>Phillips, A W</author>
+      <author>Robinson, D</author>
+      <author>Ward, C P</author>
+      <author>White, M J</author>
+      <author>Aleksa, M</author>
+      <author>Amaral, P</author>
+      <author>Amaral, S P</author>
+      <author>Amelung, C</author>
+      <author>Anghinolfi, F</author>
+      <author>Avolio, G</author>
+      <author>Bachy, G</author>
+      <author>Baltasar Dos Santos Pedrosa, F</author>
+      <author>Baron, S</author>
+      <author>Poy, A Barriuso&gt;</author>
+      <author>Batraneanu, S</author>
+      <author>Battistin, M</author>
+      <author>Beltramello, O</author>
+      <author>Berge, D</author>
+      <author>Bergsma, F</author>
+      <author>Bertinelli, F</author>
+      <author>Bitadze, A</author>
+      <author>Blanchot, G</author>
+      <author>Bock, R</author>
+      <author>Bogaerts, J A</author>
+      <author>Boisvert, V</author>
+      <author>Bonneau, P</author>
+      <author>Boosten, M</author>
+      <author>Bosteels, M</author>
+      <author>Boyd, J</author>
+      <author>Braem, A</author>
+      <author>Bremer, J</author>
+      <author>Bujor, F</author>
+      <author>Burckhart, H</author>
+      <author>Burckhart-Chromek, D</author>
+      <author>Butin, F</author>
+      <author>Campana, S</author>
+      <author>Capeans Garrido, M D M</author>
+      <author>Cardiel Sas, L</author>
+      <author>Carli, T</author>
+      <author>Catinaccio, A</author>
+      <author>Cattai, A</author>
+      <author>Cernoch, C</author>
+      <author>Cerri, A</author>
+      <author>Chevalley, J L</author>
+      <author>Cook, J</author>
+      <author>Cornelissen, T</author>
+      <author>Da Silva, R</author>
+      <author>Danielsson, H O</author>
+      <author>Dannheim, D</author>
+      <author>Dauvergne, J P</author>
+      <author>De Oliveira Branco, M</author>
+      <author>Dell'Acqua, A</author>
+      <author>Delmastro, M</author>
+      <author>Delruelle, N</author>
+      <author>Di Girolamo, B</author>
+      <author>Di Simone, A</author>
+      <author>Dittus, F</author>
+      <author>Dobinson, R</author>
+      <author>Dobos, D</author>
+      <author>Dobson, M</author>
+      <author>Donega, M</author>
+      <author>Drakoulakos, D</author>
+      <author>Drevermann, H</author>
+      <author>Dudarev, A</author>
+      <author>Dydak, F</author>
+      <author>Eklund, L M</author>
+      <author>Ellis, N</author>
+      <author>Elsing, M</author>
+      <author>Fabjan, C W</author>
+      <author>Fabre, C</author>
+      <author>Farthouat, P</author>
+      <author>Fassnacht, P</author>
+      <author>Fedorko, I</author>
+      <author>Ferrari, P</author>
+      <author>Flammer, J</author>
+      <author>Flegel, W</author>
+      <author>Fonseca Martin, T M</author>
+      <author>Foussat, A</author>
+      <author>Francis, D</author>
+      <author>Franz, S</author>
+      <author>Fratianni, S</author>
+      <author>Froidevaux, D</author>
+      <author>Gallas, M V</author>
+      <author>Garonne, V G</author>
+      <author>Gayde, J C</author>
+      <author>Gianotti, F</author>
+      <author>Gildemeister, O</author>
+      <author>Godlewski, J</author>
+      <author>Gollub, N P</author>
+      <author>Gonidec, A</author>
+      <author>Goossens, L</author>
+      <author>Gorini, B</author>
+      <author>Gorski, B T</author>
+      <author>Goulette, M</author>
+      <author>Grabowska-Bold, I</author>
+      <author>Grognuz, J</author>
+      <author>Grothe, M E M</author>
+      <author>Gruwe, M</author>
+      <author>Gschwendtner, E M</author>
+      <author>Haas, S</author>
+      <author>Hahn, F</author>
+      <author>Haider, S</author>
+      <author>Hallgren, B</author>
+      <author>Hatch, M</author>
+      <author>Haug, F</author>
+      <author>Hauschild, M</author>
+      <author>Hauviller, C</author>
+      <author>Hawkings, R J</author>
+      <author>Henriques Correia, A M</author>
+      <author>Hervas, L</author>
+      <author>Hocker, Andreas&gt;</author>
+      <author>Hoffmann, H F</author>
+      <author>Hooton, I</author>
+      <author>Hryn'ova, T</author>
+      <author>Hulsbergen, W</author>
+      <author>Iengo, P</author>
+      <author>Inigo-Golfin, J</author>
+      <author>Jaekel, M</author>
+      <author>Jarp, S</author>
+      <author>Jarron, P</author>
+      <author>Jenni, P</author>
+      <author>Jones, R</author>
+      <author>Jonsson, O</author>
+      <author>Joos, M</author>
+      <author>Joram, C</author>
+      <author>Kaplon, J</author>
+      <author>Kataoka, M</author>
+      <author>Klioutchnikova, T</author>
+      <author>Knezo, E</author>
+      <author>Knobloch, J</author>
+      <author>Koffas, T</author>
+      <author>Kono, T</author>
+      <author>Krasznahorkay, A</author>
+      <author>Kruger, K</author>
+      <author>Kubischta, W</author>
+      <author>Lasseur, C</author>
+      <author>Le Bihan, A C</author>
+      <author>Leahu, L</author>
+      <author>Leahu, M</author>
+      <author>Lee, H</author>
+      <author>Lehmann Miotto, G</author>
+      <author>Letheren, M</author>
+      <author>Lichard, P</author>
+      <author>Liko, D</author>
+      <author>Lucas, S</author>
+      <author>Lytken, E</author>
+      <author>Mair, K</author>
+      <author>Mandl, M</author>
+      <author>Mapelli, A</author>
+      <author>Mapelli, L</author>
+      <author>Marchesotti, M</author>
+      <author>Martin, B</author>
+      <author>Maugain, J M</author>
+      <author>McLaren, R A</author>
+      <author>Meinhard, H</author>
+      <author>Meirosu, C</author>
+      <author>Menot, C</author>
+      <author>Meyer, T C</author>
+      <author>Michelotto, M</author>
+      <author>Miele, P</author>
+      <author>Mladenov, D</author>
+      <author>Molina-Perez, J</author>
+      <author>Mornacchi, G</author>
+      <author>Nairz, A M</author>
+      <author>Nassiakou, M</author>
+      <author>Nessi, M</author>
+      <author>Nicquevert, B</author>
+      <author>Niinikoski, T</author>
+      <author>Nordberg, M</author>
+      <author>Nunes, R</author>
+      <author>Nyman, T</author>
+      <author>Onea, A</author>
+      <author>Pailler, P M</author>
+      <author>Palestini, S</author>
+      <author>Palla, J</author>
+      <author>Papadopoulos, I</author>
+      <author>Parkman, C</author>
+      <author>Passardi, G</author>
+      <author>Passmore, M S</author>
+      <author>Pauly, T</author>
+      <author>Pengo, R</author>
+      <author>Perez Reale, V</author>
+      <author>Pernegger, H</author>
+      <author>Petersen, J</author>
+      <author>Petersen, T C</author>
+      <author>Pezzetti, M</author>
+      <author>Pimenta Dos Santos, M A</author>
+      <author>Pirotte, O</author>
+      <author>Placci, A</author>
+      <author>Pommes, K</author>
+      <author>Poppleton, A</author>
+      <author>Pospichal, P</author>
+      <author>Poulard, G</author>
+      <author>Price, M J</author>
+      <author>Primor, D</author>
+      <author>Rabbers, J J</author>
+      <author>Rammer, H</author>
+      <author>Rangod, S</author>
+      <author>Raymond, M</author>
+      <author>Rembser, C</author>
+      <author>Roe, S</author>
+      <author>Rohrbach, F</author>
+      <author>Ruggiero, G</author>
+      <author>Sbrissa, E</author>
+      <author>Schaller, M</author>
+      <author>Schlager, G</author>
+      <author>Schlenker, S</author>
+      <author>Schmid, P</author>
+      <author>Schmitt, C</author>
+      <author>Schoerner, T</author>
+      <author>Schuh, S</author>
+      <author>Schuler, G</author>
+      <author>Schweiger, D</author>
+      <author>Schwick, C</author>
+      <author>Siebel, M</author>
+      <author>Sloper, J</author>
+      <author>Speckmayer, P</author>
+      <author>Spegel, M</author>
+      <author>Spigo, G</author>
+      <author>Spiwoks, R</author>
+      <author>Sprachmann, G</author>
+      <author>Stavrianakou, M</author>
+      <author>Stelzer, H J</author>
+      <author>Szeless, B</author>
+      <author>Taboada Gameiro, S</author>
+      <author>Tappern, G P</author>
+      <author>Ten Kate, H</author>
+      <author>Tique Aires Viegas, F J</author>
+      <author>Treichel, M</author>
+      <author>Tremblet, L</author>
+      <author>Tyrvainen, H</author>
+      <author>Unal, G</author>
+      <author>Van der Bij, H</author>
+      <author>Vandelli, W</author>
+      <author>Vandoni, G</author>
+      <author>Varela Rodriguez, F</author>
+      <author>Veness, R</author>
+      <author>Verducci, M</author>
+      <author>Vincke, H</author>
+      <author>von Boehn-Buchholz, R</author>
+      <author>Voss, R</author>
+      <author>Vuillemin, V</author>
+      <author>Vuillermet, R</author>
+      <author>Wallny, R S</author>
+      <author>Weilhammer, P M</author>
+      <author>Wells, P S</author>
+      <author>Wenig, S</author>
+      <author>Werner, P</author>
+      <author>Wiesmann, M</author>
+      <author>Wildauer, A</author>
+      <author>Wilkens, H G</author>
+      <author>Witzeling, W</author>
+      <author>Wotschack, J</author>
+      <author>Zajacova, Z</author>
+      <author>Zema, P F</author>
+      <author>Zsenei, A</author>
+      <author>Anderson, K J</author>
+      <author>Brubaker, E</author>
+      <author>Costin, T</author>
+      <author>Feng, E J</author>
+      <author>Gardner, R W</author>
+      <author>Gupta, A</author>
+      <author>Hurwitz, M</author>
+      <author>Jen-La Plante, I</author>
+      <author>Kapliy, A</author>
+      <author>Mambelli, M</author>
+      <author>Merritt, F S</author>
+      <author>Oreglia, M J</author>
+      <author>Pilcher, J E</author>
+      <author>Shochet, M J</author>
+      <author>Smirnov, Y</author>
+      <author>Usai, G</author>
+      <author>Yorita, K</author>
+      <author>Apsimon, R</author>
+      <author>Baines, J T</author>
+      <author>Barclay, P</author>
+      <author>Barnett, B M</author>
+      <author>Batchelor, L E</author>
+      <author>Baynham, D E</author>
+      <author>Bizzell, J P</author>
+      <author>Botterill, D</author>
+      <author>Brawn, I P</author>
+      <author>Butterworth, J</author>
+      <author>Carr, F S</author>
+      <author>Clifft, R W</author>
+      <author>Cragg, D A</author>
+      <author>Dallison, S J</author>
+      <author>Densham, C J</author>
+      <author>Emeliyanov, D</author>
+      <author>Fisher, S M</author>
+      <author>Gallop, B J</author>
+      <author>Gee, C N P</author>
+      <author>Gibson, M D</author>
+      <author>Gillman, A R</author>
+      <author>Greenfield, D</author>
+      <author>Hart, J C</author>
+      <author>Hatley, R W</author>
+      <author>Hayler, T</author>
+      <author>Haywood, S J</author>
+      <author>Hicheur, A</author>
+      <author>Holt, R</author>
+      <author>Holtom, E</author>
+      <author>Jones, A</author>
+      <author>Kirk, J</author>
+      <author>Li, W</author>
+      <author>Lintern, A J</author>
+      <author>Macwaters, C</author>
+      <author>Matheson, J</author>
+      <author>McCubbin, N A</author>
+      <author>McMahon, S J</author>
+      <author>Middleton, R</author>
+      <author>Morrissey, M C</author>
+      <author>Murray, W J</author>
+      <author>Nelson, C</author>
+      <author>Nichols, A</author>
+      <author>Norton, P R</author>
+      <author>Perera, V J O</author>
+      <author>Phillips, P W</author>
+      <author>Prieur, D</author>
+      <author>Qian, W</author>
+      <author>Rochford, J H</author>
+      <author>Sankey, D P C</author>
+      <author>Scott, W G</author>
+      <author>Shah, T P</author>
+      <author>Smith, B</author>
+      <author>Sole, D</author>
+      <author>Tarrant, J</author>
+      <author>Towndrow, E F</author>
+      <author>Tricoli, A</author>
+      <author>Tyndel, M</author>
+      <author>Villani, E G</author>
+      <author>Warner, G P</author>
+      <author>Weber, M</author>
+      <author>Wickens, F J</author>
+      <author>Wielers, M</author>
+      <author>Wilmut, I</author>
+      <author>Busato, E</author>
+      <author>Calvet, D</author>
+      <author>Cogneras, E</author>
+      <author>Defay, P O</author>
+      <author>Febbraro, R</author>
+      <author>Garde, V</author>
+      <author>Gris, P L Y</author>
+      <author>Guicheney, C J</author>
+      <author>Montarou, G</author>
+      <author>Pallin, D</author>
+      <author>Podlyski, F</author>
+      <author>Santoni, C</author>
+      <author>Says, L P</author>
+      <author>Vazeille, F</author>
+      <author>Bertelsen, H</author>
+      <author>Czyczula, Z</author>
+      <author>Dam, M</author>
+      <author>Driouichi, C</author>
+      <author>Facius, K</author>
+      <author>Hansen, F H</author>
+      <author>Hansen, J R</author>
+      <author>Hansen, J B</author>
+      <author>Hansen, J D</author>
+      <author>Hansen, P H</author>
+      <author>Klinkby, E B</author>
+      <author>Lindahl, A</author>
+      <author>Lundquist, J</author>
+      <author>Mackeprang, R</author>
+      <author>Nilsson, B S</author>
+      <author>Rensch, B</author>
+      <author>Waananen, A</author>
+      <author>Xella-Hansen, S</author>
+      <author>Adorisio, C</author>
+      <author>Castrovillari, F</author>
+      <author>Crosetti, G</author>
+      <author>La Rotonda, L</author>
+      <author>Lamanna, E</author>
+      <author>Meoni, E</author>
+      <author>Policicchio, A</author>
+      <author>Salvatore, D</author>
+      <author>Schioppa, M</author>
+      <author>Susinno, G</author>
+      <author>Klaiber-Lodewigs, J</author>
+      <author>Klingenberg, R</author>
+      <author>Krasel, O</author>
+      <author>Kudlaty, J</author>
+      <author>Mass, M</author>
+      <author>Rajek, S</author>
+      <author>Reisinger, I</author>
+      <author>Walbersloh, J</author>
+      <author>Weber, J</author>
+      <author>Weingarten, J</author>
+      <author>Wunstorf, R</author>
+      <author>Kobel, M</author>
+      <author>Lacker, H</author>
+      <author>Ludwig, A</author>
+      <author>Mader, W F</author>
+      <author>Schaarschmidt, J</author>
+      <author>Schumacher, J</author>
+      <author>Schwierz, R</author>
+      <author>Warsinsky, M</author>
+      <author>Aleksandrov, I N</author>
+      <author>Barashkou, A</author>
+      <author>Bardin, D Y</author>
+      <author>Batusov, V</author>
+      <author>Bednyakov, V A</author>
+      <author>Boyko, I R</author>
+      <author>Budagov, I A</author>
+      <author>Chelkov, G A</author>
+      <author>Chepurnov, V F</author>
+      <author>Dedovich, D V</author>
+      <author>Demichev, M</author>
+      <author>Evtoukhovitch, P</author>
+      <author>Glonti, G L</author>
+      <author>Gongadze, A</author>
+      <author>Gostkin, M I</author>
+      <author>Gousakov, I</author>
+      <author>Grigalashvili, N</author>
+      <author>Ilyushenka, Y</author>
+      <author>Kakurin, S</author>
+      <author>Kalinovskaya, L V</author>
+      <author>Kazarinov, M Y</author>
+      <author>Kekelidze, G D</author>
+      <author>Kharchenko, D</author>
+      <author>Khovanskiy, N</author>
+      <author>Khramov, E</author>
+      <author>Kolesnikov, V</author>
+      <author>Kotov, V M</author>
+      <author>Kruchonak, U</author>
+      <author>Krumshteyn, Z V</author>
+      <author>Kukhtin, V</author>
+      <author>Ladygin, E</author>
+      <author>Lazarev, A B</author>
+      <author>Liabline, M</author>
+      <author>Lysan, V</author>
+      <author>Malyukov, S</author>
+      <author>Manjavidze, I D</author>
+      <author>Mialkovski, V</author>
+      <author>Minashvili, I A</author>
+      <author>Mineev, M</author>
+      <author>Nanava, G</author>
+      <author>Neganov, A</author>
+      <author>Nikolaev, K</author>
+      <author>Olchevski, A G</author>
+      <author>Perepelkin, E</author>
+      <author>Peshekhonov, V D</author>
+      <author>Romanov, V M</author>
+      <author>Rumyantsev, L</author>
+      <author>Rusakovich, N A</author>
+      <author>Sadykov, R</author>
+      <author>Shilov, S</author>
+      <author>Shiyakova, M</author>
+      <author>Sisakyan, A N</author>
+      <author>Topilin, N D</author>
+      <author>Usov, Y</author>
+      <author>Vinogradov, V B</author>
+      <author>Vorozhtsov, A S</author>
+      <author>Vorozhtsov, S B</author>
+      <author>Zhemchugov, A</author>
+      <author>Zhuravlov, V</author>
+      <author>Zimin, N I</author>
+      <author>Benjamin, P</author>
+      <author>Bocci, A</author>
+      <author>Ebenstein, W L</author>
+      <author>Fowler, A J</author>
+      <author>Ko, B R</author>
+      <author>Oh, S H</author>
+      <author>Thomas, A</author>
+      <author>Wang, C</author>
+      <author>Ahmed, H</author>
+      <author>Buchanan, N J</author>
+      <author>Caron, B</author>
+      <author>Chen, L</author>
+      <author>Gingrich, D M</author>
+      <author>Liu, S</author>
+      <author>Lu, J</author>
+      <author>Macpherson, A</author>
+      <author>MacQueen, D</author>
+      <author>Moore, R W</author>
+      <author>Pinfold, J L</author>
+      <author>Soluk, R</author>
+      <author>Soukup, J</author>
+      <author>Yao, Y</author>
+      <author>Berry, T</author>
+      <author>Boorman, G</author>
+      <author>Cheng, T L</author>
+      <author>Cooper-Smith, N J</author>
+      <author>Cowan, G</author>
+      <author>De Santo, A</author>
+      <author>George, S</author>
+      <author>Goncalo, R</author>
+      <author>Green, B</author>
+      <author>Hollyman, G</author>
+      <author>Kilvington, G</author>
+      <author>Lowe, A</author>
+      <author>McGarvie, S</author>
+      <author>McMahon, T R</author>
+      <author>Misiejuk, A</author>
+      <author>Potter, C J</author>
+      <author>Strong, J A</author>
+      <author>Tamsett, M C</author>
+      <author>Teixeira-Dias, P</author>
+      <author>Adamyan, F</author>
+      <author>Grabski, V</author>
+      <author>Hakobyan, H</author>
+      <author>Mkrtchyan, S</author>
+      <author>Simonyan, M</author>
+      <author>Antonelli, M</author>
+      <author>Barone, M</author>
+      <author>Beretta, M</author>
+      <author>Bertolucci, S</author>
+      <author>Bilokon, H</author>
+      <author>Braccini, S</author>
+      <author>Cerutti, F</author>
+      <author>Chiarella, V</author>
+      <author>Curatolo, M</author>
+      <author>Esposito, B</author>
+      <author>Ferrer, M L</author>
+      <author>Gatti, C</author>
+      <author>Laurelli, P</author>
+      <author>Maccarrone, G</author>
+      <author>Martini, A</author>
+      <author>Miscetti, S</author>
+      <author>Nicoletti, G</author>
+      <author>Sansoni, A</author>
+      <author>Ventura, S</author>
+      <author>Vilucchi, E</author>
+      <author>Wen, M</author>
+      <author>Ahles, F</author>
+      <author>Bianchi, R M</author>
+      <author>Buszello, K P</author>
+      <author>Caron, S</author>
+      <author>Carpentieri, C</author>
+      <author>Christov, A</author>
+      <author>Dahlhoff, A</author>
+      <author>Dietrich, J</author>
+      <author>Eckert, S</author>
+      <author>Feld, L</author>
+      <author>Fox, H</author>
+      <author>Heldmann, M</author>
+      <author>Herten, G</author>
+      <author>Jakobs, K</author>
+      <author>Joos, D</author>
+      <author>Ketterer, C</author>
+      <author>Kollefrath, M</author>
+      <author>Kononov, A I</author>
+      <author>Kramer, A</author>
+      <author>Lai, S</author>
+      <author>Landgraf, U</author>
+      <author>Ludwig, I</author>
+      <author>Ludwig, J</author>
+      <author>Lumb, D</author>
+      <author>Maassen, M</author>
+      <author>Mahboubi, K</author>
+      <author>Meinhardt, J</author>
+      <author>Meisel, F</author>
+      <author>Messmer, I</author>
+      <author>Mohr, W</author>
+      <author>Nilsen, H</author>
+      <author>Parzefall, U</author>
+      <author>Pfeifer, B</author>
+      <author>Piacquadio, G</author>
+      <author>Portell Bueso, X</author>
+      <author>Raufer, T</author>
+      <author>Runge, K</author>
+      <author>Schroff, D</author>
+      <author>Titov, M</author>
+      <author>Tobias, J</author>
+      <author>Webel, M</author>
+      <author>Weiser, C</author>
+      <author>Xie, S</author>
+      <author>Zimmermann, S</author>
+      <author>Abdelalim, A A</author>
+      <author>Barbier, G</author>
+      <author>Blondel, A</author>
+      <author>Bonino, R</author>
+      <author>Chamizo llatas, M</author>
+      <author>Clark, A</author>
+      <author>Couyoumtzelis, C</author>
+      <author>D'Onofrio, M</author>
+      <author>Demierre, P</author>
+      <author>Diaz Gomez, M M</author>
+      <author>Efthymiopoulos, I</author>
+      <author>Eifert, T</author>
+      <author>Ferrere, D</author>
+      <author>Gadomski, S</author>
+      <author>Gaumer, O</author>
+      <author>Hakobyan, H</author>
+      <author>Hamilton, A</author>
+      <author>Kambara, H</author>
+      <author>Keil, M</author>
+      <author>La Marra, D</author>
+      <author>Lefevre, R P</author>
+      <author>Leger, A</author>
+      <author>Liu, Y</author>
+      <author>Macina, D</author>
+      <author>Mangin-Brinet, M</author>
+      <author>Mazzucato, F</author>
+      <author>Mikulec, B</author>
+      <author>Moneta, L</author>
+      <author>Morone, M C</author>
+      <author>Orellana, F</author>
+      <author>Perrin, E</author>
+      <author>Pohl, M</author>
+      <author>Robichaud-Veronneau, A</author>
+      <author>Rosselet, L</author>
+      <author>Sfyrla, A</author>
+      <author>Straessner, A</author>
+      <author>Vu Anh, T</author>
+      <author>Vuaridel, B</author>
+      <author>Wu, X</author>
+      <author>Barberis, D</author>
+      <author>Beccherle, R B</author>
+      <author>Caso, C</author>
+      <author>Cervetto, M</author>
+      <author>Coccaro, A</author>
+      <author>Cuneo, S</author>
+      <author>Dameri, M</author>
+      <author>Darbo, G</author>
+      <author>Ferro, F</author>
+      <author>Gagliardi, G</author>
+      <author>Garelli, N</author>
+      <author>Gemme, C</author>
+      <author>Kostyukhin, V V</author>
+      <author>Morettini, P</author>
+      <author>Odino, G A</author>
+      <author>Olcese, M</author>
+      <author>Osculati, B</author>
+      <author>Parodi, F</author>
+      <author>Rossi, L P</author>
+      <author>Schiavi, C</author>
+      <author>Stenzel, H</author>
+      <author>Allwood-Spiers, S E</author>
+      <author>Bates, R L</author>
+      <author>Bell, W H</author>
+      <author>Buttar, C M</author>
+      <author>Cheplakov, A</author>
+      <author>Clements, D</author>
+      <author>Collins-Tooth, C</author>
+      <author>D'Auria, S</author>
+      <author>Doherty, T</author>
+      <author>Doyle, A T</author>
+      <author>Ferrag, S</author>
+      <author>Kenyon, M</author>
+      <author>McGlone, H</author>
+      <author>Nicholson, C</author>
+      <author>O'Shea, V</author>
+      <author>Pickford, A</author>
+      <author>Raine, C</author>
+      <author>Robson, A</author>
+      <author>Saxon, D H</author>
+      <author>Shaw, C</author>
+      <author>Smith, K M</author>
+      <author>St Denis, R D</author>
+      <author>Stewart, G</author>
+      <author>Thompson, A S</author>
+      <author>Wright, C</author>
+      <author>Ay, C</author>
+      <author>Quadt, A</author>
+      <author>Uhrmacher, M</author>
+      <author>Albrand, S</author>
+      <author>Andrieux, M L</author>
+      <author>Belhorma, B</author>
+      <author>Beteille, A</author>
+      <author>Boyer, B H</author>
+      <author>Carcagno, Y</author>
+      <author>Chevallier, F</author>
+      <author>Clement, B C</author>
+      <author>Collot, J</author>
+      <author>de Saintignon, P</author>
+      <author>Dzahini, D</author>
+      <author>Ferrari, A</author>
+      <author>Fulachier, J</author>
+      <author>Hostachy, J Y</author>
+      <author>Labbe, J A</author>
+      <author>Lambert, F</author>
+      <author>Ledroit-Guillon, F</author>
+      <author>Lleres, A</author>
+      <author>Lucotte, A</author>
+      <author>Malek, F</author>
+      <author>Martin, Ph&gt;</author>
+      <author>Morel, J</author>
+      <author>Petit, P J F</author>
+      <author>Crepe-Renaudin, S R C</author>
+      <author>Rey-Campagnolle, M</author>
+      <author>Saboumazrag, S</author>
+      <author>Trocme, B</author>
+      <author>Viret, S</author>
+      <author>Behar Harpaz, S</author>
+      <author>Ben Ami, S</author>
+      <author>Bressler, S</author>
+      <author>Gernizky, Y</author>
+      <author>Hadash, E</author>
+      <author>Harel, A</author>
+      <author>Kajomovitz, E</author>
+      <author>Landsman, H</author>
+      <author>Lifshitz, R</author>
+      <author>Lupu, N</author>
+      <author>Panikashvili, N</author>
+      <author>Rozen, Y</author>
+      <author>Tarem, S</author>
+      <author>Barisonzi, M</author>
+      <author>Ehrenfeld, W</author>
+      <author>Glazov, A</author>
+      <author>Haller, J</author>
+      <author>Kama, S</author>
+      <author>Kowalski, H</author>
+      <author>Mamuzic, J</author>
+      <author>Medinnis, M</author>
+      <author>Moll, A</author>
+      <author>Naumann, T</author>
+      <author>Placakyte, R</author>
+      <author>Terwort, M</author>
+      <author>Vogt, H</author>
+      <author>Addy, T N</author>
+      <author>Harvey, A</author>
+      <author>Long, M C</author>
+      <author>McFarlane, K W</author>
+      <author>Shin, T</author>
+      <author>Vassilakopoulos, V I</author>
+      <author>Barreiro Guimaraes da Costa, J</author>
+      <author>Black, K M</author>
+      <author>Brandenburg, G W</author>
+      <author>Feldman, G</author>
+      <author>Haggerty, R</author>
+      <author>Harder, S</author>
+      <author>Hurst, P</author>
+      <author>Huth, J</author>
+      <author>Kashif, L</author>
+      <author>Outschoorn, V Martinez&gt;</author>
+      <author>Moed, S</author>
+      <author>Morii, M</author>
+      <author>Oliver, J</author>
+      <author>Prasad, S</author>
+      <author>Riegler, W</author>
+      <author>Sansone, S</author>
+      <author>Smith, B C</author>
+      <author>Achenbach, R</author>
+      <author>Andrei, V</author>
+      <author>Geweniger, C</author>
+      <author>Hanke, P</author>
+      <author>Kluge, E E</author>
+      <author>Lendermann, V</author>
+      <author>Meier, K</author>
+      <author>Schmitt, K</author>
+      <author>Schultz-Coulon, H C</author>
+      <author>Stamen, R</author>
+      <author>Weber, P</author>
+      <author>Nagasaka, Y</author>
+      <author>Benekos, N</author>
+      <author>Errede, D</author>
+      <author>Errede, S</author>
+      <author>Khandanyan, H</author>
+      <author>Liss, T M</author>
+      <author>Vichou, I</author>
+      <author>Callahan, J</author>
+      <author>Cwetanski, P</author>
+      <author>Egorov, K</author>
+      <author>Evans, H</author>
+      <author>Gagnon, P</author>
+      <author>Hanson, G</author>
+      <author>Jain, V</author>
+      <author>Kline, C R</author>
+      <author>Luehring, F</author>
+      <author>Manara, A</author>
+      <author>Morris, E J</author>
+      <author>Ogren, H</author>
+      <author>Rust, D R</author>
+      <author>Subramania, S</author>
+      <author>Whittington, D</author>
+      <author>Bischof, R</author>
+      <author>Epp, B</author>
+      <author>Ghete, V M</author>
+      <author>Girtler, P</author>
+      <author>Jussel, P</author>
+      <author>Kneringer, E</author>
+      <author>Kuhn, D</author>
+      <author>Mair, G M</author>
+      <author>Rudolph, G</author>
+      <author>Salzburger, A</author>
+      <author>Cochran, J</author>
+      <author>Meyer, W T</author>
+      <author>Rosenberg, E I</author>
+      <author>Tegenfeldt, F</author>
+      <author>Abat, E</author>
+      <author>Arik, E</author>
+      <author>Arik, M</author>
+      <author>Beddall, A J</author>
+      <author>Beddall, A</author>
+      <author>Bingul, A</author>
+      <author>Cetin, S A</author>
+      <author>Dogan, O B</author>
+      <author>Homma, Y</author>
+      <author>Ichimiya, R</author>
+      <author>Kawagoe, K</author>
+      <author>Kiyamura, H</author>
+      <author>Kurashige, H</author>
+      <author>Ochi, A</author>
+      <author>Omachi, C</author>
+      <author>Takeda, H</author>
+      <author>Yamazaki, Y</author>
+      <author>Bialas, W</author>
+      <author>Dabrowski, W</author>
+      <author>Dwuznik, M</author>
+      <author>Golonka, P J</author>
+      <author>Grybos, P</author>
+      <author>Idzik, M</author>
+      <author>Jagielski, S</author>
+      <author>Jelen, K</author>
+      <author>Kisielewska, D</author>
+      <author>Koperny, S</author>
+      <author>Kowalski, T Z</author>
+      <author>Mindur, B</author>
+      <author>Rulikowska-Zarebska, E</author>
+      <author>Toczek, B</author>
+      <author>Zajac, J</author>
+      <author>Banas, E</author>
+      <author>Blocki, J</author>
+      <author>Bocian, D</author>
+      <author>Gornicki, E</author>
+      <author>Hajduk, Z</author>
+      <author>Iwanski, W</author>
+      <author>Kaczmarska, A</author>
+      <author>Kisielewski, B</author>
+      <author>Korcyl, K</author>
+      <author>Malecki, P</author>
+      <author>Moszczynski, A</author>
+      <author>Olszewski, A</author>
+      <author>Olszowska, J</author>
+      <author>Richter-Was, E</author>
+      <author>Sapinski, M</author>
+      <author>Stanecka, E</author>
+      <author>Stodulski, M</author>
+      <author>Szczygiel, R R</author>
+      <author>Szymocha, T</author>
+      <author>Turala, M</author>
+      <author>Wolter, M W</author>
+      <author>Wosiek, B</author>
+      <author>Sasao, N</author>
+      <author>Takashima, R</author>
+      <author>Anduaga, X S</author>
+      <author>Dova, M T</author>
+      <author>Monticelli, F</author>
+      <author>Tripiana, M F</author>
+      <author>Bouhova-Thacker, E V</author>
+      <author>Brodbeck, T J</author>
+      <author>Catmore, J R</author>
+      <author>Chilingarov, A</author>
+      <author>Davidson, R</author>
+      <author>Dewhurst, A</author>
+      <author>Henderson, R C W</author>
+      <author>Hughes, G</author>
+      <author>Jones, R W L</author>
+      <author>Kartvelishvili, V</author>
+      <author>Price, D</author>
+      <author>Ratoff, P N</author>
+      <author>Sloan, T J</author>
+      <author>Small, A</author>
+      <author>Smizanska, M</author>
+      <author>Alonso, J</author>
+      <author>Anderssen, E C</author>
+      <author>Arce, A T H</author>
+      <author>Arguin, J F</author>
+      <author>Barnett, R M</author>
+      <author>Beringer, J</author>
+      <author>Binet, S</author>
+      <author>Calafiura, P</author>
+      <author>Ciocio, A</author>
+      <author>Einsweiler, K</author>
+      <author>Ely, R</author>
+      <author>Gaponenko, A</author>
+      <author>Garcia-Sciveres, M</author>
+      <author>Gilchriese, M</author>
+      <author>Golling, T</author>
+      <author>Haber, C</author>
+      <author>Hartman, N</author>
+      <author>Hinchliffe, I</author>
+      <author>Korn, A</author>
+      <author>Lavrijsen, W</author>
+      <author>Leggett, C</author>
+      <author>Leyton, M</author>
+      <author>Lys, J</author>
+      <author>Madaras, R J</author>
+      <author>Miller, W</author>
+      <author>Nowak, M</author>
+      <author>O'Connor, P</author>
+      <author>Parker, S</author>
+      <author>Quarrie, D R</author>
+      <author>Scherzer, M I</author>
+      <author>Shapiro, M</author>
+      <author>Siegrist, J</author>
+      <author>Stavropoulos, G</author>
+      <author>Tompkins, L</author>
+      <author>Trilling, G</author>
+      <author>Vahsen, S</author>
+      <author>Virzi, J</author>
+      <author>Yao, W M</author>
+      <author>Zdrazil, M</author>
+      <author>Zenz, S</author>
+      <author>Bianco, M</author>
+      <author>Borjanovic, I</author>
+      <author>Cataldi, G</author>
+      <author>Chiodini, G</author>
+      <author>Coluccia, R</author>
+      <author>Gorini, E</author>
+      <author>Grancagnolo, F</author>
+      <author>Grancagnolo, S</author>
+      <author>Perrino, R</author>
+      <author>Podkladkin, S</author>
+      <author>Primavera, M</author>
+      <author>Siragusa, G</author>
+      <author>Spagnolo, S</author>
+      <author>Ventura, Andrea&gt;</author>
+      <author>Alves, R</author>
+      <author>Amorim, A</author>
+      <author>Barros, N</author>
+      <author>Bastos, J</author>
+      <author>Benincasa, G P</author>
+      <author>Caracinha, D</author>
+      <author>Cardeira, C</author>
+      <author>Carvalho, J</author>
+      <author>Castro, Nuno Filipe&gt;</author>
+      <author>Conde Muino, P</author>
+      <author>David, M</author>
+      <author>Esteves, F</author>
+      <author>Gomes, A</author>
+      <author>Gomes, J</author>
+      <author>Gouveia, J</author>
+      <author>Gurriana, L</author>
+      <author>Lopes, L</author>
+      <author>Maio, A</author>
+      <author>Maneira, J</author>
+      <author>Maneira, M</author>
+      <author>Marques, C N</author>
+      <author>Martins, J</author>
+      <author>Mendes Jorge, P</author>
+      <author>Onofre, A</author>
+      <author>Pereira, A</author>
+      <author>Pina, J</author>
+      <author>Pinhao, J</author>
+      <author>Pinto, B</author>
+      <author>Pousada, A</author>
+      <author>Sa da Costa, J</author>
+      <author>Santos, J</author>
+      <author>Saraiva, J G</author>
+      <author>Silva, J</author>
+      <author>Soares, S</author>
+      <author>Varanda, M</author>
+      <author>Vaz, L</author>
+      <author>Veloso, F</author>
+      <author>Villate, J</author>
+      <author>Wemans, A</author>
+      <author>Wolters, H</author>
+      <author>Allport, P P</author>
+      <author>Austin, N</author>
+      <author>Booth, P S L</author>
+      <author>Burdin, S</author>
+      <author>Dervan, P</author>
+      <author>Flowerdew, M J</author>
+      <author>George, M A</author>
+      <author>Greenall, A</author>
+      <author>Gwilliam, C B</author>
+      <author>Hayward, H S</author>
+      <author>Houlden, M A</author>
+      <author>Jackson, J N</author>
+      <author>Jones, T J</author>
+      <author>King, B T</author>
+      <author>Leney, K J C</author>
+      <author>Lindsay, S W</author>
+      <author>Manca, G</author>
+      <author>Maxfield, S J</author>
+      <author>Mehta, A</author>
+      <author>Prichard, P M</author>
+      <author>Shears, T G</author>
+      <author>Smith, N A</author>
+      <author>Sutcliffe, P</author>
+      <author>Vossebeld, J H</author>
+      <author>Cindro, V</author>
+      <author>Dolenc, I</author>
+      <author>Filipcic, A</author>
+      <author>Gorisek, A</author>
+      <author>Kersevan, B P</author>
+      <author>Kramberger, G</author>
+      <author>Mandic, I</author>
+      <author>Mijovic, L</author>
+      <author>Mikus, M</author>
+      <author>Tadel, M</author>
+      <author>Adragna, P</author>
+      <author>Beck, G A</author>
+      <author>Belymam, A</author>
+      <author>Carter, A A</author>
+      <author>Dalmau, J</author>
+      <author>Eisenhandler, E</author>
+      <author>Gannaway, F C</author>
+      <author>Gnanvo, K G</author>
+      <author>Landon, M P J</author>
+      <author>Lloyd, S L</author>
+      <author>Morin, J</author>
+      <author>Morris, J</author>
+      <author>Nagai, K</author>
+      <author>Shibata, A</author>
+      <author>Anderson, B</author>
+      <author>Asquith, L</author>
+      <author>Butterworth, J M</author>
+      <author>Byatt, T</author>
+      <author>Dean, S</author>
+      <author>Drohan, J G</author>
+      <author>Fraser, J T</author>
+      <author>Gwenlan, C</author>
+      <author>Jones, T W</author>
+      <author>Konstantinidis, N</author>
+      <author>Ozcan, V E</author>
+      <author>Postranecky, M</author>
+      <author>Sherwood, P</author>
+      <author>Simmons, B</author>
+      <author>Stefanidis, E</author>
+      <author>Sutton, M R</author>
+      <author>Warren, M</author>
+      <author>Waugh, B M</author>
+      <author>Eerola, P</author>
+      <author>Egede, U</author>
+      <author>Hedberg, V</author>
+      <author>Jarlskog, G</author>
+      <author>Korsmo, H</author>
+      <author>Lundberg, B</author>
+      <author>Smirnova, O</author>
+      <author>Barreiro, F</author>
+      <author>Cantero, J</author>
+      <author>Del Peso, J</author>
+      <author>Gabaldon, C</author>
+      <author>Glasman, C</author>
+      <author>Labarga, L</author>
+      <author>Lagouri, T</author>
+      <author>Nebot, E</author>
+      <author>Oliver, C</author>
+      <author>Peez, M</author>
+      <author>Rodier, S</author>
+      <author>Soares, M</author>
+      <author>Terron, J</author>
+      <author>Aharrouche, M</author>
+      <author>Bauss, B</author>
+      <author>Bendel, M</author>
+      <author>Blum, W</author>
+      <author>Degele, R</author>
+      <author>Eckweiler, S</author>
+      <author>Kleinknecht, K</author>
+      <author>Kuhl, T</author>
+      <author>Othegraven, R</author>
+      <author>Rieke, S</author>
+      <author>Sander, H G</author>
+      <author>Secker, H</author>
+      <author>Tapprogge, S</author>
+      <author>Trefzger, T</author>
+      <author>Weber, G</author>
+      <author>Ask, S</author>
+      <author>Bell, P J</author>
+      <author>Cox, B E</author>
+      <author>Duerdoth, I P</author>
+      <author>Foster, J M</author>
+      <author>Freestone, J</author>
+      <author>Head, S J</author>
+      <author>Hughes-Jones, R E</author>
+      <author>Ibbotson, M</author>
+      <author>Keates, J R</author>
+      <author>Kelly, M</author>
+      <author>Kolya, S D</author>
+      <author>Loebinger, F K</author>
+      <author>Marshall, R</author>
+      <author>Masik, J</author>
+      <author>Miyagawa, P S</author>
+      <author>Nasteva, I</author>
+      <author>Nauyock, F</author>
+      <author>Pater, J R</author>
+      <author>Pilkington, A D</author>
+      <author>Plano, W G</author>
+      <author>Snow, S W</author>
+      <author>Tevlin, C M</author>
+      <author>Thompson, R J</author>
+      <author>Wengler, T</author>
+      <author>Yang, U K</author>
+      <author>Hinkelbein, C</author>
+      <author>Khomich, A</author>
+      <author>Kugel, A</author>
+      <author>Maenner, R</author>
+      <author>Yu, M</author>
+      <author>Aad, G</author>
+      <author>Bee, C</author>
+      <author>Benchouk, C</author>
+      <author>Bernardet, K</author>
+      <author>Breugnon, P</author>
+      <author>Cerna, C</author>
+      <author>Clemens, J C</author>
+      <author>Correard, S</author>
+      <author>Dargent, P</author>
+      <author>Delpierre, P</author>
+      <author>Djama, F</author>
+      <author>Etienne, F</author>
+      <author>Feligioni, L</author>
+      <author>Hallewell, G D</author>
+      <author>Henry-Couannier, F</author>
+      <author>Hoffmann, D</author>
+      <author>Hubaut, F</author>
+      <author>Karst, P</author>
+      <author>Leveque, J</author>
+      <author>Mangeard, P S</author>
+      <author>Meessen, C</author>
+      <author>Monnier, E</author>
+      <author>Mouthuy, T</author>
+      <author>Pralavorio, P</author>
+      <author>Qian, Z</author>
+      <author>Resende, B</author>
+      <author>Rozanov, A</author>
+      <author>Sauvage, D</author>
+      <author>Talby, M</author>
+      <author>Tisserant, S</author>
+      <author>Toth, J</author>
+      <author>Touchard, F</author>
+      <author>Vacavant, L</author>
+      <author>Vigeolas, E</author>
+      <author>Zaidan, R</author>
+      <author>Dallapiccola, C</author>
+      <author>Moore, T B</author>
+      <author>Moyse, E J W</author>
+      <author>van Eldik, N</author>
+      <author>Willocq, S</author>
+      <author>Woudstra, M J</author>
+      <author>Hasegawa, Y</author>
+      <author>Miyazaki, Y</author>
+      <author>Ohshita, H</author>
+      <author>Takeshita, T</author>
+      <author>Atkinson, T</author>
+      <author>Barberio, E L</author>
+      <author>Bischofberger, M</author>
+      <author>Davidson, N</author>
+      <author>Fawzi, F</author>
+      <author>Guy, L</author>
+      <author>Kazi, S I</author>
+      <author>La Rosa, M</author>
+      <author>Moloney, G</author>
+      <author>Moorhead, G F</author>
+      <author>Morley, A K</author>
+      <author>Phan, A</author>
+      <author>Sevior, M E</author>
+      <author>Taylor, G N</author>
+      <author>Tovey, S N</author>
+      <author>Winton, L</author>
+      <author>Abolins, M</author>
+      <author>Brock, R</author>
+      <author>Bromberg, C</author>
+      <author>Comune, G</author>
+      <author>Di Mattia, A</author>
+      <author>Ermoline, I</author>
+      <author>Gonzalez-Pineiro, B</author>
+      <author>Hauser, R</author>
+      <author>Huston, J</author>
+      <author>Martin, B</author>
+      <author>Miller, R J</author>
+      <author>Pope, B G</author>
+      <author>Richards, R A</author>
+      <author>Ryan, P</author>
+      <author>Schwienhorst, R</author>
+      <author>Chapman, J W</author>
+      <author>Cirilli, M</author>
+      <author>Dai, T</author>
+      <author>De La Cruz-Burelo, E</author>
+      <author>Diehl, E B</author>
+      <author>Eppig, A</author>
+      <author>Ferretti, C</author>
+      <author>Goldfarb, S</author>
+      <author>Levin, D</author>
+      <author>Mc Kee, S P</author>
+      <author>Neal, H A</author>
+      <author>Purdham, J</author>
+      <author>Qian, J</author>
+      <author>Schick, H</author>
+      <author>Strandberg, J</author>
+      <author>Thun, R P</author>
+      <author>Weaverdyck, C</author>
+      <author>Wilson, A</author>
+      <author>Yang, H</author>
+      <author>Zhao, Z</author>
+      <author>Zhou, B</author>
+      <author>Acerbi, E</author>
+      <author>Aleppo, M</author>
+      <author>Alessandria, F</author>
+      <author>Alimonti, G</author>
+      <author>Ambrosio, G</author>
+      <author>Andreazza, A</author>
+      <author>Baccaglioni, G</author>
+      <author>Banfi, D</author>
+      <author>Battistoni, G</author>
+      <author>Bellomo, G</author>
+      <author>Bonivento, W</author>
+      <author>Broggi, F</author>
+      <author>Caccia, M</author>
+      <author>Carminati, L</author>
+      <author>Cataneo, F</author>
+      <author>Cavalli, D</author>
+      <author>Citterio, M</author>
+      <author>Coelli, S</author>
+      <author>Costa, G</author>
+      <author>De Sanctis, U</author>
+      <author>Fanti, M</author>
+      <author>Giugni, D</author>
+      <author>Lari, T</author>
+      <author>Mandelli, L</author>
+      <author>Mazzanti, M</author>
+      <author>Meroni, C</author>
+      <author>Montesano, S</author>
+      <author>Perini, L</author>
+      <author>Ragusa, F</author>
+      <author>Resconi, S</author>
+      <author>Rivoltella, G</author>
+      <author>Rossi, L</author>
+      <author>Sala, P</author>
+      <author>Sorbi, M</author>
+      <author>Tartarelli, G</author>
+      <author>Troncon, C</author>
+      <author>Vegni, G</author>
+      <author>Volpini, G</author>
+      <author>Gilewsky, V</author>
+      <author>Kuzhir, P</author>
+      <author>Rumiantsev, V</author>
+      <author>Bogouch, A</author>
+      <author>Kulchitsky, Y</author>
+      <author>Kurochkin, Y A</author>
+      <author>Satsounkevitch, I</author>
+      <author>Tsiareshka, P V</author>
+      <author>Coco, R</author>
+      <author>Osborne, L S</author>
+      <author>Taylor, F E</author>
+      <author>Dobbs, M</author>
+      <author>Dufour, M A</author>
+      <author>Robertson, S H</author>
+      <author>Santamarina Rios, C</author>
+      <author>Vachon, B</author>
+      <author>Warburton, A</author>
+      <author>Azuelos, G</author>
+      <author>Beauchemin, P H</author>
+      <author>Brelier, B</author>
+      <author>Charron, S</author>
+      <author>Ferland, J</author>
+      <author>Idarraga, J</author>
+      <author>Lebel, C</author>
+      <author>Leroy, C</author>
+      <author>Martin, J P</author>
+      <author>Mehdiyev, R</author>
+      <author>Bondarenko, V G</author>
+      <author>Dolgoshein, B A</author>
+      <author>Kantserov, V A</author>
+      <author>Kondratyeva, N V</author>
+      <author>Mashinistov, R</author>
+      <author>Morozov, S V</author>
+      <author>Romaniouk, A</author>
+      <author>Smirnov, S Yu</author>
+      <author>Sosnovtsev, V V</author>
+      <author>Suchkov, S I</author>
+      <author>Zhelezko, A</author>
+      <author>Akimov, A V</author>
+      <author>Baranov, S P</author>
+      <author>Gavrilenko, I L</author>
+      <author>Kayumov, F</author>
+      <author>Komar, A A</author>
+      <author>Konovalov, S P</author>
+      <author>Mouraviev, S V</author>
+      <author>Nechaeva, P</author>
+      <author>Shmeleva, A</author>
+      <author>Snesarev, A A</author>
+      <author>Sulin, V V</author>
+      <author>Tikhomirov, V O</author>
+      <author>Vassilieva, L</author>
+      <author>Artamonov, A</author>
+      <author>Epshteyn, V S</author>
+      <author>Khovanskiy, V</author>
+      <author>Shatalov, P B</author>
+      <author>Tsukerman, I I</author>
+      <author>Basiladze, S</author>
+      <author>Eremin, V</author>
+      <author>Grishkevich, Y</author>
+      <author>Kramarenko, V</author>
+      <author>Nikitin, N</author>
+      <author>Sivoklokov, S</author>
+      <author>Smirnova, L</author>
+      <author>Aderholz, M</author>
+      <author>Andricek, L</author>
+      <author>Bangert, A</author>
+      <author>Barillari, T</author>
+      <author>Bartheld, V</author>
+      <author>Bartko, H</author>
+      <author>Bethke, S</author>
+      <author>Dedes, G</author>
+      <author>Dietl, H</author>
+      <author>Dubbert, J</author>
+      <author>Fent, J</author>
+      <author>Fritsch, K</author>
+      <author>Ghodbane, N</author>
+      <author>Groh, M</author>
+      <author>Haubold, T G</author>
+      <author>Hauff, D</author>
+      <author>Horvat, S</author>
+      <author>Hott, T</author>
+      <author>Kaiser, S</author>
+      <author>Kiryunin, A E</author>
+      <author>Kluth, S</author>
+      <author>Kortner, O</author>
+      <author>Kotov, S</author>
+      <author>Kroha, H</author>
+      <author>Lutz, G</author>
+      <author>Manz, A</author>
+      <author>Menke, S</author>
+      <author>Moser, H G</author>
+      <author>Nisius, R</author>
+      <author>Oberlack, H</author>
+      <author>Olivo Gomez, M</author>
+      <author>Pataraia, S</author>
+      <author>Pospelov, G E</author>
+      <author>Potrap, I N</author>
+      <author>Rauter, E</author>
+      <author>Richter, R H</author>
+      <author>Richter, R</author>
+      <author>Salihagic, D</author>
+      <author>Schacht, P</author>
+      <author>Schieck, J</author>
+      <author>Stiller, W</author>
+      <author>Stonjek, S</author>
+      <author>Striegel, D</author>
+      <author>Tribanek, W</author>
+      <author>Valderanis, C</author>
+      <author>von der Schmitt, H</author>
+      <author>Wiesmann, M</author>
+      <author>Yuan, J</author>
+      <author>Zhuang, X A</author>
+      <author>Biebel, O</author>
+      <author>Binder, M</author>
+      <author>Boehm, M</author>
+      <author>Boutemeur, M</author>
+      <author>Brandt, A</author>
+      <author>Christiansen, T</author>
+      <author>Deile, M</author>
+      <author>Duckeck, G</author>
+      <author>Elmsheuser, J</author>
+      <author>Fiedler, F</author>
+      <author>Genest, M H</author>
+      <author>Hertenberger, R</author>
+      <author>Kennedy, J</author>
+      <author>Krobath, G</author>
+      <author>Lambacher, M</author>
+      <author>Mameghani, R</author>
+      <author>Mendez, P</author>
+      <author>Merkl, D</author>
+      <author>Nunnemann, T</author>
+      <author>Obermaier, M</author>
+      <author>Rauscher, F</author>
+      <author>Ruckert, B</author>
+      <author>Schaile, D</author>
+      <author>Schieferdecker, P</author>
+      <author>Schott, M</author>
+      <author>Serfon, C</author>
+      <author>Staude, A</author>
+      <author>Vollmer, C F</author>
+      <author>Shimojima, M</author>
+      <author>Tanaka, Y</author>
+      <author>Ohshima, T</author>
+      <author>Sugimoto, T</author>
+      <author>Tomoto, M</author>
+      <author>Aloisio, A</author>
+      <author>Alviggi, M G</author>
+      <author>Biglietti, M</author>
+      <author>Canale, V</author>
+      <author>Caprio, M</author>
+      <author>Carlino, G</author>
+      <author>Cevenini, F</author>
+      <author>Chiefari, G</author>
+      <author>Conventi, F A</author>
+      <author>de Asmundis, R</author>
+      <author>Della Pietra, M</author>
+      <author>della Volpe, D</author>
+      <author>Doria, A</author>
+      <author>Izzo, V</author>
+      <author>Merola, L</author>
+      <author>Migliaccio, A</author>
+      <author>Patricelli, S</author>
+      <author>Sekhniaidze, G</author>
+      <author>Villella, I</author>
+      <author>Yoshida, H</author>
+      <author>Brooijmans, G</author>
+      <author>Caughron, S</author>
+      <author>Cooke, M</author>
+      <author>Dodd, J</author>
+      <author>Gray, H M</author>
+      <author>Haas, A</author>
+      <author>Hughes, E</author>
+      <author>Leltchouk, M</author>
+      <author>Lopez Mateos, D</author>
+      <author>Marshall, Z</author>
+      <author>Negroni, S</author>
+      <author>Parsons, J A</author>
+      <author>Spano, F</author>
+      <author>Tuts, P M</author>
+      <author>Willis, W</author>
+      <author>Zhou, N</author>
+      <author>Gorelov, I</author>
+      <author>Hoeferkamp, M R</author>
+      <author>Metcalfe, J</author>
+      <author>Seidel, S C</author>
+      <author>Thomas, T L</author>
+      <author>Toms, K</author>
+      <author>Vataga, E</author>
+      <author>Casadei, D</author>
+      <author>Cranmer, K</author>
+      <author>Djilkibaev, R</author>
+      <author>Konoplich, R</author>
+      <author>Mincer, A I</author>
+      <author>Nemethy, P</author>
+      <author>Zhao, L</author>
+      <author>De Groot, N</author>
+      <author>Filthaut, F</author>
+      <author>Jansen, E</author>
+      <author>Klok, P F</author>
+      <author>Koetsveld, F</author>
+      <author>Magrath, C A</author>
+      <author>Ordonez, G</author>
+      <author>Timmermans, C J W P</author>
+      <author>Wijnen, T</author>
+      <author>Aulchenko, V M</author>
+      <author>Kazanin, V A</author>
+      <author>Kolachev, G M</author>
+      <author>Kotov, K Y</author>
+      <author>Malychev, V</author>
+      <author>Maslennikov, A L</author>
+      <author>Orlov, I O</author>
+      <author>Panin, V N</author>
+      <author>Peleganchuk, S V</author>
+      <author>Schamov, A G</author>
+      <author>Soukharev, A</author>
+      <author>Talyshev, A</author>
+      <author>Tikhonov, Y A</author>
+      <author>Zaytsev, A</author>
+      <author>Arms, Kregg E</author>
+      <author>Fernando, W</author>
+      <author>Fisher, M J</author>
+      <author>Gan, K K</author>
+      <author>Jackson, P</author>
+      <author>Kagan, H</author>
+      <author>Kass, R D</author>
+      <author>Loureiro, K F</author>
+      <author>Rahimi, A M</author>
+      <author>Smith, D S</author>
+      <author>Ter-Antonyan, R</author>
+      <author>Zoeller, M M</author>
+      <author>Mima, S</author>
+      <author>Naito, D</author>
+      <author>Nakano, I</author>
+      <author>Tanaka, R</author>
+      <author>Abi, B A</author>
+      <author>Khanov, A</author>
+      <author>Rizatdinova, F</author>
+      <author>Boyd, G R</author>
+      <author>Gutierrez, P</author>
+      <author>Huang, G S</author>
+      <author>Meera-Lebbai, R</author>
+      <author>Saleem, M</author>
+      <author>Severini, H</author>
+      <author>Skubic, P</author>
+      <author>Snow, J</author>
+      <author>Strauss, M</author>
+      <author>Igonkina, O</author>
+      <author>Strom, David M</author>
+      <author>Torrence, E</author>
+      <author>Arnault, C</author>
+      <author>Auge, E</author>
+      <author>Barrillon, P</author>
+      <author>Bonis, J</author>
+      <author>Bourdarios, C</author>
+      <author>Breton, D</author>
+      <author>Collard, C</author>
+      <author>De La Taille, C</author>
+      <author>De Vivie De Regie, J B</author>
+      <author>Duflot, L</author>
+      <author>Falleau, I</author>
+      <author>Falou, A C</author>
+      <author>Fayard, L</author>
+      <author>Fournier, D</author>
+      <author>Guilhem, G</author>
+      <author>Henrot-Versille, S</author>
+      <author>Hrivnac, J</author>
+      <author>Iconomidou-Fayard, L</author>
+      <author>Imbert, P</author>
+      <author>Kado, M</author>
+      <author>Koletsou, I</author>
+      <author>Lechowski, M</author>
+      <author>Mace, G G R</author>
+      <author>Matricon, P</author>
+      <author>Noppe, J M</author>
+      <author>Perus, P</author>
+      <author>Plamondon, M</author>
+      <author>Poggioli, L</author>
+      <author>Prat, S</author>
+      <author>Puzo, P</author>
+      <author>Richer, J P</author>
+      <author>Rousseau, D</author>
+      <author>Rybkine, G</author>
+      <author>Schaffer, A C</author>
+      <author>Seguin-Moreau, N</author>
+      <author>Serin, L</author>
+      <author>Simion, S</author>
+      <author>Tocut, V M</author>
+      <author>Turlay, E</author>
+      <author>Varouchas, D</author>
+      <author>Veillet, J J</author>
+      <author>Wicek, F</author>
+      <author>Zerwas, D</author>
+      <author>Hanagaki, K</author>
+      <author>Nomachi, M</author>
+      <author>Sugaya, Y</author>
+      <author>Bugge, L</author>
+      <author>Buran, T</author>
+      <author>Cameron, D</author>
+      <author>Danielsen, K M</author>
+      <author>Dorholt, O</author>
+      <author>Huse, T</author>
+      <author>Lund, E</author>
+      <author>Niinimaki, M J</author>
+      <author>Ould-Saada, F</author>
+      <author>Pajchel, K</author>
+      <author>Pylypchenko, Y</author>
+      <author>Reads, A L</author>
+      <author>Samset, B H</author>
+      <author>Stapnes, S</author>
+      <author>Strandlie, A</author>
+      <author>Sundal, B</author>
+      <author>Taga, A</author>
+      <author>Archambault, J P</author>
+      <author>Asner, D</author>
+      <author>Belanger, G A N</author>
+      <author>Cojocaru, C D</author>
+      <author>Heelan, L</author>
+      <author>Khakzad, M</author>
+      <author>O'Neill, M</author>
+      <author>Oakham, F G</author>
+      <author>Schram, M</author>
+      <author>Strickland, V</author>
+      <author>Vincter, M G</author>
+      <author>Yang, Z</author>
+      <author>Abdesselam, A</author>
+      <author>Bargassa, P</author>
+      <author>Barr, A J</author>
+      <author>Brandt, O</author>
+      <author>Brett, N D</author>
+      <author>Bruckman de Renstrom, P A</author>
+      <author>Buira-Clark, D</author>
+      <author>Coe, P</author>
+      <author>Cox, J</author>
+      <author>Dehchar, M</author>
+      <author>Dennis, C</author>
+      <author>Dobson, E</author>
+      <author>Fiascaris, M</author>
+      <author>Fopma, J</author>
+      <author>Gallas, E J</author>
+      <author>Gibson, S M</author>
+      <author>Gilbert, L M</author>
+      <author>Grewal, A</author>
+      <author>Hawes, B M</author>
+      <author>Heinemann, F E W</author>
+      <author>Hill, J</author>
+      <author>Hindson, D</author>
+      <author>Holmes, A</author>
+      <author>Howell, D F</author>
+      <author>Huffman, B T</author>
+      <author>Issever, C</author>
+      <author>Jones, M</author>
+      <author>Karagoz Unel, M</author>
+      <author>Kirsch, G P</author>
+      <author>Kundu, N</author>
+      <author>Lau, W</author>
+      <author>Lavorato, A</author>
+      <author>Lohwasser, K</author>
+      <author>Loken, J</author>
+      <author>Lynn, J</author>
+      <author>Mitra, A</author>
+      <author>Nickerson, R B</author>
+      <author>Ottewell, B</author>
+      <author>Shield, P</author>
+      <author>Tseng, J C L</author>
+      <author>Vertogardov, L</author>
+      <author>Viehhauser, G H A</author>
+      <author>Wastie, R</author>
+      <author>Weidberg, A R</author>
+      <author>Yang, S</author>
+      <author>Calderini, G</author>
+      <author>Camard, A</author>
+      <author>Cavalleri, P</author>
+      <author>Derue, F</author>
+      <author>Escalier, M</author>
+      <author>Fayette, F</author>
+      <author>Fichet, S</author>
+      <author>Fleuret, F</author>
+      <author>Imbault, D</author>
+      <author>Krasny, M</author>
+      <author>Lacour, D</author>
+      <author>Laforge, B</author>
+      <author>Le Dortz, O</author>
+      <author>Nikolic-Audit, I</author>
+      <author>Orsini, F</author>
+      <author>Ridel, M</author>
+      <author>Roos, L</author>
+      <author>Savoy-Navarro, A</author>
+      <author>Schwemling, P</author>
+      <author>Trincaz-Duvoid, S</author>
+      <author>Vannucci, F</author>
+      <author>Vincent, P</author>
+      <author>Bellomo, M</author>
+      <author>Cambiaghi, M</author>
+      <author>Conta, C</author>
+      <author>Ferrari, R</author>
+      <author>Fraternali, M</author>
+      <author>Lanza, A</author>
+      <author>Livan, M</author>
+      <author>Polesello, G</author>
+      <author>Prata, M</author>
+      <author>Rebuzzi, D</author>
+      <author>Rimoldi, A</author>
+      <author>Scannicchio, D A</author>
+      <author>Vercesi, V</author>
+      <author>Dressnandt, N</author>
+      <author>Hance, M</author>
+      <author>Keener, P T</author>
+      <author>LeGeyt, B C</author>
+      <author>Martin, F F</author>
+      <author>Munar, A</author>
+      <author>Newcomer, F M</author>
+      <author>VanBerg, R</author>
+      <author>Williams, H H</author>
+      <author>Bosi, F</author>
+      <author>Cascella, M</author>
+      <author>Cavasinni, V</author>
+      <author>Cicalini, E</author>
+      <author>Del Prete, T</author>
+      <author>Dotti, A</author>
+      <author>Flaminio, V</author>
+      <author>Francavilla, P</author>
+      <author>Giangiobbe, V</author>
+      <author>Lupi, A</author>
+      <author>Mazzoni, E</author>
+      <author>Roda, C</author>
+      <author>Sarri, F</author>
+      <author>Vivarelli, I</author>
+      <author>Zenonos, Z</author>
+      <author>Bansal, V</author>
+      <author>Boudreau, J</author>
+      <author>Boulahouache, C</author>
+      <author>Cleland, W</author>
+      <author>Haboubi, G</author>
+      <author>Kittelmann, T</author>
+      <author>McDonald, J</author>
+      <author>Mueller, J</author>
+      <author>Paolone, V</author>
+      <author>Savinov, V</author>
+      <author>Tsulaia, V</author>
+      <author>Wendler, S</author>
+      <author>Yoosoofmiya, R</author>
+      <author>Zheng, W</author>
+      <author>Bazalova, M</author>
+      <author>Bohm, J</author>
+      <author>Chudoba, J</author>
+      <author>Gunther, J</author>
+      <author>Havranek, M</author>
+      <author>Hruska, I</author>
+      <author>Jahoda, M</author>
+      <author>Jez, P</author>
+      <author>Juranek, V</author>
+      <author>Kepka, O</author>
+      <author>Kupco, A</author>
+      <author>Kus, V</author>
+      <author>Kvasnicka, O</author>
+      <author>Lokajicek, M</author>
+      <author>Marcisovsky, M</author>
+      <author>Mikestikova, M</author>
+      <author>Mikestikova, M</author>
+      <author>Myska, M</author>
+      <author>Nemecek, S</author>
+      <author>Panuskova, M</author>
+      <author>Polak, I</author>
+      <author>Popule, J</author>
+      <author>Pribyl, L</author>
+      <author>Sicho, P</author>
+      <author>Staroba, P</author>
+      <author>Stastny, J</author>
+      <author>Tasevsky, M</author>
+      <author>Tic, T</author>
+      <author>Tomasek, L</author>
+      <author>Tomasek, M</author>
+      <author>Valenta, J</author>
+      <author>Vrba, V</author>
+      <author>Augsten, K</author>
+      <author>Bedajanek, I</author>
+      <author>Benes, J</author>
+      <author>Chren, D</author>
+      <author>Holy, T</author>
+      <author>Homola, P</author>
+      <author>Horazdovsky, T</author>
+      <author>Hubacek, Z</author>
+      <author>Jakubek, J</author>
+      <author>Kohout, Z</author>
+      <author>Kral, V</author>
+      <author>Linhart, V</author>
+      <author>Otec, R</author>
+      <author>Pospisil, S</author>
+      <author>Simak, V</author>
+      <author>Slavicek, T</author>
+      <author>Smolek, K</author>
+      <author>Sodomka, J</author>
+      <author>Solar, M</author>
+      <author>Sopko, V</author>
+      <author>Sopko, B</author>
+      <author>Stekl, I</author>
+      <author>Vacek, V</author>
+      <author>Vokac, P</author>
+      <author>Zychacek, V</author>
+      <author>Broklova, Z</author>
+      <author>Broz, J</author>
+      <author>Davidek, T</author>
+      <author>Dolejsi, J</author>
+      <author>Dolezal, Z</author>
+      <author>Drasal, Z</author>
+      <author>Kodys, P</author>
+      <author>Krivkova, P</author>
+      <author>Kubik, P</author>
+      <author>Leitner, R</author>
+      <author>Novakova, J</author>
+      <author>Reznicek, P</author>
+      <author>Scheirich, D</author>
+      <author>Spousta, M</author>
+      <author>Suk, M</author>
+      <author>Tas, P</author>
+      <author>Trka, Z</author>
+      <author>Valkar, S</author>
+      <author>Vorobel, V</author>
+      <author>Wilhelm, I</author>
+      <author>Benchekroun, D</author>
+      <author>Cherkaoui El Moursli, R</author>
+      <author>Derkaoui, J E</author>
+      <author>El Kacimi, M</author>
+      <author>Ghazlane, H</author>
+      <author>Goujdami, D</author>
+      <author>Hakimi, M</author>
+      <author>Hoummada, A</author>
+      <author>Benslama, K</author>
+      <author>Khoriauli, G</author>
+      <author>Duchovni, E</author>
+      <author>Gross, E</author>
+      <author>Klier, A</author>
+      <author>Kupper, M</author>
+      <author>Lellouch, D</author>
+      <author>Levinson, L J</author>
+      <author>Melamed-Katz, A</author>
+      <author>Mikenberg, G</author>
+      <author>Prosso, E</author>
+      <author>Riveline, M</author>
+      <author>Shoa, M</author>
+      <author>Smakhtin, V</author>
+      <author>Zivkovic, L</author>
+      <author>Caloba, L P</author>
+      <author>Cerqueira, A S</author>
+      <author>Coura Torres, R</author>
+      <author>Da Rocha Gesualdi Mello, A</author>
+      <author>Da Silva, P V M</author>
+      <author>do Vale, M A B</author>
+      <author>Maidantchik, C</author>
+      <author>Marroquim, F</author>
+      <author>Nepomuceno, A A</author>
+      <author>Perantoni, M</author>
+      <author>Seixas, J M</author>
+      <author>Lobkowicz, F</author>
+      <author>Slattery, P</author>
+      <author>Aielli, G</author>
+      <author>Camarri, P</author>
+      <author>Cardarelli, R</author>
+      <author>Di Ciaccio, A</author>
+      <author>Liberti, B</author>
+      <author>Paoloni, A</author>
+      <author>Salamon, A</author>
+      <author>Santonico, R</author>
+      <author>Bacci, C</author>
+      <author>Baroncelli, A</author>
+      <author>Branchini, P</author>
+      <author>Ceradini, F</author>
+      <author>Di Luise, S</author>
+      <author>Diglio, S</author>
+      <author>Farilla, A</author>
+      <author>Graziani, E</author>
+      <author>Iodice, M</author>
+      <author>Orestano, D</author>
+      <author>Passeri, A</author>
+      <author>Pastore, F</author>
+      <author>Petrucci, F</author>
+      <author>Ruggieri, F</author>
+      <author>Spiriti, E</author>
+      <author>Spogli, L</author>
+      <author>Stanescu, C</author>
+      <author>Tonazzo, A</author>
+      <author>Bagnaia, P</author>
+      <author>Bini, C</author>
+      <author>Boaretto, C</author>
+      <author>Caloi, R</author>
+      <author>Cardini, A</author>
+      <author>Cavallari, A</author>
+      <author>Ciapetti, G</author>
+      <author>De Pedis, D</author>
+      <author>De Salvo, A</author>
+      <author>De Zorzi, G</author>
+      <author>Di Domenico, A</author>
+      <author>Di Girolamo, A</author>
+      <author>Dionisi, C</author>
+      <author>Falciano, S</author>
+      <author>Gauzzi, P</author>
+      <author>Gentile, S</author>
+      <author>Giagu, S</author>
+      <author>Kuznetsova, E K</author>
+      <author>Lacava, F</author>
+      <author>Luci, C</author>
+      <author>Luminari, L</author>
+      <author>Marzano, F</author>
+      <author>Mirabelli, G</author>
+      <author>Moch, M</author>
+      <author>Nisati, A</author>
+      <author>Oberson, P</author>
+      <author>Pasqualucci, E</author>
+      <author>Pastore, Fr</author>
+      <author>Petrolo, E</author>
+      <author>Pontecorvo, L</author>
+      <author>Rescigno, M</author>
+      <author>Robins, S</author>
+      <author>Rosati, S</author>
+      <author>Sidoti, A</author>
+      <author>Camillocci, E Solfaroli&gt;</author>
+      <author>Spila, F</author>
+      <author>Valente, P</author>
+      <author>Vari, R</author>
+      <author>Veneziano, S</author>
+      <author>Zanello, Lucia&gt;</author>
+      <author>Arnaud, M</author>
+      <author>Bachacou, H</author>
+      <author>Bauer, F</author>
+      <author>Berriaud, C</author>
+      <author>Besson, N</author>
+      <author>Boonekamp, M</author>
+      <author>Chalifour, M</author>
+      <author>Chevalier, L</author>
+      <author>Dael, A</author>
+      <author>de La Broise, X</author>
+      <author>Delagnes, E</author>
+      <author>Dentan, M</author>
+      <author>Durand, D</author>
+      <author>Ernwein, J</author>
+      <author>Etienvre, A I</author>
+      <author>Fleischmann, P</author>
+      <author>Formica, A</author>
+      <author>Gautard, V</author>
+      <author>Giraud, P F</author>
+      <author>Guyot, C</author>
+      <author>Hassani, S</author>
+      <author>Helsens, C</author>
+      <author>Kozanecki, W</author>
+      <author>Lancon, E</author>
+      <author>Laporte, J F</author>
+      <author>Legendre, M</author>
+      <author>Mansoulie, B</author>
+      <author>Mayri, C</author>
+      <author>Meyer, J P</author>
+      <author>Nicolaidou, R</author>
+      <author>Ouraou, A</author>
+      <author>Pomarede, D M</author>
+      <author>Ponsot, P</author>
+      <author>Rey, J</author>
+      <author>Schune, P</author>
+      <author>Schwindling, J</author>
+      <author>Sun, Z</author>
+      <author>Vedrine, P</author>
+      <author>Virchaux, M</author>
+      <author>Moreno, D</author>
+      <author>Ammosov, V V</author>
+      <author>Borisov, A</author>
+      <author>Bozhko, N I</author>
+      <author>Chekulaev, S V</author>
+      <author>Chuguev, A G</author>
+      <author>Denisov, S P</author>
+      <author>Evdokimov, V N</author>
+      <author>Fakhrutdinov, R M</author>
+      <author>Fenyuk, A B</author>
+      <author>Gapienko, V A</author>
+      <author>Golovnia, S N</author>
+      <author>Gorokhov, S A</author>
+      <author>Goryachev, S V</author>
+      <author>Goryachev, V N</author>
+      <author>Gushchin, V N</author>
+      <author>Ivashin, A V</author>
+      <author>Kabachenko, V V</author>
+      <author>Karyukhin, A N</author>
+      <author>Kholodenko, A G</author>
+      <author>Kiver, A M</author>
+      <author>Kopikov, S V</author>
+      <author>Koreshev, V</author>
+      <author>Korotkov, V A</author>
+      <author>Kostrikov, M E</author>
+      <author>Kozhin, A S</author>
+      <author>Lapin, V V</author>
+      <author>Larionov, A V</author>
+      <author>Levitski, M S</author>
+      <author>Minaenko, A A</author>
+      <author>Mitrofanov, G Y</author>
+      <author>Moisseev, A M</author>
+      <author>Myagkov, A G</author>
+      <author>Pleskach, A V</author>
+      <author>Pylaev, A N</author>
+      <author>Ryadovikov, V</author>
+      <author>Solodkov, A A</author>
+      <author>Solovyanov, O V</author>
+      <author>Starchenko, E A</author>
+      <author>Sviridov, Yu M</author>
+      <author>Vorobiev, A P</author>
+      <author>Vovenko, A S</author>
+      <author>Zaets, V G</author>
+      <author>Zaitsev, A M</author>
+      <author>Zenin, A V</author>
+      <author>Zmuchko, V V</author>
+      <author>Booth, C N</author>
+      <author>Booth, P</author>
+      <author>Costanzo, D</author>
+      <author>Dawson, I</author>
+      <author>Dixon, S D</author>
+      <author>Duxfield, R</author>
+      <author>French, R S</author>
+      <author>Grigson, C</author>
+      <author>Harper, R</author>
+      <author>Hodgkinson, M C</author>
+      <author>Hodgson, P</author>
+      <author>Johansson, P</author>
+      <author>Kerschen, N</author>
+      <author>Lehto, M</author>
+      <author>Manolopoulos, S</author>
+      <author>Morgan, D</author>
+      <author>Nicholson, R</author>
+      <author>Paganis, E</author>
+      <author>Prokofiev, K</author>
+      <author>Tovey, D R</author>
+      <author>Walsh, S</author>
+      <author>Zhu, H Z</author>
+      <author>Tanaka, S</author>
+      <author>Bucholz, P</author>
+      <author>Fleck, I</author>
+      <author>Grybel, K</author>
+      <author>Holder, M</author>
+      <author>Ibragimov, I</author>
+      <author>Schumacher, M</author>
+      <author>Sipica, V</author>
+      <author>Stahl, T</author>
+      <author>Walkowiak, W</author>
+      <author>Werthenbach, U</author>
+      <author>Ziolkowski, M</author>
+      <author>Aracena, I</author>
+      <author>Bartoldus, R</author>
+      <author>Demers, S</author>
+      <author>Gao, Y S</author>
+      <author>Gowdy, S</author>
+      <author>Horn, C</author>
+      <author>Miller, D W</author>
+      <author>Perazzo, A</author>
+      <author>Schwartzman, A</author>
+      <author>Su, D</author>
+      <author>Young, C</author>
+      <author>Daya, R K</author>
+      <author>Dindar, K</author>
+      <author>Dinkespiler, B</author>
+      <author>Firan, A</author>
+      <author>Goldin, D</author>
+      <author>Hadavand, H K</author>
+      <author>He, Y P</author>
+      <author>Hoffman, J</author>
+      <author>Ilchenko, Y</author>
+      <author>Ishmukhametov, R</author>
+      <author>Joffe, D</author>
+      <author>Kasmi, A</author>
+      <author>Kehoe, R</author>
+      <author>Liang, Z</author>
+      <author>Liu, T</author>
+      <author>Lu, L</author>
+      <author>Renkel, P</author>
+      <author>Rios, R R</author>
+      <author>Stroynowski, R</author>
+      <author>Xiang, A</author>
+      <author>Yang, J C</author>
+      <author>Ye, J</author>
+      <author>Zarzhitsky, P</author>
+      <author>Fedin, O L</author>
+      <author>Filimonov, V</author>
+      <author>Gratchev, V</author>
+      <author>Katunin, S</author>
+      <author>Kazarov, A</author>
+      <author>Khomutnikov, V P</author>
+      <author>Kovalenko, S</author>
+      <author>Kudin, L G</author>
+      <author>Maleev, V P</author>
+      <author>Nesterov, S Y</author>
+      <author>Ryabov, Y F</author>
+      <author>Schegelsky, V A</author>
+      <author>Sedykh, E</author>
+      <author>Seliverstov, D M</author>
+      <author>Soloviev, I</author>
+      <author>Zalite, A Yu</author>
+      <author>Zalite, Yu K</author>
+      <author>Alam, S M</author>
+      <author>Athar, B</author>
+      <author>Timm, S</author>
+      <author>Wappler, F</author>
+      <author>Zhichao, L</author>
+      <author>Ahmad, A</author>
+      <author>Botchev, B</author>
+      <author>Engelmann, R</author>
+      <author>Finocchiaro, G</author>
+      <author>Goodson, J J</author>
+      <author>Grimm, K</author>
+      <author>Khodinov, A</author>
+      <author>McCarthy, R L</author>
+      <author>Rijssenbeek, M</author>
+      <author>Steffens, J L</author>
+      <author>Thioye, M</author>
+      <author>Yurkewicz, A</author>
+      <author>Grahn, K J</author>
+      <author>Hansson, P</author>
+      <author>Lund-Jensen, B</author>
+      <author>Tayalati, Y</author>
+      <author>Bergeaas, E</author>
+      <author>Berglund, S</author>
+      <author>Bohm, C</author>
+      <author>Clement, C</author>
+      <author>Eriksson, D</author>
+      <author>Gellerstedt, K</author>
+      <author>Hellman, S</author>
+      <author>Hidvegi, A</author>
+      <author>Holmgren, S O</author>
+      <author>Johansen, M</author>
+      <author>Johansson, K E</author>
+      <author>Jon-And, K</author>
+      <author>Lesser, J</author>
+      <author>Milstead, D A</author>
+      <author>Moa, T</author>
+      <author>Ramstedt, M</author>
+      <author>Sellden, B</author>
+      <author>Silverstein, S B</author>
+      <author>Lee, J S H</author>
+      <author>Peak, L S</author>
+      <author>Saavedra, A F</author>
+      <author>Varvell, K E</author>
+      <author>Waugh, A T</author>
+      <author>Chu, M L</author>
+      <author>Hou, S</author>
+      <author>Lee, S C</author>
+      <author>Liang, Z</author>
+      <author>Lin, S C</author>
+      <author>Qing, D</author>
+      <author>Ren, Z</author>
+      <author>Teng, P K</author>
+      <author>Zhou, S</author>
+      <author>Zhou, Y</author>
+      <author>Chikovani, L</author>
+      <author>Djobava, T</author>
+      <author>Khubua, J</author>
+      <author>Mosidze, M</author>
+      <author>Tskhadadze, E G</author>
+      <author>Abramowicz, H</author>
+      <author>Alexander, G</author>
+      <author>Amram, N</author>
+      <author>Bella, G</author>
+      <author>Ben Moshe, M</author>
+      <author>Benary, O</author>
+      <author>Benhammou, Y</author>
+      <author>Brodet, E</author>
+      <author>Etzion, E</author>
+      <author>Ginzburg, J</author>
+      <author>Mahalalel, Y</author>
+      <author>Oren, Y</author>
+      <author>Reinherz-Aronis, E</author>
+      <author>Soffer, A</author>
+      <author>Urkovsky, E</author>
+      <author>De, K</author>
+      <author>Dipanjan, R</author>
+      <author>Farbin, A</author>
+      <author>Kim, H</author>
+      <author>Kim, H</author>
+      <author>Li, J</author>
+      <author>Nilsson, P</author>
+      <author>Ozturk, N</author>
+      <author>Pravahan, R</author>
+      <author>Sosebee, M</author>
+      <author>Spurlock, B</author>
+      <author>Vartapetian, A</author>
+      <author>White, A</author>
+      <author>Yu, J</author>
+      <author>Anastopoulos, C</author>
+      <author>Bachas, K</author>
+      <author>Bouzakis, K</author>
+      <author>Christidi, I A</author>
+      <author>Krepouri, A</author>
+      <author>Liolios, A</author>
+      <author>Petridou, C</author>
+      <author>Sampsonidis, D</author>
+      <author>Tsiafis, I</author>
+      <author>Bratzler, U</author>
+      <author>Fukunaga, C</author>
+      <author>Asai, S</author>
+      <author>Imori, M</author>
+      <author>Ishino, M</author>
+      <author>Kanaya, N</author>
+      <author>Kaneda, M</author>
+      <author>Kataoka, Y</author>
+      <author>Kawamoto, T</author>
+      <author>Kobayashi, T</author>
+      <author>Kubota, T</author>
+      <author>Mashimo, T</author>
+      <author>Matsumoto, H</author>
+      <author>Matsunaga, H</author>
+      <author>Nomoto, H</author>
+      <author>Okawa, H</author>
+      <author>Sakamoto, H</author>
+      <author>Tanaka, J</author>
+      <author>Ueda, I</author>
+      <author>Yamamoto, S</author>
+      <author>Bailey, D C</author>
+      <author>Gibson, A</author>
+      <author>Gorbounov, P A</author>
+      <author>Groer, L S</author>
+      <author>Guo, B</author>
+      <author>Joo, K K</author>
+      <author>Knecht, N K</author>
+      <author>Krieger, P</author>
+      <author>Le Maner, C</author>
+      <author>Ma, L L</author>
+      <author>Martens, F K</author>
+      <author>Mayer, J K</author>
+      <author>Mazini, R</author>
+      <author>Orr, R S</author>
+      <author>Rosenbaum, G A</author>
+      <author>Savard, P</author>
+      <author>Sinervo, P</author>
+      <author>Teuscher, R J</author>
+      <author>Trischuk, W</author>
+      <author>Amako, K</author>
+      <author>Arai, Y</author>
+      <author>Doi, Y</author>
+      <author>Haruyama, T</author>
+      <author>Ikegami, Y</author>
+      <author>Ikeno, M</author>
+      <author>Ishii, K</author>
+      <author>Iwasaki, H</author>
+      <author>Jinnouchi, O</author>
+      <author>Kagawa, S</author>
+      <author>Kanzaki, J</author>
+      <author>Kawai, M</author>
+      <author>Kohriki, T</author>
+      <author>Kondo, T</author>
+      <author>Kondo, Y</author>
+      <author>Makida, Y</author>
+      <author>Manabe, A</author>
+      <author>Murakami, K</author>
+      <author>Nagano, K</author>
+      <author>Nozaki, M</author>
+      <author>Odaka, S</author>
+      <author>Ozone, K</author>
+      <author>Sasaki, O</author>
+      <author>Sasaki, T</author>
+      <author>Tanaka, K</author>
+      <author>Tanaka, S</author>
+      <author>Terada, S</author>
+      <author>Tojo, J</author>
+      <author>Tokushuku, K</author>
+      <author>Tsuno, S</author>
+      <author>Unno, Y</author>
+      <author>Yamamoto, A</author>
+      <author>Yamaoka, H</author>
+      <author>Yasu, Y</author>
+      <author>Hara, K</author>
+      <author>Inoue, K</author>
+      <author>Kim, S H</author>
+      <author>Maruyama, T</author>
+      <author>Mochizuki, A</author>
+      <author>Nagai, Y</author>
+      <author>Nakamura, K</author>
+      <author>Nakamura, Y</author>
+      <author>Ukegawa, F</author>
+      <author>Mann, W A</author>
+      <author>Napier, A</author>
+      <author>Rolli, S</author>
+      <author>Sliwa, K</author>
+      <author>Todorova-Nova, S</author>
+      <author>Acharya, B S</author>
+      <author>Cauz, D</author>
+      <author>Cobal, M</author>
+      <author>De Lotto, B</author>
+      <author>Del Papa, C</author>
+      <author>Giordani, M P</author>
+      <author>Grassmann, H</author>
+      <author>Luisa, L</author>
+      <author>Santi, L</author>
+      <author>Belanger-Champagne, C</author>
+      <author>Bingefors, N</author>
+      <author>Brenner, R</author>
+      <author>Coniavitis, E</author>
+      <author>Ekelof, T</author>
+      <author>Ellert, M</author>
+      <author>Flechl, M</author>
+      <author>Hansen, C J</author>
+      <author>Lindquist, L</author>
+      <author>Ruber, R</author>
+      <author>Abdallah, J</author>
+      <author>Ballester, F</author>
+      <author>Bernabeu, J</author>
+      <author>Cabrera Urban, S</author>
+      <author>Cabruja Casas, E</author>
+      <author>Calderon Terol, D</author>
+      <author>Camarena, F</author>
+      <author>Campabadal Segura, F</author>
+      <author>Castelo, J</author>
+      <author>Castillo Gimenez, V</author>
+      <author>Civera, J V</author>
+      <author>Costa, M J</author>
+      <author>Almenar, C Cuenca&gt;</author>
+      <author>Diez Cornell, S</author>
+      <author>Escobar, C</author>
+      <author>Fassi, F</author>
+      <author>Ferrer, A</author>
+      <author>Fleta Corral, C M</author>
+      <author>Fuster, J</author>
+      <author>Garcia, C</author>
+      <author>Garcia Navarro, J E</author>
+      <author>Gil Botella, Ines&gt;</author>
+      <author>Gonzalez de la Hoz, S</author>
+      <author>Gonzalez Millan, V</author>
+      <author>Gonzalez-Sevilla, S</author>
+      <author>Higon-Rodriguez, E</author>
+      <author>Kaci, M</author>
+      <author>Lacasta, C</author>
+      <author>Lacuesta, V R</author>
+      <author>Lara, V</author>
+      <author>Llosa Llacer, G</author>
+      <author>Lozano Fantoba, M</author>
+      <author>Lopez-Amengual, J M</author>
+      <author>March, L</author>
+      <author>Marti i Garcia, S</author>
+      <author>Martinez Lacambra, C</author>
+      <author>Minano, M</author>
+      <author>Mitsou, V A</author>
+      <author>Modesto, P</author>
+      <author>Moles Valls, R M</author>
+      <author>Moreno, A</author>
+      <author>Pellegrini, G</author>
+      <author>Poveda, J</author>
+      <author>Rafi, J M</author>
+      <author>Roldan, J</author>
+      <author>Romance, J B</author>
+      <author>Ros, E</author>
+      <author>Ruiz-Martinez, A</author>
+      <author>Salt, J</author>
+      <author>Salvachua Ferrando, B M</author>
+      <author>Sanchis Lozano, M A</author>
+      <author>Sanchis Peris, E</author>
+      <author>Santander, J</author>
+      <author>Solans, C A</author>
+      <author>Medel, J Soret&gt;</author>
+      <author>Suay, L Sospedra&gt;</author>
+      <author>Sanchez, J</author>
+      <author>Torres Pais, J G</author>
+      <author>Ullan Comes, M</author>
+      <author>Valero, A</author>
+      <author>Valls Ferrer, J A</author>
+      <author>Vives, R</author>
+      <author>Vos, M</author>
+      <author>Axen, A</author>
+      <author>Gay, C</author>
+      <author>Loh, C W</author>
+      <author>Hodges, T A</author>
+      <author>Ishizawa, Y</author>
+      <author>Kurchaninov, L L</author>
+      <author>Langstaf, R R</author>
+      <author>Losty, M J</author>
+      <author>Moraes, A</author>
+      <author>Oram, C J</author>
+      <author>Tafirout, R</author>
+      <author>Trigger, I M</author>
+      <author>Walker, R</author>
+      <author>Wellisch, H P</author>
+      <author>Albert, J</author>
+      <author>Astbury, A</author>
+      <author>Berghaus, F</author>
+      <author>Courneyea, L</author>
+      <author>Fincke-Keeler, M</author>
+      <author>Honma, A</author>
+      <author>Ince, T</author>
+      <author>Keeler, R</author>
+      <author>Kowalewski, Robert V</author>
+      <author>Lefebvre, M</author>
+      <author>Lelas, D</author>
+      <author>Lessard, J R</author>
+      <author>McPherson, R A</author>
+      <author>Poffenberger, P</author>
+      <author>Seuster, R</author>
+      <author>Sobie, R</author>
+      <author>Taylor, R P</author>
+      <author>Voss, K C</author>
+      <author>Daly, C H</author>
+      <author>Forbush, D A</author>
+      <author>Gaudio, G</author>
+      <author>Kuykendall, W</author>
+      <author>Lubatti, H J</author>
+      <author>Mockett, P</author>
+      <author>Rothberg, J</author>
+      <author>Twomey, M S</author>
+      <author>Wang, J C</author>
+      <author>Watts, G</author>
+      <author>Zhao, T</author>
+      <author>Griesmayer, E</author>
+      <author>Chen, X</author>
+      <author>Dos Anjos, A</author>
+      <author>Fang, Y</author>
+      <author>Fasching, D</author>
+      <author>Ferguson, D</author>
+      <author>Flores Castillo, L R</author>
+      <author>Goldschmidt, N</author>
+      <author>Gonzalez, S</author>
+      <author>Jared, R C</author>
+      <author>Joseph, J</author>
+      <author>Leung Fook Cheong, A</author>
+      <author>Mellado Garcia, B R</author>
+      <author>Padhi, S</author>
+      <author>Pan, Y B</author>
+      <author>Quayle, W B</author>
+      <author>Stradling, A</author>
+      <author>Vickey, T</author>
+      <author>Wiedenmann, W</author>
+      <author>Wu, S L</author>
+      <author>Xu, N</author>
+      <author>Zobernig, G</author>
+      <author>Becks, K H</author>
+      <author>Bellina, F</author>
+      <author>Boek, J</author>
+      <author>Braun, Helmut M</author>
+      <author>Dima, M</author>
+      <author>Dopke, J</author>
+      <author>Drees, J</author>
+      <author>Flick, T</author>
+      <author>Gerlach, P</author>
+      <author>Glitza, K W</author>
+      <author>Gorfine, G</author>
+      <author>Grah, C</author>
+      <author>Gregor, I M</author>
+      <author>Hamacher, K</author>
+      <author>Harenberg, T</author>
+      <author>Henss, T</author>
+      <author>Kersten, S</author>
+      <author>Kind, P</author>
+      <author>Kootz, A</author>
+      <author>Lantzsch, K</author>
+      <author>Lenz, T</author>
+      <author>Lenzen, G</author>
+      <author>Lepidis, J</author>
+      <author>List, J</author>
+      <author>Mechtel, M</author>
+      <author>Meder-Marouelli, D</author>
+      <author>Pauna, E</author>
+      <author>Reeves, K</author>
+      <author>Sandhoff, M</author>
+      <author>Sandvoss, S</author>
+      <author>Sanny, B</author>
+      <author>Schultes, J</author>
+      <author>Siebel, A</author>
+      <author>Thadome, J</author>
+      <author>Wahlen, H</author>
+      <author>Wicke, D</author>
+      <author>Zeitnitz, C</author>
+      <author>Auerbach, B</author>
+      <author>Baker, O K</author>
+      <author>Kaplan, B</author>
+      <author>Loginov, A</author>
+      <author>Lokwitz, S</author>
+      <author>Martin, A J</author>
+      <author>Schmidt, M P</author>
+      <author>Tipton, P</author>
+      <author>Wall, R</author>
+      <author>Zeller, M</author>
+      <author>Jorgensen, S</author>
+      <author>Oye, O K</author>
+      <author>Buscher, V</author>
+      <author>Kruger, H</author>
+      <author>Moser, N</author>
+      <author>Rottlander, I</author>
+      <author>von Torne, E</author>
+      <author>Akesson, P F</author>
+      <author>Demirkoz, B</author>
+      <author>Grafstrom, P</author>
+      <author>Kotamaki, M J</author>
+      <author>Gossling, C</author>
+      <author>Luke, D</author>
+      <author>Wustenfeld, J</author>
+      <author>Gopfert, T</author>
+      <author>Duhrssen, M</author>
+      <author>Konig, S</author>
+      <author>Duren, M</author>
+      <author>Mattig, S</author>
+      <author>Monig, K</author>
+      <author>Fohlisch, F</author>
+      <author>Ruhr, F</author>
+      <author>Dur, H</author>
+      <author>Akesson, T P A</author>
+      <author>Mjornmark, J U</author>
+      <author>Soderberg, M</author>
+      <author>Kopke, L</author>
+      <author>Schafer, U</author>
+      <author>Muller, M</author>
+      <author>Gottfert, T</author>
+      <author>Hartel, R</author>
+      <author>Mohrdieck-Mock, S</author>
+      <author>Schmucker, H</author>
+      <author>Strohmer, R</author>
+      <author>Konig, A C</author>
+      <author>Rohne, O</author>
+      <author>Asman, B</author>
+      <author>Engstrom, M</author>
+      <author>Sjolin, J</author>
+      <author>Imhauser, M</author>
+      <author>Mattig, P</author>
+      <author>Aad, G</author>
+    </authors>
+  </contributors>
+  <titles>
+    <title>The ATLAS Experiment at the CERN Large Hadron Collider</title>
+    <secondary-title>JINST</secondary-title>
+  </titles>
+  <doi>10.1088/1748-0221/3/08/S08003</doi>
+  <pages>S08003</pages>
+  <volume>3</volume>
+  <number/>
+  <dates>
+    <year>2008</year>
+    <pub-dates>
+      <date>2008</date>
+    </pub-dates>
+  </dates>
+  <abstract/>
+</record>
+
+</records>
+</xml>

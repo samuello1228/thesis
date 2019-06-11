@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+<records>
+<record>
+  <contributors>
+    <authors>
+      <author>Cervelli, Alberto</author>
+      <author>Gallardo, Gabriel</author>
+      <author>Lorenz, Jeanette</author>
+      <author>Koeck, Daniela Maria</author>
+      <author>Paredes Hernandez, Daniela</author>
+      <author>Tornambe, Peter</author>
+      <author>Javurkova, Martina</author>
+      <author>Tu, Yanjun</author>
+      <author>Zhang, Dongliang</author>
+      <author>Lo, Cheuk Yee</author>
+    </authors>
+  </contributors>
+  <titles>
+    <title>Search for chargino and neutralino production in final states with two same-sign leptons, jets and missing transverse momentum at $\sqrt{s}$ = 13 TeV with the ATLAS detector</title>
+    <secondary-title/>
+  </titles>
+  <doi/>
+  <pages/>
+  <volume/>
+  <number/>
+  <keywords>
+    <keyword>Chargino</keyword>
+    <keyword>Neutralino</keyword>
+    <keyword>Same-sign</keyword>
+    <keyword>SUSY</keyword>
+  </keywords>
+  <dates>
+    <year>2017</year>
+    <pub-dates>
+      <date>2017</date>
+    </pub-dates>
+  </dates>
+  <abstract>This note serves as reference documentation on the ATLAS search for electroweakino pro- duction in final states with two same-sign leptons, missing transverse momentum and jets in 36.1 fb−1 of pp collisions at $\sqrt{s}$ = 13 TeV. R-parity conserving simplified supersymmetric scenarios are considered in which it is assumed that $\tilde{\chi}_{2}^{0}$ and $\tilde{\chi}_{1}^{\pm}$ decay respectively into h+ $\tilde{\chi}_{1}^{0}$ and into W ± + $\tilde{\chi}_{1}^{0}$ with BR=100%.</abstract>
+</record>
+
+</records>
+</xml>

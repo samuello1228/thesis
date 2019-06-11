@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+<records>
+<record>
+  <contributors>
+    <authors>
+      <author>Joao Pequenao</author>
+      <author>Paul Schaffner</author>
+    </authors>
+  </contributors>
+  <titles>
+    <title>How ATLAS detects particles: diagram of particle paths in the detector</title>
+    <secondary-title/>
+  </titles>
+  <doi/>
+  <pages/>
+  <volume/>
+  <number/>
+  <keywords>
+    <keyword>ATLAS</keyword>
+    <keyword>experiment</keyword>
+    <keyword>cut</keyword>
+    <keyword>detects</keyword>
+    <keyword>particles</keyword>
+    <keyword>computer generated images</keyword>
+    <keyword>Outreach</keyword>
+  </keywords>
+  <dates>
+    <year>2013</year>
+    <pub-dates>
+      <date>2013</date>
+    </pub-dates>
+  </dates>
+  <abstract/>
+</record>
+
+</records>
+</xml>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+<records>
+<record>
+  <contributors>
+    <authors>
+      <author>Martin, Stephen P.</author>
+    </authors>
+  </contributors>
+  <titles>
+    <title>A Supersymmetry primer</title>
+    <secondary-title>Adv.Ser.Direct.High Energy Phys.</secondary-title>
+  </titles>
+  <electronic-resource-num>10.1142/9789812839657_0001</electronic-resource-num>
+  <pages>1-98</pages>
+  <volume>21</volume>
+  <number/>
+  <dates>
+    <year>2010</year>
+    <pub-dates>
+      <date>2010</date>
+    </pub-dates>
+  </dates>
+  <abstract>I provide a pedagogical introduction to supersymmetry. The level of discussion is aimed at readers who are familiar with the Standard Model and quantum field theory, but who have had little or no prior exposure to supersymmetry. Topics covered include: motivations for supersymmetry, the construction of supersymmetric Lagrangians, supersymmetry-breaking interactions, the Minimal Supersymmetric Standard Model (MSSM), R-parity and its consequences, the origins of supersymmetry breaking, the mass spectrum of the MSSM, decays of supersymmetric particles, experimental signals for supersymmetry, and some extensions of the minimal framework.</abstract>
+</record>
+
+</records>
+</xml>

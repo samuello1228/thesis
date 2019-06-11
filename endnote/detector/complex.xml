@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+<records>
+<record>
+  <contributors>
+    <authors>
+      <author>Mobs, Esma</author>
+    </authors>
+  </contributors>
+  <titles>
+    <title>The CERN accelerator complex</title>
+    <secondary-title/>
+  </titles>
+  <doi/>
+  <pages/>
+  <volume/>
+  <number/>
+  <keywords>
+    <keyword>LHC</keyword>
+    <keyword>accelerator</keyword>
+    <keyword>accélérateur</keyword>
+    <keyword>complex</keyword>
+    <keyword>schema</keyword>
+  </keywords>
+  <dates>
+    <year>2016</year>
+    <pub-dates>
+      <date>2016</date>
+    </pub-dates>
+  </dates>
+  <abstract>The LHC is the last ring (dark blue line) in a complex chain of particle accelerators. The smaller machines are used in a chain to help boost the particles to their final energies and provide beams to a whole set of smaller experiments, which also aim to uncover the mysteries of the Universe.</abstract>
+</record>
+
+</records>
+</xml>

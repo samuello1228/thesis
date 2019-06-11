@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+<records>
+<record>
+  <contributors/>
+  <titles>
+    <title>Search for squarks and gluinos in final states with jets and missing transverse momentum using 36 fb$^{−1}$ of $\sqrt{s} =13$ TeV pp collision data with the ATLAS detector</title>
+    <secondary-title/>
+  </titles>
+  <doi/>
+  <pages/>
+  <volume/>
+  <number/>
+  <keywords>
+    <keyword>supersymmetry</keyword>
+    <keyword>particle and resonance production</keyword>
+    <keyword>experimental results</keyword>
+    <keyword>dark matter</keyword>
+  </keywords>
+  <dates>
+    <year>2017</year>
+    <pub-dates>
+      <date>2017</date>
+    </pub-dates>
+  </dates>
+  <abstract>A search for the supersymmetric partners of quarks and gluons (squarks and gluinos) in final states containing hadronic jets and missing transverse momentum, but no electrons or muons, are presented. The data used for both approaches were recorded in 2015 and 2016 by the ATLAS experiment in $\sqrt{s} = 13$ TeV proton-proton collisions at the Large Hadron Collider, corresponding to an integrated luminosity of 36.1 inverse femtobarn. The results are interpreted in the context of various simplified models where squarks and gluinos are pair-produced and the neutralino is the lightest supersymmetric particle. An exclusion limit at the 95% confidence level on the mass of the gluino is set at 2.03 TeV for a simplified model incorporating only a gluino octet and the lightest neutralino, assuming the lightest neutralino is massless. For a simplified model involving the strong production of mass-degenerate first- and second- generation squarks, squark masses below 1.58 TeV are excluded for a massless lightest neutralino. These limits substantially extend the region of supersymmetric parameter space excluded by previous measurements with the ATLAS detector.</abstract>
+</record>
+
+</records>
+</xml>
