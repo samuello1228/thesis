@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+<records>
+<record>
+  <contributors>
+    <authors>
+      <author>Cacciari, Matteo</author>
+      <author>Salam, Gavin P.</author>
+      <author>Soyez, Gregory</author>
+    </authors>
+  </contributors>
+  <titles>
+    <title>The anti-$k_t$ jet clustering algorithm</title>
+    <secondary-title>JHEP</secondary-title>
+  </titles>
+  <electronic-resource-num>10.1088/1126-6708/2008/04/063</electronic-resource-num>
+  <pages>063</pages>
+  <volume>0804</volume>
+  <number/>
+  <dates>
+    <year>2008</year>
+  </dates>
+  <abstract>The k_t and Cambridge/Aachen inclusive jet finding algorithms for hadron-hadron collisions can be seen as belonging to a broader class of sequential recombination jet algorithms, parametrised by the power of the energy scale in the distance measure. We examine some properties of a new member of this class, for which the power is negative. This ``anti-k_t'' algorithm essentially behaves like an idealised cone algorithm, in that jets with only soft fragmentation are conical, active and passive areas are equal, the area anomalous dimensions are zero, the non-global logarithms are those of a rigid boundary and the Milan factor is universal. None of these properties hold for existing sequential recombination algorithms, nor for cone algorithms with split--merge steps, such as SISCone. They are however the identifying characteristics of the collinear unsafe plain ``iterative cone'' algorithm, for which the anti-k_t algorithm provides a natural, fast, infrared and collinear safe replacement.</abstract>
+</record>
+
+</records>
+</xml>

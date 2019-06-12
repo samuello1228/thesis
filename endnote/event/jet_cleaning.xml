@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+<records>
+<record>
+  <contributors/>
+  <titles>
+    <title>Selection of jets produced in 13TeV proton-proton collisions with the ATLAS detector</title>
+    <secondary-title/>
+  </titles>
+  <doi/>
+  <pages/>
+  <volume/>
+  <number/>
+  <keywords>
+    <keyword>Jet cleaning</keyword>
+    <keyword>Jet selection efficiency</keyword>
+  </keywords>
+  <dates>
+    <year>2015</year>
+    <pub-dates>
+      <date>2015</date>
+    </pub-dates>
+  </dates>
+  <abstract>Quality criteria for the selection of reconstructed anti-$k_t$ jets with $R = 0.4$ in the ATLAS detector are described. The study is based on data recorded in June 2015 by the ATLAS experiment in $\sqrt{s}$ = 13 TeV protonâproton collisions at the Large Hadron Collider, with a total integrated luminosity of 6.4 pb$^{−1}$. Two selection criteria are introduced. The Loose selection is designed to provide an efficiency of selecting jets from proton-proton collisions above 99.5% (99.9%) for $p_T&gt;$ 20 (100) GeV to be used in most ATLAS physics analyses. A tighter set of selection cuts, called Tight, is designed to further reject background jets for analyses sensitive to non-collision backgrounds with an efficiency of selecting jets from proton-proton collisions above 95% (99.5%) for $p_T&gt;$ 20 (100) GeV.</abstract>
+</record>
+
+</records>
+</xml>

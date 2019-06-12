@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+<records>
+<record>
+  <contributors/>
+  <titles>
+    <title>Optimisation of the ATLAS $b$-tagging performance for the 2016 LHC Run</title>
+    <secondary-title/>
+  </titles>
+  <doi/>
+  <pages/>
+  <volume/>
+  <number/>
+  <keywords>
+    <keyword>BTAGGING</keyword>
+  </keywords>
+  <dates>
+    <year>2016</year>
+    <pub-dates>
+      <date>2016</date>
+    </pub-dates>
+  </dates>
+  <abstract>The performance of the current ATLAS $b$-tagging algorithms has been optimised ahead of the 2016 Run-2 data taking. The algorithms used to identify jets containing $b$-hadrons are briefly described and the improvements relative to the 2015 LHC run are highlighted. Particular emphasis is given to the optimisation and performance of the multivariate $b$-tagging algorithm, MV2. Overall for a $b$-tagging efficiency of 77%, the light-quark rejection factor has been held constant while increasing the charm rejection factor by 40%. The performance at high jet $p_T$ has also been improved.</abstract>
+</record>
+
+</records>
+</xml>

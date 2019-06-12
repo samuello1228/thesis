@@ -1,9 +1,56 @@
 %************************************************
-\chapter{Appendix 2}
+\chapter{Label for trigger \cite{trigger}}
 \label{ch:appendixTwo}
 %************************************************
 
-\section{First main stuff}
-\label{sec:ch_1_firstmain}
+\section{Electron trigger}
 
-This is Appendix 2.
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+Label name & Description \\
+\hline
+\hline
+lhvloose & Identification quality is likelihood very loose \\
+\hline
+lhloose & Identification quality is likelihood loose \\
+\hline
+lhmedium & Identification quality is likelihood medium \\
+\hline
+lhtight & Identification quality is likelihood tight \\
+\hline
+ivarloose & Isolation requirement: $\text{ptvarcone20} / E_T < 0.1$ \\
+\hline
+nod0 & Alignment-robust likelihood tune with no d0 information used \\
+\hline
+L1EM20VH & Level 1 trigger input: $p_T > 20$ GeV \\
+\hline
+L12EM10VH & Level 1 trigger input: $p_T > 10$ GeV \\
+\hline
+\end{tabular}
+\end{center}
+\caption{Label for electron trigger.}
+\end{table}
+
+\section{Muon trigger}
+
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+Label name & Description \\
+\hline
+\hline
+iloose & Isolation requirement: $\text{ptcone20} / p_T < 0.12$ \\
+\hline
+imedium & Isolation requirement: $\text{ptcone30} / p_T < 0.06$ \\
+\hline
+L1MU15 & Level 1 trigger input: $p_T > 15$ GeV \\
+\hline
+noL1 & Level 1 trigger input: none \\
+\hline
+\end{tabular}
+\end{center}
+\caption{Label for muon trigger.}
+\end{table}

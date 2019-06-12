@@ -64,10 +64,10 @@ The following pre-selections are applied to reject background events which do no
 \item \textbf{LAr/Tile/SCT error} Events with data integrity errors in the SCT detector and the LAr and Tile calorimeter are removed. (For data only)
 \item \textbf{Primary Vertex} The events are required to have a primary vertex, which is defined as the one with the largest $\sum p_{T}^{2}$ of tracks, and has at least two tracks.
 \item \textbf{Cosmic Muon Veto} The events with cosmic muons need to be removed. The track of cosmic muon is identified by large impact parameters with respect to the primary vertex, where $|z_{0}^{PV}|>1$ mm or $|d_{0}^{PV}|>0.2$ mm.
-\item \textbf{Bad Muon Veto} The events with a bad muon that does not come from the proton-proton collision need to be removed. The bad muon is identified by a large relative error in the ratio of electric charge to momentum ($q/p$), with the condition that $\sigma(q/p) / |q/p| > 0.2$, suggested by the recommendation of the Muon Combined Performance (MCP) group. \cite{muons}
+\item \textbf{Bad Muon Veto} The events with a bad muon that does not come from the proton-proton collision need to be removed. The bad muon is identified by a large relative error in the ratio of electric charge to momentum ($q/p$), with the condition that $\sigma(q/p) / |q/p| > 0.2$, suggested by the recommendation of the Muon Combined Performance group. \cite{muons}
 \item \textbf{Bad Jet Veto} The events with bad jets that do not come from the proton-proton collision need to be removed. A jet with $p_{T}<$ 20 GeV or with the ``BadLoose" quality by the recommendation of the Jet/$E_T^{\text{miss}}$ group \cite{jet_cleaning} is identified as a bad jet.
-\item \textbf{Trigger Selection} The events need to pass at least one trigger in the trigger list, described in section \ref{sec:trigger}.
-\item \textbf{Exactly 2 baseline leptons} The events which have exactly 2 baseline leptons are selected. The definition of baseline electron and muon are described in section \ref{sec:object}. ``The two leptons" mentioned in the later chapters refer to these 2 baseline leptons. These two leptons are indexed in the descending order by their $p_T$. The lepton with larger $p_T$ is called the leading lepton ($\ell_1$), and the lepton with smaller $p_T$ is called the sub-leading lepton($\ell_2$).
+\item \textbf{Trigger Selection} The events are required to pass at least one trigger in the trigger list, described in section \ref{sec:trigger}.
+\item \textbf{Exactly 2 baseline leptons} The events which have exactly 2 baseline leptons are selected. The definition of baseline electron and muon are described in section \ref{sec:object}. ``The two leptons" mentioned in the following chapters refer to these 2 baseline leptons. The two leptons are indexed in the descending order by their $p_T$. The lepton with larger $p_T$ is called the leading lepton ($\ell_1$), and the lepton with smaller $p_T$ is called the sub-leading lepton($\ell_2$).
 \end{itemize}
 
 \section{Trigger strategy}
@@ -78,7 +78,12 @@ The trigger system accepts and rejects the events immediately after the data is 
 The Level 1 trigger system filters the events from 40 MHz to 100 kHz.
 The High Level trigger (HLT) system uses the output from the Level 1 trigger system, and further filters the events from 100 kHz to 1 kHz.
 
-In our analysis, the single lepton trigger and di-lepton trigger was used. Table \ref{tab:single_trigger} and \ref{tab:dilepton_trigger} show the list of triggers used in this analysis.
+In our analysis, the single lepton triggers and di-lepton triggers were used.
+Table \ref{tab:single_trigger} and \ref{tab:dilepton_trigger} show the list of triggers used in this analysis.
+All triggers are high level trigger (HLT), with the name starting from HLT.
+The second label represents the $p_T$ selection for the lepton.
+For example, e24 is the selection that the $p_T$ of the electron is larger than 24 GeV.
+Other labels are described in appendix \ref{ch:appendixTwo}. \cite{trigger}
 
 \begin{table}[htbp]
 \begin{center}
@@ -122,24 +127,23 @@ In our analysis, the single lepton trigger and di-lepton trigger was used. Table
 
 \section{Object definitions}
 \label{sec:object}
-The object definitions are based on \texttt{SUSYTools-00-08-60} and analysis release \texttt{Base,2.4.31}, and their associated performance packages.
 
 \subsection{Elections}
-Electrons are reconstructed by using the recommendations from the egamma group and need to be inside the region $|\eta^{\text{cluster}}|<2.47$.
-The baseline electrons are identified by the \texttt{LooseAndBLayerLLH} quality criterion and have $p_T>10$ GeV.
+Electrons are reconstructed inside the region $|\eta^{\text{cluster}}|<2.47$. \cite{electrons}
+The baseline electrons are identified by the \texttt{LooseAndBLayer} quality criterion and have $p_T>10$ GeV.
 The signal electrons must be baseline electrons and satisfy additional criteria.
-At the signal level, the electron must satisfy the \texttt{MediumLLH} quality criterion and has $p_T>25$ GeV.
-The working point for the isolation cut is \texttt{FixedCutTight}.
-The requirement for the impact parameter is $|z_0 \cdot \sin (\theta)|< 0.5$ mm and $|d_0/\sigma(d_0)|<5$, recommended by the Tracking CP group.
-To reduce the charge flip background, \texttt{ChargeIDSelector} is used with the working point \texttt{Medium} at 97\% efficiency.
+At the signal level, the electron must satisfy the \texttt{Medium} quality criterion and has $p_T>25$ GeV.
+The working point for the isolation cut is Fix (Tight) described in \cite{electrons}.
+The requirement for the impact parameter is $|z_0 \cdot \sin (\theta)|< 0.5$ mm and $|d_0/\sigma(d_0)|<5$.
+To reduce the charge flip background, the working point \texttt{Medium} at 97\% efficiency is used.
 The selections for baseline and signal electrons are summarised in table \ref{tab:lepdef}.
 
 \subsection{Muons}
-Muons are reconstructed by using the recommendation from the MCP group \cite{muons} and requiring $|\eta|<2.4$.
+Muons are reconstructed by using the recommendation from the Muon Combined Performance group and requiring $|\eta|<2.4$. \cite{muons}
 The baseline muons are identified by the \texttt{Medium} quality criterion and have $p_T>10$ GeV.
 The signal muons must be baseline muons and satisfy additional criteria.
-The additional criteria are $p_T>25$ GeV and isolation cut with the working point \texttt{GradientLoose}.
-The requirement for the impact parameter is $|z_0 \cdot \sin (\theta)|< 0.5$ mm and $|d_0/\sigma(d_0)|<3$, recommended by the Tracking CP group.
+The additional criteria are $p_T>25$ GeV and isolation cut with the working point \texttt{GradientLoose} described in \cite{muons}.
+The requirement for the impact parameter is $|z_0 \cdot \sin (\theta)|< 0.5$ mm and $|d_0/\sigma(d_0)|<3$.
 The selections for baseline and signal muons are summarised in table \ref{tab:lepdef}.
 
 \begin{table}[htbp]
@@ -175,11 +179,11 @@ ChargeIDSelector & Medium at 97\% efficiency & - \\
 \end{table}
 
 \subsection{Jets}
-The baseline jets are reconstructed by the anti-$k_t$ jet algorithm with the distance parameter $D = 0.4$.
+The baseline jets are reconstructed by the anti-$k_t$ jet algorithm \cite{anti_kt} with the distance parameter $D = 0.4$.
 Each baseline jet must have $p_T > 20$ GeV and $|\eta| < 2.8$.
 The signal jets are selected on top of the baseline jet, with additional criteria.
-The signal jets need to further satisfy the Jet Vertex Tagger (JVT) cut that JVT$> 0.59$ if the jets have $p_T < 60$ GeV and $|\eta| < 2.4$.
-The b-jets are signal jets with b-tag, by using the MV2c10 b-tagging algorithm with \texttt{FixedCut} working point which has b-jet efficiency 77\%.
+The signal jets need to further satisfy the Jet Vertex Tagger (JVT) cut \cite{jvt} that JVT$> 0.59$ if the jets have $p_T < 60$ GeV and $|\eta| < 2.4$.
+The b-jets are signal jets with b-tag, by using the MV2c10 b-tagging algorithm with \texttt{FixedCut} working point which has b-jet efficiency 77\%. \cite{btag}
 The selections of jets are summarised in table \ref{tab:jetsdef}.
 
 \begin{table}[htbp]
@@ -227,7 +231,7 @@ The Missing transverse energy ($E_{T}^{\text{miss}}$) is defined by the magnitud
 
 \subsection{Overlap removal}
 \label{sec:overlapRemoval}
-The overlap removal (OR) is performed with the baseline objects (electrons, muons and jets) and follows the default prescription provided in the \texttt{SUSYTools}.
+The overlap removal (OR) is performed with the baseline objects (electrons, muons and jets).
 The objects are removed in the following order.
 \begin{enumerate}
 \item If a jet is within $\Delta R= \sqrt{(\Delta \eta)^2 + (\Delta \phi)^2}=0.2$ of an electron:
@@ -237,6 +241,6 @@ The objects are removed in the following order.
 \end{itemize}
 \item Electrons within $\Delta R=0.4$ of a jet are removed, in order to suppress electrons from semi-leptonic decays of $c$- and $b$-hadrons.
 \item Muons within $\Delta R=0.4$ of a jet are removed, in order to suppress muons from semi-leptonic decays of $c$- and $b$-hadrons.
-\item Any calo-tagged muons sharing the same ID track with an electron are removed.
-\item Any electrons sharing the same ID track with the remaining muons are removed.
+\item Any muons sharing the same inner-detector track with an electron are removed.
+\item Any electrons sharing the same inner-detector track with the remaining muons are removed.
 \end{enumerate}
