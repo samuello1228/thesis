@@ -104,22 +104,22 @@ where $\Delta\phi$ is the azimuthal angle between the two transverse momenta.
 \label{sec:signal_region_optimization}
 This section describes how the signal region is found and optimizied.
 The goal of the optimization is to increase the number of signal events $N_s$ and decrease the number of background event $N_b$.
-This study was done, before we look at the real data, and hence the MC samples were used for signal and background.
+This study was done by using the MC samples.
 The signal significance Z for large $N_s$ and $N_b$ is defined by
 \begin{equation}
 Z = \frac{N_s}{\sqrt{N_b + N_s}}
 \label{equ:simple_significance}
 \end{equation}
-It measures how well the signal region is.
-The process of the signal region optimization is to increase the signal significance Z.
+It measures how well the signal region is defined.
+The signal region optimization is driven by increasing the signal significance Z.
 The signal significance can be interpreted as the variable $z = \frac{x-\mu}{\sigma}$ in the standard normal distribution.
-The corresponding p-value can be interpreted as the probability that the excess in the number of signal events from the background event is just due to the statistical fluctuation.
+The corresponding p-value can be interpreted as the probability that the excess in the number of signal events from the background prediction is just due to the statistical fluctuation.
 By changing the cuts on different discriminant variables, the maximum signal significance can be obtained, and the corresponding optimal cuts are the definition of the signal region.
 
 Equation \ref{equ:simple_significance} is only valid for large $N_s$ and $N_b$.
-Because $N_s$ and $N_b$ are often small, another sophisticated formula for the signal significance was used.
-Also, the systematic error and statistical error of $N_b$ need to be taken account.
-A fixed systematic error 25\% is used, and the total relative error $\sigma_b$ is the sum of systematic and statistical error in quadrature.
+Because $N_s$ and $N_b$ are often small, another sophisticated formula for the signal significance is used.
+Also, the systematic error and statistical error of $N_b$ need to be taken into account.
+A fixed systematic error 25\% is assumed, and the total relative error $\sigma_b$ is the sum of systematic and statistical error in quadrature.
 \begin{equation}
 \sigma_b = \sqrt{(25\%)^2 + (\frac{\Delta N_b}{N_b})^2}
 \end{equation}
@@ -132,7 +132,8 @@ Z = \text{BinomialExpZ}(N_s,N_b,\sigma_b)
 This method basically calculates the signal significance Z with the corresponding p-value and probability for the following case.
 A series of Bernoulli experiments is conducted with the number of trials $n = N_b + N_s + \frac{1}{\sigma_b ^2}$ and the probability of success of each trial $p = 1/(1 + 1/(N_b \sigma_b ^2))$ \cite{2-leptons-long}.
 The corresponding p-value is the probability that the number of success is at least $N_b + N_s$.
-The connection between these Bernoulli experiments and our analysis will not be explained here, but what is important is that the signal significance Z calculated by the equation \ref{equ:significance_def} is an approximation to our analysis. It is useful because it has the following properties.
+The signal significance Z calculated by the equation \ref{equ:significance_def} is an approximated signal significance to our analysis.
+It is useful because it has the following properties.
 \begin{itemize}
 \item It is a continuous function. $N_b$ and $N_s$ can be non-integer. (cf. Poisson distribution)
 \item It is a smooth function. It is convenient for finding the maximum value.
@@ -141,25 +142,25 @@ The connection between these Bernoulli experiments and our analysis will not be 
 \end{itemize}
 By using the equation \ref{equ:significance_def}, an approximately optimal signal region can be found.
 
-\subsection{Pre-selection}
+\subsection{Pre-selections}
 \label{sec:SR_pre-selection}
 Before the optimization, the following pre-selections are applied, on top of the selections in section \ref{event_cleaning}.
 \begin{itemize}
-\item \textbf{Exactly 2 signal leptons} The events which have exactly 2 signal leptons are selected. This means that the two leptons must be signal leptons.
-\item \textbf{Same sign} The electric charges of the two leptons have the same sign. This is what we are looking for, described in section \ref{sec:Wh_signal}.
-\item \textbf{B-jet veto} To suppress the top background, the number of b-jets is 0.
-\item \textbf{Number of jet} Similar to the Run 1 analysis, two signal regions are defined according to the number of signal jets. One signal region has 1 signal jet, called ``SRjet1'', and another has 2 or 3 signal jets, called ``SRjet23''.
+\item \textbf{Exactly 2 signal leptons} The events which have exactly 2 signal leptons are selected.
+\item \textbf{Same sign} The electric charges of the two leptons have the same sign.
+\item \textbf{B-jet veto} The number of b-jets is 0, to suppress the top background.
+\item \textbf{Number of jet} Two signal regions are defined according to the number of signal jets. One signal region has 1 signal jet, called ``SRjet1'', and another has 2 or 3 signal jets, called ``SRjet23''.
 \end{itemize}
 
 \subsection{Samples}
-As mentioned before, MC samples were used for estimating the expected $N_s$ and $N_b$ in the process of optimization.
+As mentioned above, MC samples are used for estimating the expected $N_s$ and $N_b$ in the process of optimization.
 
-For the signal, the mass point ($m_{\tilde{\chi}_1^\pm , \tilde{\chi}_2^0}$,$m_{\tilde{\chi}_1^0}$) = (225,75) was used for SRjet1, while the mass point ($m_{\tilde{\chi}_1^\pm , \tilde{\chi}_2^0}$,$m_{\tilde{\chi}_1^0}$) = (187.5,37.5) was used for SRjet23.
+For the signal, the mass point ($m_{\tilde{\chi}_1^\pm , \tilde{\chi}_2^0}$,$m_{\tilde{\chi}_1^0}$) = (225,75) is used for SRjet1, while the mass point ($m_{\tilde{\chi}_1^\pm , \tilde{\chi}_2^0}$,$m_{\tilde{\chi}_1^0}$) = (187.5,37.5) is used for SRjet23.
 
-For the background, MC samples were used for diboson (WZ, WW and ZZ), ttV and rare processes (triboson, multi-top and Higgs).
-Instead of using the corresponding MC samples, the fake lepton background is estimated by the matrix method as described in section \ref{sec:fake_background}, because the fake lepton background is the major background and the corresponding MC sample is not reliable.
-The charge flip background estimated in section \ref{sec:charge_flip_background} was also used.
-The plots after the pre-selection in section \ref{sec:SR_pre-selection}, but before the optimization, are shown in figures \ref{fig:SRjet1_pre-selection} and \ref{fig:SRjet23_pre-selection}.
+For the background, MC samples are used for diboson (WZ, WW and ZZ), ttV and rare processes (triboson, multi-top and Higgs).
+Instead of using the corresponding MC samples, the fake lepton background is estimated by the matrix method as described in section \ref{sec:fake_background}, because the fake lepton background is the dominant background and the corresponding MC sample is not reliable.
+The charge flip background estimated in section \ref{sec:charge_flip_background} is also used.
+The distributions after the pre-selections in section \ref{sec:SR_pre-selection}, but before the optimization, are shown in figures \ref{fig:SRjet1_pre-selection} and \ref{fig:SRjet23_pre-selection}.
 
 \begin{figure}[htpb]
 \centering
@@ -169,7 +170,7 @@ The plots after the pre-selection in section \ref{sec:SR_pre-selection}, but bef
 \includegraphics[width=0.45\linewidth]{data/plot/plot_SR/mTtwo_SR_SS_jet1_pre}\\
 \includegraphics[width=0.45\linewidth]{data/plot/plot_SR/mlj_SR_SS_jet1_pre}
 \includegraphics[width=0.45\linewidth]{data/plot/plot_SR/mt1_SR_SS_jet1_pre}\\
-\caption{Distribution of the kinematic variables used for the optimization in SRjet1. The pre-selection has been applied.}
+\caption{Distributions of the kinematic variables used for the optimization in SRjet1. The pre-selections have been applied.}
 \label{fig:SRjet1_pre-selection}
 \end{figure}
 
@@ -181,15 +182,15 @@ The plots after the pre-selection in section \ref{sec:SR_pre-selection}, but bef
 \includegraphics[width=0.45\linewidth]{data/plot/plot_SR/mTtwo_SR_SS_jet23_pre}\\
 \includegraphics[width=0.45\linewidth]{data/plot/plot_SR/mlj_SR_SS_jet23_pre}
 \includegraphics[width=0.45\linewidth]{data/plot/plot_SR/mt1_SR_SS_jet23_pre}\\
-\caption{Distribution of the kinematic variables used for the optimization in SRjet23. The pre-selection has been applied.}
+\caption{Distributions of the kinematic variables used for the optimization in SRjet23. The pre-selections have been applied.}
 \label{fig:SRjet23_pre-selection}
 \end{figure}
 
-\subsection{Running for optimization}
-Some constraints were applied during the process of optimization, in order to have enough statistics to have reliable estimation of $N_s$ and $N_b$.
+\subsection{Optimization}
+Some constraints are applied during the process of optimization, in order to have enough statistics to have reliable estimation of $N_s$ and $N_b$.
 \begin{itemize}
 \item The yields (i.e. the sum of weighted events) for each process of background need to be positive, to have a reasonable and stable modelling of the background shape.
-Also, the HistFitter requires the background need to have positive yields.
+Also, the HistFitter requires the background to have positive yields.
 \item The diboson and ttV background have at least 10 unweighted events respectively, to have a reliable estimation for the main background processes from prompt leptons (i.e. not fake leptons).
 \item For $E_T^{\text{miss}}$, $m_T$, $m_{\text{eff}}$ and $m_{T2}$, only lower cuts are applied.
 \item For $\Delta \eta_{ll}$ and $m_{lj(j)}$, only upper cuts are applied.
@@ -201,27 +202,27 @@ The list of variables used is shown in the table \ref{tab:variables_optimization
 \centering
 \begin{tabular}{|c|c|}
 \hline
-Variable & direction of cut \\
+Variable & Optimization direction \\
 \hline
 \hline
-$\Delta \eta_{ll}$ & upper cut \\
+$\Delta \eta_{ll}$ & Cut value reduced \\
 \hline
-$E_T^{\text{miss}}$ & lower cut \\
+$E_T^{\text{miss}}$ & Cut value increased \\
 \hline
-$m_T$ & lower cut \\
+$m_T$ & Cut value increased \\
 \hline
-$m_{\text{eff}}$ & lower cut \\
+$m_{\text{eff}}$ & Cut value increased \\
 \hline
-$m_{lj(j)}$ & upper cut \\
+$m_{lj(j)}$ & Cut value reduced \\
 \hline
-$m_{T2}$ & lower cut \\
+$m_{T2}$ & Cut value increased \\
 \hline
 \end{tabular}
 \caption{Kinematic variables used in the optimization.}
 \label{tab:variables_optimization}
 \end{table}
 
-\subsection{Results for optimization}
+\subsection{Results of optimization}
 The final results for the definitions of the two signal regions are shown in table \ref{tab:SR_Def}.
 The yields for different background and signal processes are shown in table \ref{tab:SRjet1_yields} and \ref{tab:SRjet23_yields}.
 The N-1 plots for the discriminant variables are shown in figures \ref{fig:SRjet1_N1} and \ref{fig:SRjet23_N1}.
@@ -341,8 +342,7 @@ Total BG & $5.335\pm0.787$ (987) & \\
 \label{fig:SRjet23_N1}
 \end{figure}
 
-The expected combined signal significances for different mass points are shown in figure \ref{fig:SR_expected_limit}.
-A flat 25 \% systematic uncertainty are included.
+The expected combined signal significances for different mass points are shown in figure \ref{fig:SR_expected_limit}, where 25\% systematic uncertainty is assumed.
 The combined signal significances are calculated by adding the signal significances of the two signal regions in quadrature.
 The figure shows considerable signal significances, in particular for the compressed region, where $m_{\tilde{\chi}_1^\pm , \tilde{\chi}_2^0} - m_{\tilde{\chi}_1^0}$ are close to the mass of Higgs boson ($\sim 125$ GeV).
 
