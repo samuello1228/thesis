@@ -64,8 +64,8 @@ The following pre-selections are applied to reject background events which do no
 \item \textbf{LAr/Tile/SCT error} Events with data integrity errors in the SCT detector and the LAr and Tile calorimeter are removed. (For data only)
 \item \textbf{Primary Vertex} The events are required to have a primary vertex, which is defined as the one with the largest $\sum p_{T}^{2}$ of tracks, and has at least two tracks.
 \item \textbf{Cosmic Muon Veto} The events with cosmic muons need to be removed. The track of cosmic muon is identified by large impact parameters with respect to the primary vertex, where $|z_{0}^{PV}|>1$ mm or $|d_{0}^{PV}|>0.2$ mm.
-\item \textbf{Bad Muon Veto} The events with a bad muon that does not come from the proton-proton collision need to be removed. The bad muon is identified by a large relative error in the ratio of electric charge to momentum ($q/p$), with the condition that $\sigma(q/p) / |q/p| > 0.2$, suggested by the recommendation of the Muon Combined Performance group. \cite{muons}
-\item \textbf{Bad Jet Veto} The events with bad jets that do not come from the proton-proton collision need to be removed. A jet with $p_{T}<$ 20 GeV or with the ``BadLoose" quality by the recommendation of the Jet/$E_T^{\text{miss}}$ group \cite{jet_cleaning} is identified as a bad jet.
+\item \textbf{Bad Muon Veto} The events with a bad muon that does not come from the proton-proton collision need to be removed. The bad muon is identified by a large relative error in the ratio of electric charge to momentum ($q/p$), with the condition that $\sigma(q/p) / |q/p| > 0.2$ \cite{muons}.
+\item \textbf{Bad Jet Veto} The events with bad jets that do not come from the proton-proton collision need to be removed. A jet with $p_{T}<$ 20 GeV or with the ``BadLoose" quality \cite{jet_cleaning} is identified as a bad jet.
 \item \textbf{Trigger Selection} The events are required to pass at least one trigger in the trigger list, described in section \ref{sec:trigger}.
 \item \textbf{Exactly 2 baseline leptons} The events which have exactly 2 baseline leptons are selected. The definition of baseline electron and muon are described in section \ref{sec:object}. ``The two leptons" mentioned in the following chapters refer to these 2 baseline leptons. The two leptons are indexed in the descending order by their $p_T$. The lepton with larger $p_T$ is called the leading lepton ($\ell_1$), and the lepton with smaller $p_T$ is called the sub-leading lepton($\ell_2$).
 \end{itemize}
@@ -83,7 +83,7 @@ Table \ref{tab:single_trigger} and \ref{tab:dilepton_trigger} show the list of t
 All triggers are high level trigger (HLT), with the name starting from HLT.
 The second label represents the $p_T$ selection for the lepton.
 For example, e24 is the selection that the $p_T$ of the electron is larger than 24 GeV.
-Other labels are described in appendix \ref{ch:appendixTwo}. \cite{trigger}
+Other labels are described in appendix \ref{ch:appendixTwo} \cite{trigger2,trigger}.
 
 \begin{table}[htbp]
 \begin{center}
@@ -139,7 +139,7 @@ To reduce the charge flip background, the working point \texttt{Medium} at 97\% 
 The selections for baseline and signal electrons are summarised in table \ref{tab:lepdef}.
 
 \subsection{Muons}
-Muons are reconstructed by using the recommendation from the Muon Combined Performance group and requiring $|\eta|<2.4$. \cite{muons}
+Muons are reconstructed in $|\eta|<2.4$ \cite{muons}.
 The baseline muons are identified by the \texttt{Medium} quality criterion and have $p_T>10$ GeV.
 The signal muons must be baseline muons and satisfy additional criteria.
 The additional criteria are $p_T>25$ GeV and isolation cut with the working point \texttt{GradientLoose} described in \cite{muons}.
