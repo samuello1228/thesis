@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+<records>
+<record>
+  <contributors>
+    <authors>
+      <author>Barr, A J</author>
+      <author>Lester, C</author>
+      <author>Stephens, P</author>
+    </authors>
+  </contributors>
+  <titles>
+    <title>A variable for measuring masses at hadron colliders when missing energy is expected; $m_{T2}$ : the truth behind the glamour</title>
+    <secondary-title>J. Phys. G</secondary-title>
+  </titles>
+  <doi/>
+  <pages>2343-63</pages>
+  <volume>29</volume>
+  <number>10</number>
+  <keywords>
+    <keyword>AMSB like scenarios</keyword>
+    <keyword>event topologies</keyword>
+    <keyword>hadron colliders</keyword>
+    <keyword>kinematic variable</keyword>
+    <keyword>mSUGRA like scenarios</keyword>
+    <keyword>missing energy</keyword>
+    <keyword>supersymmetric particles</keyword>
+    <keyword>transverse mass</keyword>
+  </keywords>
+  <dates>
+    <year>2003</year>
+    <pub-dates>
+      <date>2003</date>
+    </pub-dates>
+  </dates>
+  <abstract>We present the kinematic variable, m/sub T2/, which is in some ways similar to the more familiar 'transverse mass', but which can be used in events where two or more particles have escaped detection. We define this variable and describe the event topologies to which it applies, then present some of its mathematical properties. We then briefly discuss two case studies which show how m/sub T2/ is vital when reconstructing the masses of supersymmetric particles in mSUGRA- like and AMSB-like scenarios at the Large Hadron Collider. (16 refs).</abstract>
+</record>
+
+</records>
+</xml>
