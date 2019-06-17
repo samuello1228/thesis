@@ -328,7 +328,7 @@ The weighted OS events and the SS events agree within the uncertainties.
 \section{Fake lepton background}
 \label{sec:fake_background}
 \subsection{Sources for fake lepton background}
-The fake lepton background is ascribed to the case that other particle like meson, hadron and photon is misidentified as a lepton, after the reconstruction.
+The fake lepton background is ascribed to the case that other particles like meson, hadron and photon are misidentified as leptons.
 Three types of fake lepton background are described as follows.
 \begin{itemize}
 \item Heavy-flavor fakes:
@@ -338,7 +338,7 @@ Three types of fake lepton background are described as follows.
 \item Light-flavor fakes:
 \begin{itemize}
 \item It comes from semi-leptonic decays of light-quark hadrons in jets
-\item or is due to mis-reconstructions of jets with light-quark hadrons
+\item or comes from mis-reconstructions of jets from light-quark hadrons
 \end{itemize}
 \item photon conversion:
 \begin{itemize}
@@ -346,11 +346,10 @@ Three types of fake lepton background are described as follows.
 \end{itemize}
 \end{itemize}
 These leptons do not often pass the lepton identification cuts and have large impact parameters.
-They are also not well-isolated.
 
 \subsection{Matrix method}
-The fake lepton background is estimated by the matrix method.
-The input of this method is the real and fake efficiencies of electron and muon, in different bins of $p_T$ and $|\eta|$, which is measured in the following sections.
+The fake lepton background is estimated with the matrix method.
+The input of this method is the real and fake efficiencies of electron and muon, in different bins of $p_T$ and $|\eta|$, which are measured in the sections \ref{sec:real_eff} and \ref{sec:fake_eff}.
 This method will estimate the amount of fake lepton background, by counting the number of loose and tight leptons in data.
 The tight leptons in our analysis are the signal leptons, and the loose leptons are baseline leptons but not signal leptons.
 
@@ -358,7 +357,7 @@ The probability that a real electron (or muon) passes the signal selection (i.e.
 The probability that a real electron (or muon) does not pass the signal selection (i.e. loose lepton) is denoted by $\bar{\epsilon} = 1 - \epsilon$.
 Similarly, the probability that a fake electron (or muon) passes the signal selection (i.e. tight lepton) is denoted by the fake efficiency $f$.
 The probability that a fake electron (or muon) does not pass the signal selection (i.e. loose lepton) is denoted by $\bar{f} = 1 - f$.
-Although there are no subscripts and superscripts for the efficiencies $e$ and $f$, these efficiencies are different for different flavours of the leptons (electron or muon), and also in different $p_T$-$|\eta|$ bins.
+Although there are no subscripts and superscripts for the efficiencies $e$ and $f$, these efficiencies are different for different flavours of the leptons (electron or muon), and depend on $p_T$ and $|\eta|$.
 
 For simplicity, we first consider the case with only one lepton. We will then generalize to the case with two leptons.
 By the definition of the efficiencies, the relation between the number of real/fake leptons and the number of tight/loose leptons is given by the following matrix.
@@ -659,7 +658,7 @@ N_{LL}
 Because equation \ref{equ:fake_eff_matrix} is a linear function, we can first calculate the small contribution of $N_{TT}'$ from one event, and assign this value as a weight to the event.
 This weight is called the fake weight of the event.
 The total fake lepton background is then the sum of the fake weight of all events in data.
-For example, if the pair of the two leptons is a tight-tight pair, the fake weight of this event is $N_{TT}'$ in the following equation.
+For example, if a pair of two leptons is a tight-tight pair, the fake weight of this event is $N_{TT}'$ in the following equation.
 \begin{align}
 \begin{split}
 N_{TT}'
@@ -690,7 +689,7 @@ N_{TT}'
 \end{align}
 where the flavours, $p_T$ and $|\eta|$ of the efficiencies are simply the flavours, $p_T$ and $|\eta|$ of the leading and sub-leading lepton in this event.
 
-By calculating the inverse of the matrix, equation \ref{equ:fake_eff_matrix} can be simplified.
+By inversing the matrix, equation \ref{equ:fake_eff_matrix} can be simplified.
 First, we define a variable $d$.
 \begin{align}
 \begin{split}
@@ -802,12 +801,13 @@ For a loose-loose pair,
 \end{align}
 
 \subsection{Measurement of real efficiencies}
+\label{sec:real_eff}
 The real efficiencies $\epsilon_i$ are measured by the Z boson tag-and-probe method.
-This method is based on the fact that the Z boson will decay into two opposite-sign electrons or two muons, and the invariant mass of the two leptons is close to the mass of the Z boson ($\sim 91$ GeV).
-By selecting two opposite-sign same-flavour leptons with the invariant mass 80 GeV $< m_{ll} <$ 100 GeV, these two leptons are likely to be real leptons.
-If one of the leptons is a signal lepton, which is called the tag lepton, another lepton, which is called the probe lepton, is very likely to be a real lepton.
+This method is based on the fact that the Z bosons decay into two opposite-sign electrons or two muons and the invariant mass of the two leptons is the mass of the Z boson ($\sim 91$ GeV).
+By selecting two opposite-sign same-flavour leptons with the invariant mass 80 GeV $< m_{ll} <$ 100 GeV, these two leptons are likely to be real leptons from a Z boson decay.
+If one of the leptons is a signal lepton, called the tag lepton, another lepton called the probe lepton is very likely to be a real lepton.
 By counting the total number of baseline leptons and signal leptons for the probe lepton, the real efficiencies $\epsilon$ can be measured.
-The counting was done on the data sample, and hence this is a data-driven method.
+The counting is done in the data sample, and hence this is a data-driven method.
 \begin{align}
 \epsilon = \frac{N^{\text{data}}_{\text{signal}}}{N^{\text{data}}_{\text{baseline}}}
 \end{align}
@@ -819,8 +819,7 @@ The selections for the control region used in the measurement of real efficienci
 \item 80 GeV $< m_{ll} <$ 100 GeV
 \end{itemize}
 
-To increase the statistics, if the two leptons are both signal leptons, both leptons can be tag leptons.
-Hence, both leptons will be probe leptons, and the event will be double-counted.
+If the two leptons are both signal leptons, both leptons can be tag leptons to increase the statistics.
 
 The binning for $p_T$ and $|\eta|$ is shown in table \ref{tab:binning_real_eff}.
 \begin{table}[htbp]
@@ -850,9 +849,10 @@ The results for the real efficiencies are shown in figure \ref{fig:result_real_e
 \end{figure}
 
 \subsection{Measurement of fake efficiencies}
+\label{sec:fake_eff}
 The fake efficiencies are measured by the tag-and-probe method, similar to the real efficiencies.
 On top of the selections in section \ref{event_cleaning}, two different control regions are defined for electron and muon respectively.
-The control regions are needed to have rich heavy-flavor fakes, by the requiring at least one b-jet.
+The control regions contain rich heavy-flavor fakes by requiring at least one b-jet.
 The selections for the control regions are summarized as follows:
 \begin{itemize}
 \item For electron fake efficiencies, one lepton is a muon and another is an electron. For muons fake efficiencies, the two leptons are both muons.
@@ -860,20 +860,20 @@ The selections for the control regions are summarized as follows:
 \item There is at least 1 b-jet.
 \end{itemize}
 
-In both control regions, the tag leptons must be a signal muon with $p_T > 40$ GeV, and hence it is very likely to be a real lepton.
-The probe lepton is very likely to a fake lepton from heavy-flavor jets, because the two leptons are same-sign and one of the leptons is real lepton.
+In both control regions, the tag leptons must be a signal muon with $p_T > 40$ GeV.
+The probe lepton is very likely to a fake lepton from heavy-flavor jets, because the two leptons are same-sign and the tag lepton is very likely to be a real lepton.
 By counting the number of the baseline and signal probe leptons, the fake efficiencies can be estimated.
-This counting was done on the data samples.
-In order to have a better estimation and ensure that the probe leptons are coming from fake leptons, the number of the baseline and signal probe leptons from data need to be subtracted by the number of real leptons, estimated by the MC sample.
+This counting is done in the data samples.
+In order to ensure that the probe leptons are not coming from real leptons, the number of real leptons estimated by the MC sample is subtracted.
 These MC samples include WZ, WW, ZZ, VVV, higgs, multi-top and ttV.
 \begin{align}
 f &= \frac{N_{\text{signal}}}{N_{\text{baseline}}} \\
 &= \frac{N^{\text{data}}_{\text{signal}} - N^{\text{MC, real}}_{\text{signal}}}{N^{\text{data}}_{\text{baseline}} - N^{\text{MC, real}}_{\text{baseline}}}
 \end{align}
 
-The identification of the real leptons in the MC samples is using the truth information (ParticleType = IsoElectron/IsoMuon) by using the package \texttt{MCTruthClassifier}.
-It will classify the reconstructed lepton into different types of truth particle.
-The origin of the reconstructed lepton can then be known.
+The identification of the real leptons in the MC samples is using the truth information.
+It classifies the reconstructed lepton into different types of truth particle.
+The origin of the reconstructed lepton are known.
 
 The binning for $p_T$ and $|\eta|$ is shown in table \ref{tab:binning_fake_eff}.
 \begin{table}[htbp]
@@ -911,9 +911,9 @@ The results for the fake efficiencies are shown in figure \ref{fig:result_fake_e
 \end{figure}
 
 \subsection{Validation for the fake lepton background}
-In order to validate the fake lepton background, it, together with other backgrounds, is compared with the data in a validation region.
+In order to validate the fake lepton background, we compare data with all background predictions including the fake lepton background in validation regions.
 The validation region is expected to have small contribution from signal.
-The validation region is defined as follows, on top of the selections in section \ref{event_cleaning}.
+It is defined as follows on top of the selections in section \ref{event_cleaning}.
 \begin{itemize}
 \item The two leptons are signal leptons.
 \item The two leptons are same-sign.
@@ -924,12 +924,12 @@ The validation region is defined as follows, on top of the selections in section
 \item $m_{\text{eff}} > 200$ GeV
 \end{itemize}
 
-To ensure that the contribution from signal is small, the percentages of the signal contribution are checked in figure \ref{fig:signal_contribution_fakes}, and they are below 7\%.
-Also, in order to make sure that there is a substantial contribution from fake lepton background, the percentages of different backgrounds are checked in table \ref{tab:VRfakes_compos}.
+To ensure that the contribution from signal is small, the fractions of the signal contribution are checked in figure \ref{fig:signal_contribution_fakes}, and they are below 7\%.
+In addition, in order to make sure that there is a substantial contribution from fake lepton background, the background compositions are checked in table \ref{tab:VRfakes_compos}.
 The validation region is split into 3 channels: electron-electron, muon-muon and electron-muon channel.
 Their fake contributions are 65\%,  24\% and 48\% respectively.
 
-The backgrounds and the data are compared for several variables in the 3 channels, shown in figures \ref{fig:VRSS_fake_ee}, \ref{fig:VRSS_fake_mumu} and \ref{fig:VRSS_fake_emu} respectively.
+The backgrounds and the data are compared in several variable distributions in the 3 channels, shown in figures \ref{fig:VRSS_fake_ee}, \ref{fig:VRSS_fake_mumu} and \ref{fig:VRSS_fake_emu} respectively.
 There are good agreements between the backgrounds and the data within the uncertainties.
 
 \begin{figure}[htbp]
@@ -961,7 +961,7 @@ Total BG    & 1322           & 408.4          & 1286 \\
 Data        & 1201           & 454            & 1410 \\
 \hline
 \end{tabular}
-\caption{Percentages of different backgrounds in the Validation region. The numbers in brackets are the yields.}
+\caption{The background compositions in the validation region. The numbers in brackets are the event yields.}
 \label{tab:VRfakes_compos}
 \end{center}
 \end{table}
@@ -974,7 +974,7 @@ Data        & 1201           & 454            & 1410 \\
 \begin{center}
 \includegraphics[width=0.49\textwidth]{data/plot/Fake_VR/nJet_VR_Fake_ee}
 \end{center}
-\caption{Distribution of the  leading lepton $p_T$, $m_{\text{eff}}$, $m_T$, $E_{T}^{\text{miss}}$ and $n_{\text{jets}}$ in the electron-electron channel. The ratio of data to background is shown in the lower plot. The error bar includes all the systematic uncertainties except for the theoretical uncertainties.}
+\caption{Distribution of the  leading lepton $p_T$, $m_{\text{eff}}$, $m_T$, $E_{T}^{\text{miss}}$ and $n_{\text{jets}}$ in the electron-electron channel. The ratio of data to background yields is shown in the lower plot. The error bar includes all the systematic uncertainties except for the theoretical uncertainties.}
 \label{fig:VRSS_fake_ee}
 \end{figure}
 
@@ -986,7 +986,7 @@ Data        & 1201           & 454            & 1410 \\
 \begin{center}
 \includegraphics[width=0.49\textwidth]{data/plot/Fake_VR/nJet_VR_Fake_mumu}
 \end{center}
-\caption{Distribution of the  leading lepton $p_T$, $m_{\text{eff}}$, $m_T$, $E_{T}^{\text{miss}}$ and $n_{\text{jets}}$ in the muon-muon channel. The ratio of data to background is shown in the lower plot. The error bar includes all the systematic uncertainties except for the theoretical uncertainties.}
+\caption{Distribution of the  leading lepton $p_T$, $m_{\text{eff}}$, $m_T$, $E_{T}^{\text{miss}}$ and $n_{\text{jets}}$ in the muon-muon channel. The ratio of data to background yields is shown in the lower plot. The error bar includes all the systematic uncertainties except for the theoretical uncertainties.}
 \label{fig:VRSS_fake_mumu}
 \end{figure}
 
@@ -998,6 +998,6 @@ Data        & 1201           & 454            & 1410 \\
 \begin{center}
 \includegraphics[width=0.49\textwidth]{data/plot/Fake_VR/nJet_VR_Fake_emu}
 \end{center}
-\caption{Distribution of the  leading lepton $p_T$, $m_{\text{eff}}$, $m_T$, $E_{T}^{\text{miss}}$ and $n_{\text{jets}}$ in the electron-muon channel. The ratio of data to background is shown in the lower plot. The error bar includes all the systematic uncertainties except for the theoretical uncertainties.}
+\caption{Distribution of the  leading lepton $p_T$, $m_{\text{eff}}$, $m_T$, $E_{T}^{\text{miss}}$ and $n_{\text{jets}}$ in the electron-muon channel. The ratio of data to background yields is shown in the lower plot. The error bar includes all the systematic uncertainties except for the theoretical uncertainties.}
 \label{fig:VRSS_fake_emu}
 \end{figure}
