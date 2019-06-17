@@ -3,7 +3,7 @@
 \label{ch:VR}
 %************************************************
 
-In order to ensure the estimations of the backgrounds have good modelling, two validation regions (VRjet1 and VRjet23) are defined for the corresponding two signal regions (SRjet1 and SRjet23), to compare the backgrounds and the data.
+In order to ensure the estimations of the backgrounds are robust, two validation regions (VRjet1 and VRjet23) are defined for the corresponding two signal regions (SRjet1 and SRjet23), to compare the backgrounds and the data.
 There are three requirements for the validation regions:
 \begin{itemize}
 \item The signal contribution is small.
@@ -28,26 +28,27 @@ $m_{lj(j)}$ [GeV]               & \textcolor{red}{$>130$}       & \textcolor{red
 $m_{T2}$ [GeV]                  & $\textcolor{red}{-}$          & $\textcolor{red}{-}$ \\
 \hline
 \end{tabular}
-\caption{The definition of the two validation regions, on top of the pre-selections in section \ref{sec:SR_pre-selection}. The values in red colour represent the changes with respect to the cuts in the signal regions.}
+\caption{The definition of the two validation regions on top of the pre-selections in section \ref{sec:SR_pre-selection}. The values in red colour represent different cuts compared to the signal regions.}
 \label{tab:VR_cuts}
 \end{center}
 \end{table}
 
-For the VRjet1, the validation region is obtained by reversing the $E_T^{\text{miss}}$ cut and applying a lower cut on it.
-This can ensure that the validation region is orthogonal to SRjet1.
-The lower cut of $E_T^{\text{miss}}$ is optimized to 70 GeV, to have a similar background composition with SRjet1.
-The direction of the $m_{lj}$ is reversed and relaxed, in order to reduce the signal contribution and increase the statistics.
+For the VRjet1, the validation region is obtained by reversing the $E_T^{\text{miss}}$ cut compared to the signal region.
+This can ensure that the validation region is orthogonal to the SRjet1.
+The lower cut of $E_T^{\text{miss}}$ is optimized to 70 GeV.
+Such a similar background composition is obtained compared with the SRjet1.
+The cut on $m_{lj}$ is reversed and relaxed, in order to reduce the signal contribution and increase the statistics.
 The cuts of $m_{\text{eff}}$ and $m_{T2}$ are also removed to increase the statistics.
 
-For the VRjet23, the validation region is obtained by reversing the $m_T$ cut and applying a lower cut on it.
-Similar to VRjet1, this can ensure that the validation region is orthogonal to SRjet23, and the lower cut can be optimized to have a similar background composition.
-The lower cut of $m_T$ is optimized to 65 GeV.
-The direction of the $m_{ljj}$ is reversed to reduce the signal contribution.
+For the VRjet23, the validation region is obtained by reversing the $m_T$ cut.
+This can ensure that the validation region is orthogonal to the SRjet23.
+The cut is optimized to 65 GeV to have a similar background composition.
+The cut on $m_{ljj}$ is reversed to reduce the signal contribution.
 To increase the statistics, the $m_{T2}$ cut is removed.
 
-The percentages of signal contribution for different mass points are shown in figure \ref{fig:signal_contribution_VR}. The signal contribution is below 12\% and 10\% for VRjet1 and VRjet23 respectively.
-Figures \ref{fig:background composition_1} and \ref{fig:background composition_2} show the background composition for the validation regions and their corresponding signal regions.
-The background compositions of the validation regions are similar, compared with their corresponding signal regions.
+The fractions of signal contribution at different mass points are shown in figure \ref{fig:signal_contribution_VR}. The signal contributions are below 12\% and 10\% for VRjet1 and VRjet23 respectively.
+Figures \ref{fig:background composition_1} and \ref{fig:background composition_2} show the background composition in the validation regions and in the corresponding signal regions.
+The background compositions of the validation regions are similar compared with their corresponding signal regions.
 Table \ref{tab:VR_yields} shows the expected number of events in each background and the observed number of events in data.
 The comparisons of some variable distributions between the background and the data are also shown in figures \ref{fig:VRjet1_plot} and \ref{fig:VRjet23_plot} for VRjet1 and VRjet23 respectively.
 The estimated background and the data agree with each other within the uncertainties.
@@ -56,7 +57,7 @@ The estimated background and the data agree with each other within the uncertain
 \centering
 \includegraphics[width=0.45\textwidth]{data/plot/VR/SignalContamination_VRjet1.eps}
 \includegraphics[width=0.45\textwidth]{data/plot/VR/SignalContamination_VRjet23.eps}
-\caption{Percentages of signal contribution are shown for the VRjet1 (left) and VRjet23 (right).}
+\caption{Fractions of signal contribution are shown for the VRjet1 (left) and VRjet23 (right).}
 \label{fig:signal_contribution_VR}
 \end{figure}
 
@@ -64,7 +65,7 @@ The estimated background and the data agree with each other within the uncertain
 \centering
 \includegraphics[width=0.45\textwidth]{data/plot/VR/BkgComposition_VRjet1.eps}
 \includegraphics[width=0.45\textwidth]{data/plot/VR/BkgComposition_SRjet1.eps}
-\caption{Background composition for the VRjet1 (left) and SRjet1 (right).}
+\caption{Background composition in the VRjet1 (left) and SRjet1 (right).}
 \label{fig:background composition_1}
 \end{figure}
 
@@ -72,7 +73,7 @@ The estimated background and the data agree with each other within the uncertain
 \centering
 \includegraphics[width=0.45\textwidth]{data/plot/VR/BkgComposition_VRjet23.eps}
 \includegraphics[width=0.45\textwidth]{data/plot/VR/BkgComposition_SRjet23.eps}
-\caption{Background composition for the VRjet23 (left) and SRjet23 (right).}
+\caption{Background composition in the VRjet23 (left) and SRjet23 (right).}
 \label{fig:background composition_2}
 \end{figure}
 
@@ -99,7 +100,7 @@ Data        & $17$ & $54$ \\
 \hline
 \hline
 \end{tabular}
-\caption{The expected number of background events and the observed number of data events for the VRjet1 (the second column) and VRjet23 (the third column). The uncertainties include the statistical and systematic uncertainties.}
+\caption{The expected number of background events and the observed number of data events in the VRjet1 (the second column) and VRjet23 (the third column). The uncertainties include the statistical and systematic uncertainties.}
 \label{tab:VR_yields}
 \end{center}
 \end{table}
@@ -115,7 +116,7 @@ Data        & $17$ & $54$ \\
 \includegraphics[width=0.47\textwidth]{data/plot/VR/all_PtLep_VRjet1.eps}
 \includegraphics[width=0.47\textwidth]{data/plot/VR/all_PtSublep_VRjet1.eps} \\
 \includegraphics[width=0.47\textwidth]{data/plot/VR/all_Njets_VRjet1.eps}
-\caption{Distributions of some variables in the VRjet1 for the background estimation and the data are shown. A signal of a mass point ($m_{\tilde{\chi}_1^\pm , \tilde{\chi}_2^0}$,$m_{\tilde{\chi}_1^0}$) = (175,0) is also shown. The internal shaded area refers to the statistical uncertainties, while the external shaded area refers to the total uncertainty.}
+\caption{Distributions of the variables in the VRjet1 for the background estimation and the data are shown. A signal at a mass point ($m_{\tilde{\chi}_1^\pm , \tilde{\chi}_2^0}$,$m_{\tilde{\chi}_1^0}$) = (175,0) is also shown. The internal shaded area refers to the statistical uncertainties, while the external shaded area refers to the total uncertainty.}
 \label{fig:VRjet1_plot}
 \end{figure}
 
@@ -130,6 +131,6 @@ Data        & $17$ & $54$ \\
 \includegraphics[width=0.47\textwidth]{data/plot/VR/all_PtLep_VRjet23.eps}
 \includegraphics[width=0.47\textwidth]{data/plot/VR/all_PtSublep_VRjet23.eps} \\
 \includegraphics[width=0.47\textwidth]{data/plot/VR/all_Njets_VRjet23.eps}
-\caption{Distributions of some variables in the VRjet23 for the background estimation and the data are shown. A signal of a mass point ($m_{\tilde{\chi}_1^\pm , \tilde{\chi}_2^0}$,$m_{\tilde{\chi}_1^0}$) = (175,0) is also shown. The internal shaded area refers to the statistical uncertainties, while the external shaded area refers to the total uncertainty.}
+\caption{Distributions of the variables in the VRjet23 for the background estimation and the data are shown. A signal at a mass point ($m_{\tilde{\chi}_1^\pm , \tilde{\chi}_2^0}$,$m_{\tilde{\chi}_1^0}$) = (175,0) is also shown. The internal shaded area refers to the statistical uncertainties, while the external shaded area refers to the total uncertainty.}
 \label{fig:VRjet23_plot}
 \end{figure}
