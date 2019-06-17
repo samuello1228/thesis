@@ -3,46 +3,47 @@
 \label{ch:BG}
 %************************************************
 
-The charge flip background and the fake lepton background are the two dominant backgrounds that their original particles in the final state come from the SM, but not the SUSY signal. Because of the mis-reconstruction, they pass the selections of the SRs. This type of background will be estimated by using the data-driven method.
+The charge flip background and the fake lepton background are the two dominant backgrounds due to a mis-reconstruction of the final state leptons.
+This type of background will be estimated by using data-driven methods.
 
 \section{Charge flip background}
 \label{sec:charge_flip_background}
 \subsection{Sources for charge flip background}
-The charge flip background is due to the misidentification of the sign of the charge of a lepton, after the reconstruction.
+The charge flip background is due to the misidentification of the sign of the charge of a lepton.
 The sign of the charge is determined by the direction of the curvature of the track.
 There are two main sources for the misidentification for the direction of the curvature.
 
 The first source is described by figure \ref{fig:charge_flip_bremsstrahlung}.
-It is the case that the lepton interacts with the material of the detector, and a photon is emitted by the process of bremsstrahlung.
+It is the case that the lepton interacts with the material of the detector and a photon is emitted by the process of bremsstrahlung.
 The emitted photon further produces a pair of electron and positron, namely the $\gamma$ conversion.
 As shown in figure \ref{fig:charge_flip_bremsstrahlung}, if most of the energy is carried by the positron $e^{+}$ (the purple track), the direction of the curvature of the reconstructed track (the orange track) will be reversed.
 Thus, the charge of the lepton is flipped.
-Because the amount of this misidentification depends on the number of hits with the detector, and hence depends on $|\eta|$ of the original track.
+Because the misidentification depends on the amount of the detector material, and hence depends on $|\eta|$ of the original track.
 
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{data/photo/charge_flip/Brem.jpg}
-\caption{This shows how the track of the electron is incorrectly reconstructed (the orange track), due to the process of bremsstrahlung and $\gamma$ conversion.}
+\caption{It shows how the track of the electron is incorrectly reconstructed (the orange track), due to the process of bremsstrahlung and $\gamma$ conversion.}
 \label{fig:charge_flip_bremsstrahlung}
 \end{figure}
 
 The second source is described by the figure \ref{fig:charge_flip_high_pt}.
 When the $p_T$ of the lepton is very high, the track of the lepton will be almost a straight line.
-The curvature of the track will be close to zero, and the sign of the curvature will be difficult to distinguish.
-As a result, the sign of the charge of the lepton will be incorrectly assigned.
+The curvature of the track will be close to zero, and the sign of the curvature will be difficult to be determined.
+As a result, the sign of the charge of the lepton is likely incorrectly assigned.
 The chance to have this problem obviously depends on $p_T$ of the lepton.
 
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{data/photo/charge_flip/WrongTrack.png}
-\caption{This shows how the track of the electron is incorrectly reconstructed (the orange track), due to very high $p_T$ of the electron.}
+\caption{It shows how the track of the electron is incorrectly reconstructed (the orange track), due to very high $p_T$ of the electron.}
 \label{fig:charge_flip_high_pt}
 \end{figure}
 
 Compared to an electron, the charge of a reconstructed muon will be less often to be misidentified.
-The first reason is that a muon is heavier than an electron.
+Firstly, a muon is heavier than an electron.
 This will reduce the chance of the process of bremsstrahlung.
-The second reason is that muons can reach to the muon spectrometer, which is the outer part of the detector, while most electrons cannot.
+Secondly, muons can reach to the muon spectrometer, which is the outer part of the detector, while electrons cannot.
 This means that the length of the track of a muon, which can be detected by the tracker, is longer than that of an electron.
 Hence, the reconstructed curvature of the track for muons can be more accurate, and it reduces the chance of the misidentification due to the high $p_T$.
 Because most of the charge flip background comes from electrons, we only estimate the charge flip background for electrons.
@@ -67,8 +68,8 @@ $|\eta|$ & 0, 0.50, 1.00, 1.37, 1.52, 1.80, 2.00, 2.47 \\
 \label{tab:binning_charge_flip}
 \end{table}
 
-Suppose that, before the reconstruction, there are $m^{ij}_{OS}$ opposite-sign events with the leading lepton in bin $i$ and the sub-leading lepton in bin $j$, and similarly there are $m^{ij}_{SS}$ same-sign events.
-After the reconstruction, due to the charge-flipped leptons, there are $M^{ij}_{OS}$ opposite-sign events and $M^{ij}_{SS}$ same-sign events.
+Suppose that there are $m^{ij}_{OS}$ opposite-sign events with the leading lepton in bin $i$ and the sub-leading lepton in bin $j$ before the reconstruction, and there are $m^{ij}_{SS}$ same-sign events.
+After the reconstruction, there are $M^{ij}_{OS}$ opposite-sign events and $M^{ij}_{SS}$ same-sign events due to the charge-flipped leptons.
 The number of events after the reconstruction is given by
 \begin{equation}
 M^{ij}_{OS} = (1-\epsilon_i) (1-\epsilon_j) m^{ij}_{OS} + \epsilon_i (1-\epsilon_j) m^{ij}_{SS} + (1-\epsilon_i) \epsilon_j m^{ij}_{SS} + \epsilon_i \epsilon_j m^{ij}_{OS}
@@ -94,7 +95,7 @@ Figure \ref{fig:charge_flip_OS_SS} shows that the number of OS events is much la
 \caption{The comparison between the OS events and the SS events in data. The number of OS events is much larger than the number of SS events by almost $10^3$ times.}
 \label{fig:charge_flip_OS_SS}
 \end{figure}
-Also, it turns out that the resulting measured charge-flip rate $\epsilon_i$ is about $10^{-3}$, as shown in figure \ref{fig:charge_flip_data_tot}.
+Besides, it turns out that the measured charge-flip rate $\epsilon_i$ is about $10^{-3}$, as shown in figure \ref{fig:charge_flip_data_tot}.
 Hence, $m^{ij}_{OS}$ can be estimated by
 \begin{align}
 M^{ij}_{OS} &\approx (1-\epsilon_i) (1-\epsilon_j) m^{ij}_{OS} \\
@@ -128,18 +129,17 @@ P(N^{ij}_{SS}|N^{ij},\epsilon_i,\epsilon_j) &= \frac{ \lambda^{N^{ij}_{SS}} e^{-
 
 In order to estimate the charge flip BG, we need to measure the charge-flip rate $\epsilon_i$.
 The charge-flip rate is measured as a function of $p_T$ and $|\eta|$ by using a likelihood method, based on the 2015 and 2016 data.
-A control region is used to select $Z \rightarrow ee$ processes.
+A control region is used to select $Z \rightarrow ee$ processes, with Z mass window of 80 GeV $<m_{ll}<$100 GeV.
 Inside the control region, exactly 2 signal electrons are required.
-Also, a Z mass window of 80 GeV $<m_{ll}<$100 GeV is used.
 In this control region, the total number of events $N^{ij}$ and the SS events $N^{ij}_{SS}$ in each bin can be measured.
 By using the equation \ref{equ:poisson}, the charge-flip rate $\epsilon_i$ can be measured by using the following likelihood method.
 
 The likelihood function $L$ is defined by
 \begin{align}
 L(\epsilon_i,\epsilon_j|N^{ij},N^{ij}_{SS}) &= \prod_{ij} P(N^{ij}_{SS}|N^{ij},\epsilon_i,\epsilon_j) \\
-&= \prod_{ij} \frac{ (p_{ij} N^{ij})^{N^{ij}_{SS}} e^{- p_{ij} N^{ij}} }{N^{ij}_{SS}!} \\
+&= \prod_{ij} \frac{ (p_{ij} N^{ij})^{N^{ij}_{SS}} e^{- p_{ij} N^{ij}} }{N^{ij}_{SS}!}
 \end{align}
-Given the measured values of $N^{ij}$ and $N^{ij}_{SS}$ in each bin, by maximizing the likelihood function over all possible values of $\epsilon_i$, the value of $\epsilon_i$ can be estimated.
+Given the measured values of $N^{ij}$ and $N^{ij}_{SS}$ in each bin, the value of $\epsilon_i$ can be estimated by maximizing the likelihood function over all possible values of $\epsilon_i$.
 By taking the negative logarithm, it is equivalent to minimize $- \ln L$.
 \begin{align}
 - \ln L
@@ -153,8 +153,8 @@ By taking the negative logarithm, it is equivalent to minimize $- \ln L$.
 \subsection{Background subtraction}
 \label{sec:Background_subtraction}
 By minimizing $- \ln L$ described in the previous section, the value of the charge-flip rate $\epsilon_i$ can be measured by using the data in the control region.
-In order to have better input values of $N^{ij}$ and $N^{ij}_{SS}$, the number of events should mainly come from $Z \rightarrow ee$ processes, and other processes should be subtracted.
-The number of events from other processes can be estimated by the sideband region: 60 GeV $<m_{ll}<$ 80 GeV and 100 GeV $<m_{ll}<$ 120 GeV.
+In order to have accurate $N^{ij}$ and $N^{ij}_{SS}$, the number of events should come from $Z \rightarrow ee$ processes, and other processes should be subtracted in data.
+The number of events from other processes can be estimated with the sideband method in the region: 60 GeV $<m_{ll}<$ 80 GeV and 100 GeV $<m_{ll}<$ 120 GeV, by assuming a flat distribution.
 The corrected values of $N^{ij}$ and $N^{ij}_{SS}$ are given by
 \begin{align}
 N_{80,100;\text{corrected}} = N_{80,100} - 20 \Big( \frac{N_{60,80} + N_{80,100}}{20 + 20} \Big)
@@ -213,10 +213,11 @@ Figure \ref{fig:charge_flip_sys_background_subtraction} shows the variations of 
 \subsection{Systematic uncertainties due to likelihood method}
 \label{sec:sys_likelihood}
 The systematic uncertainties due to likelihood method are estimated by the difference between the likelihood method and the MC truth method.
-In the MC truth method, the charge-flip rate is estimated by using the truth information in $Z \rightarrow ee$ MC samples inside the control region.
+In the MC truth method, the charge-flip rate is estimated by using the truth information in the $Z \rightarrow ee$ MC sample inside the control region.
 The control region requires exactly 2 signal electrons.
-The following are the procedures to match the reconstructed electron to the original electron, and hence the original electric charge can be found.
-Figure \ref{fig:charge_flip_MC_match} shows how the original electron is found in the decay process described in figure \ref{fig:charge_flip_bremsstrahlung}. In this procedure, some reconstructed electrons will be ignored.
+The following are the procedures to match the reconstructed electron to the original electron, in order to find out the original electric charge.
+In this procedure, some reconstructed electrons cannot be matched.
+Figure \ref{fig:charge_flip_MC_match} shows how the original electron is found in the decay process described in figure \ref{fig:charge_flip_bremsstrahlung}.
 \begin{figure}
 \centering
 \includegraphics[width=0.5\textwidth]{data/photo/charge_flip/MC-truth.png}
@@ -224,14 +225,18 @@ Figure \ref{fig:charge_flip_MC_match} shows how the original electron is found i
 \label{fig:charge_flip_MC_match}
 \end{figure}
 \begin{enumerate}
-\item The reconstructed electron will be matched to the truth particle with the smallest $\Delta R$ within the cone $\Delta R < 0.1$. If no any truth particles can be found inside the cone, the reconstructed electron will be ignored.
-\item If the truth particle is not an electron, it will be ignored.
-\item If the origin of the truth electron is not a Z boson, it will be ignored.
-\item If the daughter particle of the Z boson is not an electron, it will be ignored.
+\item The reconstructed electron will be matched to the truth particle with the smallest $\Delta R$ within the cone $\Delta R < 0.1$.
+\item In the following cases, the reconstructed electron are thrown away.
+\begin{enumerate}
+\item No any truth particles can be found inside the cone.
+\item The truth particle is not an electron.
+\item The origin of the truth electron is not a Z boson.
+\item The daughter particle of the Z boson is not an electron.
+\end{enumerate}
 \item The charge of the daughter electron from the Z boson is the original charge of the reconstructed electron.
 \end{enumerate}
 
-Only the events with two reconstructed electrons that are not ignored in the above procedure are considered.
+Only the events with two reconstructed electrons that are kept in the above procedure are considered.
 $N_{\text{total}}$ is the total number of electrons in these events, and $N_{\text{flipped}}$ is the number of electrons that the original charge and the reconstructed charge are different.
 By calculating the ratio in each bin, the charge flip rate can be estimated by using the MC truth information.
 \begin{equation}
@@ -248,7 +253,7 @@ for data,
 \sigma_{\text{truth,data}} = \epsilon_{\text{lik,data}} \times \frac{\sigma_{\text{truth,MC}}}{\epsilon_{\text{lik,MC}}}
 \end{equation}
 
-Figure \ref{fig:charge_flip_sys_truth} shows the comparison of the resulting charge flip rate, between the likelihood method and the MC truth method, by using the $Z \rightarrow ee$ MC samples.
+Figure \ref{fig:charge_flip_sys_truth} shows the comparison of the resulting charge flip rate, between the likelihood method and the MC truth method.
 \begin{figure}
 \centering
 \includegraphics[width=0.3\textwidth]{data/plot/charge_flip/FitPlots/mc_cf_rate_0.eps}
@@ -256,13 +261,13 @@ Figure \ref{fig:charge_flip_sys_truth} shows the comparison of the resulting cha
 \includegraphics[width=0.3\textwidth]{data/plot/charge_flip/FitPlots/mc_cf_rate_2.eps} \\
 \includegraphics[width=0.3\textwidth]{data/plot/charge_flip/FitPlots/mc_cf_rate_3.eps}
 \includegraphics[width=0.3\textwidth]{data/plot/charge_flip/FitPlots/mc_cf_rate_4.eps}
-\caption{The comparison between the likelihood method and the MC truth method, by using the $Z \rightarrow ee$ MC samples. Hence, the systematic uncertainties due to likelihood method can be estimated.}
+\caption{The comparisons between the likelihood method and the MC truth method. The systematic uncertainties due to likelihood method can be estimated.}
 \label{fig:charge_flip_sys_truth}
 \end{figure}
 
 \subsection{Results with total uncertainties}
 \label{sec:charge_flip_results_stat}
-The total systematic uncertainties is the quadratic sum of systematic uncertainties due to the background subtraction and the likelihood method, described in section \ref{sec:sys_background_subtraction} and \ref{sec:sys_likelihood} respectively.
+The total systematic uncertainties is a quadratic sum of systematic uncertainties due to the background subtraction and the likelihood method, described in section \ref{sec:sys_background_subtraction} and \ref{sec:sys_likelihood} respectively.
 \begin{equation}
 \sigma_{\text{sys}} = \sqrt{\sigma_{\text{bgk}} ^2+ \sigma_{\text{truth}} ^2}
 \end{equation}
@@ -290,7 +295,7 @@ N^{ij}_{SS} &= [ \epsilon_i (1-\epsilon_j) + (1-\epsilon_i) \epsilon_j ] m^{ij}_
 &\approx [ \epsilon_i (1-\epsilon_j) + (1-\epsilon_i) \epsilon_j ] \frac{ M^{ij}_{OS} }{ (1-\epsilon_i) (1-\epsilon_j) } \\
 &= \frac{\epsilon_i (1-\epsilon_j) + (1-\epsilon_i) \epsilon_j}{(1-\epsilon_i) (1-\epsilon_j)} M^{ij}_{OS}
 \end{align}
-Also, in the equation \ref{equ:MSS}, $m^{ij}_{SS}$ is zero for the $Z \rightarrow ee$ MC samples, we have
+In the equation \ref{equ:MSS}, $m^{ij}_{SS}$ is zero for the $Z \rightarrow ee$ MC samples, therefore we have
 \begin{align}
 M^{ij}_{SS} &= \epsilon_i (1-\epsilon_j) m^{ij}_{OS} + (1-\epsilon_i) \epsilon_j m^{ij}_{OS} \\
 &= N^{ij}_{SS}
@@ -305,8 +310,7 @@ By weighting the OS events in MC with the weight,
 \end{align}
 the weighted OS events and the SS events will be close to each other.
 This can be used to validate the charge flip rate.
-Figure shows the comparison between the weighted OS events and the SS events, with different variables.
-All event weights are applied, except the charge flip scale factor.
+Figure \ref{fig:charge_flip_MC_validation} shows the comparisons between the weighted OS events and the SS events in various distributions, where all event weights are applied except the charge flip scale factor.
 The weighted OS events and the SS events agree within the uncertainties.
 \begin{figure}
 \centering
@@ -317,7 +321,8 @@ The weighted OS events and the SS events agree within the uncertainties.
 \includegraphics[width=0.3\textwidth]{data/plot/charge_flip/ReweightPlots/plots_NOchfSF/mc_mll.pdf}
 \includegraphics[width=0.3\textwidth]{data/plot/charge_flip/ReweightPlots/plots_NOchfSF/mc_phi_1.pdf}
 \includegraphics[width=0.3\textwidth]{data/plot/charge_flip/ReweightPlots/plots_NOchfSF/mc_phi_2.pdf}
-\caption{The comparison between the weighted OS events and the SS events, with different variables.}
+\caption{The comparisons between the weighted OS events and the SS events.}
+\label{fig:charge_flip_MC_validation}
 \end{figure}
 
 \section{Fake lepton background}
